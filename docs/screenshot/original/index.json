@@ -1,0 +1,62 @@
+{
+  "taken_at": "2026-11-20T12:43:26.572Z",
+  "viewport_width": 1440,
+  "shots": [
+    {
+      "name": "home",
+      "url": "https://www.corsidiformazionecm.it/",
+      "file": "docs/screenshot/original/home.png",
+      "bytes": 2723811,
+      "page_height": 4315
+    },
+    {
+      "name": "catalogo-pagina-1",
+      "url": "https://www.corsidiformazionecm.it/collections",
+      "file": "docs/screenshot/original/catalogo-pagina-1.png",
+      "bytes": 892842,
+      "page_height": 1434
+    },
+    {
+      "name": "corso-lungo-metabolismo-cane-cavallo",
+      "url": "https://www.corsidiformazionecm.it/courses/METABOLISMO,%20NUTRIZIONE%20E%20PERFORMANCE%20NEL%20CANE%20SPORTIVO%20E%20NEL%20CAVALLO%20ATLETA",
+      "file": "docs/screenshot/original/corso-lungo-metabolismo-cane-cavallo.png",
+      "bytes": 982615,
+      "page_height": 4041
+    },
+    {
+      "name": "corso-breve-apparato-digerente",
+      "url": "https://www.corsidiformazionecm.it/courses/apparato-digerente",
+      "file": "docs/screenshot/original/corso-breve-apparato-digerente.png",
+      "bytes": 670994,
+      "page_height": 2572
+    },
+    {
+      "name": "chi-siamo",
+      "url": "https://www.corsidiformazionecm.it/pages/chi-siamo",
+      "file": "docs/screenshot/original/chi-siamo.png",
+      "bytes": 94095,
+      "page_height": 958
+    },
+    {
+      "name": "docenti",
+      "url": "https://www.corsidiformazionecm.it/pages/docenti",
+      "file": "docs/screenshot/original/docenti.png",
+      "bytes": 4087459,
+      "page_height": 13056
+    },
+    {
+      "name": "contatti",
+      "url": "https://www.corsidiformazionecm.it/pages/contatti",
+      "file": "docs/screenshot/original/contatti.png",
+      "bytes": 116364,
+      "page_height": 1658
+    },
+    {
+      "name": "testimonianze-sales",
+      "url": "https://sales.corsidiformazionecm.it/testimonianze",
+      "file": "docs/screenshot/original/testimonianze-sales.png",
+      "bytes": 5124501,
+      "page_height": 13542
+    }
+  ]
+}

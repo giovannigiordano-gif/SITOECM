@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Token — "La Lente" (vedi docs/design-system.md)
+   ========================================================================== */
+:root {
+	/* Colore: ematossilina (inchiostro) + eosina (cremisi del logo) + porcellana */
+	--c-ink: oklch(0.235 0.055 285);
+	--c-ink-2: oklch(0.32 0.07 285);
+	--c-ink-3: oklch(0.4 0.07 285);
+	--c-ink-soft: oklch(0.47 0.04 285);
+	--c-crimson: oklch(0.512 0.198 25.4);
+	--c-crimson-deep: oklch(0.42 0.165 22);
+	--c-crimson-soft: oklch(0.62 0.17 22);
+	--c-blush: oklch(0.935 0.028 15);
+	--c-blush-2: oklch(0.965 0.014 15);
+	--c-paper: oklch(0.977 0.005 285);
+	--c-paper-2: oklch(0.955 0.008 285);
+	--c-paper-3: oklch(0.925 0.011 285);
+	--c-line: oklch(0.88 0.012 285);
+	--c-line-ink: oklch(0.42 0.05 285);
+	--c-on-ink: oklch(0.97 0.008 285);
+	--c-on-ink-soft: oklch(0.8 0.025 285);
+	--c-tile: oklch(0.99 0.003 285);
+
+	/* Tipografia */
+	--f-sans: "Mona Sans", "Mona Sans Fallback", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+	--fs-xs: 0.8125rem;
+	--fs-sm: 0.9375rem;
+	--fs-base: clamp(1.0625rem, 1rem + 0.22vw, 1.1875rem);
+	--fs-lg: clamp(1.25rem, 1.12rem + 0.55vw, 1.5rem);
+	--fs-xl: clamp(1.5rem, 1.26rem + 1.05vw, 2.125rem);
+	--fs-2xl: clamp(2rem, 1.5rem + 2.2vw, 3.25rem);
+	--fs-3xl: clamp(2.375rem, 1.55rem + 3.6vw, 4.75rem);
+	--fs-display: clamp(2.75rem, min(1.2rem + 5.2vw, 10.4svh), 6.5rem);
+	--lh-tight: 1;
+	--lh-snug: 1.15;
+	--lh-body: 1.62;
+	--measure: 66ch;
+
+	/* Spazi (base 4) */
+	--s-1: 0.25rem;
+	--s-2: 0.5rem;
+	--s-3: 0.75rem;
+	--s-4: 1rem;
+	--s-5: 1.5rem;
+	--s-6: 2rem;
+	--s-7: 3rem;
+	--s-8: 4rem;
+	--s-9: 6rem;
+	--s-10: 8rem;
+	--s-11: 11rem;
+	--section: clamp(5rem, 2.6rem + 9vw, 11rem);
+	--section-tight: clamp(3.5rem, 2rem + 6vw, 7.5rem);
+
+	/* Griglia */
+	--wrap-max: 92.5rem;
+	--margin: clamp(1rem, 0.4rem + 3.6vw, 4.5rem);
+	--gutter: clamp(1rem, 0.6rem + 1.6vw, 2rem);
+
+	/* Forme */
+	--r-pill: 999px;
+	--r-media: 22px;
+	--r-field: 14px;
+	--r-sm: 10px;
+
+	/* Elevazione (ombre tinte d'inchiostro) */
+	--shadow-1: 0 1px 2px oklch(0.235 0.055 285 / 0.06), 0 10px 30px -14px oklch(0.235 0.055 285 / 0.22);
+	--shadow-2: 0 2px 4px oklch(0.235 0.055 285 / 0.05), 0 24px 48px -24px oklch(0.235 0.055 285 / 0.32);
+	--shadow-lift: 0 40px 80px -40px oklch(0.235 0.055 285 / 0.45);
+
+	/* Motion */
+	--ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+	--ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+	--ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
+	--dur-1: 160ms;
+	--dur-2: 420ms;
+	--dur-3: 900ms;
+	--dur-4: 1400ms;
+
+	/* Livelli */
+	--z-raised: 10;
+	--z-header: 100;
+	--z-cta: 110;
+	--z-menu: 200;
+	--z-cookie: 300;
+	--z-toast: 350;
+
+	--header-h: 72px;
+	--focus: 0 0 0 3px var(--c-paper), 0 0 0 5px var(--c-crimson);
+	color-scheme: light;
+}
+
+@media (max-width: 767px) {
+	:root {
+		--header-h: 64px;
+	}
+}

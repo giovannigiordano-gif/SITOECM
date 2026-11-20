@@ -1,0 +1,274 @@
+{
+  "generated_at": "2026-11-20T12:54:00.803Z",
+  "unique_files": 9,
+  "unique_entities": [
+    "Ordine Biologi Sicilia",
+    "Ordine Veterinari della Provincia del Verbano-Cusio-Ossola",
+    "Ordine Veterinari della Provincia di Bologna",
+    "Ordine dei Biologi Piemonte – Liguria – Valle d'Aosta",
+    "Ordine dei Medici Veterinari Caserta",
+    "Ordine dei Medici Veterinari della Provincia di Ancona",
+    "Ordine dei Medici Veterinari della Provincia di Latina",
+    "Ordine dei Medici Veterinari della Provincia di Mantova",
+    "Ordine dei Medici Veterinari della Provincia di Parma",
+    "Ordine dei Medici Veterinari della Provincia di Perugia",
+    "Ordine dei Medici Veterinari della Provincia di Reggio Emilia",
+    "Ordine dei Medici Veterinari della Provincia di Torino"
+  ],
+  "note": "Dedup per sha1 del file scaricato. Le due immagini del corso BUNDLE sono banner compositi con più loghi (contains_entities).",
+  "logos": [
+    {
+      "sha1": "75be18e82b404d417e0a30fb3165e0d73c817da3",
+      "name": "Ordine dei Medici Veterinari della Provincia di Perugia",
+      "composite_image": false,
+      "contains_entities": null,
+      "canonical_file": "data/scrape/assets/logos/metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta/01-logo-ordine-nitido-pg.png",
+      "width": 632,
+      "height": 622,
+      "filenames": [
+        "LOGO_Ordine_-_nitido._pg.PNG"
+      ],
+      "urls": [
+        "https://files.cdn.thinkific.com/file_uploads/692348/images/9de/326/340/LOGO_Ordine_-_nitido._pg.PNG",
+        "https://files.cdn.thinkific.com/file_uploads/692348/images/d22/7d3/8ef/LOGO_Ordine_-_nitido._pg.PNG"
+      ],
+      "used_by": [
+        {
+          "course": "metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+          "position": 1,
+          "file": "data/scrape/assets/logos/metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta/01-logo-ordine-nitido-pg.png"
+        },
+        {
+          "course": "alimentazione-nel-gatto-completo",
+          "position": 5,
+          "file": "data/scrape/assets/logos/alimentazione-nel-gatto-completo/05-logo-ordine-nitido-pg.png"
+        }
+      ]
+    },
+    {
+      "sha1": "a4c1734c81760da0add3178d86070712eb6c46e9",
+      "name": "Ordine Veterinari della Provincia del Verbano-Cusio-Ossola",
+      "composite_image": false,
+      "contains_entities": null,
+      "canonical_file": "data/scrape/assets/logos/metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta/02-vbo.png",
+      "width": 283,
+      "height": 286,
+      "filenames": [
+        "vbo.png"
+      ],
+      "urls": [
+        "https://files.cdn.thinkific.com/file_uploads/692348/images/c72/96b/14e/vbo.png",
+        "https://files.cdn.thinkific.com/file_uploads/692348/images/9dc/240/a1a/vbo.png"
+      ],
+      "used_by": [
+        {
+          "course": "metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+          "position": 2,
+          "file": "data/scrape/assets/logos/metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta/02-vbo.png"
+        },
+        {
+          "course": "alimentazione-nel-gatto-completo",
+          "position": 1,
+          "file": "data/scrape/assets/logos/alimentazione-nel-gatto-completo/01-vbo.png"
+        }
+      ]
+    },
+    {
+      "sha1": "3c0fa1bea620366e71d00a07bc59d692c999d6c3",
+      "name": "Ordine dei Medici Veterinari della Provincia di Mantova",
+      "composite_image": false,
+      "contains_entities": null,
+      "canonical_file": "data/scrape/assets/logos/metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta/03-logo-ordine-veterinari-mantova.jpg",
+      "width": 905,
+      "height": 851,
+      "filenames": [
+        "logo_Ordine_veterinari_mantova.jpg"
+      ],
+      "urls": [
+        "https://files.cdn.thinkific.com/file_uploads/692348/images/853/a7b/9a4/logo_Ordine_veterinari_mantova.jpg",
+        "https://files.cdn.thinkific.com/file_uploads/692348/images/ac6/351/a05/logo_Ordine_veterinari_mantova.jpg"
+      ],
+      "used_by": [
+        {
+          "course": "metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+          "position": 3,
+          "file": "data/scrape/assets/logos/metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta/03-logo-ordine-veterinari-mantova.jpg"
+        },
+        {
+          "course": "alimentazione-nel-gatto-completo",
+          "position": 4,
+          "file": "data/scrape/assets/logos/alimentazione-nel-gatto-completo/04-logo-ordine-veterinari-mantova.jpg"
+        }
+      ]
+    },
+    {
+      "sha1": "69a95df7297844e5027965072717fe6ed09ea6fa",
+      "name": "Ordine dei Medici Veterinari della Provincia di Ancona",
+      "composite_image": false,
+      "contains_entities": null,
+      "canonical_file": "data/scrape/assets/logos/metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta/04-unnamed.jpg",
+      "width": 273,
+      "height": 257,
+      "filenames": [
+        "unnamed.jpg"
+      ],
+      "urls": [
+        "https://files.cdn.thinkific.com/file_uploads/692348/images/145/db9/a7e/unnamed.jpg",
+        "https://files.cdn.thinkific.com/file_uploads/692348/images/c4b/8d3/da2/unnamed.jpg"
+      ],
+      "used_by": [
+        {
+          "course": "metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+          "position": 4,
+          "file": "data/scrape/assets/logos/metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta/04-unnamed.jpg"
+        },
+        {
+          "course": "alimentazione-nel-gatto-completo",
+          "position": 3,
+          "file": "data/scrape/assets/logos/alimentazione-nel-gatto-completo/03-unnamed.jpg"
+        }
+      ]
+    },
+    {
+      "sha1": "af059fc5aa8aca3ad8425da915fff53e2ef77d48",
+      "name": "Ordine Biologi Sicilia",
+      "composite_image": false,
+      "contains_entities": null,
+      "canonical_file": "data/scrape/assets/logos/metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta/05-logo-onb-sicilia.jpg",
+      "width": 1022,
+      "height": 1024,
+      "filenames": [
+        "logo_onb_sicilia.jpeg"
+      ],
+      "urls": [
+        "https://files.cdn.thinkific.com/file_uploads/692348/images/895/5f2/f12/logo_onb_sicilia.jpeg",
+        "https://files.cdn.thinkific.com/file_uploads/692348/images/ee0/7a0/9df/logo_onb_sicilia.jpeg"
+      ],
+      "used_by": [
+        {
+          "course": "metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+          "position": 5,
+          "file": "data/scrape/assets/logos/metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta/05-logo-onb-sicilia.jpg"
+        },
+        {
+          "course": "alimentazione-nel-gatto-completo",
+          "position": 2,
+          "file": "data/scrape/assets/logos/alimentazione-nel-gatto-completo/02-logo-onb-sicilia.jpg"
+        }
+      ]
+    },
+    {
+      "sha1": "76fe8723094be6f8a1cf2bb31ca6e6fed0ac3d33",
+      "name": "Ordine dei Medici Veterinari della Provincia di Latina",
+      "composite_image": false,
+      "contains_entities": null,
+      "canonical_file": "data/scrape/assets/logos/metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta/06-logo-ordine-veterinari-latina.png",
+      "width": 1048,
+      "height": 1047,
+      "filenames": [
+        "Logo_Ordine_veterinari_latina.png"
+      ],
+      "urls": [
+        "https://files.cdn.thinkific.com/file_uploads/692348/images/638/2c3/7ab/Logo_Ordine_veterinari_latina.png",
+        "https://files.cdn.thinkific.com/file_uploads/692348/images/74d/7c8/bad/Logo_Ordine_veterinari_latina.png"
+      ],
+      "used_by": [
+        {
+          "course": "metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+          "position": 6,
+          "file": "data/scrape/assets/logos/metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta/06-logo-ordine-veterinari-latina.png"
+        },
+        {
+          "course": "alimentazione-nel-gatto-completo",
+          "position": 7,
+          "file": "data/scrape/assets/logos/alimentazione-nel-gatto-completo/07-logo-ordine-veterinari-latina.png"
+        }
+      ]
+    },
+    {
+      "sha1": "26eea860d8d7bcc002c7fdfd471f7f67353da7a6",
+      "name": "Ordine dei Biologi Piemonte – Liguria – Valle d'Aosta",
+      "composite_image": false,
+      "contains_entities": null,
+      "canonical_file": "data/scrape/assets/logos/metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta/07-logo-ordine-biologi-piemonte-liguria-e-valle-daosta-solo-rot.png",
+      "width": 2339,
+      "height": 2309,
+      "filenames": [
+        "Logo_Ordine_biologi_piemonte_liguria_e_valle_daosta_-_SOLO_ROTONDO-1.png"
+      ],
+      "urls": [
+        "https://files.cdn.thinkific.com/file_uploads/692348/images/90d/26f/bac/Logo_Ordine_biologi_piemonte_liguria_e_valle_daosta_-_SOLO_ROTONDO-1.png",
+        "https://files.cdn.thinkific.com/file_uploads/692348/images/7b3/22c/a71/Logo_Ordine_biologi_piemonte_liguria_e_valle_daosta_-_SOLO_ROTONDO-1.png"
+      ],
+      "used_by": [
+        {
+          "course": "metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+          "position": 7,
+          "file": "data/scrape/assets/logos/metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta/07-logo-ordine-biologi-piemonte-liguria-e-valle-daosta-solo-rot.png"
+        },
+        {
+          "course": "alimentazione-nel-gatto-completo",
+          "position": 6,
+          "file": "data/scrape/assets/logos/alimentazione-nel-gatto-completo/06-logo-ordine-biologi-piemonte-liguria-e-valle-daosta-solo-rot.png"
+        }
+      ]
+    },
+    {
+      "sha1": "e5181d193261bd84525f314a6f8ca6e843cc2c6d",
+      "name": null,
+      "composite_image": true,
+      "contains_entities": [
+        "Ordine dei Medici Veterinari Caserta",
+        "Ordine dei Medici Veterinari della Provincia di Parma",
+        "Ordine dei Medici Veterinari della Provincia di Ancona",
+        "Ordine dei Medici Veterinari della Provincia di Mantova",
+        "Ordine dei Biologi Piemonte – Liguria – Valle d'Aosta",
+        "Ordine dei Medici Veterinari della Provincia di Reggio Emilia"
+      ],
+      "canonical_file": "data/scrape/assets/logos/bundle-microbiota-ed-epigenetica-nell-alimentazione-del-cane-e-del-gatto/01-jnrfa4dytpqpmiowcsg7-1.png",
+      "width": 1650,
+      "height": 450,
+      "filenames": [
+        "JNrfa4DyTpqpmIoWcSg7_1.png"
+      ],
+      "urls": [
+        "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FJNrfa4DyTpqpmIoWcSg7_1.png?width=1920"
+      ],
+      "used_by": [
+        {
+          "course": "bundle-microbiota-ed-epigenetica-nell-alimentazione-del-cane-e-del-gatto",
+          "position": 1,
+          "file": "data/scrape/assets/logos/bundle-microbiota-ed-epigenetica-nell-alimentazione-del-cane-e-del-gatto/01-jnrfa4dytpqpmiowcsg7-1.png"
+        }
+      ]
+    },
+    {
+      "sha1": "a5c2d3d60eb2bf6f21d2df6d2d6e90c9fef8bd65",
+      "name": null,
+      "composite_image": true,
+      "contains_entities": [
+        "Ordine Veterinari della Provincia di Bologna",
+        "Ordine Biologi Sicilia",
+        "Ordine dei Medici Veterinari della Provincia di Perugia",
+        "Ordine dei Medici Veterinari della Provincia di Torino",
+        "Ordine Veterinari della Provincia del Verbano-Cusio-Ossola"
+      ],
+      "canonical_file": "data/scrape/assets/logos/bundle-microbiota-ed-epigenetica-nell-alimentazione-del-cane-e-del-gatto/02-iqeqynfsqhcyhi5mw6ti-2.png",
+      "width": 1650,
+      "height": 450,
+      "filenames": [
+        "iqEQynfSQhCYhi5MW6ti_2.png"
+      ],
+      "urls": [
+        "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FiqEQynfSQhCYhi5MW6ti_2.png?width=1920"
+      ],
+      "used_by": [
+        {
+          "course": "bundle-microbiota-ed-epigenetica-nell-alimentazione-del-cane-e-del-gatto",
+          "position": 2,
+          "file": "data/scrape/assets/logos/bundle-microbiota-ed-epigenetica-nell-alimentazione-del-cane-e-del-gatto/02-iqeqynfsqhcyhi5mw6ti-2.png"
+        }
+      ]
+    }
+  ]
+}

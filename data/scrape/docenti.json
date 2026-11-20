@@ -1,0 +1,909 @@
+{
+  "scraped_at": "2026-11-20T12:34:16.114Z",
+  "url": "https://www.corsidiformazionecm.it/pages/docenti",
+  "http_status": 200,
+  "html_title": "Docenti",
+  "intro": [
+    {
+      "type": "banner",
+      "heading": "Docenti",
+      "subheading": "Ecco qui sotto la lista dei docenti con relativi CV relatori dei nostri corsi",
+      "text": "Docenti\n\nEcco qui sotto la lista dei docenti con relativi CV relatori dei nostri corsi",
+      "html": "<h2>Docenti</h2><p>Ecco qui sotto la lista dei docenti con relativi CV relatori dei nostri corsi</p>"
+    }
+  ],
+  "count": 18,
+  "cv_downloadable_count": 18,
+  "docenti": [
+    {
+      "position": 1,
+      "heading_exact": "Dottoressa Grazia Angrisani",
+      "name": "Grazia Angrisani",
+      "title_or_role": "Dottoressa",
+      "honorific": "Dottoressa",
+      "bio_html": "<p>Consulente tecnico-regolatorio del settore alimentare e cosmetico Laurea magistrale in Farmacia Laureata con capacità comunicative e organizzative acquisite nella professione in di consulente</p>",
+      "bio_text": "Consulente tecnico-regolatorio del settore alimentare e cosmetico Laurea magistrale in Farmacia Laureata con capacità comunicative e organizzative acquisite nella professione in di consulente",
+      "bio_raw": "Consulente tecnico-regolatorio del settore alimentare e cosmetico\nLaurea magistrale in Farmacia\nLaureata con capacità comunicative e organizzative acquisite nella professione in di\nconsulente",
+      "photo_url": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FVZ09zmu0QCa5cNtyublh_l_20170831130457.jpg",
+      "photo_url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FVZ09zmu0QCa5cNtyublh_l_20170831130457.jpg",
+      "photo_file": "data/scrape/assets/docenti/01-grazia-angrisani.jpg",
+      "photo_width": 600,
+      "photo_height": 502,
+      "cv_label": "VEDI IL CV",
+      "cv_url": "https://drive.google.com/file/d/1ssG0SNjlSwGDjzXSgqeHiLxcv0NsUDfg/view?usp=share_link",
+      "cv_drive_id": "1ssG0SNjlSwGDjzXSgqeHiLxcv0NsUDfg",
+      "cv_type": "drive-pdf",
+      "cv_file": "data/scrape/assets/cv/01-grazia-angrisani.pdf",
+      "cv_downloadable": true,
+      "cv_bytes": 280105,
+      "cv_pages": 3,
+      "cv_download": {
+        "ok": true,
+        "via": "https://drive.google.com/uc?export=download&id=1ssG0SNjlSwGDjzXSgqeHiLxcv0NsUDfg",
+        "attempts": [
+          {
+            "url": "https://drive.google.com/uc?export=download&id=1ssG0SNjlSwGDjzXSgqeHiLxcv0NsUDfg",
+            "status": 200,
+            "final_url": "https://drive.usercontent.google.com/download?id=1ssG0SNjlSwGDjzXSgqeHiLxcv0NsUDfg&export=download",
+            "ct": "application/octet-stream",
+            "bytes": 280105
+          }
+        ]
+      },
+      "section_uid": "lkbZVX3FI",
+      "notes": [
+        "Bio con a-capo nel sorgente non visibili sul sito (white-space:normal); bio_html: a-capo dopo punteggiatura => <br>, altrimenti spazio.",
+        "Foto senza alt.",
+        "Titolo diverso sulla pagina vendite GHL: \"Dott.ssa Grazia Angrisani\" vs pagina docenti \"Dottoressa Grazia Angrisani\"."
+      ],
+      "sales_page": {
+        "heading": "Dott.ssa Grazia Angrisani",
+        "text": "Consulente tecnico-regolatorio del settore alimentare e cosmetico Laurea magistrale in Farmacia Laureata con capacità comunicative e organizzative acquisite nella professione in di consulente",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/66954fbbdea9fe998081e748.jpeg"
+      }
+    },
+    {
+      "position": 2,
+      "heading_exact": "Dottor Nino Carlo Battistini",
+      "name": "Nino Carlo Battistini",
+      "title_or_role": "Dottor",
+      "honorific": "Dottor",
+      "bio_html": "<p>Professore Ordinario in Scienze Tecniche Dietetiche Applicate ( MED49 - Facoltà di Medicina e Chirurgia dell' Università degli Studi di Modena e Reggio Emilia</p>",
+      "bio_text": "Professore Ordinario in Scienze Tecniche Dietetiche Applicate ( MED49 - Facoltà di Medicina e Chirurgia dell' Università degli Studi di Modena e Reggio Emilia",
+      "bio_raw": "Professore Ordinario in Scienze Tecniche Dietetiche Applicate ( MED49 -\nFacoltà di Medicina e Chirurgia dell' Università degli Studi di Modena e Reggio\nEmilia",
+      "photo_url": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FpaCQfOCcSy2cQnfY4zfZ_l_20170831130543.jpg",
+      "photo_url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FpaCQfOCcSy2cQnfY4zfZ_l_20170831130543.jpg",
+      "photo_file": "data/scrape/assets/docenti/02-nino-carlo-battistini.jpg",
+      "photo_width": 600,
+      "photo_height": 502,
+      "cv_label": "VEDI IL CV",
+      "cv_url": "https://drive.google.com/file/d/1Mn62h2QZ0DxGmvIM-Rc_KK49qoIvWfMi/view?usp=share_link",
+      "cv_drive_id": "1Mn62h2QZ0DxGmvIM-Rc_KK49qoIvWfMi",
+      "cv_type": "drive-pdf",
+      "cv_file": "data/scrape/assets/cv/02-nino-carlo-battistini.pdf",
+      "cv_downloadable": true,
+      "cv_bytes": 248108,
+      "cv_pages": 3,
+      "cv_download": {
+        "ok": true,
+        "via": "https://drive.google.com/uc?export=download&id=1Mn62h2QZ0DxGmvIM-Rc_KK49qoIvWfMi",
+        "attempts": [
+          {
+            "url": "https://drive.google.com/uc?export=download&id=1Mn62h2QZ0DxGmvIM-Rc_KK49qoIvWfMi",
+            "status": 200,
+            "final_url": "https://drive.usercontent.google.com/download?id=1Mn62h2QZ0DxGmvIM-Rc_KK49qoIvWfMi&export=download",
+            "ct": "application/octet-stream",
+            "bytes": 248108
+          }
+        ]
+      },
+      "section_uid": "XBjrQeVZ2",
+      "notes": [
+        "Bio con a-capo nel sorgente non visibili sul sito (white-space:normal); bio_html: a-capo dopo punteggiatura => <br>, altrimenti spazio.",
+        "Foto senza alt.",
+        "Titolo diverso sulla pagina vendite GHL: \"Prof. Nino Carlo Battistini\" vs pagina docenti \"Dottor Nino Carlo Battistini\"."
+      ],
+      "sales_page": {
+        "heading": "Prof. Nino Carlo Battistini",
+        "text": "Professore Ordinario in Scienze Tecniche Dietetiche Applicate ( MED49 - Facoltà di Medicina e Chirurgia dell' Università degli Studi di Modena e Reggio Emilia",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/66954fd56584f6749216d37a.jpeg"
+      }
+    },
+    {
+      "position": 3,
+      "heading_exact": "Dottor Benvenuto Cestaro",
+      "name": "Benvenuto Cestaro",
+      "title_or_role": "Dottor",
+      "honorific": "Dottor",
+      "bio_html": "<p>E’ affiliato alle seguenti società scientifiche: Società Italiana di Biochimica e Società Italiana di Nutrizione Umana. E’ autore di oltre 200 pubblicazioni pubblicate su riviste nazionali ed internazionali</p>",
+      "bio_text": "E’ affiliato alle seguenti società scientifiche: Società Italiana di Biochimica e Società Italiana di Nutrizione Umana. E’ autore di oltre 200 pubblicazioni pubblicate su riviste nazionali ed internazionali",
+      "bio_raw": "E’ affiliato alle seguenti società scientifiche: Società Italiana di\nBiochimica e Società Italiana di Nutrizione Umana. E’ autore di oltre 200\npubblicazioni pubblicate su riviste nazionali ed internazionali",
+      "photo_url": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FnJ5VZzcSZMNOPDCrkOgo_Cestaro.jpg",
+      "photo_url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FnJ5VZzcSZMNOPDCrkOgo_Cestaro.jpg",
+      "photo_file": "data/scrape/assets/docenti/03-benvenuto-cestaro.jpg",
+      "photo_width": 600,
+      "photo_height": 502,
+      "cv_label": "VEDI IL CV",
+      "cv_url": "https://drive.google.com/file/d/1X0yZprqX9XX8LGdqvPw-iIL0Ez6QdvMZ/view?usp=share_link",
+      "cv_drive_id": "1X0yZprqX9XX8LGdqvPw-iIL0Ez6QdvMZ",
+      "cv_type": "drive-pdf",
+      "cv_file": "data/scrape/assets/cv/03-benvenuto-cestaro.pdf",
+      "cv_downloadable": true,
+      "cv_bytes": 285010,
+      "cv_pages": 2,
+      "cv_download": {
+        "ok": true,
+        "via": "https://drive.google.com/uc?export=download&id=1X0yZprqX9XX8LGdqvPw-iIL0Ez6QdvMZ",
+        "attempts": [
+          {
+            "url": "https://drive.google.com/uc?export=download&id=1X0yZprqX9XX8LGdqvPw-iIL0Ez6QdvMZ",
+            "status": 200,
+            "final_url": "https://drive.usercontent.google.com/download?id=1X0yZprqX9XX8LGdqvPw-iIL0Ez6QdvMZ&export=download",
+            "ct": "application/octet-stream",
+            "bytes": 285010
+          }
+        ]
+      },
+      "section_uid": "A5BTVbgcR",
+      "notes": [
+        "Bio con a-capo nel sorgente non visibili sul sito (white-space:normal); bio_html: a-capo dopo punteggiatura => <br>, altrimenti spazio.",
+        "Foto senza alt.",
+        "Titolo diverso sulla pagina vendite GHL: \"Prof. Benvenuto Cestaro\" vs pagina docenti \"Dottor Benvenuto Cestaro\"."
+      ],
+      "sales_page": {
+        "heading": "Prof. Benvenuto Cestaro",
+        "text": "E’ affiliato alle seguenti società scientifiche: Società Italiana di Biochimica e Società Italiana di Nutrizione Umana. E’ autore di oltre 200 pubblicazioni pubblicate su riviste nazionali ed internazionali",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/66954fee66cf901733df1721.jpeg"
+      }
+    },
+    {
+      "position": 4,
+      "heading_exact": "Dottor Giancarlo Demontis",
+      "name": "Giancarlo Demontis",
+      "title_or_role": "Dottor",
+      "honorific": "Dottor",
+      "bio_html": "<p>Gli interessi di ricerca spaziano dalle proprietà elettriche al metabolismo dei neuroni e includono</p><p>terapie rigenerative per le malattie neurodegenerative</p>",
+      "bio_text": "Gli interessi di ricerca spaziano dalle proprietà elettriche al metabolismo dei neuroni e includono\n\nterapie rigenerative per le malattie neurodegenerative",
+      "bio_raw": "Gli interessi di ricerca spaziano dalle proprietà elettriche al metabolismo dei neuroni e includono\n\nterapie rigenerative per le malattie neurodegenerative",
+      "photo_url": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FqwDzNdLT2YZpODHmjezg_Demontis.jpg",
+      "photo_url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FqwDzNdLT2YZpODHmjezg_Demontis.jpg",
+      "photo_file": "data/scrape/assets/docenti/04-giancarlo-demontis.jpg",
+      "photo_width": 600,
+      "photo_height": 502,
+      "cv_label": "VEDI IL CV",
+      "cv_url": "https://drive.google.com/file/d/1XLkM7E5cSgQK2BpqM2DujDvQ7lsnAhzt/view",
+      "cv_drive_id": "1XLkM7E5cSgQK2BpqM2DujDvQ7lsnAhzt",
+      "cv_type": "drive-pdf",
+      "cv_file": "data/scrape/assets/cv/04-giancarlo-demontis.pdf",
+      "cv_downloadable": true,
+      "cv_bytes": 137227,
+      "cv_pages": 2,
+      "cv_download": {
+        "ok": true,
+        "via": "https://drive.google.com/uc?export=download&id=1XLkM7E5cSgQK2BpqM2DujDvQ7lsnAhzt",
+        "attempts": [
+          {
+            "url": "https://drive.google.com/uc?export=download&id=1XLkM7E5cSgQK2BpqM2DujDvQ7lsnAhzt",
+            "status": 200,
+            "final_url": "https://drive.usercontent.google.com/download?id=1XLkM7E5cSgQK2BpqM2DujDvQ7lsnAhzt&export=download",
+            "ct": "application/octet-stream",
+            "bytes": 137227
+          }
+        ]
+      },
+      "section_uid": "aZNF1K3_Q",
+      "notes": [
+        "Bio con a-capo nel sorgente non visibili sul sito (white-space:normal); bio_html: a-capo dopo punteggiatura => <br>, altrimenti spazio.",
+        "Foto senza alt.",
+        "Titolo diverso sulla pagina vendite GHL: \"Prof. Giancarlo Demontis\" vs pagina docenti \"Dottor Giancarlo Demontis\"."
+      ],
+      "sales_page": {
+        "heading": "Prof. Giancarlo Demontis",
+        "text": "Gli interessi di ricerca spaziano dalle proprietà elettriche al metabolismo dei neuroni e includono terapie rigenerative per le malattie neurodegenerative",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/6695500966cf902899df172d.jpeg"
+      }
+    },
+    {
+      "position": 5,
+      "heading_exact": "Dottor Bergamaschi Gianguglielmo",
+      "name": "Bergamaschi Gianguglielmo",
+      "title_or_role": "Dottor",
+      "honorific": "Dottor",
+      "bio_html": "<p>Medico di Medicina Generale, con indirizzo in Medicina Integrata e non convenzionale Medico dello Sport (idoneità sportive, eventi sportivi, formazione in primo soccorso)</p>",
+      "bio_text": "Medico di Medicina Generale, con indirizzo in Medicina Integrata e non convenzionale Medico dello Sport (idoneità sportive, eventi sportivi, formazione in primo soccorso)",
+      "bio_raw": "Medico di Medicina Generale, con indirizzo in Medicina Integrata e non convenzionale\nMedico dello Sport (idoneità sportive, eventi sportivi, formazione in primo soccorso)",
+      "photo_url": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FNUzSkmtcTDOPJPWw4JA9_Bergamaschi.jpg",
+      "photo_url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FNUzSkmtcTDOPJPWw4JA9_Bergamaschi.jpg",
+      "photo_file": "data/scrape/assets/docenti/05-bergamaschi-gianguglielmo.jpg",
+      "photo_width": 600,
+      "photo_height": 502,
+      "cv_label": "VEDI IL CV",
+      "cv_url": "https://drive.google.com/file/d/1KSjQn-ltcE0FQW6B07cSwZNbjGVzyKcS/view",
+      "cv_drive_id": "1KSjQn-ltcE0FQW6B07cSwZNbjGVzyKcS",
+      "cv_type": "drive-pdf",
+      "cv_file": "data/scrape/assets/cv/05-bergamaschi-gianguglielmo.pdf",
+      "cv_downloadable": true,
+      "cv_bytes": 372708,
+      "cv_pages": 3,
+      "cv_download": {
+        "ok": true,
+        "via": "https://drive.google.com/uc?export=download&id=1KSjQn-ltcE0FQW6B07cSwZNbjGVzyKcS",
+        "attempts": [
+          {
+            "url": "https://drive.google.com/uc?export=download&id=1KSjQn-ltcE0FQW6B07cSwZNbjGVzyKcS",
+            "status": 200,
+            "final_url": "https://drive.usercontent.google.com/download?id=1KSjQn-ltcE0FQW6B07cSwZNbjGVzyKcS&export=download",
+            "ct": "application/octet-stream",
+            "bytes": 372708
+          }
+        ]
+      },
+      "section_uid": "aQ4KJqy8L",
+      "notes": [
+        "Bio con a-capo nel sorgente non visibili sul sito (white-space:normal); bio_html: a-capo dopo punteggiatura => <br>, altrimenti spazio.",
+        "Foto senza alt."
+      ],
+      "sales_page": {
+        "heading": "Dottor Bergamaschi Gianguglielmo",
+        "text": "Medico di Medicina Generale, con indirizzo in Medicina Integrata e non convenzionale Medico dello Sport (idoneità sportive, eventi sportivi, formazione in primo soccorso).",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/66955035f137866794f2e643.jpeg"
+      }
+    },
+    {
+      "position": 6,
+      "heading_exact": "Dottor Giovanni Battista Gidaro",
+      "name": "Giovanni Battista Gidaro",
+      "title_or_role": "Dottor",
+      "honorific": "Dottor",
+      "bio_html": "<p>Dal 2003 ad oggi, BIOLOGO NUTRIZIONISTA e CONSULENTE DI NUTRIGENETICA e GENOMICA Dal 2015 BIOSTATISTICO e BIOINFORMATICA Dal 2014- SOCIO FONDATORE e SEGRETARIO GENERALE della SINEc-Società Italiana di Nutrigenomica ed Epigenetica Clinica Dal 2013-FONDATORE DI REPORT GENOMICS 2011-2013: DIRETTORE SCIENTIFICO</p>",
+      "bio_text": "Dal 2003 ad oggi, BIOLOGO NUTRIZIONISTA e CONSULENTE DI NUTRIGENETICA e GENOMICA Dal 2015 BIOSTATISTICO e BIOINFORMATICA Dal 2014- SOCIO FONDATORE e SEGRETARIO GENERALE della SINEc-Società Italiana di Nutrigenomica ed Epigenetica Clinica Dal 2013-FONDATORE DI REPORT GENOMICS 2011-2013: DIRETTORE SCIENTIFICO",
+      "bio_raw": "Dal 2003 ad oggi, BIOLOGO NUTRIZIONISTA e CONSULENTE DI NUTRIGENETICA e GENOMICA\nDal 2015 BIOSTATISTICO e BIOINFORMATICA\nDal 2014- SOCIO FONDATORE e SEGRETARIO GENERALE della SINEc-Società Italiana di Nutrigenomica ed\nEpigenetica Clinica\nDal 2013-FONDATORE DI REPORT GENOMICS\n2011-2013: DIRETTORE SCIENTIFICO",
+      "photo_url": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FD8hz1tTGqVdWhSWfiSAb_Gidaro.jpg",
+      "photo_url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FD8hz1tTGqVdWhSWfiSAb_Gidaro.jpg",
+      "photo_file": "data/scrape/assets/docenti/06-giovanni-battista-gidaro.jpg",
+      "photo_width": 600,
+      "photo_height": 502,
+      "cv_label": "VEDI IL CV",
+      "cv_url": "https://drive.google.com/file/d/12IoBYdpCHDBbWSHdjrpMaGv_vPD89D61/view",
+      "cv_drive_id": "12IoBYdpCHDBbWSHdjrpMaGv_vPD89D61",
+      "cv_type": "drive-pdf",
+      "cv_file": "data/scrape/assets/cv/06-giovanni-battista-gidaro.pdf",
+      "cv_downloadable": true,
+      "cv_bytes": 485683,
+      "cv_pages": 3,
+      "cv_download": {
+        "ok": true,
+        "via": "https://drive.google.com/uc?export=download&id=12IoBYdpCHDBbWSHdjrpMaGv_vPD89D61",
+        "attempts": [
+          {
+            "url": "https://drive.google.com/uc?export=download&id=12IoBYdpCHDBbWSHdjrpMaGv_vPD89D61",
+            "status": 200,
+            "final_url": "https://drive.usercontent.google.com/download?id=12IoBYdpCHDBbWSHdjrpMaGv_vPD89D61&export=download",
+            "ct": "application/octet-stream",
+            "bytes": 485683
+          }
+        ]
+      },
+      "section_uid": "Z_-BeK3bk",
+      "notes": [
+        "Bio con a-capo nel sorgente non visibili sul sito (white-space:normal); bio_html: a-capo dopo punteggiatura => <br>, altrimenti spazio.",
+        "Foto senza alt."
+      ],
+      "sales_page": {
+        "heading": "Dottor Giovanni Battista Gidaro",
+        "text": "Dal 2003 ad oggi, Biologo nutrizionista e CONSULENTE DI NUTRIGENETICA e GENOMICA Dal 2015 BIOSTATISTICO e BIOINFORMATICA Dal 2014- socio fondatore e segretario generale della SINEc-Società Italiana di Nutrigenomica ed Epigenetica Clinica Dal 2013-FONDATORE DI REPORT GENOMICS 2011-2013: direttore scientifico.",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/669550549687da45c6c1cf4d.jpeg"
+      }
+    },
+    {
+      "position": 7,
+      "heading_exact": "Dottor Marco Domenicali",
+      "name": "Marco Domenicali",
+      "title_or_role": "Dottor",
+      "honorific": "Dottor",
+      "bio_html": "<p>Ricercatore (settore scientifico disciplinare Medicina Interna MED/09)<br>Formazione-consulenza-ricerca e sviluppo nel campo dell'assistenza agli anziani Medico geriatra consulente- responsabile assistenza sanitaria Organizzatore di eventi formativi rivolti a coloro che assistono gli anziani Dottore di ricerca in ultrasonologia in Medicina Interna</p>",
+      "bio_text": "Ricercatore (settore scientifico disciplinare Medicina Interna MED/09)\nFormazione-consulenza-ricerca e sviluppo nel campo dell'assistenza agli anziani Medico geriatra consulente- responsabile assistenza sanitaria Organizzatore di eventi formativi rivolti a coloro che assistono gli anziani Dottore di ricerca in ultrasonologia in Medicina Interna",
+      "bio_raw": "Ricercatore (settore scientifico disciplinare Medicina Interna MED/09)\nFormazione-consulenza-ricerca e sviluppo nel campo dell'assistenza agli anziani\nMedico geriatra consulente- responsabile assistenza sanitaria\nOrganizzatore di eventi formativi rivolti a coloro che assistono gli anziani\nDottore di ricerca in ultrasonologia in Medicina Interna",
+      "photo_url": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FSqHQW4sORTyMF624UFon_Domenicali.jpg",
+      "photo_url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FSqHQW4sORTyMF624UFon_Domenicali.jpg",
+      "photo_file": "data/scrape/assets/docenti/07-marco-domenicali.jpg",
+      "photo_width": 600,
+      "photo_height": 502,
+      "cv_label": "VEDI IL CV",
+      "cv_url": "https://drive.google.com/file/d/1n-zofK0ra_UujbBrmomMIJzbL0g0VjhR/view?usp=share_link",
+      "cv_drive_id": "1n-zofK0ra_UujbBrmomMIJzbL0g0VjhR",
+      "cv_type": "drive-pdf",
+      "cv_file": "data/scrape/assets/cv/07-marco-domenicali.pdf",
+      "cv_downloadable": true,
+      "cv_bytes": 233302,
+      "cv_pages": 4,
+      "cv_download": {
+        "ok": true,
+        "via": "https://drive.google.com/uc?export=download&id=1n-zofK0ra_UujbBrmomMIJzbL0g0VjhR",
+        "attempts": [
+          {
+            "url": "https://drive.google.com/uc?export=download&id=1n-zofK0ra_UujbBrmomMIJzbL0g0VjhR",
+            "status": 200,
+            "final_url": "https://drive.usercontent.google.com/download?id=1n-zofK0ra_UujbBrmomMIJzbL0g0VjhR&export=download",
+            "ct": "application/octet-stream",
+            "bytes": 233302
+          }
+        ]
+      },
+      "section_uid": "jDtaTVYmt",
+      "notes": [
+        "Bio con a-capo nel sorgente non visibili sul sito (white-space:normal); bio_html: a-capo dopo punteggiatura => <br>, altrimenti spazio.",
+        "Foto senza alt.",
+        "Titolo diverso sulla pagina vendite GHL: \"Prof. Marco Domenicali\" vs pagina docenti \"Dottor Marco Domenicali\"."
+      ],
+      "sales_page": {
+        "heading": "Prof. Marco Domenicali",
+        "text": "Ricercatore (settore scientifico disciplinare Medicina Interna MED/09) Formazione-consulenza-ricerca e sviluppo nel campo dell'assistenza agli anziani Medico geriatra consulente- responsabile assistenza sanitaria. Organizzatore di eventi formativi rivolti a coloro che assistono gli anziani Dottore di ricerca in ultrasonologia in Medicina Interna.",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/669550746fb9e2cf567cc7a9.jpeg"
+      }
+    },
+    {
+      "position": 8,
+      "heading_exact": "Dottoressa Maria Grazia Spalluto",
+      "name": "Maria Grazia Spalluto",
+      "title_or_role": "Dottoressa",
+      "honorific": "Dottoressa",
+      "bio_html": "<p>Consulente aziendale, consulente TV2000, Docente di Fitoterapia presso il Master in Medicine Naturali ( Università Tor Vergata Roma)</p>",
+      "bio_text": "Consulente aziendale, consulente TV2000, Docente di Fitoterapia presso il Master in Medicine Naturali ( Università Tor Vergata Roma)",
+      "bio_raw": "Consulente aziendale, consulente TV2000, Docente di\nFitoterapia presso il Master in Medicine Naturali ( Università Tor Vergata Roma)",
+      "photo_url": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FORtQYvgkR4ipVJHfDYzU_Sparuto.jpg",
+      "photo_url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FORtQYvgkR4ipVJHfDYzU_Sparuto.jpg",
+      "photo_file": "data/scrape/assets/docenti/08-maria-grazia-spalluto.jpg",
+      "photo_width": 600,
+      "photo_height": 502,
+      "cv_label": "VEDI IL CV",
+      "cv_url": "https://drive.google.com/file/d/1xO0aIsNXWexB4edkXYwsFnwSs6hK6LHf/view?usp=sharing",
+      "cv_drive_id": "1xO0aIsNXWexB4edkXYwsFnwSs6hK6LHf",
+      "cv_type": "drive-pdf",
+      "cv_file": "data/scrape/assets/cv/08-maria-grazia-spalluto.pdf",
+      "cv_downloadable": true,
+      "cv_bytes": 471075,
+      "cv_pages": 3,
+      "cv_download": {
+        "ok": true,
+        "via": "https://drive.google.com/uc?export=download&id=1xO0aIsNXWexB4edkXYwsFnwSs6hK6LHf",
+        "attempts": [
+          {
+            "url": "https://drive.google.com/uc?export=download&id=1xO0aIsNXWexB4edkXYwsFnwSs6hK6LHf",
+            "status": 200,
+            "final_url": "https://drive.usercontent.google.com/download?id=1xO0aIsNXWexB4edkXYwsFnwSs6hK6LHf&export=download",
+            "ct": "application/octet-stream",
+            "bytes": 471075
+          }
+        ]
+      },
+      "section_uid": "M6NQwwk76",
+      "notes": [
+        "Bio con a-capo nel sorgente non visibili sul sito (white-space:normal); bio_html: a-capo dopo punteggiatura => <br>, altrimenti spazio.",
+        "Foto senza alt.",
+        "Titolo diverso sulla pagina vendite GHL: \"Prof.ssa Maria Grazia Spalluto\" vs pagina docenti \"Dottoressa Maria Grazia Spalluto\"."
+      ],
+      "sales_page": {
+        "heading": "Prof.ssa Maria Grazia Spalluto",
+        "text": "Consulente aziendale, consulente TV2000, Docente di Fitoterapia presso il Master in Medicine Naturali ( Università Tor Vergata Roma)",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/6695509170a6517f1c6daed6.jpeg"
+      }
+    },
+    {
+      "position": 9,
+      "heading_exact": "Dottor Mauro Favruzzo",
+      "name": "Mauro Favruzzo",
+      "title_or_role": "Dottor",
+      "honorific": "Dottor",
+      "bio_html": "<p>Biologo Nutrizionista - Valutazione stato nutrizionale - Elaborazione diete personalizzate - Intolleranze alimentari - Test genetici di legati alla nutrizione; nutrigenomica</p>",
+      "bio_text": "Biologo Nutrizionista - Valutazione stato nutrizionale - Elaborazione diete personalizzate - Intolleranze alimentari - Test genetici di legati alla nutrizione; nutrigenomica",
+      "bio_raw": "Biologo Nutrizionista\n- Valutazione stato nutrizionale\n- Elaborazione diete personalizzate\n- Intolleranze alimentari\n- Test genetici di legati alla nutrizione; nutrigenomica",
+      "photo_url": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2F1EVx14ayT8OSfAnzd2ei_Favruzzo.jpg",
+      "photo_url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2F1EVx14ayT8OSfAnzd2ei_Favruzzo.jpg",
+      "photo_file": "data/scrape/assets/docenti/09-mauro-favruzzo.jpg",
+      "photo_width": 600,
+      "photo_height": 502,
+      "cv_label": "VEDI IL CV",
+      "cv_url": "https://drive.google.com/file/d/14m--45n4m6EEGA7LS6NVXe7lbemsk4cG/view?usp=sharing",
+      "cv_drive_id": "14m--45n4m6EEGA7LS6NVXe7lbemsk4cG",
+      "cv_type": "drive-pdf",
+      "cv_file": "data/scrape/assets/cv/09-mauro-favruzzo.pdf",
+      "cv_downloadable": true,
+      "cv_bytes": 93637,
+      "cv_pages": 5,
+      "cv_download": {
+        "ok": true,
+        "via": "https://drive.google.com/uc?export=download&id=14m--45n4m6EEGA7LS6NVXe7lbemsk4cG",
+        "attempts": [
+          {
+            "url": "https://drive.google.com/uc?export=download&id=14m--45n4m6EEGA7LS6NVXe7lbemsk4cG",
+            "status": 200,
+            "final_url": "https://drive.usercontent.google.com/download?id=14m--45n4m6EEGA7LS6NVXe7lbemsk4cG&export=download",
+            "ct": "application/octet-stream",
+            "bytes": 93637
+          }
+        ]
+      },
+      "section_uid": "5mtnlX8xr",
+      "notes": [
+        "Bio con a-capo nel sorgente non visibili sul sito (white-space:normal); bio_html: a-capo dopo punteggiatura => <br>, altrimenti spazio.",
+        "Foto senza alt."
+      ],
+      "sales_page": {
+        "heading": "Dottor Mauro Favruzzo",
+        "text": "Biologo Nutrizionista - Valutazione stato nutrizionale - Elaborazione diete personalizzate - Intolleranze alimentari - Test genetici di legati alla nutrizione; nutrigenomica",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/669550dbab3bb6bfd440c082.jpeg"
+      }
+    },
+    {
+      "position": 10,
+      "heading_exact": "Dottoressa Milza Patrizia",
+      "name": "Milza Patrizia",
+      "title_or_role": "Dottoressa",
+      "honorific": "Dottoressa",
+      "bio_html": "<p>DAL 2007 AD OGGI, LIBERA PROFESSIONISTA COME BIOLOGA NUTRIZIONISTA PRESSO POLIAMBULATORI PRIVATI E STUDI PROFESSIONALI.</p><p>DOCENTE IN CORSI DI FORMAZIONE PROFESSIONALE IN AMBITO NUTRIZIONALE E FITOTERAPICO PER CONTO DI AZIENDE, ANNI 2014-2015- 2016-2017.</p><p>TITOLARE DI ERBORISTERIA DAL 1992 AL 2011 ”L’ERBORISTERIA DI PIACENZA”<br>DIPENDENTE DAL 1985 AL 1992 PRESSO “ERBORISTERIA MEDICINALE PIACENTINA”.</p>",
+      "bio_text": "DAL 2007 AD OGGI, LIBERA PROFESSIONISTA COME BIOLOGA NUTRIZIONISTA PRESSO POLIAMBULATORI PRIVATI E STUDI PROFESSIONALI.\n\nDOCENTE IN CORSI DI FORMAZIONE PROFESSIONALE IN AMBITO NUTRIZIONALE E FITOTERAPICO PER CONTO DI AZIENDE, ANNI 2014-2015- 2016-2017.\n\nTITOLARE DI ERBORISTERIA DAL 1992 AL 2011 ”L’ERBORISTERIA DI PIACENZA”\nDIPENDENTE DAL 1985 AL 1992 PRESSO “ERBORISTERIA MEDICINALE PIACENTINA”.",
+      "bio_raw": "DAL 2007 AD OGGI, LIBERA PROFESSIONISTA COME BIOLOGA NUTRIZIONISTA PRESSO POLIAMBULATORI\nPRIVATI E STUDI PROFESSIONALI.\n\nDOCENTE IN CORSI DI FORMAZIONE PROFESSIONALE IN AMBITO NUTRIZIONALE E FITOTERAPICO PER\nCONTO DI AZIENDE, ANNI 2014-2015- 2016-2017.\n\nTITOLARE DI ERBORISTERIA DAL 1992 AL 2011 ”L’ERBORISTERIA DI PIACENZA”\nDIPENDENTE DAL 1985 AL 1992 PRESSO “ERBORISTERIA MEDICINALE PIACENTINA”.",
+      "photo_url": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2F1x3e8mJJSYO59568rfRq_Patrizia.jpg",
+      "photo_url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2F1x3e8mJJSYO59568rfRq_Patrizia.jpg",
+      "photo_file": "data/scrape/assets/docenti/10-milza-patrizia.jpg",
+      "photo_width": 600,
+      "photo_height": 502,
+      "cv_label": "VEDI IL CV",
+      "cv_url": "https://drive.google.com/file/d/10MPj2F6BzRyHubo6PF_1zkwm_4Aa-EUE/view?usp=sharing",
+      "cv_drive_id": "10MPj2F6BzRyHubo6PF_1zkwm_4Aa-EUE",
+      "cv_type": "drive-pdf",
+      "cv_file": "data/scrape/assets/cv/10-milza-patrizia.pdf",
+      "cv_downloadable": true,
+      "cv_bytes": 126141,
+      "cv_pages": 2,
+      "cv_download": {
+        "ok": true,
+        "via": "https://drive.google.com/uc?export=download&id=10MPj2F6BzRyHubo6PF_1zkwm_4Aa-EUE",
+        "attempts": [
+          {
+            "url": "https://drive.google.com/uc?export=download&id=10MPj2F6BzRyHubo6PF_1zkwm_4Aa-EUE",
+            "status": 200,
+            "final_url": "https://drive.usercontent.google.com/download?id=10MPj2F6BzRyHubo6PF_1zkwm_4Aa-EUE&export=download",
+            "ct": "application/octet-stream",
+            "bytes": 126141
+          }
+        ]
+      },
+      "section_uid": "elQE67RAG",
+      "notes": [
+        "Bio con a-capo nel sorgente non visibili sul sito (white-space:normal); bio_html: a-capo dopo punteggiatura => <br>, altrimenti spazio.",
+        "Foto senza alt.",
+        "Titolo diverso sulla pagina vendite GHL: \"Dott.ssa Milza Patrizia\" vs pagina docenti \"Dottoressa Milza Patrizia\"."
+      ],
+      "sales_page": {
+        "heading": "Dott.ssa Milza Patrizia",
+        "text": "Dal 2007 ad oggi, libera professionista come biologa nutrizionista presso poliambulatori privati e studi professionali. Docente in corsi di formazione professionale in ambito nutrizionale e fitoterapico per conto di aziende, anni 2014-2015-2016-2017. Titolare di erboristeria dal 1992 al 2011 ”l’erboristeria di Piacenza” dipendente dal 1985 al 1992 presso “erboristeria medicinale piacentina”.",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/6695510c70a6514d7a6daefc.jpeg"
+      }
+    },
+    {
+      "position": 11,
+      "heading_exact": "Dottor Vincenzo Calderone",
+      "name": "Vincenzo Calderone",
+      "title_or_role": "Dottor",
+      "honorific": "Dottor",
+      "bio_html": "<p>Da gennaio 2016 è Professore Ordinario di Farmacologia presso il Dipartimento di Farmacia dell’Università di Pisa.<br>Da dicembre 2014 a dicembre 2015 è stato Professore Associato di Farmacologia presso il Dipartimento di Farmacia dell’Università di Pisa.<br>Dal 2001 al 2014 è stato Ricercatore in Farmacologia presso il Dipartimento di Psichiatria, Neurobiologia, Farmacologia e Biotecnologie (e dal 19/09/2012 presso il Dipartimento di Farmacia) dell’Università di Pisa.<br>Nel periodo maggio-luglio 2013 è stato Visiting Professor presso l'Albanian University di Tirana (Albania).<br>Nel settembre 2014 è stato Visiting Professor presso il Weill Cornell Medical College di New York (USA).</p>",
+      "bio_text": "Da gennaio 2016 è Professore Ordinario di Farmacologia presso il Dipartimento di Farmacia dell’Università di Pisa.\nDa dicembre 2014 a dicembre 2015 è stato Professore Associato di Farmacologia presso il Dipartimento di Farmacia dell’Università di Pisa.\nDal 2001 al 2014 è stato Ricercatore in Farmacologia presso il Dipartimento di Psichiatria, Neurobiologia, Farmacologia e Biotecnologie (e dal 19/09/2012 presso il Dipartimento di Farmacia) dell’Università di Pisa.\nNel periodo maggio-luglio 2013 è stato Visiting Professor presso l'Albanian University di Tirana (Albania).\nNel settembre 2014 è stato Visiting Professor presso il Weill Cornell Medical College di New York (USA).",
+      "bio_raw": "Da gennaio 2016 è Professore Ordinario di Farmacologia presso il Dipartimento di Farmacia\ndell’Università di Pisa.\nDa dicembre 2014 a dicembre 2015 è stato Professore Associato di Farmacologia presso il\nDipartimento di Farmacia dell’Università di Pisa.\nDal 2001 al 2014 è stato Ricercatore in Farmacologia presso il Dipartimento di Psichiatria,\nNeurobiologia, Farmacologia e Biotecnologie (e dal 19/09/2012 presso il Dipartimento di\nFarmacia) dell’Università di Pisa.\nNel periodo maggio-luglio 2013 è stato Visiting Professor presso l'Albanian University di Tirana\n(Albania).\nNel settembre 2014 è stato Visiting Professor presso il Weill Cornell Medical College di New\nYork (USA).",
+      "photo_url": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FdlVbli9DSi2R2yMQSMuh_Calderoni.jpg",
+      "photo_url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FdlVbli9DSi2R2yMQSMuh_Calderoni.jpg",
+      "photo_file": "data/scrape/assets/docenti/11-vincenzo-calderone.jpg",
+      "photo_width": 600,
+      "photo_height": 502,
+      "cv_label": "VEDI IL CV",
+      "cv_url": "https://drive.google.com/file/d/1E91vVP_GNt9t--KYIGSccSOW4a28q3pe/view?usp=sharing",
+      "cv_drive_id": "1E91vVP_GNt9t--KYIGSccSOW4a28q3pe",
+      "cv_type": "drive-pdf",
+      "cv_file": "data/scrape/assets/cv/11-vincenzo-calderone.pdf",
+      "cv_downloadable": true,
+      "cv_bytes": 144077,
+      "cv_pages": 5,
+      "cv_download": {
+        "ok": true,
+        "via": "https://drive.google.com/uc?export=download&id=1E91vVP_GNt9t--KYIGSccSOW4a28q3pe",
+        "attempts": [
+          {
+            "url": "https://drive.google.com/uc?export=download&id=1E91vVP_GNt9t--KYIGSccSOW4a28q3pe",
+            "status": 200,
+            "final_url": "https://drive.usercontent.google.com/download?id=1E91vVP_GNt9t--KYIGSccSOW4a28q3pe&export=download",
+            "ct": "application/octet-stream",
+            "bytes": 144077
+          }
+        ]
+      },
+      "section_uid": "zjOp8mLLD",
+      "notes": [
+        "Bio con a-capo nel sorgente non visibili sul sito (white-space:normal); bio_html: a-capo dopo punteggiatura => <br>, altrimenti spazio.",
+        "Foto senza alt.",
+        "Titolo diverso sulla pagina vendite GHL: \"Prof. Vincenzo Calderone\" vs pagina docenti \"Dottor Vincenzo Calderone\"."
+      ],
+      "sales_page": {
+        "heading": "Prof. Vincenzo Calderone",
+        "text": "Da gennaio 2016 è Professore Ordinario di Farmacologia presso il Dipartimento di Farmacia dell’Università di Pisa. Da dicembre 2014 a dicembre 2015 è stato Professore Associato di Farmacologia presso il Dipartimento di Farmacia dell’Università di Pisa. Dal 2001 al 2014 è stato Ricercatore in Farmacologia presso il Dipartimento di Psichiatria, Neurobiologia, Farmacologia e Biotecnologie (e dal 19/09/2012 presso il Dipartimento di Farmacia) dell’Università di Pisa. Nel periodo maggio-luglio 2013 è stato Visiting Professor presso l'Albanian University di Tirana (Albania). Nel settembre 2014 è stato Visiting Professor presso il Weill Cornell Medical College di New York (USA).",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/6695516666cf908e18df182c.jpeg"
+      }
+    },
+    {
+      "position": 12,
+      "heading_exact": "Dottor Samir Sukkar",
+      "name": "Samir Sukkar",
+      "title_or_role": "Dottor",
+      "honorific": "Dottor",
+      "bio_html": "<p>Responsabile dell'U.O. dipartimentale DIETETICA E NUTRIZIONE CLINICA</p>",
+      "bio_text": "Responsabile dell'U.O. dipartimentale DIETETICA E NUTRIZIONE CLINICA",
+      "bio_raw": "Responsabile dell'U.O. dipartimentale DIETETICA E NUTRIZIONE CLINICA",
+      "photo_url": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FSXuAAs4RvapHR6AOjPin_Sukkar.jpg",
+      "photo_url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FSXuAAs4RvapHR6AOjPin_Sukkar.jpg",
+      "photo_file": "data/scrape/assets/docenti/12-samir-sukkar.jpg",
+      "photo_width": 600,
+      "photo_height": 502,
+      "cv_label": "VEDI IL CV",
+      "cv_url": "https://drive.google.com/file/d/1ciCApxRhGrEKDsSZvUoOe_ClYQDUXdvX/view?usp=sharing",
+      "cv_drive_id": "1ciCApxRhGrEKDsSZvUoOe_ClYQDUXdvX",
+      "cv_type": "drive-pdf",
+      "cv_file": "data/scrape/assets/cv/12-samir-sukkar.pdf",
+      "cv_downloadable": true,
+      "cv_bytes": 206018,
+      "cv_pages": 4,
+      "cv_download": {
+        "ok": true,
+        "via": "https://drive.google.com/uc?export=download&id=1ciCApxRhGrEKDsSZvUoOe_ClYQDUXdvX",
+        "attempts": [
+          {
+            "url": "https://drive.google.com/uc?export=download&id=1ciCApxRhGrEKDsSZvUoOe_ClYQDUXdvX",
+            "status": 200,
+            "final_url": "https://drive.usercontent.google.com/download?id=1ciCApxRhGrEKDsSZvUoOe_ClYQDUXdvX&export=download",
+            "ct": "application/octet-stream",
+            "bytes": 206018
+          }
+        ]
+      },
+      "section_uid": "n2E-9sDcn",
+      "notes": [
+        "Foto senza alt.",
+        "Titolo diverso sulla pagina vendite GHL: \"Prof. Samir Sukkar\" vs pagina docenti \"Dottor Samir Sukkar\"."
+      ],
+      "sales_page": {
+        "heading": "Prof. Samir Sukkar",
+        "text": "Responsabile dell'U.O. dipartimentale DIETETICA E NUTRIZIONE CLINICA\n\nMembro delle seguenti società scientifiche: - European Society for Parenteral and Enteral Nutrition (ESPEN) - Società Italiana di Nutrizione Clinica (SINUC) - Società Italiana di Endoscopia Digestiva (SIED) - Società Italiana dell’Obesità (SIO) E’ membro dell’editorial board scientifico della rivista: Nutritional Therapy and Metabolism. Associate editor Frontiers in nutrition Presidente regionale della Società Italiana di Nutrizione Clinica (SINUC) e membro del direttivo nazionale dal 2016 Presidente della sezione regionale della Società Italiana dell’Obesità (SIO) Attività extraistituzionali ). Fondatore della rivista scientifica Mediterranean Journal of Nutrition and Metabolism (rivista ufficiale della Associazione Italiana di Dietetica e Nutrizione Clinica) nonché past Editor-in–chief Past President Regionale ADI Past President della Società Italiana di Nutrigenomica ed epigenetica clinica (SINEC)",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/66955188a34af009be2bdf80.jpeg"
+      }
+    },
+    {
+      "position": 13,
+      "heading_exact": "Dottor Spagnulo Stefano",
+      "name": "Spagnulo Stefano",
+      "title_or_role": "Dottor",
+      "honorific": "Dottor",
+      "bio_html": "<p>Docenza in Tossicologia, Biochimica, Anatomia Umana, Patologia Generale, Neurologia, Traumatologia (Corso per Tossicologo Ambientale e Massoidroterapista). Docente per UnitelmaSapienza di Roma (Corso per Tecnico di di Sanificazione ambientale – Modulo Terra – Biosicurezza in campo agricolo e Zootecnico). Fitopatologia ed Entomologia Agraria.</p>",
+      "bio_text": "Docenza in Tossicologia, Biochimica, Anatomia Umana, Patologia Generale, Neurologia, Traumatologia (Corso per Tossicologo Ambientale e Massoidroterapista). Docente per UnitelmaSapienza di Roma (Corso per Tecnico di di Sanificazione ambientale – Modulo Terra – Biosicurezza in campo agricolo e Zootecnico). Fitopatologia ed Entomologia Agraria.",
+      "bio_raw": "Docenza in Tossicologia, Biochimica, Anatomia Umana, Patologia Generale,\nNeurologia, Traumatologia (Corso per Tossicologo Ambientale e\nMassoidroterapista). Docente per UnitelmaSapienza di Roma (Corso per\nTecnico di di Sanificazione ambientale – Modulo Terra – Biosicurezza in\ncampo agricolo e Zootecnico). Fitopatologia ed Entomologia Agraria.",
+      "photo_url": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FH9AiYEx0TOWnFDTHzLZ1_foto_spagnulo_sito.jpg",
+      "photo_url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FH9AiYEx0TOWnFDTHzLZ1_foto_spagnulo_sito.jpg",
+      "photo_file": "data/scrape/assets/docenti/13-spagnulo-stefano.jpg",
+      "photo_width": 800,
+      "photo_height": 670,
+      "cv_label": "Vedi il CV",
+      "cv_url": "https://drive.google.com/file/d/1nQ7ZAkBRXPmeh1x4Nl6lLJAvSVUaVrGq/view?usp=sharing",
+      "cv_drive_id": "1nQ7ZAkBRXPmeh1x4Nl6lLJAvSVUaVrGq",
+      "cv_type": "drive-pdf",
+      "cv_file": "data/scrape/assets/cv/13-spagnulo-stefano.pdf",
+      "cv_downloadable": true,
+      "cv_bytes": 723401,
+      "cv_pages": 20,
+      "cv_download": {
+        "ok": true,
+        "via": "https://drive.google.com/uc?export=download&id=1nQ7ZAkBRXPmeh1x4Nl6lLJAvSVUaVrGq",
+        "attempts": [
+          {
+            "url": "https://drive.google.com/uc?export=download&id=1nQ7ZAkBRXPmeh1x4Nl6lLJAvSVUaVrGq",
+            "status": 200,
+            "final_url": "https://drive.usercontent.google.com/download?id=1nQ7ZAkBRXPmeh1x4Nl6lLJAvSVUaVrGq&export=download",
+            "ct": "application/octet-stream",
+            "bytes": 723401
+          }
+        ]
+      },
+      "section_uid": "jc5_sWKVT",
+      "notes": [
+        "Bio con a-capo nel sorgente non visibili sul sito (white-space:normal); bio_html: a-capo dopo punteggiatura => <br>, altrimenti spazio.",
+        "Foto senza alt.",
+        "Titolo diverso sulla pagina vendite GHL: \"Prof. Spagnulo Stefano\" vs pagina docenti \"Dottor Spagnulo Stefano\"."
+      ],
+      "sales_page": {
+        "heading": "Prof. Spagnulo Stefano",
+        "text": "Docenza in Tossicologia, Biochimica, Anatomia Umana, Patologia Generale, Neurologia, Traumatologia (Corso per Tossicologo Ambientale e Massoidroterapista). Docente per UnitelmaSapienza di Roma (Corso per Tecnico di di Sanificazione ambientale – Modulo Terra – Biosicurezza in campo agricolo e Zootecnico). Fitopatologia ed Entomologia Agraria.",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/669551a470a65110ee6daf4e.jpeg"
+      }
+    },
+    {
+      "position": 14,
+      "heading_exact": "Dottoressa Giulia Sabato",
+      "name": "Giulia Sabato",
+      "title_or_role": "Dottoressa",
+      "honorific": "Dottoressa",
+      "bio_html": "<p>Ordine dei medici veterinari della provincia di Lecce.</p>",
+      "bio_text": "Ordine dei medici veterinari della provincia di Lecce.",
+      "bio_raw": "Ordine dei medici veterinari della provincia di Lecce.",
+      "photo_url": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FDJHegstTmWRdod1ulI2G_foto%20giulia%20sabato.jpg",
+      "photo_url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FDJHegstTmWRdod1ulI2G_foto%20giulia%20sabato.jpg",
+      "photo_file": "data/scrape/assets/docenti/14-giulia-sabato.jpg",
+      "photo_width": 3669,
+      "photo_height": 3072,
+      "cv_label": "Vedi il CV",
+      "cv_url": "https://drive.google.com/file/d/1TH2geRjZWw9K7f2NOTcLlwsd3JLWY3VO/view?usp=sharing",
+      "cv_drive_id": "1TH2geRjZWw9K7f2NOTcLlwsd3JLWY3VO",
+      "cv_type": "drive-pdf",
+      "cv_file": "data/scrape/assets/cv/14-giulia-sabato.pdf",
+      "cv_downloadable": true,
+      "cv_bytes": 335089,
+      "cv_pages": 11,
+      "cv_download": {
+        "ok": true,
+        "via": "https://drive.google.com/uc?export=download&id=1TH2geRjZWw9K7f2NOTcLlwsd3JLWY3VO",
+        "attempts": [
+          {
+            "url": "https://drive.google.com/uc?export=download&id=1TH2geRjZWw9K7f2NOTcLlwsd3JLWY3VO",
+            "status": 200,
+            "final_url": "https://drive.usercontent.google.com/download?id=1TH2geRjZWw9K7f2NOTcLlwsd3JLWY3VO&export=download",
+            "ct": "application/octet-stream",
+            "bytes": 335089
+          }
+        ]
+      },
+      "section_uid": "GMWNQzu68",
+      "notes": [
+        "Foto senza alt.",
+        "Titolo diverso sulla pagina vendite GHL: \"Dott.ssa Giulia Sabato\" vs pagina docenti \"Dottoressa Giulia Sabato\"."
+      ],
+      "sales_page": {
+        "heading": "Dott.ssa Giulia Sabato",
+        "text": "Ordine dei medici veterinari della provincia di Lecce.",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/669551bd66cf900ea5df1850.jpeg"
+      }
+    },
+    {
+      "position": 15,
+      "heading_exact": "Dottor Alexander Bertuccioli",
+      "name": "Alexander Bertuccioli",
+      "title_or_role": "Dottor",
+      "honorific": "Dottor",
+      "bio_html": "<p>​Il Dott. Alexander Bertuccioli è un medico nutrizionista con una solida formazione accademica. Ha svolto attività di docenza in contesti universitari, federali e privati. Ha pubblicato il libro \"Dall'indagine antropometrica alla composizione corporea. Manuale pratico\", che offre una guida pratica alla valutazione della composizione corporea. Il Dott. Bertuccioli ha anche contribuito con articoli specialistici, come \"Probiotici come terapia?\", esplorando le interazioni tra cellule procariote ed eucariote nell'organismo umano.</p>",
+      "bio_text": "​Il Dott. Alexander Bertuccioli è un medico nutrizionista con una solida formazione accademica. Ha svolto attività di docenza in contesti universitari, federali e privati. Ha pubblicato il libro \"Dall'indagine antropometrica alla composizione corporea. Manuale pratico\", che offre una guida pratica alla valutazione della composizione corporea. Il Dott. Bertuccioli ha anche contribuito con articoli specialistici, come \"Probiotici come terapia?\", esplorando le interazioni tra cellule procariote ed eucariote nell'organismo umano.",
+      "bio_raw": "​Il Dott. Alexander Bertuccioli è un medico nutrizionista con una solida formazione accademica. Ha svolto attività di docenza in contesti universitari, federali e privati. Ha pubblicato il libro \"Dall'indagine antropometrica alla composizione corporea. Manuale pratico\", che offre una guida pratica alla valutazione della composizione corporea. Il Dott. Bertuccioli ha anche contribuito con articoli specialistici, come \"Probiotici come terapia?\", esplorando le interazioni tra cellule procariote ed eucariote nell'organismo umano.",
+      "photo_url": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FV4DNnoQfTbKFtt8lRpO7_66b5e3dd8b8e581a486b7d97.png",
+      "photo_url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FV4DNnoQfTbKFtt8lRpO7_66b5e3dd8b8e581a486b7d97.png",
+      "photo_file": "data/scrape/assets/docenti/15-alexander-bertuccioli.png",
+      "photo_width": 1219,
+      "photo_height": 1019,
+      "cv_label": "Vedi il CV",
+      "cv_url": "https://drive.google.com/file/d/1HGmzAc4gGvCTNzhKAIK9xkCYZtmpDOZp/view?usp=sharing",
+      "cv_drive_id": "1HGmzAc4gGvCTNzhKAIK9xkCYZtmpDOZp",
+      "cv_type": "drive-pdf",
+      "cv_file": "data/scrape/assets/cv/15-alexander-bertuccioli.pdf",
+      "cv_downloadable": true,
+      "cv_bytes": 453587,
+      "cv_pages": 7,
+      "cv_download": {
+        "ok": true,
+        "via": "https://drive.google.com/uc?export=download&id=1HGmzAc4gGvCTNzhKAIK9xkCYZtmpDOZp",
+        "attempts": [
+          {
+            "url": "https://drive.google.com/uc?export=download&id=1HGmzAc4gGvCTNzhKAIK9xkCYZtmpDOZp",
+            "status": 200,
+            "final_url": "https://drive.usercontent.google.com/download?id=1HGmzAc4gGvCTNzhKAIK9xkCYZtmpDOZp&export=download",
+            "ct": "application/octet-stream",
+            "bytes": 453587
+          }
+        ]
+      },
+      "section_uid": "G1o8sx30T3",
+      "notes": [
+        "Foto senza alt.",
+        "Titolo diverso sulla pagina vendite GHL: \"Prof. Alexander Bertuccioli\" vs pagina docenti \"Dottor Alexander Bertuccioli\"."
+      ],
+      "sales_page": {
+        "heading": "Prof. Alexander Bertuccioli",
+        "text": "Il Dott. Alexander Bertuccioli è un medico nutrizionista con una solida formazione accademica. Ha svolto attività di docenza in contesti universitari, federali e privati. Ha pubblicato il libro \"Dall'indagine antropometrica alla composizione corporea. Manuale pratico\", che offre una guida pratica alla valutazione della composizione corporea. Il Dott. Bertuccioli ha anche contribuito con articoli specialistici, come \"Probiotici come terapia?\", esplorando le interazioni tra cellule procariote ed eucariote nell'organismo umano.",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/66b5e3dd8b8e581a486b7d97.png"
+      }
+    },
+    {
+      "position": 16,
+      "heading_exact": "Dottor Loprete Fortunato",
+      "name": "Loprete Fortunato",
+      "title_or_role": "Dottor",
+      "honorific": "Dottor",
+      "bio_html": "<p>​Il Dott. Fortunato Loprete da oltre 30 anni, si dedica alla prevenzione primaria, promuovendo uno stile di vita sano basato su una corretta alimentazione e attività fisica regolare. Ha approfondito diverse discipline mediche, tra cui Nutrizione e Dietetica, Agopuntura, Ossigeno-Ozonoterapia, Osteopatia, Omeopatia e Oncologia Integrata. È docente universitario nel Master di II° Livello presso l'Università di Pavia.</p>",
+      "bio_text": "​Il Dott. Fortunato Loprete da oltre 30 anni, si dedica alla prevenzione primaria, promuovendo uno stile di vita sano basato su una corretta alimentazione e attività fisica regolare. Ha approfondito diverse discipline mediche, tra cui Nutrizione e Dietetica, Agopuntura, Ossigeno-Ozonoterapia, Osteopatia, Omeopatia e Oncologia Integrata. È docente universitario nel Master di II° Livello presso l'Università di Pavia.",
+      "bio_raw": "​Il Dott. Fortunato Loprete da oltre 30 anni, si dedica alla prevenzione primaria, promuovendo uno stile di vita sano basato su una corretta alimentazione e attività fisica regolare. Ha approfondito diverse discipline mediche, tra cui Nutrizione e Dietetica, Agopuntura, Ossigeno-Ozonoterapia, Osteopatia, Omeopatia e Oncologia Integrata. È docente universitario nel Master di II° Livello presso l'Università di Pavia.",
+      "photo_url": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FeZkkznuOQNKZxEuvkstz_66b5e3dd8b8e5803b76b7d98.png",
+      "photo_url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FeZkkznuOQNKZxEuvkstz_66b5e3dd8b8e5803b76b7d98.png",
+      "photo_file": "data/scrape/assets/docenti/16-loprete-fortunato.png",
+      "photo_width": 1219,
+      "photo_height": 1019,
+      "cv_label": "Vedi il CV",
+      "cv_url": "https://drive.google.com/file/d/1Z1XQincYPPRmFTWtRYkV80ZcEmCusrgo/view?usp=sharing",
+      "cv_drive_id": "1Z1XQincYPPRmFTWtRYkV80ZcEmCusrgo",
+      "cv_type": "drive-pdf",
+      "cv_file": "data/scrape/assets/cv/16-loprete-fortunato.pdf",
+      "cv_downloadable": true,
+      "cv_bytes": 1357424,
+      "cv_pages": 5,
+      "cv_download": {
+        "ok": true,
+        "via": "https://drive.google.com/uc?export=download&id=1Z1XQincYPPRmFTWtRYkV80ZcEmCusrgo",
+        "attempts": [
+          {
+            "url": "https://drive.google.com/uc?export=download&id=1Z1XQincYPPRmFTWtRYkV80ZcEmCusrgo",
+            "status": 200,
+            "final_url": "https://drive.usercontent.google.com/download?id=1Z1XQincYPPRmFTWtRYkV80ZcEmCusrgo&export=download",
+            "ct": "application/octet-stream",
+            "bytes": 1357424
+          }
+        ]
+      },
+      "section_uid": "DDHDH8GBwI",
+      "notes": [
+        "Foto senza alt.",
+        "Titolo diverso sulla pagina vendite GHL: \"Prof. Fortunato Loprete\" vs pagina docenti \"Dottor Loprete Fortunato\"."
+      ],
+      "sales_page": {
+        "heading": "Prof. Fortunato Loprete",
+        "text": "​Il Dott. Fortunato Loprete da oltre 30 anni, si dedica alla prevenzione primaria, promuovendo uno stile di vita sano basato su una corretta alimentazione e attività fisica regolare. Ha approfondito diverse discipline mediche, tra cui Nutrizione e Dietetica, Agopuntura, Ossigeno-Ozonoterapia, Osteopatia, Omeopatia e Oncologia Integrata. È docente universitario nel Master di II° Livello presso l'Università di Pavia.",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/66b5e3dd8b8e5803b76b7d98.png"
+      }
+    },
+    {
+      "position": 17,
+      "heading_exact": "Dottoressa Alessia Candellone",
+      "name": "Alessia Candellone",
+      "title_or_role": "Dottoressa",
+      "honorific": "Dottoressa",
+      "bio_html": "<p>La Dott.ssa Alessia Candellone è un medico veterinario con una specializzazione avanzata in nutrizione clinica degli animali da compagnia. Si è laureata con lode presso l’Università di Torino e ha completato un PhD in Nutrizione e Alimentazione Animale, focalizzandosi sullo stress ossidativo nei gatti ipertiroidei. Ha conseguito anche il diploma europeo EMSAVM e un Master in Dietetica Clinica e Petfood. Dal 2011 ha maturato esperienza internazionale grazie a soggiorni di studio e ricerca in università europee.</p><p>Attualmente è assegnista di ricerca presso il Dipartimento di Scienze Veterinarie dell’Università di Torino e residente presso l’European College of Veterinary and Comparative Nutrition (ECVCN). Svolge attività di consulenza come nutrizionista veterinario freelance nel Nord Italia ed è CEO e co-fondatrice della società NutriTo vet srl. È autrice di numerosi articoli scientifici, relatrice in convegni internazionali e attivamente coinvolta in progetti di ricerca.</p><p>Partecipa alla vita associativa professionale come fondatrice di A.Ge.S e consigliere del GISPeV, ed è membro di diverse società veterinarie europee. Appassionata di ciclismo, partecipa a competizioni con il “Billy Team”. La sua carriera unisce eccellenza accademica, pratica clinica e impegno divulgativo.</p>",
+      "bio_text": "La Dott.ssa Alessia Candellone è un medico veterinario con una specializzazione avanzata in nutrizione clinica degli animali da compagnia. Si è laureata con lode presso l’Università di Torino e ha completato un PhD in Nutrizione e Alimentazione Animale, focalizzandosi sullo stress ossidativo nei gatti ipertiroidei. Ha conseguito anche il diploma europeo EMSAVM e un Master in Dietetica Clinica e Petfood. Dal 2011 ha maturato esperienza internazionale grazie a soggiorni di studio e ricerca in università europee.\n\nAttualmente è assegnista di ricerca presso il Dipartimento di Scienze Veterinarie dell’Università di Torino e residente presso l’European College of Veterinary and Comparative Nutrition (ECVCN). Svolge attività di consulenza come nutrizionista veterinario freelance nel Nord Italia ed è CEO e co-fondatrice della società NutriTo vet srl. È autrice di numerosi articoli scientifici, relatrice in convegni internazionali e attivamente coinvolta in progetti di ricerca.\n\nPartecipa alla vita associativa professionale come fondatrice di A.Ge.S e consigliere del GISPeV, ed è membro di diverse società veterinarie europee. Appassionata di ciclismo, partecipa a competizioni con il “Billy Team”. La sua carriera unisce eccellenza accademica, pratica clinica e impegno divulgativo.",
+      "bio_raw": "La Dott.ssa Alessia Candellone è un medico veterinario con una specializzazione avanzata in nutrizione clinica degli animali da compagnia. Si è laureata con lode presso l’Università di Torino e ha completato un PhD in Nutrizione e Alimentazione Animale, focalizzandosi sullo stress ossidativo nei gatti ipertiroidei. Ha conseguito anche il diploma europeo EMSAVM e un Master in Dietetica Clinica e Petfood. Dal 2011 ha maturato esperienza internazionale grazie a soggiorni di studio e ricerca in università europee.\n\nAttualmente è assegnista di ricerca presso il Dipartimento di Scienze Veterinarie dell’Università di Torino e residente presso l’European College of Veterinary and Comparative Nutrition (ECVCN). Svolge attività di consulenza come nutrizionista veterinario freelance nel Nord Italia ed è CEO e co-fondatrice della società NutriTo vet srl. È autrice di numerosi articoli scientifici, relatrice in convegni internazionali e attivamente coinvolta in progetti di ricerca.\n\nPartecipa alla vita associativa professionale come fondatrice di A.Ge.S e consigliere del GISPeV, ed è membro di diverse società veterinarie europee. Appassionata di ciclismo, partecipa a competizioni con il “Billy Team”. La sua carriera unisce eccellenza accademica, pratica clinica e impegno divulgativo.",
+      "photo_url": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FoH0DTE5SCdIRhkmANHw3_3.png",
+      "photo_url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FoH0DTE5SCdIRhkmANHw3_3.png",
+      "photo_file": "data/scrape/assets/docenti/17-alessia-candellone.png",
+      "photo_width": 500,
+      "photo_height": 418,
+      "cv_label": "Vedi il CV",
+      "cv_url": "https://docs.google.com/document/d/1nfmakc_uAUFpLe6_KlUpHnb9qadWOj_n/edit?usp=sharing&ouid=108064462340899240217&rtpof=true&sd=true",
+      "cv_drive_id": "1nfmakc_uAUFpLe6_KlUpHnb9qadWOj_n",
+      "cv_type": "google-doc",
+      "cv_file": "data/scrape/assets/cv/17-alessia-candellone.pdf",
+      "cv_downloadable": true,
+      "cv_bytes": 78470,
+      "cv_pages": 3,
+      "cv_download": {
+        "ok": true,
+        "via": "https://docs.google.com/document/d/1nfmakc_uAUFpLe6_KlUpHnb9qadWOj_n/export?format=pdf",
+        "attempts": [
+          {
+            "url": "https://docs.google.com/document/d/1nfmakc_uAUFpLe6_KlUpHnb9qadWOj_n/export?format=pdf",
+            "status": 200,
+            "final_url": "https://doc-00-4o-docstext.googleusercontent.com/export/dr04igesal9pftlk9arelf1tq8/cecssv93jqhpsbvclfeft817bc/1795178050000/105250506097979753968/*/1nfmakc_uAUFpLe6_KlUpHnb9qadWOj_n?format=pdf",
+            "ct": "application/pdf",
+            "bytes": 78470
+          }
+        ]
+      },
+      "section_uid": "w69ryU2yd",
+      "notes": [
+        "CV è un documento Google Docs (file Office \"rtpof=true\"): PDF ottenuto via export?format=pdf.",
+        "Bio con a-capo nel sorgente non visibili sul sito (white-space:normal); bio_html: a-capo dopo punteggiatura => <br>, altrimenti spazio.",
+        "Foto senza alt.",
+        "Titolo diverso sulla pagina vendite GHL: \"Dott.ssa Alessia Candellone\" vs pagina docenti \"Dottoressa Alessia Candellone\"."
+      ],
+      "sales_page": {
+        "heading": "Dott.ssa Alessia Candellone",
+        "text": "La Dott.ssa Alessia Candellone è un medico veterinario con una specializzazione avanzata in nutrizione clinica degli animali da compagnia. Si è laureata con lode presso l’Università di Torino e ha completato un PhD in Nutrizione e Alimentazione Animale, focalizzandosi sullo stress ossidativo nei gatti ipertiroidei. Ha conseguito anche il diploma europeo EMSAVM e un Master in Dietetica Clinica e Petfood. Dal 2011 ha maturato esperienza internazionale grazie a soggiorni di studio e ricerca in università europee. Attualmente è assegnista di ricerca presso il Dipartimento di Scienze Veterinarie dell’Università di Torino e residente presso l’European College of Veterinary and Comparative Nutrition (ECVCN). Svolge attività di consulenza come nutrizionista veterinario freelance nel Nord Italia ed è CEO e co-fondatrice della società NutriTo vet srl. È autrice di numerosi articoli scientifici, relatrice in convegni internazionali e attivamente coinvolta in progetti di ricerca. Partecipa alla vita associativa professionale come fondatrice di A.Ge.S e consigliere del GISPeV, ed è membro di diverse società veterinarie europee. Appassionata di ciclismo, partecipa a competizioni con il “Billy Team”. La sua carriera unisce eccellenza accademica, pratica clinica e impegno divulgativo.",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/6883a112ad32085ffe0a4291.png"
+      }
+    },
+    {
+      "position": 18,
+      "heading_exact": "Dottor Stefano Aulicino",
+      "name": "Stefano Aulicino",
+      "title_or_role": "Dottor",
+      "honorific": "Dottor",
+      "bio_html": "<p>Il Dott. Stefano Aulicino è un medico veterinario specializzato in gastroenterologia ed endoscopia clinica. Laureato presso l’Università di Bari, esercita la libera professione prevalentemente presso l’Ospedale Veterinario Pingry a Modugno (BA), dove si occupa della gestione di patologie gastrointestinali complesse nei piccoli animali. Collabora anche con altri ambulatori veterinari, offrendo consulenze specialistiche e interventi endoscopici.</p><p>È riconosciuto per le sue competenze pratiche nell’uso dell’endoscopia diagnostica e operativa, e per la capacità di gestire casi clinici articolati. Lavora in rete con colleghi e condivide casi di rilievo anche tramite canali divulgativi, mantenendo un forte legame con la didattica veterinaria applicata. È apprezzato per il suo approccio clinico accurato e per la disponibilità a collaborazioni esterne. Svolge la sua attività principalmente nella provincia di Bari.</p>",
+      "bio_text": "Il Dott. Stefano Aulicino è un medico veterinario specializzato in gastroenterologia ed endoscopia clinica. Laureato presso l’Università di Bari, esercita la libera professione prevalentemente presso l’Ospedale Veterinario Pingry a Modugno (BA), dove si occupa della gestione di patologie gastrointestinali complesse nei piccoli animali. Collabora anche con altri ambulatori veterinari, offrendo consulenze specialistiche e interventi endoscopici.\n\nÈ riconosciuto per le sue competenze pratiche nell’uso dell’endoscopia diagnostica e operativa, e per la capacità di gestire casi clinici articolati. Lavora in rete con colleghi e condivide casi di rilievo anche tramite canali divulgativi, mantenendo un forte legame con la didattica veterinaria applicata. È apprezzato per il suo approccio clinico accurato e per la disponibilità a collaborazioni esterne. Svolge la sua attività principalmente nella provincia di Bari.",
+      "bio_raw": "Il Dott. Stefano Aulicino è un medico veterinario specializzato in gastroenterologia ed endoscopia clinica. Laureato presso l’Università di Bari, esercita la libera professione prevalentemente presso l’Ospedale Veterinario Pingry a Modugno (BA), dove si occupa della gestione di patologie gastrointestinali complesse nei piccoli animali. Collabora anche con altri ambulatori veterinari, offrendo consulenze specialistiche e interventi endoscopici.\n\nÈ riconosciuto per le sue competenze pratiche nell’uso dell’endoscopia diagnostica e operativa, e per la capacità di gestire casi clinici articolati. Lavora in rete con colleghi e condivide casi di rilievo anche tramite canali divulgativi, mantenendo un forte legame con la didattica veterinaria applicata. È apprezzato per il suo approccio clinico accurato e per la disponibilità a collaborazioni esterne. Svolge la sua attività principalmente nella provincia di Bari.",
+      "photo_url": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FsqxowB5FRYm4HygD7yBn_4.png",
+      "photo_url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FsqxowB5FRYm4HygD7yBn_4.png",
+      "photo_file": "data/scrape/assets/docenti/18-stefano-aulicino.png",
+      "photo_width": 500,
+      "photo_height": 418,
+      "cv_label": "Vedi il CV",
+      "cv_url": "https://docs.google.com/document/d/19KAxZVhMRzX4Lhz4-ibRA1DQjdJjkS3f/edit?usp=sharing&ouid=108064462340899240217&rtpof=true&sd=true",
+      "cv_drive_id": "19KAxZVhMRzX4Lhz4-ibRA1DQjdJjkS3f",
+      "cv_type": "google-doc",
+      "cv_file": "data/scrape/assets/cv/18-stefano-aulicino.pdf",
+      "cv_downloadable": true,
+      "cv_bytes": 113232,
+      "cv_pages": 3,
+      "cv_download": {
+        "ok": true,
+        "via": "https://docs.google.com/document/d/19KAxZVhMRzX4Lhz4-ibRA1DQjdJjkS3f/export?format=pdf",
+        "attempts": [
+          {
+            "url": "https://docs.google.com/document/d/19KAxZVhMRzX4Lhz4-ibRA1DQjdJjkS3f/export?format=pdf",
+            "status": 200,
+            "final_url": "https://doc-0k-4o-docstext.googleusercontent.com/export/dr04igesal9pftlk9arelf1tq8/qv4incqmoegf938ibcapgrr0a8/1795178055000/105250506097979753968/*/19KAxZVhMRzX4Lhz4-ibRA1DQjdJjkS3f?format=pdf",
+            "ct": "application/pdf",
+            "bytes": 113232
+          }
+        ]
+      },
+      "section_uid": "jtQNIw24mw",
+      "notes": [
+        "CV è un documento Google Docs (file Office \"rtpof=true\"): PDF ottenuto via export?format=pdf.",
+        "Bio con a-capo nel sorgente non visibili sul sito (white-space:normal); bio_html: a-capo dopo punteggiatura => <br>, altrimenti spazio.",
+        "Foto senza alt.",
+        "Titolo diverso sulla pagina vendite GHL: \"Dott. Stefano Aulicino\" vs pagina docenti \"Dottor Stefano Aulicino\"."
+      ],
+      "sales_page": {
+        "heading": "Dott. Stefano Aulicino",
+        "text": "Il Dott. Stefano Aulicino è un medico veterinario specializzato in gastroenterologia ed endoscopia clinica. Laureato presso l’Università di Bari, esercita la libera professione prevalentemente presso l’Ospedale Veterinario Pingry a Modugno (BA), dove si occupa della gestione di patologie gastrointestinali complesse nei piccoli animali. Collabora anche con altri ambulatori veterinari, offrendo consulenze specialistiche e interventi endoscopici. È riconosciuto per le sue competenze pratiche nell’uso dell’endoscopia diagnostica e operativa, e per la capacità di gestire casi clinici articolati. Lavora in rete con colleghi e condivide casi di rilievo anche tramite canali divulgativi, mantenendo un forte legame con la didattica veterinaria applicata. È apprezzato per il suo approccio clinico accurato e per la disponibilità a collaborazioni esterne. Svolge la sua attività principalmente nella provincia di Bari.",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/6883a144f1133ff889aaf16c.png"
+      }
+    }
+  ],
+  "sales_page_crossref": {
+    "source": "https://sales.corsidiformazionecm.it/testimonianze",
+    "sales_page_teachers": 26,
+    "matched": 18,
+    "only_on_docenti_page": [],
+    "only_on_sales_page": [
+      {
+        "heading": "Prof. Marco Biagi",
+        "text": "Laurea in Chimica e Tecnologia Farmaceutiche e poi Dottorato in Scienze Farmaceutiche presso l’Università di Siena.\n\nAttualmente docente e attivo nella ricerca sperimentale presso l’Ateneo senese nel settore disciplinare della biologia farmaceutica; cultore della materia in farmacologia e contrattista anche presso l’Università di Modena e Reggio Emilia.\n\nDirettore del Master di II livello in Fitoterapia Applicata dell’Università di Siena e docente nei percorsi post-lauream in fitoterapia e nutraceutica presso l’Università di Padova, di Milano e del Piemonte Orientale. Segretario della Società Italiana di Fitoterapia e membro del Consiglio Direttivo della Società Italiana di Formulatori in Nutraceutica.",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/66b5e3dd2abf3c4c5f1f1454.png"
+      },
+      {
+        "heading": "Prof.ssa Monica Montopoli",
+        "text": "La prof.ssa Monica Montopoli è Professore Associato di Farmacologia presso il Dipartimento di Scienze del farmaco, Scuola di Medicina, Università di Padova. Ha conseguito la laurea magistrale in Chimica e Tecnologia Farmaceutiche nel 2003 (Università di Padova). Ha conseguito il dottorato di ricerca in Farmacologia Molecolare e Cellulare nel 2007, Università di Padova. Nel 2023 ha conseguito il master di II livello in Salute e Medicina di Genere (Università di Firenze). È docente in master di primo e secondo livello (Università di Siena) oltre ad essere Direttrice di 2 corsi di Alta Formazione (università di Padova). La prof.ssa Montopoli è visiting scientist allo IOR (Bellinzona-Svizzera). Ha pubblicato oltre 85 articoli peer-reviewed e oltre 200 abstract in conferenze nazionali e internazionali. È membro di: Società Italiana di Farmacologia (SIF), di Fitoterapia (SiFIT), di Tossicologia (SITOX).",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/66b5e3dd487a813bd1a39d20.png"
+      },
+      {
+        "heading": "Prof.ssa Lara Testai",
+        "text": "Professore associato presso il Dipartimento di Farmacia dell’Università di Pisa.\n\nRicercatore in Farmacologia presso il Dipartimento di Psichiatria,Neurobiologia, Farmacologia e Biotecnologie presso il Dipartimento di Farmacia dell’Università di Pisa.",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/66b5e3dd31293560517ddd1e.png"
+      },
+      {
+        "heading": "Prof.ssa Elisabetta Miraldi",
+        "text": "Collegio dei Docenti per il Dottorato di Ricerca in Scienze Farmaceutiche (XV ciclo).\n\nComitato Editoriale del PJSIR (Pakistan Journal of Scientific and Industrial Research).\n\nAutrice di più di 100 pubblicazioni scientifiche su argomenti di Fitochimica e Botanica Farmaceutica.",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/66b5e3dd312935668f7ddd1f.png"
+      },
+      {
+        "heading": "Dott.ssa Silvia Tempucci",
+        "text": "Membro del Collegio di Dottorato in SCIENZA DEL FARMACO E DELLE SOSTANZE BIOATTIVE. DOCENTE del Corso di dottorato in \"Scienze del Farmaco e delle sostanze bioattive\" dell'Universita di Pisa",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/66b5e3dd31293506027ddd1d.png"
+      },
+      {
+        "heading": "Prof.ssa Giuseppina Menduno",
+        "text": "Antropologa (specializzata in Antropologia Medica), Professoressa in qualità di esperta di alta qualificazione in possesso di un significativo curriculum scientifico e professionale dell’Insegnamento di “Antropologia Culturale” alla Facoltà di Medicina e Chirurgia dell’Università degli Studi di Perugia (Dipartimento di Medicina), Professoressa, in qualità di esperto di alta qualificazione in possesso di un significativo curriculum scientifico e professionale del Modulo di “Pedagogia e Andragogia” dell’insegnamento di “Teorie e metodologie dell'insegnamento ed educazione continua in sanità\".",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/66b5e3dd2abf3c3e2a1f1455.png"
+      },
+      {
+        "heading": "Dott.ssa Rita Tanas",
+        "text": "Specializzazione con Lode in Clinica Pediatrica conseguita presso l'Università degli Studi di Bologna. Specializzazione con Lode in Endocrinologia e Malattie del Ricambio conseguita presso l'Università degli Studi di Ferrara con Indirizzo Malattie del Ricambio e Diabetologia.",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/66b628272abf3c6b501f8eea.png"
+      },
+      {
+        "heading": "Prof. Pietro Morini",
+        "text": "È laureato in Scienze e Tecnologie Alimentari presso l'Università degli studi di Milano,è docente di molte facoltà italiane, quali: icamp, facoltà di farmacologia, scuola di scienze dell'alimentazione, scuola di medicina estetica post laurea.\n\nE’ relatore nei convegni nazionali e internazionali dedicati al tema dell'alimentazione e della diagnostica nutrizionale, inoltre è coordinatore scientifico dei corsi ECM sul tema del fabbisogno nutrizionale, integratori, intolleranze alimentari, probiotici e prebiotici, per medici, farmacisti e biologi e consulente per lo sviluppo di prodotti nutraceutici e cosmeceutici.",
+        "image": "https://assets.cdn.filesafe.space/mECwJmRKDtAj0CyYleAt/media/66b628275efd045c04847b28.png"
+      }
+    ],
+    "note": "La pagina vendite (GoHighLevel) ha un elenco \"I nostri docenti\" più lungo, con titoli (Prof./Dott.) spesso diversi dalla pagina /pages/docenti di Thinkific. Le foto sono su assets.cdn.filesafe.space e NON sono state scaricate (solo URL)."
+  }
+}

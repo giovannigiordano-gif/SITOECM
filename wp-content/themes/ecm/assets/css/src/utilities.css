@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Utility e stampa
+   ========================================================================== */
+.nowrap {
+	white-space: nowrap;
+}
+.num {
+	font-variant-numeric: tabular-nums;
+}
+
+@media print {
+	.site-header,
+	.menu-panel,
+	.sticky-cta,
+	.cookie,
+	.toast,
+	.newsletter,
+	.cta-final,
+	.lens,
+	.areas__nav {
+		display: none !important;
+	}
+	body {
+		background: #fff;
+		color: #000;
+	}
+	.site-footer {
+		background: none;
+		color: #000;
+	}
+	a[href^="http"]::after {
+		content: " (" attr(href) ")";
+		font-size: 0.8em;
+	}
+}

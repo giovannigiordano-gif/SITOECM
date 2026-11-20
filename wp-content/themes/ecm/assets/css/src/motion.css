@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Motion: stati iniziali (solo con JS e motion consentito) e transizioni di pagina
+   ========================================================================== */
+
+/* Righe dei titoli: maschera + "respiro" della larghezza (wdth 75 → 120) */
+.line-mask {
+	display: block;
+	overflow: clip;
+	overflow-clip-margin: 0.12em;
+	padding-bottom: 0.08em;
+	margin-bottom: -0.08em;
+}
+.line {
+	display: block;
+	will-change: transform;
+}
+
+/* Prima che il JS parta, gli elementi da rivelare sono già nascosti: niente lampi. */
+html.js:not(.reduced-motion) [data-reveal="lines"]:not(.is-split) {
+	opacity: 0;
+}
+html.js:not(.reduced-motion) [data-reveal="fade"]:not(.is-in) {
+	opacity: 0;
+	transform: translateY(16px);
+}
+html.js:not(.reduced-motion) [data-reveal="fade"] {
+	transition: opacity var(--dur-3) var(--ease-out), transform var(--dur-3) var(--ease-out);
+}
+html.js:not(.reduced-motion) [data-reveal="fade"].is-in {
+	opacity: 1;
+	transform: none;
+}
+/* Sicurezza: se il JS non parte entro 3s, tutto torna visibile. */
+html.js.motion-failsafe [data-reveal] {
+	opacity: 1 !important;
+	transform: none !important;
+}
+
+/* Transizioni di pagina (View Transitions API cross-document): cerchio dal punto del click. */
+@media (prefers-reduced-motion: no-preference) {
+	@view-transition {
+		navigation: auto;
+	}
+}
+::view-transition-old(root) {
+	animation: vt-old 820ms var(--ease-inout) both;
+}
+::view-transition-new(root) {
+	animation: none;
+	mix-blend-mode: normal;
+}
+::view-transition-image-pair(root) {
+	isolation: auto;
+}
+@keyframes vt-old {
+	to {
+		transform: scale(0.97);
+		filter: brightness(0.92);
+	}
+}
+
+/* Motion ridotto: niente animazioni decorative. */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}

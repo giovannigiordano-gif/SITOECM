@@ -1,0 +1,33 @@
+{
+  "_comment": "Entity names read visually from the downloaded logo images (no alt text on the live site). Keyed by sha1 of the file.",
+  "75be18e82b404d417e0a30fb3165e0d73c817da3": { "name": "Ordine dei Medici Veterinari della Provincia di Perugia" },
+  "a4c1734c81760da0add3178d86070712eb6c46e9": { "name": "Ordine Veterinari della Provincia del Verbano-Cusio-Ossola" },
+  "3c0fa1bea620366e71d00a07bc59d692c999d6c3": { "name": "Ordine dei Medici Veterinari della Provincia di Mantova" },
+  "69a95df7297844e5027965072717fe6ed09ea6fa": { "name": "Ordine dei Medici Veterinari della Provincia di Ancona" },
+  "af059fc5aa8aca3ad8425da915fff53e2ef77d48": { "name": "Ordine Biologi Sicilia" },
+  "76fe8723094be6f8a1cf2bb31ca6e6fed0ac3d33": { "name": "Ordine dei Medici Veterinari della Provincia di Latina" },
+  "26eea860d8d7bcc002c7fdfd471f7f67353da7a6": { "name": "Ordine dei Biologi Piemonte – Liguria – Valle d'Aosta" },
+  "e5181d193261bd84525f314a6f8ca6e843cc2c6d": {
+    "name": null,
+    "composite": true,
+    "contains": [
+      "Ordine dei Medici Veterinari Caserta",
+      "Ordine dei Medici Veterinari della Provincia di Parma",
+      "Ordine dei Medici Veterinari della Provincia di Ancona",
+      "Ordine dei Medici Veterinari della Provincia di Mantova",
+      "Ordine dei Biologi Piemonte – Liguria – Valle d'Aosta",
+      "Ordine dei Medici Veterinari della Provincia di Reggio Emilia"
+    ]
+  },
+  "a5c2d3d60eb2bf6f21d2df6d2d6e90c9fef8bd65": {
+    "name": null,
+    "composite": true,
+    "contains": [
+      "Ordine Veterinari della Provincia di Bologna",
+      "Ordine Biologi Sicilia",
+      "Ordine dei Medici Veterinari della Provincia di Perugia",
+      "Ordine dei Medici Veterinari della Provincia di Torino",
+      "Ordine Veterinari della Provincia del Verbano-Cusio-Ossola"
+    ]
+  }
+}

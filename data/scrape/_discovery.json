@@ -1,0 +1,842 @@
+{
+  "scraped_at": "2026-11-20T12:21:11.557Z",
+  "catalog_pages": [
+    {
+      "page": 1,
+      "url": "https://www.corsidiformazionecm.it/collections?page=1",
+      "status": 200,
+      "count": 6
+    },
+    {
+      "page": 2,
+      "url": "https://www.corsidiformazionecm.it/collections?page=2",
+      "status": 200,
+      "count": 6
+    },
+    {
+      "page": 3,
+      "url": "https://www.corsidiformazionecm.it/collections?page=3",
+      "status": 200,
+      "count": 6
+    },
+    {
+      "page": 4,
+      "url": "https://www.corsidiformazionecm.it/collections?page=4",
+      "status": 200,
+      "count": 6
+    },
+    {
+      "page": 5,
+      "url": "https://www.corsidiformazionecm.it/collections?page=5",
+      "status": 200,
+      "count": 3
+    },
+    {
+      "page": 6,
+      "url": "https://www.corsidiformazionecm.it/collections?page=6",
+      "status": 200,
+      "count": 0
+    }
+  ],
+  "catalog": [
+    {
+      "card_class": "card card--presell",
+      "href_raw": "/courses/METABOLISMO,%20NUTRIZIONE%20E%20PERFORMANCE%20NEL%20CANE%20SPORTIVO%20E%20NEL%20CAVALLO%20ATLETA",
+      "name_html": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+      "desc_html": "La nutrizione rappresenta un elemento determinante per la salute, il benessere e la performance del cane sportivo e del cavallo atleta. Il corso fornisce una preparazione teorico-pratica sui principi del metabolismo energetico, sulla valutazione dei",
+      "badge_html": "Pre-ordine disponibile ora!",
+      "img_src": "https://import.cdn.thinkific.com/692348/H3F3sVONSvauB2XC1lr6_hf_20261008_173033_0c957f75-5ef6-4e97-b87d-e0f9dfdd55b7%20(1).png",
+      "img_alt": "",
+      "catalog_page": 1,
+      "order": 1
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/alimentazione-nel-gatto-completo",
+      "name_html": "ALIMENTAZIONE NEL CANE &amp; GATTO COMPLETO",
+      "desc_html": "Il corso che presentiamo in questa occasione intende formare le figure titolate e legalizzate in Italia a formulare piani alimentari e nutrizionali sugli animali: il Biologo Nutrizionista, i Dietisti e il Medico Veterinario.",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/TxTIqDSdQKmAlpLPVWOQ_50.png",
+      "img_alt": "",
+      "catalog_page": 1,
+      "order": 2
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/alimentazione-nello-sportivo",
+      "name_html": "ALIMENTAZIONE NELLO SPORTIVO - 20 CREDITI",
+      "desc_html": "L’alimentazione e l’attività fisica, non posso essere viste come due pratiche separate, ma bensì, una come complemento dell’altra, al fine di un miglioramento dello stato psicofisico.",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/courses/1975432/NR9Mc65CTluhKI41FCNd_Diapositiva1.png",
+      "img_alt": "",
+      "catalog_page": 1,
+      "order": 3
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/alimentazione-vegana-e-vegetariana",
+      "name_html": "ALIMENTAZIONE VEGANA E VEGETARIANA",
+      "desc_html": "Durante il corso verranno approfondite le differenze tra le varie tipologie di diete a base vegetale e verrà spiegato quali sono da ritenersi complete e quali no.",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/courses/1975437/pCj42alZR4u02vwASSzz_Diapositiva2.png",
+      "img_alt": "",
+      "catalog_page": 1,
+      "order": 4
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/apparato-digerente",
+      "name_html": "APPARATO DIGERENTE",
+      "desc_html": "Approfondisce sia il razionale fisio-patologico che il razionale terapeutico, diversi protocolli terapeutici con farmaci omeopatici o fitoterapici e/o integratori nutrizionali, rivolti particolarmente al sistema immunitario e digerente.",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/courses/1975481/jWv0OvOrSXme50YaTgEH_Diapositiva3.png",
+      "img_alt": "",
+      "catalog_page": 1,
+      "order": 5
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/privato-corso-cane-e-gatto-230",
+      "name_html": "COME ALIMENTI TUOI AMICI A 4 ZAMPE?",
+      "desc_html": "Con questo corso, andiamo ad educare i proprietari, allevatori ed educatori allo scopo di guidarli verso le migliori scelte nutrizionali per i nostri amici a 4 zampe, tenendo conto delle singole razze; ma affronteremo anche temi comportamentali.",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/zAxOsGWIRvelBjwju8c5_Brochure%20cane%20gatto%20.png",
+      "img_alt": "",
+      "catalog_page": 1,
+      "order": 6
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/composizione-corporea-e-stato-di-nutrizione",
+      "name_html": "COMPOSIZIONE CORPOREA E STATO DI NUTRIZIONE",
+      "desc_html": "L’elaborazione di un piano nutrizionale personalizzato richiede un’attenta valutazione da parte del nutrizionista delle caratteristiche antropometriche e dello stato di nutrizione su base individuale.",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/courses/1975459/cRBC8ecTuqsDOXKq4Yi0_Diapositiva4.png",
+      "img_alt": "",
+      "catalog_page": 2,
+      "order": 7
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/counseling-nutrizionale",
+      "name_html": "COUNSELING NUTRIZIONALE",
+      "desc_html": "Le tecniche di counseling sono uno strumento particolarmente qualificato per la conduzione di colloqui con persone che vogliono risolvere una situazione di malessere e necessitano di cambiare uno o più aspetti dei loro comportamenti di salute.",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/courses/1975479/JivWtz0BQSSbitstmFHs_Diapositiva5.png",
+      "img_alt": "",
+      "catalog_page": 2,
+      "order": 8
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/curare-l-eccesso-ponderale-in-eta-evolutiva",
+      "name_html": "CURARE L’ECCESSO PONDERALE IN ETÀ EVOLUTIVA",
+      "desc_html": "L’Obesità manifesta una crescente complessità man mano che viene studiata. Ancora troppo pochi studenti e professionisti sanitari, anche se coinvolti, hanno mai sentito parlare delle molteplici molecole coinvolte nella regolazione dell’appetito.",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/courses/1975455/L7QmySdiTnGpSIlK4M8F_Diapositiva6.png",
+      "img_alt": "",
+      "catalog_page": 2,
+      "order": 9
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/dall-eubiosi-alla-disbiosi",
+      "name_html": "DALL'EUBIOSI ALLA DISBIOSI",
+      "desc_html": "La conoscenza e l’identificazione delle cause della disbiosi intestinale consentirà di attivare un approccio terapeutico (nutrizionale e nutraceutico) differente a seconda della tipologia di disbiosi.",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/courses/1975434/nGgb9P3AQf6KC2ohI75O_Diapositiva7.png",
+      "img_alt": "",
+      "catalog_page": 2,
+      "order": 10
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/evidence-based-phytotherapy",
+      "name_html": "EVIDENCE-BASED PHYTOTHERAPY",
+      "desc_html": "Questo Corso di Perfezionamento è indirizzato a fornire un’adeguata conoscenza delle basi scientifiche e delle evidenze cliniche che possano consentire un utilizzo razionale e fondato della fitoterapia nella prevenzione e nel trattamento di patologie",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/courses/1975486/nOvwU32AQUOVmaMqkvA3_Diapositiva8.png",
+      "img_alt": "",
+      "catalog_page": 2,
+      "order": 11
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/fitoterapia-applicata",
+      "name_html": "FITOTERAPIA APPLICATA",
+      "desc_html": "Il programma didattico prevede l’approfondimento delle conoscenze sulle caratteristiche farmaco-tossicologiche e terapeutiche delle piante medicinali o sulle loro preparazioni.",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/courses/1975484/VZ0GVT5TSaXJNa1bvahA_Diapositiva9.png",
+      "img_alt": "",
+      "catalog_page": 2,
+      "order": 12
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/fitoterapia-sistemica",
+      "name_html": "FITOTERAPIA SISTEMICA",
+      "desc_html": "La finalità del Corso di Perfezionamento è quella di fornire una preparazione professionale nel settore della fitoterapia. Il programma didattico prevede l’approfondimento delle conoscenze sulle caratteristiche farmaco-tossicologiche e terapeutiche.",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/courses/1975485/1kF8tTLzQzaCMgle3JfZ_Diapositiva10.png",
+      "img_alt": "",
+      "catalog_page": 3,
+      "order": 13
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/l-insulino-resistenza-e-la-diabesita",
+      "name_html": "L'INSULINO-RESISTENZA E LA DIABESITÀ",
+      "desc_html": "Una diagnosi tempestiva ed una adeguata terapia nutrizionale e nutraceutica costituiranno una vera e propria prevenzione primaria.",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/courses/1975440/bhtdEj93RJSSGA9H1VzB_Diapositiva11.png",
+      "img_alt": "",
+      "catalog_page": 3,
+      "order": 14
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/dieta-chetogenica",
+      "name_html": "LA DIETA CHETOGENICA COME SOLUZIONE TERAPEUTICA: Un approccio pratico",
+      "desc_html": "In questo corso scoprirai cos'è e come funziona la dieta chetogenica:\nsfatiamo i falsi miti che circondano questo regime alimentare e analizziamo benefici comprovati e le problematiche più comuni. E molto altro!",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/38zxBH3RS9S9o2E6MbLN_CORSO%20CHETOGENICA%20PER%20SITO.png",
+      "img_alt": "",
+      "catalog_page": 3,
+      "order": 15
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/le-reazioni-avverse-agli-alimenti",
+      "name_html": "LE REAZIONI AVVERSE AGLI ALIMENTI",
+      "desc_html": "Le cause alla base delle reazioni avverse, molto spesso, non sono ascrivibili all’alimento come tale ma ad un’eccessiva reattività dell’immunità innata con comparsa dei sintomi correlati oppure ad uno stato di disbiosi intestinale.",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/courses/1975443/IMhuXmyZQYqx3It9RVBm_Diapositiva18.png",
+      "img_alt": "",
+      "catalog_page": 3,
+      "order": 16
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/microbiota",
+      "name_html": "L’ANALISI DEL MICROBIOTA NELLA PRATICA CLINICA E NELLA GESTIONE NUTRIZIONALE: Un approccio pratico",
+      "desc_html": "Il corso che presentiamo in questa occasione intende formare le figure titolate e legalizzate in Italia a formulare piani alimentari e nutrizionali sugli animali: il Biologo Nutrizionista, i Dietisti e il Medico Veterinario.",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/IUPeZsKQjKWCaXqEJtAL_microbiota_sito.png",
+      "img_alt": "",
+      "catalog_page": 3,
+      "order": 17
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/l-invecchiamento-in-salute",
+      "name_html": "L’INVECCHIAMENTO IN SALUTE",
+      "desc_html": "Individuare i fattori di rischio (l’inattività fisica, la dieta inadeguata, l’ipertensione arteriosa sistemica, le dislipidemie, ecc) ed agire tempestivamente con adeguati strategie terapeutiche",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/courses/1975446/D39OqKTBT5uYjQ2T94Sz_Diapositiva12.png",
+      "img_alt": "",
+      "catalog_page": 3,
+      "order": 18
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/nutrizione-e-dietetica-applicata",
+      "name_html": "MASTER NUTRIZIONE E DIETETICA APPLICATA",
+      "desc_html": "Il corso offre le basi per abbattere la visione dicotomica del cibo - il cibo che fa bene o fa male, che cura o intossica, biologico o industriale, integro o manipolato - e indica gli strumenti per fidelizzare il proprio paziente.",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/courses/1969890/zEIANv9bQNuPFF8xTRNu_Diapositiva15.png",
+      "img_alt": "",
+      "catalog_page": 4,
+      "order": 19
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/BUNDLE%20MICROBIOTA%20ED%20EPIGENETICA%20NELL'ALIMENTAZIONE%20DEL%20CANE%20E%20DEL%20GATTO",
+      "name_html": "MICROBIOTA ED EPIGENETICA NELL'ALIMENTAZIONEDEL CANE E DEL GATTO: PRINCIPI ED APPLICAZIONI CLINICHE",
+      "desc_html": "In questo corso scoprirai cos'è e come funziona la dieta chetogenica:\nsfatiamo i falsi miti che circondano questo regime alimentare e analizziamo benefici comprovati e le problematiche più comuni. E molto altro!",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/wVY6LHxOSlyslMvLPuTy_Microbiota%20cane%20gatto.png",
+      "img_alt": "",
+      "catalog_page": 4,
+      "order": 20
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/nuovo-approccio-alla-prevenzione-e-cura-dell-obesita-infantile",
+      "name_html": "NUOVO APPROCCIO ALLA PREVENZIONE E CURA DELL’OBESITÀ INFANTILE",
+      "desc_html": "Il percorso comincia proprio dai Pediatri di Famiglia, sostenuti da una buona governance delle forze politiche e dalla creazione di un Team di secondo livello preparato ad un approccio nuovo.",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/courses/1975449/vHkFc2PcQHiCAVCksxkK_Diapositiva13.png",
+      "img_alt": "",
+      "catalog_page": 4,
+      "order": 21
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/nutrigenomica-nutrigenetica-ed-epigenetica",
+      "name_html": "NUTRIGENOMICA, NUTRIGENETICA ED EPIGENETICA",
+      "desc_html": null,
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/courses/2023230/3AHIdfXiQteJrAIejNJI_21.png",
+      "img_alt": "",
+      "catalog_page": 4,
+      "order": 22
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/nutrizione-clinica",
+      "name_html": "NUTRIZIONE CLINICA - 30 CREDITI",
+      "desc_html": "La nutrizione, alla luce delle conoscenze scientifiche attuali, ha assunto un valore preventivo e terapeutico non solo delle patologie dismetaboliche ma anche delle patologie cronico-degenerative, allergiche ed autoimmunitarie.",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/courses/1974665/P61pRpKRTVeVXNSe3fLE_Diapositiva14.png",
+      "img_alt": "",
+      "catalog_page": 4,
+      "order": 23
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/nutrizione-e-donna",
+      "name_html": "NUTRIZIONE E DONNA",
+      "desc_html": "Prepara il medico a guidare le donne verso scelte consapevoli e percorsi nutrizionali corretti che, pur condiscendenti all’estetica mirino a rispettare e migliorare lo stato di salute della donna e delle generazioni future.",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/courses/1975454/kHU5gAwzS3GDQCDESE3Y_Diapositiva16.png",
+      "img_alt": "",
+      "catalog_page": 4,
+      "order": 24
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/caneegatto2",
+      "name_html": "PATOLOGIE E ANALISI DI LABORATORIO NEL CANE E NEL GATTO",
+      "desc_html": "Gli alimenti contenenti nutrienti possono svolgere nelle patologie correlate azione funzionale in quanto protagonisti nei fenomeni del metabolismo, fisiologia ed espressione genica.",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/JmEBxbvBTtSoBPhHJR6Z_Brochure_Corsi_di_FromazionEcm_.png",
+      "img_alt": "",
+      "catalog_page": 5,
+      "order": 25
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/pnl-applicata-alla-comunicazione-sanitaria",
+      "name_html": "PNL APPLICATA ALLA COMUNICAZIONE SANITARIA",
+      "desc_html": "Per realizzare un intervento sanitario efﬁcace, la sola capacità strategica non basta.  Le persone consultano la ﬁgura sanitaria per i problemi più svariati e, in queste situazioni, possono sentirsi preoccupate, addolorate o irritate.",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/courses/1975452/ZhxsR2c5Tqmg7jbzmfAw_Diapositiva17.png",
+      "img_alt": "",
+      "catalog_page": 5,
+      "order": 26
+    },
+    {
+      "card_class": "card card--published",
+      "href_raw": "/courses/ritmi-circadiani-e-metabolismo",
+      "name_html": "RITMI CIRCADIANI E METABOLISMO",
+      "desc_html": "L’organismo umano è regolato da un “orologio” interno presente sia nel nucleo suprachiasmatico che negli organi periferici. Gran parte delle funzioni metaboliche esprimono un ritmo circadiano secondo cicli governati da tali “orologi”.",
+      "badge_html": null,
+      "img_src": "https://import.cdn.thinkific.com/692348/courses/1975450/pmtvvAmzRoiEm6ue7c1L_Diapositiva19.png",
+      "img_alt": "",
+      "catalog_page": 5,
+      "order": 27
+    }
+  ],
+  "sitemap": [
+    "https://www.corsidiformazionecm.it/",
+    "https://www.corsidiformazionecm.it/collections",
+    "https://www.corsidiformazionecm.it/collections/courses",
+    "https://www.corsidiformazionecm.it/courses/METABOLISMO,%20NUTRIZIONE%20E%20PERFORMANCE%20NEL%20CANE%20SPORTIVO%20E%20NEL%20CAVALLO%20ATLETA",
+    "https://www.corsidiformazionecm.it/courses/alimentazione-nel-gatto-completo",
+    "https://www.corsidiformazionecm.it/courses/alimentazione-nello-sportivo",
+    "https://www.corsidiformazionecm.it/courses/alimentazione-vegana-e-vegetariana",
+    "https://www.corsidiformazionecm.it/courses/apparato-digerente",
+    "https://www.corsidiformazionecm.it/courses/privato-corso-cane-e-gatto-230",
+    "https://www.corsidiformazionecm.it/courses/composizione-corporea-e-stato-di-nutrizione",
+    "https://www.corsidiformazionecm.it/courses/counseling-nutrizionale",
+    "https://www.corsidiformazionecm.it/courses/curare-l-eccesso-ponderale-in-eta-evolutiva",
+    "https://www.corsidiformazionecm.it/courses/dall-eubiosi-alla-disbiosi",
+    "https://www.corsidiformazionecm.it/courses/evidence-based-phytotherapy",
+    "https://www.corsidiformazionecm.it/courses/fitoterapia-applicata",
+    "https://www.corsidiformazionecm.it/courses/fitoterapia-sistemica",
+    "https://www.corsidiformazionecm.it/courses/l-insulino-resistenza-e-la-diabesita",
+    "https://www.corsidiformazionecm.it/courses/dieta-chetogenica",
+    "https://www.corsidiformazionecm.it/courses/le-reazioni-avverse-agli-alimenti",
+    "https://www.corsidiformazionecm.it/courses/microbiota",
+    "https://www.corsidiformazionecm.it/courses/l-invecchiamento-in-salute",
+    "https://www.corsidiformazionecm.it/courses/nutrizione-e-dietetica-applicata",
+    "https://www.corsidiformazionecm.it/courses/BUNDLE%20MICROBIOTA%20ED%20EPIGENETICA%20NELL'ALIMENTAZIONE%20DEL%20CANE%20E%20DEL%20GATTO",
+    "https://www.corsidiformazionecm.it/courses/nuovo-approccio-alla-prevenzione-e-cura-dell-obesita-infantile",
+    "https://www.corsidiformazionecm.it/courses/nutrigenomica-nutrigenetica-ed-epigenetica",
+    "https://www.corsidiformazionecm.it/courses/nutrizione-clinica",
+    "https://www.corsidiformazionecm.it/courses/nutrizione-e-donna",
+    "https://www.corsidiformazionecm.it/courses/caneegatto2",
+    "https://www.corsidiformazionecm.it/courses/pnl-applicata-alla-comunicazione-sanitaria",
+    "https://www.corsidiformazionecm.it/courses/ritmi-circadiani-e-metabolismo",
+    "https://www.corsidiformazionecm.it/pages/nutrizione-e-dietetica-applicata-nel-cane-e-nel-gatto",
+    "https://www.corsidiformazionecm.it/pages/offerta-corso-allergie-e-intolleranze-200-coupon-sconto",
+    "https://www.corsidiformazionecm.it/pages/docenti",
+    "https://www.corsidiformazionecm.it/pages/terms",
+    "https://www.corsidiformazionecm.it/pages/privacy",
+    "https://www.corsidiformazionecm.it/pages/richiesta-informazioni-ecm",
+    "https://www.corsidiformazionecm.it/pages/contatti",
+    "https://www.corsidiformazionecm.it/pages/chi-siamo"
+  ],
+  "crawled": [
+    {
+      "url": "https://www.corsidiformazionecm.it/",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/collections?page=1",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/collections?page=2",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/collections?page=3",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/collections?page=4",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/collections?page=5",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/collections?page=6",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/collections",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/collections/courses",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/METABOLISMO,%20NUTRIZIONE%20E%20PERFORMANCE%20NEL%20CANE%20SPORTIVO%20E%20NEL%20CAVALLO%20ATLETA",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/alimentazione-nel-gatto-completo",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/alimentazione-nello-sportivo",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/alimentazione-vegana-e-vegetariana",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/apparato-digerente",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/privato-corso-cane-e-gatto-230",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/composizione-corporea-e-stato-di-nutrizione",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/counseling-nutrizionale",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/curare-l-eccesso-ponderale-in-eta-evolutiva",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/dall-eubiosi-alla-disbiosi",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/evidence-based-phytotherapy",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/fitoterapia-applicata",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/fitoterapia-sistemica",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/l-insulino-resistenza-e-la-diabesita",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/dieta-chetogenica",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/le-reazioni-avverse-agli-alimenti",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/microbiota",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/l-invecchiamento-in-salute",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/nutrizione-e-dietetica-applicata",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/BUNDLE%20MICROBIOTA%20ED%20EPIGENETICA%20NELL'ALIMENTAZIONE%20DEL%20CANE%20E%20DEL%20GATTO",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/nuovo-approccio-alla-prevenzione-e-cura-dell-obesita-infantile",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/nutrigenomica-nutrigenetica-ed-epigenetica",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/nutrizione-clinica",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/nutrizione-e-donna",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/caneegatto2",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/pnl-applicata-alla-comunicazione-sanitaria",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/courses/ritmi-circadiani-e-metabolismo",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/pages/nutrizione-e-dietetica-applicata-nel-cane-e-nel-gatto",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/pages/offerta-corso-allergie-e-intolleranze-200-coupon-sconto",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/pages/docenti",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/pages/terms",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/pages/privacy",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/pages/richiesta-informazioni-ecm",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/pages/contatti",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/pages/chi-siamo",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/collections/courses?page=2",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/collections/courses?page=3",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/collections/courses?page=4",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/collections/courses?page=1",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/collections/courses?page=5",
+      "status": 200
+    }
+  ],
+  "course_link_sources": {
+    "/courses/METABOLISMO,%20NUTRIZIONE%20E%20PERFORMANCE%20NEL%20CANE%20SPORTIVO%20E%20NEL%20CAVALLO%20ATLETA": [
+      "/",
+      "/collections?page=1",
+      "/collections",
+      "/collections/courses",
+      "/collections/courses?page=1"
+    ],
+    "/courses/alimentazione-nel-gatto-completo": [
+      "/",
+      "/collections?page=1",
+      "/collections",
+      "/collections/courses",
+      "/collections/courses?page=1"
+    ],
+    "/courses/alimentazione-nello-sportivo": [
+      "/",
+      "/collections?page=1",
+      "/collections",
+      "/collections/courses",
+      "/collections/courses?page=1"
+    ],
+    "/courses/alimentazione-vegana-e-vegetariana": [
+      "/",
+      "/collections?page=1",
+      "/collections",
+      "/collections/courses",
+      "/collections/courses?page=1"
+    ],
+    "/courses/apparato-digerente": [
+      "/",
+      "/collections?page=1",
+      "/collections",
+      "/collections/courses",
+      "/collections/courses?page=1"
+    ],
+    "/courses/privato-corso-cane-e-gatto-230": [
+      "/",
+      "/collections?page=1",
+      "/collections",
+      "/collections/courses",
+      "/collections/courses?page=1"
+    ],
+    "/courses/composizione-corporea-e-stato-di-nutrizione": [
+      "/",
+      "/collections?page=2",
+      "/collections/courses?page=2"
+    ],
+    "/courses/counseling-nutrizionale": [
+      "/",
+      "/collections?page=2",
+      "/collections/courses?page=2"
+    ],
+    "/courses/curare-l-eccesso-ponderale-in-eta-evolutiva": [
+      "/",
+      "/collections?page=2",
+      "/collections/courses?page=2"
+    ],
+    "/courses/dall-eubiosi-alla-disbiosi": [
+      "/",
+      "/collections?page=2",
+      "/collections/courses?page=2"
+    ],
+    "/courses/evidence-based-phytotherapy": [
+      "/",
+      "/collections?page=2",
+      "/collections/courses?page=2"
+    ],
+    "/courses/fitoterapia-applicata": [
+      "/",
+      "/collections?page=2",
+      "/collections/courses?page=2"
+    ],
+    "/courses/fitoterapia-sistemica": [
+      "/",
+      "/collections?page=3",
+      "/collections/courses?page=3"
+    ],
+    "/courses/l-insulino-resistenza-e-la-diabesita": [
+      "/",
+      "/collections?page=3",
+      "/collections/courses?page=3"
+    ],
+    "/courses/dieta-chetogenica": [
+      "/",
+      "/collections?page=3",
+      "/collections/courses?page=3"
+    ],
+    "/courses/le-reazioni-avverse-agli-alimenti": [
+      "/collections?page=3",
+      "/collections/courses?page=3"
+    ],
+    "/courses/microbiota": [
+      "/collections?page=3",
+      "/collections/courses?page=3"
+    ],
+    "/courses/l-invecchiamento-in-salute": [
+      "/collections?page=3",
+      "/collections/courses?page=3"
+    ],
+    "/courses/nutrizione-e-dietetica-applicata": [
+      "/collections?page=4",
+      "/collections/courses?page=4"
+    ],
+    "/courses/BUNDLE%20MICROBIOTA%20ED%20EPIGENETICA%20NELL'ALIMENTAZIONE%20DEL%20CANE%20E%20DEL%20GATTO": [
+      "/collections?page=4",
+      "/collections/courses?page=4"
+    ],
+    "/courses/nuovo-approccio-alla-prevenzione-e-cura-dell-obesita-infantile": [
+      "/collections?page=4",
+      "/collections/courses?page=4"
+    ],
+    "/courses/nutrigenomica-nutrigenetica-ed-epigenetica": [
+      "/collections?page=4",
+      "/collections/courses?page=4"
+    ],
+    "/courses/nutrizione-clinica": [
+      "/collections?page=4",
+      "/collections/courses?page=4"
+    ],
+    "/courses/nutrizione-e-donna": [
+      "/collections?page=4",
+      "/collections/courses?page=4"
+    ],
+    "/courses/caneegatto2": [
+      "/collections?page=5",
+      "/collections/courses?page=5"
+    ],
+    "/courses/pnl-applicata-alla-comunicazione-sanitaria": [
+      "/collections?page=5",
+      "/collections/courses?page=5"
+    ],
+    "/courses/ritmi-circadiani-e-metabolismo": [
+      "/collections?page=5",
+      "/collections/courses?page=5"
+    ]
+  },
+  "courses_not_in_catalog": [],
+  "pages_found": [
+    {
+      "url": "https://www.corsidiformazionecm.it/pages/nutrizione-e-dietetica-applicata-nel-cane-e-nel-gatto",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/pages/offerta-corso-allergie-e-intolleranze-200-coupon-sconto",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/pages/docenti",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/pages/terms",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/pages/privacy",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/pages/richiesta-informazioni-ecm",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/pages/contatti",
+      "status": 200
+    },
+    {
+      "url": "https://www.corsidiformazionecm.it/pages/chi-siamo",
+      "status": 200
+    }
+  ],
+  "sales_page_links": [
+    {
+      "text": "Leggi le testimonianze",
+      "href": "#custom-code-VKiuMcbF5-"
+    },
+    {
+      "text": "PrivacyPolicy",
+      "href": "https://drive.google.com/file/d/1whvBhSjjck-_1FK-CixobW-uXPFI-G3i/view"
+    }
+  ],
+  "external_links": [
+    "https://api.whatsapp.com/send/?phone=393394846020&text=Salve%2C+vorrei+avere+maggiori+informazioni+sul+corso+NUTRIZIONE+E+DIETETICA+CANE+E+GATTO&type=phone_number&app_absent=0",
+    "https://corsidiformazionecm.thinkific.com/pages/terms",
+    "https://d2saw6je89goi1.cloudfront.net/uploads/digital_asset/file/1072338/Termini_e_Condizioni.pdf",
+    "https://docs.google.com/document/d/19KAxZVhMRzX4Lhz4-ibRA1DQjdJjkS3f/edit?usp=sharing&ouid=108064462340899240217&rtpof=true&sd=true",
+    "https://docs.google.com/document/d/1nfmakc_uAUFpLe6_KlUpHnb9qadWOj_n/edit?usp=sharing&ouid=108064462340899240217&rtpof=true&sd=true",
+    "https://drive.google.com/file/d/1-qQ4TyguquYRWMBwRVut-m-Jn6L381gG/view?usp=sharing",
+    "https://drive.google.com/file/d/10MPj2F6BzRyHubo6PF_1zkwm_4Aa-EUE/view?usp=sharing",
+    "https://drive.google.com/file/d/12IoBYdpCHDBbWSHdjrpMaGv_vPD89D61/view",
+    "https://drive.google.com/file/d/146B1CEJ1QXqk77dP74BGzdDe6nS5dodK/view?usp=sharing",
+    "https://drive.google.com/file/d/14m--45n4m6EEGA7LS6NVXe7lbemsk4cG/view?usp=sharing",
+    "https://drive.google.com/file/d/168Sx8Y45MDhkKxHdeiD3mE1yKcNoJA3p/view?usp=sharing",
+    "https://drive.google.com/file/d/17eS-4fs3HP1a0_7XIa0KOhzo4KGyomhy/view?usp=sharing",
+    "https://drive.google.com/file/d/19csunCBUv8qoJ_09aroxnzfzLVVU_1f1/view?usp=sharing",
+    "https://drive.google.com/file/d/1E91vVP_GNt9t--KYIGSccSOW4a28q3pe/view?usp=sharing",
+    "https://drive.google.com/file/d/1Gyd1dZnimHThw6ASvqdgqn68cfjpFUtA/view?usp=sharing",
+    "https://drive.google.com/file/d/1HGmzAc4gGvCTNzhKAIK9xkCYZtmpDOZp/view?usp=sharing",
+    "https://drive.google.com/file/d/1IvT4kmrrGv58Dil2fmPAtgyZ-yBIePV1/view?usp=sharing",
+    "https://drive.google.com/file/d/1K4qwSF-yVKOkIIA5ZuC3SsZ-btLnFVKV/view?usp=sharing",
+    "https://drive.google.com/file/d/1K6BvA7toepcbv2iCVtwcz3joWLdkR4A7/view?usp=sharing",
+    "https://drive.google.com/file/d/1KSjQn-ltcE0FQW6B07cSwZNbjGVzyKcS/view",
+    "https://drive.google.com/file/d/1KhWSpLggR3PRDwHkexteNOcQq-z9wfVY/view?usp=sharing",
+    "https://drive.google.com/file/d/1MhaeIQPSfg4ZcGFn6mC9BIrfW2TTGTlO/view?usp=sharing",
+    "https://drive.google.com/file/d/1Mn62h2QZ0DxGmvIM-Rc_KK49qoIvWfMi/view?usp=share_link",
+    "https://drive.google.com/file/d/1N3mEY6ByAYX32vEjuoIn4OhSYrt63tK0/view?usp=sharing",
+    "https://drive.google.com/file/d/1NFe0o9s_rZYA5eg2Myllf0N4NGg2DMc_/view?usp=sharing",
+    "https://drive.google.com/file/d/1PpnFpKL-CRKV6_LgJK_GwVly8E9NmC2K/view?usp=sharing",
+    "https://drive.google.com/file/d/1TH2geRjZWw9K7f2NOTcLlwsd3JLWY3VO/view?usp=sharing",
+    "https://drive.google.com/file/d/1U_viZjpHNDR7ynzh96IRSIGSdpvt5VmT/view?usp=sharing",
+    "https://drive.google.com/file/d/1X0yZprqX9XX8LGdqvPw-iIL0Ez6QdvMZ/view?usp=share_link",
+    "https://drive.google.com/file/d/1X1uqSEdN4wc17oL0eRnd4gUKRc9ADiLP/view?usp=sharing",
+    "https://drive.google.com/file/d/1XLkM7E5cSgQK2BpqM2DujDvQ7lsnAhzt/view",
+    "https://drive.google.com/file/d/1XOAUjsV6RQPxZKtk0Fqs-9KpPcgwDPQZ/view?usp=sharing",
+    "https://drive.google.com/file/d/1Xb-StRPhvghZS2JUdLWh8yHuR3DA_0G0/view?usp=sharing",
+    "https://drive.google.com/file/d/1Z1XQincYPPRmFTWtRYkV80ZcEmCusrgo/view?usp=sharing",
+    "https://drive.google.com/file/d/1ZxOEE4IZ2gEw4nhSzVeHECFmmybr9_mt/view?usp=sharing",
+    "https://drive.google.com/file/d/1_0tQlEpolBa7lpVE1ixXYdbIyyxmPuY1/view?usp=sharing",
+    "https://drive.google.com/file/d/1ciCApxRhGrEKDsSZvUoOe_ClYQDUXdvX/view?usp=sharing",
+    "https://drive.google.com/file/d/1hn0QeUSpyoxoRAHLQrixxpPhxstRZOwG/view?usp=sharing",
+    "https://drive.google.com/file/d/1i2uam_vvvwLKbyHeH83n8uQ4TKQQAgRl/view?usp=sharing",
+    "https://drive.google.com/file/d/1n-zofK0ra_UujbBrmomMIJzbL0g0VjhR/view?usp=share_link",
+    "https://drive.google.com/file/d/1nQ7ZAkBRXPmeh1x4Nl6lLJAvSVUaVrGq/view?usp=sharing",
+    "https://drive.google.com/file/d/1nf5h6rW6Xl3p1CUSjDHmcwkZ7xtxVWB_/view?usp=sharing",
+    "https://drive.google.com/file/d/1q95QCrPYAlRMKfl7D1jju4sb6cx87IPi/view?usp=sharing",
+    "https://drive.google.com/file/d/1ssG0SNjlSwGDjzXSgqeHiLxcv0NsUDfg/view?usp=share_link",
+    "https://drive.google.com/file/d/1tJzqKrF-NtW9rO_nsmg36TJfBF_t7X72/view?usp=sharing",
+    "https://drive.google.com/file/d/1uEfAPQqV36yAhMkj_V4_nuZqVUf91Hqt/view?usp=sharing",
+    "https://drive.google.com/file/d/1vJPoZavhKe04HBhVAN4zz1mTTWwLoknW/view?usp=sharing",
+    "https://drive.google.com/file/d/1whvBhSjjck-_1FK-CixobW-uXPFI-G3i/view?usp=sharing",
+    "https://drive.google.com/file/d/1xO0aIsNXWexB4edkXYwsFnwSs6hK6LHf/view?usp=sharing",
+    "https://drive.google.com/file/d/1yYkxt3PHVdZgr5JB53CoHOHl0abgn06i/view?usp=sharing",
+    "https://drive.google.com/file/d/1zfdrVxb07yzmCWD2l3Fc_QoAAsJBR_74/view?usp=sharing",
+    "https://forms.gle/PRtiYheGg1FAqnKe8",
+    "https://sales.corsidiformazionecm.it/testimonianze",
+    "https://wa.me/393394846020?text=Salve%2C%20vorrei%20avere%20maggiori%20informazioni%20sul%20corso%20%22ALIMENTAZIONE%20NELLO%20SPORTIVO%22",
+    "https://wa.me/393394846020?text=Salve%2C%20vorrei%20avere%20maggiori%20informazioni%20sul%20corso%20%22ALIMENTAZIONE%20VEGANA%20E%20VEGETARIANA%22",
+    "https://wa.me/393394846020?text=Salve%2C%20vorrei%20avere%20maggiori%20informazioni%20sul%20corso%20%22APPARATO%20DIGERENTE%22",
+    "https://wa.me/393394846020?text=Salve%2C%20vorrei%20avere%20maggiori%20informazioni%20sul%20corso%20%22COMPOSIZIONE%20CORPOREA%20E%20STATO%20DI%20NUTRIZIONE%22",
+    "https://wa.me/393394846020?text=Salve%2C%20vorrei%20avere%20maggiori%20informazioni%20sul%20corso%20%22COUNSELING%20NUTRIZIONALE%22",
+    "https://wa.me/393394846020?text=Salve%2C%20vorrei%20avere%20maggiori%20informazioni%20sul%20corso%20%22CURARE%20L%E2%80%99ECCESSO%20PONDERALE%20IN%20ET%C3%80%20EVOLUTIVA%22",
+    "https://wa.me/393394846020?text=Salve%2C%20vorrei%20avere%20maggiori%20informazioni%20sul%20corso%20%22DALL%27EUBIOSI%20ALLA%20DISBIOSI%22",
+    "https://wa.me/393394846020?text=Salve%2C%20vorrei%20avere%20maggiori%20informazioni%20sul%20corso%20%22EVIDENCE-BASED%20PHYTOTHERAPY%22",
+    "https://wa.me/393394846020?text=Salve%2C%20vorrei%20avere%20maggiori%20informazioni%20sul%20corso%20%22FITOTERAPIA%20APPLICATA%22",
+    "https://wa.me/393394846020?text=Salve%2C%20vorrei%20avere%20maggiori%20informazioni%20sul%20corso%20%22FITOTERAPIA%20SISTEMICA%22",
+    "https://wa.me/393394846020?text=Salve%2C%20vorrei%20avere%20maggiori%20informazioni%20sul%20corso%20%22L%27INSULINO-RESISTENZA%20E%20LA%20DIABESIT%C3%80%22",
+    "https://wa.me/393394846020?text=Salve%2C%20vorrei%20avere%20maggiori%20informazioni%20sul%20corso%20%22L%E2%80%99INVECCHIAMENTO%20IN%20SALUTE%22",
+    "https://wa.me/393394846020?text=Salve%2C%20vorrei%20avere%20maggiori%20informazioni%20sul%20corso%20%22MASTER%20NUTRIZIONE%20E%20DIETETICA%20APPLICATA%22",
+    "https://wa.me/393394846020?text=Salve%2C%20vorrei%20avere%20maggiori%20informazioni%20sul%20corso%20%22NUOVO%20APPROCCIO%20ALLA%20PREVENZIONE%20E%20CURA%20DELL%E2%80%99OBESIT%C3%80%20INFANTILE%22",
+    "https://wa.me/393394846020?text=Salve%2C%20vorrei%20avere%20maggiori%20informazioni%20sul%20corso%20%22NUTRIGENOMICA%22",
+    "https://wa.me/393394846020?text=Salve%2C%20vorrei%20avere%20maggiori%20informazioni%20sul%20corso%20%22NUTRIZIONE%20CLINICA%22",
+    "https://wa.me/393394846020?text=Salve%2C%20vorrei%20avere%20maggiori%20informazioni%20sul%20corso%20%22NUTRIZIONE%20E%20DONNA%22",
+    "https://wa.me/393394846020?text=Salve%2C%20vorrei%20avere%20maggiori%20informazioni%20sul%20corso%20%22PNL%20APPLICATA%20ALLA%20COMUNICAZIONE%20SANITARIA%22",
+    "https://wa.me/393394846020?text=Salve%2C%20vorrei%20avere%20maggiori%20informazioni%20sul%20corso%20%22RITMI%20CIRCADIANI%20E%20METABOLISMO%22",
+    "https://wa.me/393394846020?text=Salve%2C%20vorrei%20avere%20maggiori%20informazioni%20sul%20corso%20NUTRIZIONE%20E%20DIETETICA%20CANE%20E%20GATTO",
+    "https://www.corsidiformazionecm.it/cart/add_product/2347110?price_id=3128806",
+    "https://www.corsidiformazionecm.it/cdn-cgi/l/email-protection",
+    "https://www.corsidiformazionecm.it/users/sign_in",
+    "https://www.facebook.com/corsidiformazionecm",
+    "https://www.instagram.com/corsidiformazionecm/",
+    "https://www.thinkific.com/?utm_source=corsidiformazionecm&utm_medium=powered-by&utm_campaign=Referral",
+    "https://www.youtube.com/channel/UCooF9-KhcMD6aNzHepZZSNA?sub_confirmation=1"
+  ]
+}

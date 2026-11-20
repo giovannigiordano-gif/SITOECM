@@ -1,0 +1,22 @@
+{
+  "name": "scrape-corsidiformazionecm",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Read-only scraper of the current Thinkific site for the WordPress rebuild",
+  "dependencies": {
+    "playwright": "^1.65.1"
+  },
+  "scripts": {
+    "discover": "node discover.mjs",
+    "courses": "node courses.mjs",
+    "site": "node site.mjs",
+    "testimonianze": "node testimonianze.mjs",
+    "docenti": "node docenti.mjs",
+    "pages": "node pages.mjs",
+    "postprocess": "node postprocess.mjs",
+    "screenshots": "node screenshots.mjs",
+    "report": "node report.mjs",
+    "all": "node discover.mjs && node courses.mjs && node site.mjs && node testimonianze.mjs && node docenti.mjs && node pages.mjs && node postprocess.mjs && node screenshots.mjs && node report.mjs"
+  }
+}

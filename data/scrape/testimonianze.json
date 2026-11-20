@@ -1,0 +1,2130 @@
+{
+  "scraped_at": "2026-11-20T12:50:58.045Z",
+  "sales_page": {
+    "url": "https://sales.corsidiformazionecm.it/testimonianze",
+    "final_url": "https://sales.corsidiformazionecm.it/testimonianze",
+    "title": "Corsi di Formazione ECM | Testimonianze",
+    "platform": "GoHighLevel / LeadConnector funnel (header x-ghl-cache / x-ghl-serve-region, asset CDN assets.cdn.filesafe.space, sezioni c-section/c-row/c-column) — NON Thinkific",
+    "response_headers": {
+      "x-ghl-cache": "HIT",
+      "x-ghl-serve-region": "us"
+    },
+    "review_widgets": [
+      {
+        "widget": 1,
+        "heading": "TESTIMONIANZE",
+        "cards_in_dom": 24,
+        "unique_cards": 12,
+        "unique_cards_only_in_this_widget": 3
+      },
+      {
+        "widget": 2,
+        "heading": "eventi dal vivo",
+        "cards_in_dom": 18,
+        "unique_cards": 9,
+        "unique_cards_only_in_this_widget": 0
+      }
+    ],
+    "video_testimonials": [
+      {
+        "vimeo_id": "984380014",
+        "url": "https://vimeo.com/984380014",
+        "player_url": "https://player.vimeo.com/video/984380014",
+        "title": "Claudia Reel 2 ottobre",
+        "author": "Sales Process",
+        "duration_s": 43,
+        "thumbnail": "https://i.vimeocdn.com/video/1899820045-3f5d272c0079a73ce4ed0fb4a745198974910de1781355ddcf3f5ab6d2228ecf-d_200x150?region=us",
+        "width": 240,
+        "height": 426,
+        "oembed_status": 200
+      },
+      {
+        "vimeo_id": "984381200",
+        "url": "https://vimeo.com/984381200",
+        "player_url": "https://player.vimeo.com/video/984381200",
+        "title": "reel 6 dicembre Claudia",
+        "author": "Sales Process",
+        "duration_s": 24,
+        "thumbnail": "https://i.vimeocdn.com/video/1899821245-926c86e9a89caa6f883f4efb034eece55b1db8091a2f80f818920b1a2471d111-d_200x150?region=us",
+        "width": 240,
+        "height": 426,
+        "oembed_status": 200
+      },
+      {
+        "vimeo_id": "984381880",
+        "url": "https://vimeo.com/984381880",
+        "player_url": "https://player.vimeo.com/video/984381880",
+        "title": "reel Claudia 18 settembre",
+        "author": "Sales Process",
+        "duration_s": 58,
+        "thumbnail": "https://i.vimeocdn.com/video/1899822167-90927b8ab6e6a7c788d7aa2fc81706802a31ee0e57dbb5e7c03247c1f34359d1-d_200x150?region=us",
+        "width": 240,
+        "height": 426,
+        "oembed_status": 200
+      },
+      {
+        "vimeo_id": "984377690",
+        "url": "https://vimeo.com/984377690",
+        "player_url": "https://player.vimeo.com/video/984377690",
+        "title": "Recensione microbiota 1",
+        "author": "Sales Process",
+        "duration_s": 53,
+        "thumbnail": "https://i.vimeocdn.com/video/1899817472-0a889ddf774dc9436c810fd4164a1df11de2a212ea6dda3ee3b22cff95679c65-d_200x150?region=us",
+        "width": 240,
+        "height": 426,
+        "oembed_status": 200
+      },
+      {
+        "vimeo_id": "984377893",
+        "url": "https://vimeo.com/984377893",
+        "player_url": "https://player.vimeo.com/video/984377893",
+        "title": "Recensione microbiota 2",
+        "author": "Sales Process",
+        "duration_s": 56,
+        "thumbnail": "https://i.vimeocdn.com/video/1899817670-24818a27967c733436fa0020ba9a30a21334346bc2ff993f3003d83e4007e2b7-d_200x150?region=us",
+        "width": 240,
+        "height": 426,
+        "oembed_status": 200
+      },
+      {
+        "vimeo_id": "984378054",
+        "url": "https://vimeo.com/984378054",
+        "player_url": "https://player.vimeo.com/video/984378054",
+        "title": "Recensione microbiota 3",
+        "author": "Sales Process",
+        "duration_s": 45,
+        "thumbnail": "https://i.vimeocdn.com/video/1899817788-e3591b573c25058cfda47fe793818c73348c320fded719ed881f0271e2c139e0-d_200x150?region=us",
+        "width": 240,
+        "height": 426,
+        "oembed_status": 200
+      },
+      {
+        "vimeo_id": "984378156",
+        "url": "https://vimeo.com/984378156",
+        "player_url": "https://player.vimeo.com/video/984378156",
+        "title": "Recensione microbiota 4",
+        "author": "Sales Process",
+        "duration_s": 44,
+        "thumbnail": "https://i.vimeocdn.com/video/1899817891-da50aef290d8a4df6229c5201a49e77269d86666cdad86f1ac80def5fe720f90-d_200x150?region=us",
+        "width": 240,
+        "height": 426,
+        "oembed_status": 200
+      },
+      {
+        "vimeo_id": "984378279",
+        "url": "https://vimeo.com/984378279",
+        "player_url": "https://player.vimeo.com/video/984378279",
+        "title": "Recensione microbiota 5",
+        "author": "Sales Process",
+        "duration_s": 31,
+        "thumbnail": "https://i.vimeocdn.com/video/1899818101-b85dedb1724a3c09ca782a3d4abf7866139f1980467251673485508c4d7c0fc5-d_200x150?region=us",
+        "width": 240,
+        "height": 426,
+        "oembed_status": 200
+      },
+      {
+        "vimeo_id": "984378423",
+        "url": "https://vimeo.com/984378423",
+        "player_url": "https://player.vimeo.com/video/984378423",
+        "title": "Recensione microbiota 6",
+        "author": "Sales Process",
+        "duration_s": 19,
+        "thumbnail": "https://i.vimeocdn.com/video/1899818170-73175710113901095d35489238236c145bac648c8f042488e53b1609bd9ab609-d_200x150?region=us",
+        "width": 240,
+        "height": 426,
+        "oembed_status": 200
+      }
+    ],
+    "non_testimonial_quotes": [
+      {
+        "text": "“Il nostro Obiettivo è promuovere la cultura della formazione e dell’alta professionalità nel settore sanitario attraverso corsi e percorsi originali che coniugano l’innovazione tecnologica con la ricerca scientifica.”",
+        "note": "Citazione senza autore nel blocco (citazione della fondatrice, sezione Chi siamo): esclusa dalle testimonianze"
+      }
+    ],
+    "video_rows_in_script": [
+      {
+        "name": "videosRow1",
+        "ids": [
+          "984380014",
+          "984381200",
+          "984381880",
+          "984377690",
+          "984377893"
+        ]
+      },
+      {
+        "name": "videosRow2",
+        "ids": [
+          "984378054",
+          "984378156",
+          "984378279",
+          "984378423",
+          "984380014"
+        ]
+      },
+      {
+        "name": "videosRow1",
+        "ids": [
+          "984380014",
+          "984381200",
+          "984381880",
+          "984377690",
+          "984377893"
+        ]
+      },
+      {
+        "name": "videosRow2",
+        "ids": [
+          "984378054",
+          "984378156",
+          "984378279",
+          "984378423",
+          "984380014"
+        ]
+      }
+    ],
+    "other_content_note": "La pagina contiene anche: hero \"ECCELLENZA NELLA FORMAZIONE / TESTIMONIANZE\", sezione CHI SIAMO con statistiche (200+ ore, 14 docenti, 10k+ corsisti), Mission/Vision, citazione della fondatrice, elenco \"I nostri docenti\" (vedi _sales_page.json: blocks, docenti)."
+  },
+  "counts": {
+    "sales_unique": 13,
+    "sales_cards_in_dom_with_marquee_duplicates": 42,
+    "home": 10,
+    "course_pages": 18,
+    "all_entries": 41,
+    "unique_after_dedupe": 29,
+    "in_multiple_sources": 8,
+    "in_sales_and_home": 0,
+    "video_testimonials": 9
+  },
+  "dedupe_rule": "Stesso cognome + similarità parole >= 0.5 (min-overlap su parole >2 lettere, titolo+testo), oppure similarità >= 0.85 a prescindere dal nome. Ogni variante conserva il testo esatto della sua fonte.",
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Dott.ssa Evelina Raimondi",
+      "role_or_meta": "Biologa Nutrizionista · Corso Alimentazione nel cane e nel gatto",
+      "course_referenced": "Corso Alimentazione nel cane e nel gatto",
+      "rating": 5,
+      "date": null,
+      "photo": null,
+      "title": null,
+      "text": "Ho visto la pubblicità dei corsi sulla nutrizione del cane e del gatto su Instagram; il mio cane aveva avuto problemi gastrointestinali molto gravi e quindi mi sono incuriosita subito, ma ero anche molto scettica. Ho contattato CorsidiFormazioneEcm e già dal modo in cui mi hanno risposto ho capito che fossero un ente molto serio; ciò che non avevo capito e che ho appreso durante il corso è che mirano a darci un'ottima preparazione e non tanto a vendere un prodotto! Durante il corso ho avuto modo di imparare tantissimo dal Dottor Stefano Spagnulo, ma anche di apprezzare l'enorme amore che ha verso questi meravigliosi amici pelosi e quanta passione ha per il suo lavoro, amore che lo porta a dare a noi studenti tutto il suo sapere con tutto il cuore. Questa passione resta anche finito il corso, poiché ci ha lasciato un'abbondanza di materiale didattico. Che dire? Prima di tutto grazie! E ai miei colleghi nutrizionisti vorrei dire che CorsidiFormazioneEcm fa anche corsi in umana, quindi ve la consiglio enormemente!",
+      "sources": [
+        "sales"
+      ],
+      "in_multiple_sources": false,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "sales",
+          "name": "Dott.ssa Evelina Raimondi",
+          "role_or_meta": "Biologa Nutrizionista · Corso Alimentazione nel cane e nel gatto",
+          "role": "Biologa Nutrizionista",
+          "course_referenced": "Corso Alimentazione nel cane e nel gatto",
+          "rating": 5,
+          "rating_raw": "★★★★★",
+          "date": null,
+          "photo": null,
+          "text": "Ho visto la pubblicità dei corsi sulla nutrizione del cane e del gatto su Instagram; il mio cane aveva avuto problemi gastrointestinali molto gravi e quindi mi sono incuriosita subito, ma ero anche molto scettica. Ho contattato CorsidiFormazioneEcm e già dal modo in cui mi hanno risposto ho capito che fossero un ente molto serio; ciò che non avevo capito e che ho appreso durante il corso è che mirano a darci un'ottima preparazione e non tanto a vendere un prodotto! Durante il corso ho avuto modo di imparare tantissimo dal Dottor Stefano Spagnulo, ma anche di apprezzare l'enorme amore che ha verso questi meravigliosi amici pelosi e quanta passione ha per il suo lavoro, amore che lo porta a dare a noi studenti tutto il suo sapere con tutto il cuore. Questa passione resta anche finito il corso, poiché ci ha lasciato un'abbondanza di materiale didattico. Che dire? Prima di tutto grazie! E ai miei colleghi nutrizionisti vorrei dire che CorsidiFormazioneEcm fa anche corsi in umana, quindi ve la consiglio enormemente!",
+          "text_raw": "\"Ho visto la pubblicità dei corsi sulla nutrizione del cane e del gatto su Instagram; il mio cane aveva avuto problemi gastrointestinali molto gravi e quindi mi sono incuriosita subito, ma ero anche molto scettica. Ho contattato CorsidiFormazioneEcm e già dal modo in cui mi hanno risposto ho capito che fossero un ente molto serio; ciò che non avevo capito e che ho appreso durante il corso è che mirano a darci un'ottima preparazione e non tanto a vendere un prodotto! Durante il corso ho avuto modo di imparare tantissimo dal Dottor Stefano Spagnulo, ma anche di apprezzare l'enorme amore che ha verso questi meravigliosi amici pelosi e quanta passione ha per il suo lavoro, amore che lo porta a dare a noi studenti tutto il suo sapere con tutto il cuore. Questa passione resta anche finito il corso, poiché ci ha lasciato un'abbondanza di materiale didattico. Che dire? Prima di tutto grazie! E ai miei colleghi nutrizionisti vorrei dire che CorsidiFormazioneEcm fa anche corsi in umana, quindi ve la consiglio enormemente!\"",
+          "title": null,
+          "widget": 1,
+          "widget_heading": "TESTIMONIANZE",
+          "group_comment": "GRUPPO 1 (ORIGINALE)",
+          "occurrences_in_marquee": 2,
+          "widgets": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Dott.ssa Chiara Cavazzini",
+      "role_or_meta": "Biologa Nutrizionista",
+      "course_referenced": null,
+      "rating": 5,
+      "date": null,
+      "photo": null,
+      "title": null,
+      "text": "Corso completo ed esaustivo in tutte le sue parti ricco di contenuti anche pratici",
+      "sources": [
+        "sales"
+      ],
+      "in_multiple_sources": false,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "sales",
+          "name": "Dott.ssa Chiara Cavazzini",
+          "role_or_meta": "Biologa Nutrizionista",
+          "role": "Biologa Nutrizionista",
+          "course_referenced": null,
+          "rating": 5,
+          "rating_raw": "★★★★★",
+          "date": null,
+          "photo": null,
+          "text": "Corso completo ed esaustivo in tutte le sue parti ricco di contenuti anche pratici",
+          "text_raw": "\"Corso completo ed esaustivo in tutte le sue parti ricco di contenuti anche pratici\"",
+          "title": null,
+          "widget": 1,
+          "widget_heading": "TESTIMONIANZE",
+          "group_comment": "GRUPPO 1 (ORIGINALE)",
+          "occurrences_in_marquee": 2,
+          "widgets": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Dott.ssa Alessandra Santarsiere Schiavone",
+      "role_or_meta": "Biologa Nutrizionista",
+      "course_referenced": null,
+      "rating": 5,
+      "date": null,
+      "photo": null,
+      "title": null,
+      "text": "Mi sono iscritta al corso sul Microbiota perché mi occupo di questo argomento da tempo e devo dire che l’ho trovato davvero bellissimo e molto interessante. Non è il solito corso teorico che non lascia strumenti pratici, ma un percorso ricco di contenuti e spunti utili. Ho avuto modo di relazionarmi con la dott.ssa Claudia Petrazzuolo, che si è dimostrata sempre disponibile a chiarire ogni mio dubbio, gentilissima e molto attenta. Grazie infinite per questa bellissima esperienza!",
+      "sources": [
+        "sales"
+      ],
+      "in_multiple_sources": false,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "sales",
+          "name": "Dott.ssa Alessandra Santarsiere Schiavone",
+          "role_or_meta": "Biologa Nutrizionista",
+          "role": "Biologa Nutrizionista",
+          "course_referenced": null,
+          "rating": 5,
+          "rating_raw": "★★★★★",
+          "date": null,
+          "photo": null,
+          "text": "Mi sono iscritta al corso sul Microbiota perché mi occupo di questo argomento da tempo e devo dire che l’ho trovato davvero bellissimo e molto interessante. Non è il solito corso teorico che non lascia strumenti pratici, ma un percorso ricco di contenuti e spunti utili. Ho avuto modo di relazionarmi con la dott.ssa Claudia Petrazzuolo, che si è dimostrata sempre disponibile a chiarire ogni mio dubbio, gentilissima e molto attenta. Grazie infinite per questa bellissima esperienza!",
+          "text_raw": "\"Mi sono iscritta al corso sul Microbiota perché mi occupo di questo argomento da tempo e devo dire che l’ho trovato davvero bellissimo e molto interessante. Non è il solito corso teorico che non lascia strumenti pratici, ma un percorso ricco di contenuti e spunti utili. Ho avuto modo di relazionarmi con la dott.ssa Claudia Petrazzuolo, che si è dimostrata sempre disponibile a chiarire ogni mio dubbio, gentilissima e molto attenta. Grazie infinite per questa bellissima esperienza!\"",
+          "title": null,
+          "widget": 1,
+          "widget_heading": "TESTIMONIANZE",
+          "group_comment": "GRUPPO 1 (ORIGINALE)",
+          "occurrences_in_marquee": 2,
+          "widgets": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Dott.ssa Maria Teresa Anfossi",
+      "role_or_meta": "Medico Gastroenterologo",
+      "course_referenced": "La Dieta Chetogenica come soluzione terapeutica",
+      "rating": 5,
+      "date": null,
+      "photo": null,
+      "title": null,
+      "text": "La Dieta Chetogenica come soluzione terapeutica: Elevatissimo livello delle informazioni e della didattica. Il dott. Loprete è appassionato e trasmette conoscenze in modo approfondito ma accessibile. Molto utile la modalità on demand. Un grazie speciale alla dott.ssa Petrazzuolo, sempre disponibile e di grande supporto.",
+      "sources": [
+        "sales"
+      ],
+      "in_multiple_sources": false,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "sales",
+          "name": "Dott.ssa Maria Teresa Anfossi",
+          "role_or_meta": "Medico Gastroenterologo",
+          "role": "Medico Gastroenterologo",
+          "course_referenced": "La Dieta Chetogenica come soluzione terapeutica",
+          "rating": 5,
+          "rating_raw": "★★★★★",
+          "date": null,
+          "photo": null,
+          "text": "La Dieta Chetogenica come soluzione terapeutica: Elevatissimo livello delle informazioni e della didattica. Il dott. Loprete è appassionato e trasmette conoscenze in modo approfondito ma accessibile. Molto utile la modalità on demand. Un grazie speciale alla dott.ssa Petrazzuolo, sempre disponibile e di grande supporto.",
+          "text_raw": "\"La Dieta Chetogenica come soluzione terapeutica: Elevatissimo livello delle informazioni e della didattica. Il dott. Loprete è appassionato e trasmette conoscenze in modo approfondito ma accessibile. Molto utile la modalità on demand. Un grazie speciale alla dott.ssa Petrazzuolo, sempre disponibile e di grande supporto.\"",
+          "title": null,
+          "widget": 1,
+          "widget_heading": "TESTIMONIANZE",
+          "group_comment": "GRUPPO 1 (ORIGINALE)",
+          "occurrences_in_marquee": 4,
+          "widgets": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Clizia D’Angelo",
+      "role_or_meta": "Biologa nutrizionista",
+      "course_referenced": null,
+      "rating": 5,
+      "date": null,
+      "photo": null,
+      "title": "Corso molto bello",
+      "text": "Corso molto bello, con docenti preparati, appassionati e spiegazioni chiare. Molto bella la sensazione di potersi affidare ai docenti anche dopo il corso nel caso di consigli o approfondimenti. Complimenti a tutti, ma la star del corso resta Thor!",
+      "sources": [
+        "sales",
+        "course:metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+        "course:alimentazione-nel-gatto-completo"
+      ],
+      "in_multiple_sources": true,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "sales",
+          "name": "Clizia D’Angelo",
+          "role_or_meta": "Biologa nutrizionista",
+          "role": "Biologa nutrizionista",
+          "course_referenced": null,
+          "rating": 5,
+          "rating_raw": "★★★★★",
+          "date": null,
+          "photo": null,
+          "text": "Corso molto bello, con docenti preparati, appassionati e spiegazioni chiare. Molto bella la sensazione di potersi affidare ai docenti anche dopo il corso nel caso di consigli o approfondimenti. Complimenti a tutti, ma la star del corso resta Thor!",
+          "text_raw": "\"Corso molto bello, con docenti preparati, appassionati e spiegazioni chiare. Molto bella la sensazione di potersi affidare ai docenti anche dopo il corso nel caso di consigli o approfondimenti. Complimenti a tutti, ma la star del corso resta Thor!\"",
+          "title": null,
+          "widget": 1,
+          "widget_heading": "TESTIMONIANZE",
+          "group_comment": "GRUPPO 1 (ORIGINALE)",
+          "occurrences_in_marquee": 4,
+          "widgets": [
+            1,
+            2
+          ]
+        },
+        {
+          "source": "course",
+          "course_slug": "metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+          "course_title": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+          "name": "Dott.ssa Clizia d'Angelo",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+          "rating": null,
+          "date": null,
+          "photo": null,
+          "title": "Corso molto bello",
+          "text": "Docenti preparati, appassionati e spiegazioni chiare.\n\nMolto bella la sensazione di potersi affidare ai docenti anche dopo il corso nel caso di consigli o approfondimenti.\n\nComplimenti a tutti, ma la star del corso resta Thor!❤️",
+          "text_raw": "Docenti preparati, appassionati e spiegazioni chiare.\n\nMolto bella la sensazione di potersi affidare ai docenti anche dopo il corso nel caso di consigli o approfondimenti. \n\nComplimenti a tutti, ma la star del corso resta Thor!❤️"
+        },
+        {
+          "source": "course",
+          "course_slug": "alimentazione-nel-gatto-completo",
+          "course_title": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+          "name": "Dott.ssa Clizia d'Angelo",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+          "rating": null,
+          "date": null,
+          "photo": null,
+          "title": "Corso molto bello",
+          "text": "Docenti preparati, appassionati e spiegazioni chiare.\n\nMolto bella la sensazione di potersi affidare ai docenti anche dopo il corso nel caso di consigli o approfondimenti.\n\nComplimenti a tutti, ma la star del corso resta Thor!❤️",
+          "text_raw": "Docenti preparati, appassionati e spiegazioni chiare.\n\nMolto bella la sensazione di potersi affidare ai docenti anche dopo il corso nel caso di consigli o approfondimenti. \n\nComplimenti a tutti, ma la star del corso resta Thor!❤️"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Daniela Di Bani",
+      "role_or_meta": null,
+      "course_referenced": null,
+      "rating": 5,
+      "date": null,
+      "photo": null,
+      "title": null,
+      "text": "Bellissimo e molto interessante, dottori preparati semplici da capire. Cose vissute. Finalmente capite e spiegate.",
+      "sources": [
+        "sales"
+      ],
+      "in_multiple_sources": false,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "sales",
+          "name": "Daniela Di Bani",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": null,
+          "rating": 5,
+          "rating_raw": "★★★★★",
+          "date": null,
+          "photo": null,
+          "text": "Bellissimo e molto interessante, dottori preparati semplici da capire. Cose vissute. Finalmente capite e spiegate.",
+          "text_raw": "\"Bellissimo e molto interessante, dottori preparati semplici da capire. Cose vissute. Finalmente capite e spiegate.\"",
+          "title": null,
+          "widget": 1,
+          "widget_heading": "TESTIMONIANZE",
+          "group_comment": "GRUPPO 1 (ORIGINALE)",
+          "occurrences_in_marquee": 4,
+          "widgets": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Dott.ssa Francesca Morganti",
+      "role_or_meta": null,
+      "course_referenced": null,
+      "rating": 5,
+      "date": null,
+      "photo": null,
+      "title": "Corso ben strutturato, interessante ed innovativo",
+      "text": "Corso ben strutturato, interessante ed innovativo. Docenti ben preparati, disponibili e spiegazioni chiare. Lo rifarei sicuramente!",
+      "sources": [
+        "sales",
+        "course:metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+        "course:alimentazione-nel-gatto-completo"
+      ],
+      "in_multiple_sources": true,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "sales",
+          "name": "Dott.ssa Francesca Morganti",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": null,
+          "rating": 5,
+          "rating_raw": "★★★★★",
+          "date": null,
+          "photo": null,
+          "text": "Corso ben strutturato, interessante ed innovativo. Docenti ben preparati, disponibili e spiegazioni chiare. Lo rifarei sicuramente!",
+          "text_raw": "\"Corso ben strutturato, interessante ed innovativo. Docenti ben preparati, disponibili e spiegazioni chiare. Lo rifarei sicuramente!\"",
+          "title": null,
+          "widget": 1,
+          "widget_heading": "TESTIMONIANZE",
+          "group_comment": "GRUPPO 1 (ORIGINALE)",
+          "occurrences_in_marquee": 4,
+          "widgets": [
+            1,
+            2
+          ]
+        },
+        {
+          "source": "course",
+          "course_slug": "metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+          "course_title": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+          "name": "Dott.ssa Francesca Morganti",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+          "rating": null,
+          "date": null,
+          "photo": null,
+          "title": "Corso ben strutturato, interessante ed innovativo",
+          "text": "Docenti ben preparati, disponibili e spiegazioni chiare.\n\nLo rifarei sicuramente!",
+          "text_raw": "Docenti ben preparati, disponibili e spiegazioni chiare.\n\nLo rifarei sicuramente!"
+        },
+        {
+          "source": "course",
+          "course_slug": "alimentazione-nel-gatto-completo",
+          "course_title": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+          "name": "Dott.ssa Francesca Morganti",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+          "rating": null,
+          "date": null,
+          "photo": null,
+          "title": "Corso ben strutturato, interessante ed innovativo",
+          "text": "Docenti ben preparati, disponibili e spiegazioni chiare.\n\nLo rifarei sicuramente!",
+          "text_raw": "Docenti ben preparati, disponibili e spiegazioni chiare.\n\nLo rifarei sicuramente!"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Federica Fulghesu",
+      "role_or_meta": "Biologa nutrizionista",
+      "course_referenced": null,
+      "rating": 5,
+      "date": null,
+      "photo": null,
+      "title": null,
+      "text": "Buonasera Dottoressa, sono Federica Fulghesu e sono una biologa nutrizionista. Ho seguito con molto piacere e interesse il corso di oggi, è stato molto utile. Non vedo l’ora di seguire anche la parte dell’alimentazione del gatto.",
+      "sources": [
+        "sales"
+      ],
+      "in_multiple_sources": false,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "sales",
+          "name": "Federica Fulghesu",
+          "role_or_meta": "Biologa nutrizionista",
+          "role": "Biologa nutrizionista",
+          "course_referenced": null,
+          "rating": 5,
+          "rating_raw": "★★★★★",
+          "date": null,
+          "photo": null,
+          "text": "Buonasera Dottoressa, sono Federica Fulghesu e sono una biologa nutrizionista. Ho seguito con molto piacere e interesse il corso di oggi, è stato molto utile. Non vedo l’ora di seguire anche la parte dell’alimentazione del gatto.",
+          "text_raw": "\"Buonasera Dottoressa, sono Federica Fulghesu e sono una biologa nutrizionista. Ho seguito con molto piacere e interesse il corso di oggi, è stato molto utile. Non vedo l’ora di seguire anche la parte dell’alimentazione del gatto.\"",
+          "title": null,
+          "widget": 1,
+          "widget_heading": "TESTIMONIANZE",
+          "group_comment": "GRUPPO 1 (ORIGINALE)",
+          "occurrences_in_marquee": 4,
+          "widgets": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Rossana Polizzi",
+      "role_or_meta": null,
+      "course_referenced": null,
+      "rating": 5,
+      "date": null,
+      "photo": null,
+      "title": null,
+      "text": "Complimenti per il bellissimo corso, semplice ed estremamente pratico, dà la possibilità di mettersi al lavoro sin da subito. Complimenti ai formatori e in particolar modo al Dottor Spagnulo, persona preparata e al contempo raggiungibile. Esperienza più che positiva.",
+      "sources": [
+        "sales"
+      ],
+      "in_multiple_sources": false,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "sales",
+          "name": "Rossana Polizzi",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": null,
+          "rating": 5,
+          "rating_raw": "★★★★★",
+          "date": null,
+          "photo": null,
+          "text": "Complimenti per il bellissimo corso, semplice ed estremamente pratico, dà la possibilità di mettersi al lavoro sin da subito. Complimenti ai formatori e in particolar modo al Dottor Spagnulo, persona preparata e al contempo raggiungibile. Esperienza più che positiva.",
+          "text_raw": "\"Complimenti per il bellissimo corso, semplice ed estremamente pratico, dà la possibilità di mettersi al lavoro sin da subito. Complimenti ai formatori e in particolar modo al Dottor Spagnulo, persona preparata e al contempo raggiungibile. Esperienza più che positiva.\"",
+          "title": null,
+          "widget": 1,
+          "widget_heading": "TESTIMONIANZE",
+          "group_comment": "GRUPPO 1 (ORIGINALE)",
+          "occurrences_in_marquee": 4,
+          "widgets": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Dott. Mauro Minotti",
+      "role_or_meta": "Biologo Nutrizionista",
+      "course_referenced": null,
+      "rating": 5,
+      "date": null,
+      "photo": null,
+      "title": null,
+      "text": "Un corso veramente interessante che fornisce delle ottime basi strumentali per applicare la dieta chetogenica come trattamento dietoterapico ai clienti affetti da patologie. Soprattutto abbatte i miti errati dovuti alla male informazione.",
+      "sources": [
+        "sales"
+      ],
+      "in_multiple_sources": false,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "sales",
+          "name": "Dott. Mauro Minotti",
+          "role_or_meta": "Biologo Nutrizionista",
+          "role": "Biologo Nutrizionista",
+          "course_referenced": null,
+          "rating": 5,
+          "rating_raw": "★★★★★",
+          "date": null,
+          "photo": null,
+          "text": "Un corso veramente interessante che fornisce delle ottime basi strumentali per applicare la dieta chetogenica come trattamento dietoterapico ai clienti affetti da patologie. Soprattutto abbatte i miti errati dovuti alla male informazione.",
+          "text_raw": "\"Un corso veramente interessante che fornisce delle ottime basi strumentali per applicare la dieta chetogenica come trattamento dietoterapico ai clienti affetti da patologie. Soprattutto abbatte i miti errati dovuti alla male informazione.\"",
+          "title": null,
+          "widget": 1,
+          "widget_heading": "TESTIMONIANZE",
+          "group_comment": "GRUPPO 1 (ORIGINALE)",
+          "occurrences_in_marquee": 4,
+          "widgets": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Angela Gigliotti",
+      "role_or_meta": "Medico, Medicina Interna",
+      "course_referenced": "La dieta chetogenica",
+      "rating": 5,
+      "date": null,
+      "photo": null,
+      "title": null,
+      "text": "La dieta chetogenica: Ho trovato il corso molto interessante, il docente molto appassionato, disponibile a coinvolgere i discenti, sempre pronto a chiarire e semplificare i concetti più complessi. Ottima anche l’assistenza con Claudia sempre disponibile per qualsiasi problema tecnico. Tutto perfetto.",
+      "sources": [
+        "sales"
+      ],
+      "in_multiple_sources": false,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "sales",
+          "name": "Angela Gigliotti",
+          "role_or_meta": "Medico, Medicina Interna",
+          "role": "Medico, Medicina Interna",
+          "course_referenced": "La dieta chetogenica",
+          "rating": 5,
+          "rating_raw": "★★★★★",
+          "date": null,
+          "photo": null,
+          "text": "La dieta chetogenica: Ho trovato il corso molto interessante, il docente molto appassionato, disponibile a coinvolgere i discenti, sempre pronto a chiarire e semplificare i concetti più complessi. Ottima anche l’assistenza con Claudia sempre disponibile per qualsiasi problema tecnico. Tutto perfetto.",
+          "text_raw": "\"La dieta chetogenica: Ho trovato il corso molto interessante, il docente molto appassionato, disponibile a coinvolgere i discenti, sempre pronto a chiarire e semplificare i concetti più complessi. Ottima anche l’assistenza con Claudia sempre disponibile per qualsiasi problema tecnico. Tutto perfetto.\"",
+          "title": null,
+          "widget": 1,
+          "widget_heading": "TESTIMONIANZE",
+          "group_comment": "GRUPPO 1 (ORIGINALE)",
+          "occurrences_in_marquee": 4,
+          "widgets": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Dott. Vincenzo dell’Anna",
+      "role_or_meta": "Medico Chirurgo – Reumatologo",
+      "course_referenced": "Corso Microbiota",
+      "rating": 5,
+      "date": null,
+      "photo": null,
+      "title": null,
+      "text": "Corso Microbiota: Vorrei fare i miei più sentiti e sinceri complimenti per il corso e al relatore Alexander Bertuccioli che ha trattato il “mondo microbioma” in maniera completa, esaustiva, consequenziale ed estremamente stimolante…!! Grazie grazie ancora e spero ci siano ulteriori corsi in programma…. Grazie Claudia",
+      "sources": [
+        "sales"
+      ],
+      "in_multiple_sources": false,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "sales",
+          "name": "Dott. Vincenzo dell’Anna",
+          "role_or_meta": "Medico Chirurgo – Reumatologo",
+          "role": "Medico Chirurgo – Reumatologo",
+          "course_referenced": "Corso Microbiota",
+          "rating": 5,
+          "rating_raw": "★★★★★",
+          "date": null,
+          "photo": null,
+          "text": "Corso Microbiota: Vorrei fare i miei più sentiti e sinceri complimenti per il corso e al relatore Alexander Bertuccioli che ha trattato il “mondo microbioma” in maniera completa, esaustiva, consequenziale ed estremamente stimolante…!! Grazie grazie ancora e spero ci siano ulteriori corsi in programma…. Grazie Claudia",
+          "text_raw": "\"Corso Microbiota: Vorrei fare i miei più sentiti e sinceri complimenti per il corso e al relatore Alexander Bertuccioli che ha trattato il “mondo microbioma” in maniera completa, esaustiva, consequenziale ed estremamente stimolante…!! Grazie grazie ancora e spero ci siano ulteriori corsi in programma…. Grazie Claudia\"",
+          "title": null,
+          "widget": 1,
+          "widget_heading": "TESTIMONIANZE",
+          "group_comment": "GRUPPO 1 (ORIGINALE)",
+          "occurrences_in_marquee": 4,
+          "widgets": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Marco Neri",
+      "role_or_meta": "Nutrizionista e Vice presidente Federazione Italiana Fitness",
+      "course_referenced": null,
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": null,
+      "text": "Nonostante i miei anni di esperienza ho tratto un sacco di Informazioni positive! Ho trovato un supporto molto valido soprattutto i video e le slides oltre che amministrativo. Esperienza veramente positiva",
+      "sources": [
+        "sales"
+      ],
+      "in_multiple_sources": false,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "sales",
+          "name": "Marco Neri",
+          "role_or_meta": "Nutrizionista e Vice presidente Federazione Italiana Fitness",
+          "role": "Nutrizionista e Vice presidente Federazione Italiana Fitness",
+          "course_referenced": null,
+          "rating": null,
+          "date": null,
+          "photo": null,
+          "text": "Nonostante i miei anni di esperienza ho tratto un sacco di Informazioni positive! Ho trovato un supporto molto valido soprattutto i video e le slides oltre che amministrativo. Esperienza veramente positiva",
+          "text_raw": "<div class=\"paragraph-yYGAyaxwlM text-output cparagraph-yYGAyaxwlM noBorder radius0 none\" data-animation-class=\"\" style=\"\"><div><p><em>“Nonostante i miei anni di esperienza ho tratto un sacco di Informazioni positive! Ho trovato un supporto molto valido soprattutto i video e le slides oltre che amministrativo. Esperienza veramente positiva”</em></p><p></p><p><strong>Marco Neri, </strong>Nutrizionista e Vice presidente Federazione Italiana Fitness</p></div></div>",
+          "title": null,
+          "widget": "quote-paragraph",
+          "note": "Citazione in blocco paragrafo GHL (accompagnata da un video Vimeo nella stessa sezione)"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Martina M.",
+      "role_or_meta": "Nutrizione e Donna",
+      "course_referenced": "Nutrizione e Donna",
+      "rating": null,
+      "date": null,
+      "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fr3zyE353Sj2QrHWEm5Gz_Logo_CDF-02.png",
+      "title": null,
+      "text": "Era la prima volta che usavo questa metodologia di aggiornamento, e ad essere sincera avevo molti dubbi sull'efficacia.. Invece mi è molto piaciuto perché sembrava di essere in aula! E' stato possibile interagire con docente ed organizzazione. Il materiale didattico completo è stato consegnato subito dopo il corso, insomma veramente soddisfacente!",
+      "sources": [
+        "home"
+      ],
+      "in_multiple_sources": false,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "home",
+          "name": "Martina M.",
+          "role_or_meta": "Nutrizione e Donna",
+          "role": null,
+          "course_referenced": "Nutrizione e Donna",
+          "rating": null,
+          "date": null,
+          "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fr3zyE353Sj2QrHWEm5Gz_Logo_CDF-02.png",
+          "photo_note": "avatar generico (logo CDF)",
+          "text": "Era la prima volta che usavo questa metodologia di aggiornamento, e ad essere sincera avevo molti dubbi sull'efficacia.. Invece mi è molto piaciuto perché sembrava di essere in aula! E' stato possibile interagire con docente ed organizzazione. Il materiale didattico completo è stato consegnato subito dopo il corso, insomma veramente soddisfacente!",
+          "text_raw": "Era la prima volta che usavo questa metodologia di aggiornamento, e ad essere sincera avevo molti dubbi sull'efficacia.. Invece mi è molto piaciuto perché sembrava di essere in aula! E' stato possibile interagire con docente ed organizzazione. Il materiale didattico completo è stato consegnato subito dopo il corso, insomma veramente soddisfacente!",
+          "title": null,
+          "position": 1
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Dott. Andrea M.",
+      "role_or_meta": "Nutrizione e Donna",
+      "course_referenced": "Nutrizione e Donna",
+      "rating": null,
+      "date": null,
+      "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FOj6A3zpQ3u4y6BBTM2hl_Logo_CDF-02.png",
+      "title": null,
+      "text": "Dopo il corso ho sentito di avere maggiori stimoli e informazioni sull'argomento che mi possono permettere di arricchire il colloquio con il paziente.",
+      "sources": [
+        "home"
+      ],
+      "in_multiple_sources": false,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "home",
+          "name": "Dott. Andrea M.",
+          "role_or_meta": "Nutrizione e Donna",
+          "role": null,
+          "course_referenced": "Nutrizione e Donna",
+          "rating": null,
+          "date": null,
+          "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FOj6A3zpQ3u4y6BBTM2hl_Logo_CDF-02.png",
+          "photo_note": "avatar generico (logo CDF)",
+          "text": "Dopo il corso ho sentito di avere maggiori stimoli e informazioni sull'argomento che mi possono permettere di arricchire il colloquio con il paziente.",
+          "text_raw": "Dopo il corso ho sentito di avere maggiori stimoli e informazioni sull'argomento che mi possono permettere di arricchire il colloquio con il paziente.",
+          "title": null,
+          "position": 2
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Francesca G.",
+      "role_or_meta": null,
+      "course_referenced": null,
+      "rating": null,
+      "date": null,
+      "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FYMRlbNawQgO3dw4bTQWm_Logo_CDF-02.png",
+      "title": null,
+      "text": "È la mia seconda esperienza con CORSIDIFORMAZIONECM e le mie aspettative sono sempre state soddisfatte. Professionalità e cortesia. Ottimo binomio!",
+      "sources": [
+        "home"
+      ],
+      "in_multiple_sources": false,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "home",
+          "name": "Francesca G.",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": null,
+          "rating": null,
+          "date": null,
+          "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FYMRlbNawQgO3dw4bTQWm_Logo_CDF-02.png",
+          "photo_note": "avatar generico (logo CDF)",
+          "text": "È la mia seconda esperienza con CORSIDIFORMAZIONECM e le mie aspettative sono sempre state soddisfatte. Professionalità e cortesia. Ottimo binomio!",
+          "text_raw": "È la mia seconda esperienza con CORSIDIFORMAZIONECM e le mie aspettative sono sempre state soddisfatte. Professionalità e cortesia. Ottimo binomio!",
+          "title": null,
+          "position": 3
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Studente",
+      "role_or_meta": null,
+      "course_referenced": null,
+      "rating": null,
+      "date": null,
+      "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FbCD1tElJQG2vb1JBg8hX_Logo_CDF-02.png",
+      "title": null,
+      "text": "Interessante visione degli aspetti medici con un approccio che mette il paziente e non la malattia al centro dell'attenzione",
+      "sources": [
+        "home"
+      ],
+      "in_multiple_sources": false,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "home",
+          "name": "Studente",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": null,
+          "rating": null,
+          "date": null,
+          "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FbCD1tElJQG2vb1JBg8hX_Logo_CDF-02.png",
+          "photo_note": "avatar generico (logo CDF)",
+          "text": "Interessante visione degli aspetti medici con un approccio che mette il paziente e non la malattia al centro dell'attenzione",
+          "text_raw": "Interessante visione degli aspetti medici con un approccio che mette il paziente e non la malattia al centro dell'attenzione",
+          "title": null,
+          "position": 4
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Marco P.",
+      "role_or_meta": null,
+      "course_referenced": null,
+      "rating": null,
+      "date": null,
+      "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FL6b8B7zHTWaZ82dAidLM_Logo_CDF-02.png",
+      "title": null,
+      "text": "Un corso interessante, stimolante e utile per approfondire la conoscenza delle piante terapeutiche andando ben oltre gli insegnamenti della classica formazione universitaria.",
+      "sources": [
+        "home"
+      ],
+      "in_multiple_sources": false,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "home",
+          "name": "Marco P.",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": null,
+          "rating": null,
+          "date": null,
+          "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FL6b8B7zHTWaZ82dAidLM_Logo_CDF-02.png",
+          "photo_note": "avatar generico (logo CDF)",
+          "text": "Un corso interessante, stimolante e utile per approfondire la conoscenza delle piante terapeutiche andando ben oltre gli insegnamenti della classica formazione universitaria.",
+          "text_raw": "Un corso interessante, stimolante e utile per approfondire la conoscenza delle piante terapeutiche andando ben oltre gli insegnamenti della classica formazione universitaria.",
+          "title": null,
+          "position": 5
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Francesco L.Marco",
+      "role_or_meta": null,
+      "course_referenced": null,
+      "rating": null,
+      "date": null,
+      "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FjMTJWUVRJqdYzxyjVCQ0_Logo_CDF-02.png",
+      "title": null,
+      "text": "Ottimo corso e grande professionalità da parte dei docenti.",
+      "sources": [
+        "home"
+      ],
+      "in_multiple_sources": false,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "home",
+          "name": "Francesco L.Marco",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": null,
+          "rating": null,
+          "date": null,
+          "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FjMTJWUVRJqdYzxyjVCQ0_Logo_CDF-02.png",
+          "photo_note": "avatar generico (logo CDF)",
+          "text": "Ottimo corso e grande professionalità da parte dei docenti.",
+          "text_raw": "Ottimo corso e grande professionalità da parte dei docenti.",
+          "title": null,
+          "position": 6
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Studente Corso",
+      "role_or_meta": null,
+      "course_referenced": null,
+      "rating": null,
+      "date": null,
+      "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FEz4RjubgRq3vUdeaL5lV_Logo_CDF-02.png",
+      "title": null,
+      "text": "Consiglio questi corsi perché ben organizzati, molto interessanti, ma soprattutto, è possibile trovare un ambiente familiare e fortemente formativo.",
+      "sources": [
+        "home"
+      ],
+      "in_multiple_sources": false,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "home",
+          "name": "Studente Corso",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": null,
+          "rating": null,
+          "date": null,
+          "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FEz4RjubgRq3vUdeaL5lV_Logo_CDF-02.png",
+          "photo_note": "avatar generico (logo CDF)",
+          "text": "Consiglio questi corsi perché ben organizzati, molto interessanti, ma soprattutto, è possibile trovare un ambiente familiare e fortemente formativo.",
+          "text_raw": "Consiglio questi corsi perché ben organizzati, molto interessanti, ma soprattutto, è possibile trovare un ambiente familiare e fortemente formativo.",
+          "title": null,
+          "position": 7
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Giovanni F.",
+      "role_or_meta": null,
+      "course_referenced": null,
+      "rating": null,
+      "date": null,
+      "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FSpfKiiZOQFe6hdwdSFXs_Logo_CDF-02.png",
+      "title": null,
+      "text": "Il corso non ha rispettato le mie aspettative... le ha ampiamente superate! Complimenti.",
+      "sources": [
+        "home"
+      ],
+      "in_multiple_sources": false,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "home",
+          "name": "Giovanni F.",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": null,
+          "rating": null,
+          "date": null,
+          "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FSpfKiiZOQFe6hdwdSFXs_Logo_CDF-02.png",
+          "photo_note": "avatar generico (logo CDF)",
+          "text": "Il corso non ha rispettato le mie aspettative... le ha ampiamente superate! Complimenti.",
+          "text_raw": "Il corso non ha rispettato le mie aspettative... le ha ampiamente superate! Complimenti.",
+          "title": null,
+          "position": 8
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Dott. Fracassi S.",
+      "role_or_meta": null,
+      "course_referenced": null,
+      "rating": null,
+      "date": null,
+      "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FNifkf5hyS5OsSI5O03ON_Logo_CDF-02.png",
+      "title": null,
+      "text": "Corso di elevata qualità scientifica, non deve mancare nel curriculum di un professionista della salute.",
+      "sources": [
+        "home"
+      ],
+      "in_multiple_sources": false,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "home",
+          "name": "Dott. Fracassi S.",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": null,
+          "rating": null,
+          "date": null,
+          "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FNifkf5hyS5OsSI5O03ON_Logo_CDF-02.png",
+          "photo_note": "avatar generico (logo CDF)",
+          "text": "Corso di elevata qualità scientifica, non deve mancare nel curriculum di un professionista della salute.",
+          "text_raw": "Corso di elevata qualità scientifica, non deve mancare nel curriculum di un professionista della salute.",
+          "title": null,
+          "position": 9
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Francesco L.",
+      "role_or_meta": null,
+      "course_referenced": null,
+      "rating": null,
+      "date": null,
+      "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FcBTx3DAkRZs75I3mbZug_Logo_CDF-02.png",
+      "title": null,
+      "text": "Corso ricco di materiale informativo e formativo. Ottima organizzazione... esperienza sicuramente da ripetere.",
+      "sources": [
+        "home"
+      ],
+      "in_multiple_sources": false,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "home",
+          "name": "Francesco L.",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": null,
+          "rating": null,
+          "date": null,
+          "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FcBTx3DAkRZs75I3mbZug_Logo_CDF-02.png",
+          "photo_note": "avatar generico (logo CDF)",
+          "text": "Corso ricco di materiale informativo e formativo. Ottima organizzazione... esperienza sicuramente da ripetere.",
+          "text_raw": "Corso ricco di materiale informativo e formativo. Ottima organizzazione... esperienza sicuramente da ripetere.",
+          "title": null,
+          "position": 10
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": null,
+      "role_or_meta": null,
+      "course_referenced": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Io non posso dire altro se non che sono veramente più che soddisfatta!",
+      "text": "Mi sta piacendo tantissimo e sto apprendendo tantissime nozioni interessantissime che, oltretutto, mi fanno sentire decisamente più vicina alla figura che vorrei essere e che, con sommo piacere ed anche un po' di commozione, non lo nascondo, sto trovando nel Dottor Stefano.\n\nDesidero complimentarmi con tutti voi non solo per la realizzazione del corso e per come è stato strutturato, ma soprattutto per gli ospiti che sono stati scelti, dunque la Dottoressa Giulia ed il Dottor Stefano, per la loro solida preparazione e per l'umanità e l'umiltà che sono riuscita a percepire da entrambi durante le loro esposizioni.\n\nCome le ho esposto in precedenza, spero davvero si riesca ad organizzare un corso del genere anche sui grandi animali, equidi compresi, che non metto in dubbio ne potrebbe derivare un corso meraviglioso come questo.\n\nSono veramente felice, soddisfatta e grata di partecipare a questo corso.\n\nUn grandissimo grazie a tutti voi ❤️",
+      "sources": [
+        "course:metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+        "course:alimentazione-nel-gatto-completo"
+      ],
+      "in_multiple_sources": true,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "course",
+          "course_slug": "metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+          "course_title": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+          "name": null,
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+          "rating": null,
+          "date": null,
+          "photo": null,
+          "title": "Io non posso dire altro se non che sono veramente più che soddisfatta!",
+          "text": "Mi sta piacendo tantissimo e sto apprendendo tantissime nozioni interessantissime che, oltretutto, mi fanno sentire decisamente più vicina alla figura che vorrei essere e che, con sommo piacere ed anche un po' di commozione, non lo nascondo, sto trovando nel Dottor Stefano.\n\nDesidero complimentarmi con tutti voi non solo per la realizzazione del corso e per come è stato strutturato, ma soprattutto per gli ospiti che sono stati scelti, dunque la Dottoressa Giulia ed il Dottor Stefano, per la loro solida preparazione e per l'umanità e l'umiltà che sono riuscita a percepire da entrambi durante le loro esposizioni.\n\nCome le ho esposto in precedenza, spero davvero si riesca ad organizzare un corso del genere anche sui grandi animali, equidi compresi, che non metto in dubbio ne potrebbe derivare un corso meraviglioso come questo.\n\nSono veramente felice, soddisfatta e grata di partecipare a questo corso.\n\nUn grandissimo grazie a tutti voi ❤️",
+          "text_raw": "Mi sta piacendo tantissimo e sto apprendendo tantissime nozioni interessantissime che, oltretutto, mi fanno sentire decisamente più vicina alla figura che vorrei essere e che, con sommo piacere ed anche un po' di commozione, non lo nascondo, sto trovando nel Dottor Stefano.\n\nDesidero complimentarmi con tutti voi non solo per la realizzazione del corso e per come è stato strutturato, ma soprattutto per gli ospiti che sono stati scelti, dunque la Dottoressa Giulia ed il Dottor Stefano, per la loro solida preparazione e per l'umanità e l'umiltà che sono riuscita a percepire da entrambi durante le loro esposizioni.\n\nCome le ho esposto in precedenza, spero davvero si riesca ad organizzare un corso del genere anche sui grandi animali, equidi compresi, che non metto in dubbio ne potrebbe derivare un corso meraviglioso come questo.\n\nSono veramente felice, soddisfatta e grata di partecipare a questo corso.\n\nUn grandissimo grazie a tutti voi ❤️"
+        },
+        {
+          "source": "course",
+          "course_slug": "alimentazione-nel-gatto-completo",
+          "course_title": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+          "name": null,
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+          "rating": null,
+          "date": null,
+          "photo": null,
+          "title": "Io non posso dire altro se non che sono veramente più che soddisfatta!",
+          "text": "Mi sta piacendo tantissimo e sto apprendendo tantissime nozioni interessantissime che, oltretutto, mi fanno sentire decisamente più vicina alla figura che vorrei essere e che, con sommo piacere ed anche un po' di commozione, non lo nascondo, sto trovando nel Dottor Stefano.\n\nDesidero complimentarmi con tutti voi non solo per la realizzazione del corso e per come è stato strutturato, ma soprattutto per gli ospiti che sono stati scelti, dunque la Dottoressa Giulia ed il Dottor Stefano, per la loro solida preparazione e per l'umanità e l'umiltà che sono riuscita a percepire da entrambi durante le loro esposizioni.\n\nCome le ho esposto in precedenza, spero davvero si riesca ad organizzare un corso del genere anche sui grandi animali, equidi compresi, che non metto in dubbio ne potrebbe derivare un corso meraviglioso come questo.\n\nSono veramente felice, soddisfatta e grata di partecipare a questo corso.\n\nUn grandissimo grazie a tutti voi ❤️",
+          "text_raw": "Mi sta piacendo tantissimo e sto apprendendo tantissime nozioni interessantissime che, oltretutto, mi fanno sentire decisamente più vicina alla figura che vorrei essere e che, con sommo piacere ed anche un po' di commozione, non lo nascondo, sto trovando nel Dottor Stefano.\n\nDesidero complimentarmi con tutti voi non solo per la realizzazione del corso e per come è stato strutturato, ma soprattutto per gli ospiti che sono stati scelti, dunque la Dottoressa Giulia ed il Dottor Stefano, per la loro solida preparazione e per l'umanità e l'umiltà che sono riuscita a percepire da entrambi durante le loro esposizioni.\n\nCome le ho esposto in precedenza, spero davvero si riesca ad organizzare un corso del genere anche sui grandi animali, equidi compresi, che non metto in dubbio ne potrebbe derivare un corso meraviglioso come questo.\n\nSono veramente felice, soddisfatta e grata di partecipare a questo corso.\n\nUn grandissimo grazie a tutti voi ❤️"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Dott.ssa Debora Prete",
+      "role_or_meta": null,
+      "course_referenced": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Complimenti per il corso ricco di materiale e consigli pratici",
+      "text": "Tutto viene esposto con grande professionalità e chiarezza grazie alle conoscenze della dott.ssa Sabato e del Dott. Spagnulo.\n\nUn ringraziamento per aver condiviso il vostro sapere con noi specialisti, capaci ora di contribuire allo stato di salute dell'animale.",
+      "sources": [
+        "course:metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+        "course:alimentazione-nel-gatto-completo"
+      ],
+      "in_multiple_sources": true,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "course",
+          "course_slug": "metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+          "course_title": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+          "name": "Dott.ssa Debora Prete",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+          "rating": null,
+          "date": null,
+          "photo": null,
+          "title": "Complimenti per il corso ricco di materiale e consigli pratici",
+          "text": "Tutto viene esposto con grande professionalità e chiarezza grazie alle conoscenze della dott.ssa Sabato e del Dott. Spagnulo.\n\nUn ringraziamento per aver condiviso il vostro sapere con noi specialisti, capaci ora di contribuire allo stato di salute dell'animale.",
+          "text_raw": "Tutto viene esposto con grande professionalità e chiarezza grazie alle conoscenze della dott.ssa Sabato e del Dott. Spagnulo.\n\nUn ringraziamento per aver condiviso il vostro sapere con noi specialisti, capaci ora di contribuire allo stato di salute dell'animale."
+        },
+        {
+          "source": "course",
+          "course_slug": "alimentazione-nel-gatto-completo",
+          "course_title": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+          "name": "Dott.ssa Debora Prete",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+          "rating": null,
+          "date": null,
+          "photo": null,
+          "title": "Complimenti per il corso ricco di materiale e consigli pratici",
+          "text": "Tutto viene esposto con grande professionalità e chiarezza grazie alle conoscenze della dott.ssa Sabato e del Dott. Spagnulo.\n\nUn ringraziamento per aver condiviso il vostro sapere con noi specialisti, capaci ora di contribuire allo stato di salute dell'animale.",
+          "text_raw": "Tutto viene esposto con grande professionalità e chiarezza grazie alle conoscenze della dott.ssa Sabato e del Dott. Spagnulo.\n\nUn ringraziamento per aver condiviso il vostro sapere con noi specialisti, capaci ora di contribuire allo stato di salute dell'animale."
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Dott.ssa Annalisa Sacchetti",
+      "role_or_meta": null,
+      "course_referenced": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Avrei continuato ad ascoltarlo ancora",
+      "text": "Spero che ci siano altri corsi \"avanzati\" per approfondire ulteriormente certe tematiche e casi specifici.",
+      "sources": [
+        "course:metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+        "course:alimentazione-nel-gatto-completo"
+      ],
+      "in_multiple_sources": true,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "course",
+          "course_slug": "metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+          "course_title": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+          "name": "Dott.ssa Annalisa Sacchetti",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+          "rating": null,
+          "date": null,
+          "photo": null,
+          "title": "Avrei continuato ad ascoltarlo ancora",
+          "text": "Spero che ci siano altri corsi \"avanzati\" per approfondire ulteriormente certe tematiche e casi specifici.",
+          "text_raw": "Spero che ci siano altri corsi \"avanzati\" per approfondire ulteriormente certe tematiche e casi specifici."
+        },
+        {
+          "source": "course",
+          "course_slug": "alimentazione-nel-gatto-completo",
+          "course_title": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+          "name": "Dott.ssa Annalisa Sacchetti",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+          "rating": null,
+          "date": null,
+          "photo": null,
+          "title": "Avrei continuato ad ascoltarlo ancora",
+          "text": "Spero che ci siano altri corsi \"avanzati\" per approfondire ulteriormente certe tematiche e casi specifici.",
+          "text_raw": "Spero che ci siano altri corsi \"avanzati\" per approfondire ulteriormente certe tematiche e casi specifici."
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Dott.ssa Martina Cattaneo",
+      "role_or_meta": null,
+      "course_referenced": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Corso ben strutturato",
+      "text": "Docente chiaro e disponibile.\n\nLa dott.ssa Claudia fantastica!",
+      "sources": [
+        "course:metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+        "course:alimentazione-nel-gatto-completo"
+      ],
+      "in_multiple_sources": true,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "course",
+          "course_slug": "metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+          "course_title": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+          "name": "Dott.ssa Martina Cattaneo",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+          "rating": null,
+          "date": null,
+          "photo": null,
+          "title": "Corso ben strutturato",
+          "text": "Docente chiaro e disponibile.\n\nLa dott.ssa Claudia fantastica!",
+          "text_raw": "Docente chiaro e disponibile. \n\nLa dott.ssa Claudia fantastica!"
+        },
+        {
+          "source": "course",
+          "course_slug": "alimentazione-nel-gatto-completo",
+          "course_title": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+          "name": "Dott.ssa Martina Cattaneo",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+          "rating": null,
+          "date": null,
+          "photo": null,
+          "title": "Corso ben strutturato",
+          "text": "Docente chiaro e disponibile.\n\nLa dott.ssa Claudia fantastica!",
+          "text_raw": "Docente chiaro e disponibile. \n\nLa dott.ssa Claudia fantastica!"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Dott.ssa Francesca Foltran",
+      "role_or_meta": null,
+      "course_referenced": "EVIDENCE-BASED PHYTOTHERAPY",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Ho seguito on line l'intero pacchetto di tre corsi dedicati alla fitoterapia",
+      "text": "Ciascun corso appare esaustivo e completo; le lezioni sono lezioni chiare, facilmente fruibili, supportate da materiale didattico completo e sempre consultabile; i docenti, di rilievo, forniscono esposizioni chiare e supportate da riferimenti di letteratura. la frequenza dell'intero pacchetto consente di integrare al meglio istanze scientifico-conoscitive (oggetto in particolare del corso di fitoterapia evidence based) e finalità maggiormente applicative.",
+      "sources": [
+        "course:evidence-based-phytotherapy",
+        "course:fitoterapia-applicata",
+        "course:fitoterapia-sistemica"
+      ],
+      "in_multiple_sources": true,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "course",
+          "course_slug": "evidence-based-phytotherapy",
+          "course_title": "EVIDENCE-BASED PHYTOTHERAPY",
+          "name": "Dott.ssa Francesca Foltran",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": "EVIDENCE-BASED PHYTOTHERAPY",
+          "rating": null,
+          "date": null,
+          "photo": null,
+          "title": "Ho seguito on line l'intero pacchetto di tre corsi dedicati alla fitoterapia",
+          "text": "Ciascun corso appare esaustivo e completo; le lezioni sono lezioni chiare, facilmente fruibili, supportate da materiale didattico completo e sempre consultabile; i docenti, di rilievo, forniscono esposizioni chiare e supportate da riferimenti di letteratura. la frequenza dell'intero pacchetto consente di integrare al meglio istanze scientifico-conoscitive (oggetto in particolare del corso di fitoterapia evidence based) e finalità maggiormente applicative.",
+          "text_raw": "Ciascun corso appare esaustivo e completo; le lezioni sono lezioni chiare, facilmente fruibili, supportate da materiale didattico completo e sempre consultabile; i docenti, di rilievo, forniscono esposizioni chiare e supportate da riferimenti di letteratura. la frequenza dell'intero pacchetto consente di integrare al meglio istanze scientifico-conoscitive (oggetto in particolare del corso di fitoterapia evidence based) e finalità maggiormente applicative."
+        },
+        {
+          "source": "course",
+          "course_slug": "fitoterapia-applicata",
+          "course_title": "FITOTERAPIA APPLICATA",
+          "name": "Dott.ssa Francesca Foltran",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": "FITOTERAPIA APPLICATA",
+          "rating": null,
+          "date": null,
+          "photo": null,
+          "title": "Ho seguito on line l'intero pacchetto di tre corsi dedicati alla fitoterapia",
+          "text": "Ciascun corso appare esaustivo e completo; le lezioni sono lezioni chiare, facilmente fruibili, supportate da materiale didattico completo e sempre consultabile; i docenti, di rilievo, forniscono esposizioni chiare e supportate da riferimenti di letteratura. la frequenza dell'intero pacchetto consente di integrare al meglio istanze scientifico-conoscitive (oggetto in particolare del corso di fitoterapia evidence based) e finalità maggiormente applicative.",
+          "text_raw": "Ciascun corso appare esaustivo e completo; le lezioni sono lezioni chiare, facilmente fruibili, supportate da materiale didattico completo e sempre consultabile; i docenti, di rilievo, forniscono esposizioni chiare e supportate da riferimenti di letteratura. la frequenza dell'intero pacchetto consente di integrare al meglio istanze scientifico-conoscitive (oggetto in particolare del corso di fitoterapia evidence based) e finalità maggiormente applicative."
+        },
+        {
+          "source": "course",
+          "course_slug": "fitoterapia-sistemica",
+          "course_title": "FITOTERAPIA SISTEMICA",
+          "name": "Dott.ssa Francesca Foltran",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": "FITOTERAPIA SISTEMICA",
+          "rating": null,
+          "date": null,
+          "photo": null,
+          "title": "Ho seguito on line l'intero pacchetto di tre corsi dedicati alla fitoterapia",
+          "text": "Ciascun corso appare esaustivo e completo; le lezioni sono lezioni chiare, facilmente fruibili, supportate da materiale didattico completo e sempre consultabile; i docenti, di rilievo, forniscono esposizioni chiare e supportate da riferimenti di letteratura. la frequenza dell'intero pacchetto consente di integrare al meglio istanze scientifico-conoscitive (oggetto in particolare del corso di fitoterapia evidence based) e finalità maggiormente applicative.",
+          "text_raw": "Ciascun corso appare esaustivo e completo; le lezioni sono lezioni chiare, facilmente fruibili, supportate da materiale didattico completo e sempre consultabile; i docenti, di rilievo, forniscono esposizioni chiare e supportate da riferimenti di letteratura. la frequenza dell'intero pacchetto consente di integrare al meglio istanze scientifico-conoscitive (oggetto in particolare del corso di fitoterapia evidence based) e finalità maggiormente applicative."
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Dott.ssa Chiara D’Ottavio",
+      "role_or_meta": null,
+      "course_referenced": "EVIDENCE-BASED PHYTOTHERAPY",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Buongiorno Claudia",
+      "text": "Sono ancora un po' indietro, ma concordo sul fatto che sono molto ben strutturati.\n\nE' facile riprendere da dove ci si è interrotti ed i contenuti sono molto utili! Sono felice della scelta fatta.\n\nConfido nel maggior temo che avrò a disposizione durante le vacanza per proseguire con la formazione\n\nGrazie Buona Estate!",
+      "sources": [
+        "course:evidence-based-phytotherapy",
+        "course:fitoterapia-applicata",
+        "course:fitoterapia-sistemica"
+      ],
+      "in_multiple_sources": true,
+      "in_sales_and_home": false,
+      "variants": [
+        {
+          "source": "course",
+          "course_slug": "evidence-based-phytotherapy",
+          "course_title": "EVIDENCE-BASED PHYTOTHERAPY",
+          "name": "Dott.ssa Chiara D’Ottavio",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": "EVIDENCE-BASED PHYTOTHERAPY",
+          "rating": null,
+          "date": null,
+          "photo": null,
+          "title": "Buongiorno Claudia",
+          "text": "Sono ancora un po' indietro, ma concordo sul fatto che sono molto ben strutturati.\n\nE' facile riprendere da dove ci si è interrotti ed i contenuti sono molto utili! Sono felice della scelta fatta.\n\nConfido nel maggior temo che avrò a disposizione durante le vacanza per proseguire con la formazione\n\nGrazie Buona Estate!",
+          "text_raw": "Sono ancora un po' indietro, ma concordo sul fatto che sono molto ben strutturati.\n\nE' facile riprendere da dove ci si è interrotti ed i contenuti sono molto utili! Sono felice della scelta fatta. \n\nConfido nel maggior temo che avrò a disposizione durante le vacanza per proseguire con la formazione\n\nGrazie\nBuona Estate!"
+        },
+        {
+          "source": "course",
+          "course_slug": "fitoterapia-applicata",
+          "course_title": "FITOTERAPIA APPLICATA",
+          "name": "Dott.ssa Chiara D’Ottavio",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": "FITOTERAPIA APPLICATA",
+          "rating": null,
+          "date": null,
+          "photo": null,
+          "title": "Buongiorno Claudia",
+          "text": "Sono ancora un po' indietro, ma concordo sul fatto che sono molto ben strutturati.\n\nE' facile riprendere da dove ci si è interrotti ed i contenuti sono molto utili! Sono felice della scelta fatta.\n\nConfido nel maggior temo che avrò a disposizione durante le vacanza per proseguire con la formazione\n\nGrazie Buona Estate!",
+          "text_raw": "Sono ancora un po' indietro, ma concordo sul fatto che sono molto ben strutturati.\n\nE' facile riprendere da dove ci si è interrotti ed i contenuti sono molto utili! Sono felice della scelta fatta. \n\nConfido nel maggior temo che avrò a disposizione durante le vacanza per proseguire con la formazione\n\nGrazie\nBuona Estate!"
+        },
+        {
+          "source": "course",
+          "course_slug": "fitoterapia-sistemica",
+          "course_title": "FITOTERAPIA SISTEMICA",
+          "name": "Dott.ssa Chiara D’Ottavio",
+          "role_or_meta": null,
+          "role": null,
+          "course_referenced": "FITOTERAPIA SISTEMICA",
+          "rating": null,
+          "date": null,
+          "photo": null,
+          "title": "Buongiorno Claudia",
+          "text": "Sono ancora un po' indietro, ma concordo sul fatto che sono molto ben strutturati.\n\nE' facile riprendere da dove ci si è interrotti ed i contenuti sono molto utili! Sono felice della scelta fatta.\n\nConfido nel maggior temo che avrò a disposizione durante le vacanza per proseguire con la formazione\n\nGrazie Buona Estate!",
+          "text_raw": "Sono ancora un po' indietro, ma concordo sul fatto che sono molto ben strutturati.\n\nE' facile riprendere da dove ci si è interrotti ed i contenuti sono molto utili! Sono felice della scelta fatta. \n\nConfido nel maggior temo che avrò a disposizione durante le vacanza per proseguire con la formazione\n\nGrazie\nBuona Estate!"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "source": "sales",
+      "name": "Dott.ssa Evelina Raimondi",
+      "role_or_meta": "Biologa Nutrizionista · Corso Alimentazione nel cane e nel gatto",
+      "role": "Biologa Nutrizionista",
+      "course_referenced": "Corso Alimentazione nel cane e nel gatto",
+      "rating": 5,
+      "rating_raw": "★★★★★",
+      "date": null,
+      "photo": null,
+      "text": "Ho visto la pubblicità dei corsi sulla nutrizione del cane e del gatto su Instagram; il mio cane aveva avuto problemi gastrointestinali molto gravi e quindi mi sono incuriosita subito, ma ero anche molto scettica. Ho contattato CorsidiFormazioneEcm e già dal modo in cui mi hanno risposto ho capito che fossero un ente molto serio; ciò che non avevo capito e che ho appreso durante il corso è che mirano a darci un'ottima preparazione e non tanto a vendere un prodotto! Durante il corso ho avuto modo di imparare tantissimo dal Dottor Stefano Spagnulo, ma anche di apprezzare l'enorme amore che ha verso questi meravigliosi amici pelosi e quanta passione ha per il suo lavoro, amore che lo porta a dare a noi studenti tutto il suo sapere con tutto il cuore. Questa passione resta anche finito il corso, poiché ci ha lasciato un'abbondanza di materiale didattico. Che dire? Prima di tutto grazie! E ai miei colleghi nutrizionisti vorrei dire che CorsidiFormazioneEcm fa anche corsi in umana, quindi ve la consiglio enormemente!",
+      "text_raw": "\"Ho visto la pubblicità dei corsi sulla nutrizione del cane e del gatto su Instagram; il mio cane aveva avuto problemi gastrointestinali molto gravi e quindi mi sono incuriosita subito, ma ero anche molto scettica. Ho contattato CorsidiFormazioneEcm e già dal modo in cui mi hanno risposto ho capito che fossero un ente molto serio; ciò che non avevo capito e che ho appreso durante il corso è che mirano a darci un'ottima preparazione e non tanto a vendere un prodotto! Durante il corso ho avuto modo di imparare tantissimo dal Dottor Stefano Spagnulo, ma anche di apprezzare l'enorme amore che ha verso questi meravigliosi amici pelosi e quanta passione ha per il suo lavoro, amore che lo porta a dare a noi studenti tutto il suo sapere con tutto il cuore. Questa passione resta anche finito il corso, poiché ci ha lasciato un'abbondanza di materiale didattico. Che dire? Prima di tutto grazie! E ai miei colleghi nutrizionisti vorrei dire che CorsidiFormazioneEcm fa anche corsi in umana, quindi ve la consiglio enormemente!\"",
+      "title": null,
+      "widget": 1,
+      "widget_heading": "TESTIMONIANZE",
+      "group_comment": "GRUPPO 1 (ORIGINALE)",
+      "_occurrences": 2,
+      "_widgets": [
+        1
+      ]
+    },
+    {
+      "source": "sales",
+      "name": "Dott.ssa Chiara Cavazzini",
+      "role_or_meta": "Biologa Nutrizionista",
+      "role": "Biologa Nutrizionista",
+      "course_referenced": null,
+      "rating": 5,
+      "rating_raw": "★★★★★",
+      "date": null,
+      "photo": null,
+      "text": "Corso completo ed esaustivo in tutte le sue parti ricco di contenuti anche pratici",
+      "text_raw": "\"Corso completo ed esaustivo in tutte le sue parti ricco di contenuti anche pratici\"",
+      "title": null,
+      "widget": 1,
+      "widget_heading": "TESTIMONIANZE",
+      "group_comment": "GRUPPO 1 (ORIGINALE)",
+      "_occurrences": 2,
+      "_widgets": [
+        1
+      ]
+    },
+    {
+      "source": "sales",
+      "name": "Dott.ssa Alessandra Santarsiere Schiavone",
+      "role_or_meta": "Biologa Nutrizionista",
+      "role": "Biologa Nutrizionista",
+      "course_referenced": null,
+      "rating": 5,
+      "rating_raw": "★★★★★",
+      "date": null,
+      "photo": null,
+      "text": "Mi sono iscritta al corso sul Microbiota perché mi occupo di questo argomento da tempo e devo dire che l’ho trovato davvero bellissimo e molto interessante. Non è il solito corso teorico che non lascia strumenti pratici, ma un percorso ricco di contenuti e spunti utili. Ho avuto modo di relazionarmi con la dott.ssa Claudia Petrazzuolo, che si è dimostrata sempre disponibile a chiarire ogni mio dubbio, gentilissima e molto attenta. Grazie infinite per questa bellissima esperienza!",
+      "text_raw": "\"Mi sono iscritta al corso sul Microbiota perché mi occupo di questo argomento da tempo e devo dire che l’ho trovato davvero bellissimo e molto interessante. Non è il solito corso teorico che non lascia strumenti pratici, ma un percorso ricco di contenuti e spunti utili. Ho avuto modo di relazionarmi con la dott.ssa Claudia Petrazzuolo, che si è dimostrata sempre disponibile a chiarire ogni mio dubbio, gentilissima e molto attenta. Grazie infinite per questa bellissima esperienza!\"",
+      "title": null,
+      "widget": 1,
+      "widget_heading": "TESTIMONIANZE",
+      "group_comment": "GRUPPO 1 (ORIGINALE)",
+      "_occurrences": 2,
+      "_widgets": [
+        1
+      ]
+    },
+    {
+      "source": "sales",
+      "name": "Dott.ssa Maria Teresa Anfossi",
+      "role_or_meta": "Medico Gastroenterologo",
+      "role": "Medico Gastroenterologo",
+      "course_referenced": "La Dieta Chetogenica come soluzione terapeutica",
+      "rating": 5,
+      "rating_raw": "★★★★★",
+      "date": null,
+      "photo": null,
+      "text": "La Dieta Chetogenica come soluzione terapeutica: Elevatissimo livello delle informazioni e della didattica. Il dott. Loprete è appassionato e trasmette conoscenze in modo approfondito ma accessibile. Molto utile la modalità on demand. Un grazie speciale alla dott.ssa Petrazzuolo, sempre disponibile e di grande supporto.",
+      "text_raw": "\"La Dieta Chetogenica come soluzione terapeutica: Elevatissimo livello delle informazioni e della didattica. Il dott. Loprete è appassionato e trasmette conoscenze in modo approfondito ma accessibile. Molto utile la modalità on demand. Un grazie speciale alla dott.ssa Petrazzuolo, sempre disponibile e di grande supporto.\"",
+      "title": null,
+      "widget": 1,
+      "widget_heading": "TESTIMONIANZE",
+      "group_comment": "GRUPPO 1 (ORIGINALE)",
+      "_occurrences": 4,
+      "_widgets": [
+        1,
+        2
+      ]
+    },
+    {
+      "source": "sales",
+      "name": "Clizia D’Angelo",
+      "role_or_meta": "Biologa nutrizionista",
+      "role": "Biologa nutrizionista",
+      "course_referenced": null,
+      "rating": 5,
+      "rating_raw": "★★★★★",
+      "date": null,
+      "photo": null,
+      "text": "Corso molto bello, con docenti preparati, appassionati e spiegazioni chiare. Molto bella la sensazione di potersi affidare ai docenti anche dopo il corso nel caso di consigli o approfondimenti. Complimenti a tutti, ma la star del corso resta Thor!",
+      "text_raw": "\"Corso molto bello, con docenti preparati, appassionati e spiegazioni chiare. Molto bella la sensazione di potersi affidare ai docenti anche dopo il corso nel caso di consigli o approfondimenti. Complimenti a tutti, ma la star del corso resta Thor!\"",
+      "title": null,
+      "widget": 1,
+      "widget_heading": "TESTIMONIANZE",
+      "group_comment": "GRUPPO 1 (ORIGINALE)",
+      "_occurrences": 4,
+      "_widgets": [
+        1,
+        2
+      ]
+    },
+    {
+      "source": "sales",
+      "name": "Daniela Di Bani",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": null,
+      "rating": 5,
+      "rating_raw": "★★★★★",
+      "date": null,
+      "photo": null,
+      "text": "Bellissimo e molto interessante, dottori preparati semplici da capire. Cose vissute. Finalmente capite e spiegate.",
+      "text_raw": "\"Bellissimo e molto interessante, dottori preparati semplici da capire. Cose vissute. Finalmente capite e spiegate.\"",
+      "title": null,
+      "widget": 1,
+      "widget_heading": "TESTIMONIANZE",
+      "group_comment": "GRUPPO 1 (ORIGINALE)",
+      "_occurrences": 4,
+      "_widgets": [
+        1,
+        2
+      ]
+    },
+    {
+      "source": "sales",
+      "name": "Dott.ssa Francesca Morganti",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": null,
+      "rating": 5,
+      "rating_raw": "★★★★★",
+      "date": null,
+      "photo": null,
+      "text": "Corso ben strutturato, interessante ed innovativo. Docenti ben preparati, disponibili e spiegazioni chiare. Lo rifarei sicuramente!",
+      "text_raw": "\"Corso ben strutturato, interessante ed innovativo. Docenti ben preparati, disponibili e spiegazioni chiare. Lo rifarei sicuramente!\"",
+      "title": null,
+      "widget": 1,
+      "widget_heading": "TESTIMONIANZE",
+      "group_comment": "GRUPPO 1 (ORIGINALE)",
+      "_occurrences": 4,
+      "_widgets": [
+        1,
+        2
+      ]
+    },
+    {
+      "source": "sales",
+      "name": "Federica Fulghesu",
+      "role_or_meta": "Biologa nutrizionista",
+      "role": "Biologa nutrizionista",
+      "course_referenced": null,
+      "rating": 5,
+      "rating_raw": "★★★★★",
+      "date": null,
+      "photo": null,
+      "text": "Buonasera Dottoressa, sono Federica Fulghesu e sono una biologa nutrizionista. Ho seguito con molto piacere e interesse il corso di oggi, è stato molto utile. Non vedo l’ora di seguire anche la parte dell’alimentazione del gatto.",
+      "text_raw": "\"Buonasera Dottoressa, sono Federica Fulghesu e sono una biologa nutrizionista. Ho seguito con molto piacere e interesse il corso di oggi, è stato molto utile. Non vedo l’ora di seguire anche la parte dell’alimentazione del gatto.\"",
+      "title": null,
+      "widget": 1,
+      "widget_heading": "TESTIMONIANZE",
+      "group_comment": "GRUPPO 1 (ORIGINALE)",
+      "_occurrences": 4,
+      "_widgets": [
+        1,
+        2
+      ]
+    },
+    {
+      "source": "sales",
+      "name": "Rossana Polizzi",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": null,
+      "rating": 5,
+      "rating_raw": "★★★★★",
+      "date": null,
+      "photo": null,
+      "text": "Complimenti per il bellissimo corso, semplice ed estremamente pratico, dà la possibilità di mettersi al lavoro sin da subito. Complimenti ai formatori e in particolar modo al Dottor Spagnulo, persona preparata e al contempo raggiungibile. Esperienza più che positiva.",
+      "text_raw": "\"Complimenti per il bellissimo corso, semplice ed estremamente pratico, dà la possibilità di mettersi al lavoro sin da subito. Complimenti ai formatori e in particolar modo al Dottor Spagnulo, persona preparata e al contempo raggiungibile. Esperienza più che positiva.\"",
+      "title": null,
+      "widget": 1,
+      "widget_heading": "TESTIMONIANZE",
+      "group_comment": "GRUPPO 1 (ORIGINALE)",
+      "_occurrences": 4,
+      "_widgets": [
+        1,
+        2
+      ]
+    },
+    {
+      "source": "sales",
+      "name": "Dott. Mauro Minotti",
+      "role_or_meta": "Biologo Nutrizionista",
+      "role": "Biologo Nutrizionista",
+      "course_referenced": null,
+      "rating": 5,
+      "rating_raw": "★★★★★",
+      "date": null,
+      "photo": null,
+      "text": "Un corso veramente interessante che fornisce delle ottime basi strumentali per applicare la dieta chetogenica come trattamento dietoterapico ai clienti affetti da patologie. Soprattutto abbatte i miti errati dovuti alla male informazione.",
+      "text_raw": "\"Un corso veramente interessante che fornisce delle ottime basi strumentali per applicare la dieta chetogenica come trattamento dietoterapico ai clienti affetti da patologie. Soprattutto abbatte i miti errati dovuti alla male informazione.\"",
+      "title": null,
+      "widget": 1,
+      "widget_heading": "TESTIMONIANZE",
+      "group_comment": "GRUPPO 1 (ORIGINALE)",
+      "_occurrences": 4,
+      "_widgets": [
+        1,
+        2
+      ]
+    },
+    {
+      "source": "sales",
+      "name": "Angela Gigliotti",
+      "role_or_meta": "Medico, Medicina Interna",
+      "role": "Medico, Medicina Interna",
+      "course_referenced": "La dieta chetogenica",
+      "rating": 5,
+      "rating_raw": "★★★★★",
+      "date": null,
+      "photo": null,
+      "text": "La dieta chetogenica: Ho trovato il corso molto interessante, il docente molto appassionato, disponibile a coinvolgere i discenti, sempre pronto a chiarire e semplificare i concetti più complessi. Ottima anche l’assistenza con Claudia sempre disponibile per qualsiasi problema tecnico. Tutto perfetto.",
+      "text_raw": "\"La dieta chetogenica: Ho trovato il corso molto interessante, il docente molto appassionato, disponibile a coinvolgere i discenti, sempre pronto a chiarire e semplificare i concetti più complessi. Ottima anche l’assistenza con Claudia sempre disponibile per qualsiasi problema tecnico. Tutto perfetto.\"",
+      "title": null,
+      "widget": 1,
+      "widget_heading": "TESTIMONIANZE",
+      "group_comment": "GRUPPO 1 (ORIGINALE)",
+      "_occurrences": 4,
+      "_widgets": [
+        1,
+        2
+      ]
+    },
+    {
+      "source": "sales",
+      "name": "Dott. Vincenzo dell’Anna",
+      "role_or_meta": "Medico Chirurgo – Reumatologo",
+      "role": "Medico Chirurgo – Reumatologo",
+      "course_referenced": "Corso Microbiota",
+      "rating": 5,
+      "rating_raw": "★★★★★",
+      "date": null,
+      "photo": null,
+      "text": "Corso Microbiota: Vorrei fare i miei più sentiti e sinceri complimenti per il corso e al relatore Alexander Bertuccioli che ha trattato il “mondo microbioma” in maniera completa, esaustiva, consequenziale ed estremamente stimolante…!! Grazie grazie ancora e spero ci siano ulteriori corsi in programma…. Grazie Claudia",
+      "text_raw": "\"Corso Microbiota: Vorrei fare i miei più sentiti e sinceri complimenti per il corso e al relatore Alexander Bertuccioli che ha trattato il “mondo microbioma” in maniera completa, esaustiva, consequenziale ed estremamente stimolante…!! Grazie grazie ancora e spero ci siano ulteriori corsi in programma…. Grazie Claudia\"",
+      "title": null,
+      "widget": 1,
+      "widget_heading": "TESTIMONIANZE",
+      "group_comment": "GRUPPO 1 (ORIGINALE)",
+      "_occurrences": 4,
+      "_widgets": [
+        1,
+        2
+      ]
+    },
+    {
+      "source": "sales",
+      "name": "Marco Neri",
+      "role_or_meta": "Nutrizionista e Vice presidente Federazione Italiana Fitness",
+      "role": "Nutrizionista e Vice presidente Federazione Italiana Fitness",
+      "course_referenced": null,
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "text": "Nonostante i miei anni di esperienza ho tratto un sacco di Informazioni positive! Ho trovato un supporto molto valido soprattutto i video e le slides oltre che amministrativo. Esperienza veramente positiva",
+      "text_raw": "<div class=\"paragraph-yYGAyaxwlM text-output cparagraph-yYGAyaxwlM noBorder radius0 none\" data-animation-class=\"\" style=\"\"><div><p><em>“Nonostante i miei anni di esperienza ho tratto un sacco di Informazioni positive! Ho trovato un supporto molto valido soprattutto i video e le slides oltre che amministrativo. Esperienza veramente positiva”</em></p><p></p><p><strong>Marco Neri, </strong>Nutrizionista e Vice presidente Federazione Italiana Fitness</p></div></div>",
+      "title": null,
+      "widget": "quote-paragraph",
+      "note": "Citazione in blocco paragrafo GHL (accompagnata da un video Vimeo nella stessa sezione)"
+    },
+    {
+      "source": "home",
+      "name": "Martina M.",
+      "role_or_meta": "Nutrizione e Donna",
+      "role": null,
+      "course_referenced": "Nutrizione e Donna",
+      "rating": null,
+      "date": null,
+      "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fr3zyE353Sj2QrHWEm5Gz_Logo_CDF-02.png",
+      "photo_note": "avatar generico (logo CDF)",
+      "text": "Era la prima volta che usavo questa metodologia di aggiornamento, e ad essere sincera avevo molti dubbi sull'efficacia.. Invece mi è molto piaciuto perché sembrava di essere in aula! E' stato possibile interagire con docente ed organizzazione. Il materiale didattico completo è stato consegnato subito dopo il corso, insomma veramente soddisfacente!",
+      "text_raw": "Era la prima volta che usavo questa metodologia di aggiornamento, e ad essere sincera avevo molti dubbi sull'efficacia.. Invece mi è molto piaciuto perché sembrava di essere in aula! E' stato possibile interagire con docente ed organizzazione. Il materiale didattico completo è stato consegnato subito dopo il corso, insomma veramente soddisfacente!",
+      "title": null,
+      "position": 1
+    },
+    {
+      "source": "home",
+      "name": "Dott. Andrea M.",
+      "role_or_meta": "Nutrizione e Donna",
+      "role": null,
+      "course_referenced": "Nutrizione e Donna",
+      "rating": null,
+      "date": null,
+      "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FOj6A3zpQ3u4y6BBTM2hl_Logo_CDF-02.png",
+      "photo_note": "avatar generico (logo CDF)",
+      "text": "Dopo il corso ho sentito di avere maggiori stimoli e informazioni sull'argomento che mi possono permettere di arricchire il colloquio con il paziente.",
+      "text_raw": "Dopo il corso ho sentito di avere maggiori stimoli e informazioni sull'argomento che mi possono permettere di arricchire il colloquio con il paziente.",
+      "title": null,
+      "position": 2
+    },
+    {
+      "source": "home",
+      "name": "Francesca G.",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": null,
+      "rating": null,
+      "date": null,
+      "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FYMRlbNawQgO3dw4bTQWm_Logo_CDF-02.png",
+      "photo_note": "avatar generico (logo CDF)",
+      "text": "È la mia seconda esperienza con CORSIDIFORMAZIONECM e le mie aspettative sono sempre state soddisfatte. Professionalità e cortesia. Ottimo binomio!",
+      "text_raw": "È la mia seconda esperienza con CORSIDIFORMAZIONECM e le mie aspettative sono sempre state soddisfatte. Professionalità e cortesia. Ottimo binomio!",
+      "title": null,
+      "position": 3
+    },
+    {
+      "source": "home",
+      "name": "Studente",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": null,
+      "rating": null,
+      "date": null,
+      "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FbCD1tElJQG2vb1JBg8hX_Logo_CDF-02.png",
+      "photo_note": "avatar generico (logo CDF)",
+      "text": "Interessante visione degli aspetti medici con un approccio che mette il paziente e non la malattia al centro dell'attenzione",
+      "text_raw": "Interessante visione degli aspetti medici con un approccio che mette il paziente e non la malattia al centro dell'attenzione",
+      "title": null,
+      "position": 4
+    },
+    {
+      "source": "home",
+      "name": "Marco P.",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": null,
+      "rating": null,
+      "date": null,
+      "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FL6b8B7zHTWaZ82dAidLM_Logo_CDF-02.png",
+      "photo_note": "avatar generico (logo CDF)",
+      "text": "Un corso interessante, stimolante e utile per approfondire la conoscenza delle piante terapeutiche andando ben oltre gli insegnamenti della classica formazione universitaria.",
+      "text_raw": "Un corso interessante, stimolante e utile per approfondire la conoscenza delle piante terapeutiche andando ben oltre gli insegnamenti della classica formazione universitaria.",
+      "title": null,
+      "position": 5
+    },
+    {
+      "source": "home",
+      "name": "Francesco L.Marco",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": null,
+      "rating": null,
+      "date": null,
+      "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FjMTJWUVRJqdYzxyjVCQ0_Logo_CDF-02.png",
+      "photo_note": "avatar generico (logo CDF)",
+      "text": "Ottimo corso e grande professionalità da parte dei docenti.",
+      "text_raw": "Ottimo corso e grande professionalità da parte dei docenti.",
+      "title": null,
+      "position": 6
+    },
+    {
+      "source": "home",
+      "name": "Studente Corso",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": null,
+      "rating": null,
+      "date": null,
+      "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FEz4RjubgRq3vUdeaL5lV_Logo_CDF-02.png",
+      "photo_note": "avatar generico (logo CDF)",
+      "text": "Consiglio questi corsi perché ben organizzati, molto interessanti, ma soprattutto, è possibile trovare un ambiente familiare e fortemente formativo.",
+      "text_raw": "Consiglio questi corsi perché ben organizzati, molto interessanti, ma soprattutto, è possibile trovare un ambiente familiare e fortemente formativo.",
+      "title": null,
+      "position": 7
+    },
+    {
+      "source": "home",
+      "name": "Giovanni F.",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": null,
+      "rating": null,
+      "date": null,
+      "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FSpfKiiZOQFe6hdwdSFXs_Logo_CDF-02.png",
+      "photo_note": "avatar generico (logo CDF)",
+      "text": "Il corso non ha rispettato le mie aspettative... le ha ampiamente superate! Complimenti.",
+      "text_raw": "Il corso non ha rispettato le mie aspettative... le ha ampiamente superate! Complimenti.",
+      "title": null,
+      "position": 8
+    },
+    {
+      "source": "home",
+      "name": "Dott. Fracassi S.",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": null,
+      "rating": null,
+      "date": null,
+      "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FNifkf5hyS5OsSI5O03ON_Logo_CDF-02.png",
+      "photo_note": "avatar generico (logo CDF)",
+      "text": "Corso di elevata qualità scientifica, non deve mancare nel curriculum di un professionista della salute.",
+      "text_raw": "Corso di elevata qualità scientifica, non deve mancare nel curriculum di un professionista della salute.",
+      "title": null,
+      "position": 9
+    },
+    {
+      "source": "home",
+      "name": "Francesco L.",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": null,
+      "rating": null,
+      "date": null,
+      "photo": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FcBTx3DAkRZs75I3mbZug_Logo_CDF-02.png",
+      "photo_note": "avatar generico (logo CDF)",
+      "text": "Corso ricco di materiale informativo e formativo. Ottima organizzazione... esperienza sicuramente da ripetere.",
+      "text_raw": "Corso ricco di materiale informativo e formativo. Ottima organizzazione... esperienza sicuramente da ripetere.",
+      "title": null,
+      "position": 10
+    },
+    {
+      "source": "course",
+      "course_slug": "metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+      "course_title": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+      "name": "Dott.ssa Clizia d'Angelo",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Corso molto bello",
+      "text": "Docenti preparati, appassionati e spiegazioni chiare.\n\nMolto bella la sensazione di potersi affidare ai docenti anche dopo il corso nel caso di consigli o approfondimenti.\n\nComplimenti a tutti, ma la star del corso resta Thor!❤️",
+      "text_raw": "Docenti preparati, appassionati e spiegazioni chiare.\n\nMolto bella la sensazione di potersi affidare ai docenti anche dopo il corso nel caso di consigli o approfondimenti. \n\nComplimenti a tutti, ma la star del corso resta Thor!❤️"
+    },
+    {
+      "source": "course",
+      "course_slug": "metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+      "course_title": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+      "name": null,
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Io non posso dire altro se non che sono veramente più che soddisfatta!",
+      "text": "Mi sta piacendo tantissimo e sto apprendendo tantissime nozioni interessantissime che, oltretutto, mi fanno sentire decisamente più vicina alla figura che vorrei essere e che, con sommo piacere ed anche un po' di commozione, non lo nascondo, sto trovando nel Dottor Stefano.\n\nDesidero complimentarmi con tutti voi non solo per la realizzazione del corso e per come è stato strutturato, ma soprattutto per gli ospiti che sono stati scelti, dunque la Dottoressa Giulia ed il Dottor Stefano, per la loro solida preparazione e per l'umanità e l'umiltà che sono riuscita a percepire da entrambi durante le loro esposizioni.\n\nCome le ho esposto in precedenza, spero davvero si riesca ad organizzare un corso del genere anche sui grandi animali, equidi compresi, che non metto in dubbio ne potrebbe derivare un corso meraviglioso come questo.\n\nSono veramente felice, soddisfatta e grata di partecipare a questo corso.\n\nUn grandissimo grazie a tutti voi ❤️",
+      "text_raw": "Mi sta piacendo tantissimo e sto apprendendo tantissime nozioni interessantissime che, oltretutto, mi fanno sentire decisamente più vicina alla figura che vorrei essere e che, con sommo piacere ed anche un po' di commozione, non lo nascondo, sto trovando nel Dottor Stefano.\n\nDesidero complimentarmi con tutti voi non solo per la realizzazione del corso e per come è stato strutturato, ma soprattutto per gli ospiti che sono stati scelti, dunque la Dottoressa Giulia ed il Dottor Stefano, per la loro solida preparazione e per l'umanità e l'umiltà che sono riuscita a percepire da entrambi durante le loro esposizioni.\n\nCome le ho esposto in precedenza, spero davvero si riesca ad organizzare un corso del genere anche sui grandi animali, equidi compresi, che non metto in dubbio ne potrebbe derivare un corso meraviglioso come questo.\n\nSono veramente felice, soddisfatta e grata di partecipare a questo corso.\n\nUn grandissimo grazie a tutti voi ❤️"
+    },
+    {
+      "source": "course",
+      "course_slug": "metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+      "course_title": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+      "name": "Dott.ssa Debora Prete",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Complimenti per il corso ricco di materiale e consigli pratici",
+      "text": "Tutto viene esposto con grande professionalità e chiarezza grazie alle conoscenze della dott.ssa Sabato e del Dott. Spagnulo.\n\nUn ringraziamento per aver condiviso il vostro sapere con noi specialisti, capaci ora di contribuire allo stato di salute dell'animale.",
+      "text_raw": "Tutto viene esposto con grande professionalità e chiarezza grazie alle conoscenze della dott.ssa Sabato e del Dott. Spagnulo.\n\nUn ringraziamento per aver condiviso il vostro sapere con noi specialisti, capaci ora di contribuire allo stato di salute dell'animale."
+    },
+    {
+      "source": "course",
+      "course_slug": "metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+      "course_title": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+      "name": "Dott.ssa Annalisa Sacchetti",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Avrei continuato ad ascoltarlo ancora",
+      "text": "Spero che ci siano altri corsi \"avanzati\" per approfondire ulteriormente certe tematiche e casi specifici.",
+      "text_raw": "Spero che ci siano altri corsi \"avanzati\" per approfondire ulteriormente certe tematiche e casi specifici."
+    },
+    {
+      "source": "course",
+      "course_slug": "metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+      "course_title": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+      "name": "Dott.ssa Martina Cattaneo",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Corso ben strutturato",
+      "text": "Docente chiaro e disponibile.\n\nLa dott.ssa Claudia fantastica!",
+      "text_raw": "Docente chiaro e disponibile. \n\nLa dott.ssa Claudia fantastica!"
+    },
+    {
+      "source": "course",
+      "course_slug": "metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+      "course_title": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+      "name": "Dott.ssa Francesca Morganti",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Corso ben strutturato, interessante ed innovativo",
+      "text": "Docenti ben preparati, disponibili e spiegazioni chiare.\n\nLo rifarei sicuramente!",
+      "text_raw": "Docenti ben preparati, disponibili e spiegazioni chiare.\n\nLo rifarei sicuramente!"
+    },
+    {
+      "source": "course",
+      "course_slug": "alimentazione-nel-gatto-completo",
+      "course_title": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+      "name": "Dott.ssa Clizia d'Angelo",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Corso molto bello",
+      "text": "Docenti preparati, appassionati e spiegazioni chiare.\n\nMolto bella la sensazione di potersi affidare ai docenti anche dopo il corso nel caso di consigli o approfondimenti.\n\nComplimenti a tutti, ma la star del corso resta Thor!❤️",
+      "text_raw": "Docenti preparati, appassionati e spiegazioni chiare.\n\nMolto bella la sensazione di potersi affidare ai docenti anche dopo il corso nel caso di consigli o approfondimenti. \n\nComplimenti a tutti, ma la star del corso resta Thor!❤️"
+    },
+    {
+      "source": "course",
+      "course_slug": "alimentazione-nel-gatto-completo",
+      "course_title": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+      "name": null,
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Io non posso dire altro se non che sono veramente più che soddisfatta!",
+      "text": "Mi sta piacendo tantissimo e sto apprendendo tantissime nozioni interessantissime che, oltretutto, mi fanno sentire decisamente più vicina alla figura che vorrei essere e che, con sommo piacere ed anche un po' di commozione, non lo nascondo, sto trovando nel Dottor Stefano.\n\nDesidero complimentarmi con tutti voi non solo per la realizzazione del corso e per come è stato strutturato, ma soprattutto per gli ospiti che sono stati scelti, dunque la Dottoressa Giulia ed il Dottor Stefano, per la loro solida preparazione e per l'umanità e l'umiltà che sono riuscita a percepire da entrambi durante le loro esposizioni.\n\nCome le ho esposto in precedenza, spero davvero si riesca ad organizzare un corso del genere anche sui grandi animali, equidi compresi, che non metto in dubbio ne potrebbe derivare un corso meraviglioso come questo.\n\nSono veramente felice, soddisfatta e grata di partecipare a questo corso.\n\nUn grandissimo grazie a tutti voi ❤️",
+      "text_raw": "Mi sta piacendo tantissimo e sto apprendendo tantissime nozioni interessantissime che, oltretutto, mi fanno sentire decisamente più vicina alla figura che vorrei essere e che, con sommo piacere ed anche un po' di commozione, non lo nascondo, sto trovando nel Dottor Stefano.\n\nDesidero complimentarmi con tutti voi non solo per la realizzazione del corso e per come è stato strutturato, ma soprattutto per gli ospiti che sono stati scelti, dunque la Dottoressa Giulia ed il Dottor Stefano, per la loro solida preparazione e per l'umanità e l'umiltà che sono riuscita a percepire da entrambi durante le loro esposizioni.\n\nCome le ho esposto in precedenza, spero davvero si riesca ad organizzare un corso del genere anche sui grandi animali, equidi compresi, che non metto in dubbio ne potrebbe derivare un corso meraviglioso come questo.\n\nSono veramente felice, soddisfatta e grata di partecipare a questo corso.\n\nUn grandissimo grazie a tutti voi ❤️"
+    },
+    {
+      "source": "course",
+      "course_slug": "alimentazione-nel-gatto-completo",
+      "course_title": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+      "name": "Dott.ssa Debora Prete",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Complimenti per il corso ricco di materiale e consigli pratici",
+      "text": "Tutto viene esposto con grande professionalità e chiarezza grazie alle conoscenze della dott.ssa Sabato e del Dott. Spagnulo.\n\nUn ringraziamento per aver condiviso il vostro sapere con noi specialisti, capaci ora di contribuire allo stato di salute dell'animale.",
+      "text_raw": "Tutto viene esposto con grande professionalità e chiarezza grazie alle conoscenze della dott.ssa Sabato e del Dott. Spagnulo.\n\nUn ringraziamento per aver condiviso il vostro sapere con noi specialisti, capaci ora di contribuire allo stato di salute dell'animale."
+    },
+    {
+      "source": "course",
+      "course_slug": "alimentazione-nel-gatto-completo",
+      "course_title": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+      "name": "Dott.ssa Annalisa Sacchetti",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Avrei continuato ad ascoltarlo ancora",
+      "text": "Spero che ci siano altri corsi \"avanzati\" per approfondire ulteriormente certe tematiche e casi specifici.",
+      "text_raw": "Spero che ci siano altri corsi \"avanzati\" per approfondire ulteriormente certe tematiche e casi specifici."
+    },
+    {
+      "source": "course",
+      "course_slug": "alimentazione-nel-gatto-completo",
+      "course_title": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+      "name": "Dott.ssa Martina Cattaneo",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Corso ben strutturato",
+      "text": "Docente chiaro e disponibile.\n\nLa dott.ssa Claudia fantastica!",
+      "text_raw": "Docente chiaro e disponibile. \n\nLa dott.ssa Claudia fantastica!"
+    },
+    {
+      "source": "course",
+      "course_slug": "alimentazione-nel-gatto-completo",
+      "course_title": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+      "name": "Dott.ssa Francesca Morganti",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": "CORSO NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Corso ben strutturato, interessante ed innovativo",
+      "text": "Docenti ben preparati, disponibili e spiegazioni chiare.\n\nLo rifarei sicuramente!",
+      "text_raw": "Docenti ben preparati, disponibili e spiegazioni chiare.\n\nLo rifarei sicuramente!"
+    },
+    {
+      "source": "course",
+      "course_slug": "evidence-based-phytotherapy",
+      "course_title": "EVIDENCE-BASED PHYTOTHERAPY",
+      "name": "Dott.ssa Francesca Foltran",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": "EVIDENCE-BASED PHYTOTHERAPY",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Ho seguito on line l'intero pacchetto di tre corsi dedicati alla fitoterapia",
+      "text": "Ciascun corso appare esaustivo e completo; le lezioni sono lezioni chiare, facilmente fruibili, supportate da materiale didattico completo e sempre consultabile; i docenti, di rilievo, forniscono esposizioni chiare e supportate da riferimenti di letteratura. la frequenza dell'intero pacchetto consente di integrare al meglio istanze scientifico-conoscitive (oggetto in particolare del corso di fitoterapia evidence based) e finalità maggiormente applicative.",
+      "text_raw": "Ciascun corso appare esaustivo e completo; le lezioni sono lezioni chiare, facilmente fruibili, supportate da materiale didattico completo e sempre consultabile; i docenti, di rilievo, forniscono esposizioni chiare e supportate da riferimenti di letteratura. la frequenza dell'intero pacchetto consente di integrare al meglio istanze scientifico-conoscitive (oggetto in particolare del corso di fitoterapia evidence based) e finalità maggiormente applicative."
+    },
+    {
+      "source": "course",
+      "course_slug": "evidence-based-phytotherapy",
+      "course_title": "EVIDENCE-BASED PHYTOTHERAPY",
+      "name": "Dott.ssa Chiara D’Ottavio",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": "EVIDENCE-BASED PHYTOTHERAPY",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Buongiorno Claudia",
+      "text": "Sono ancora un po' indietro, ma concordo sul fatto che sono molto ben strutturati.\n\nE' facile riprendere da dove ci si è interrotti ed i contenuti sono molto utili! Sono felice della scelta fatta.\n\nConfido nel maggior temo che avrò a disposizione durante le vacanza per proseguire con la formazione\n\nGrazie Buona Estate!",
+      "text_raw": "Sono ancora un po' indietro, ma concordo sul fatto che sono molto ben strutturati.\n\nE' facile riprendere da dove ci si è interrotti ed i contenuti sono molto utili! Sono felice della scelta fatta. \n\nConfido nel maggior temo che avrò a disposizione durante le vacanza per proseguire con la formazione\n\nGrazie\nBuona Estate!"
+    },
+    {
+      "source": "course",
+      "course_slug": "fitoterapia-applicata",
+      "course_title": "FITOTERAPIA APPLICATA",
+      "name": "Dott.ssa Francesca Foltran",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": "FITOTERAPIA APPLICATA",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Ho seguito on line l'intero pacchetto di tre corsi dedicati alla fitoterapia",
+      "text": "Ciascun corso appare esaustivo e completo; le lezioni sono lezioni chiare, facilmente fruibili, supportate da materiale didattico completo e sempre consultabile; i docenti, di rilievo, forniscono esposizioni chiare e supportate da riferimenti di letteratura. la frequenza dell'intero pacchetto consente di integrare al meglio istanze scientifico-conoscitive (oggetto in particolare del corso di fitoterapia evidence based) e finalità maggiormente applicative.",
+      "text_raw": "Ciascun corso appare esaustivo e completo; le lezioni sono lezioni chiare, facilmente fruibili, supportate da materiale didattico completo e sempre consultabile; i docenti, di rilievo, forniscono esposizioni chiare e supportate da riferimenti di letteratura. la frequenza dell'intero pacchetto consente di integrare al meglio istanze scientifico-conoscitive (oggetto in particolare del corso di fitoterapia evidence based) e finalità maggiormente applicative."
+    },
+    {
+      "source": "course",
+      "course_slug": "fitoterapia-applicata",
+      "course_title": "FITOTERAPIA APPLICATA",
+      "name": "Dott.ssa Chiara D’Ottavio",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": "FITOTERAPIA APPLICATA",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Buongiorno Claudia",
+      "text": "Sono ancora un po' indietro, ma concordo sul fatto che sono molto ben strutturati.\n\nE' facile riprendere da dove ci si è interrotti ed i contenuti sono molto utili! Sono felice della scelta fatta.\n\nConfido nel maggior temo che avrò a disposizione durante le vacanza per proseguire con la formazione\n\nGrazie Buona Estate!",
+      "text_raw": "Sono ancora un po' indietro, ma concordo sul fatto che sono molto ben strutturati.\n\nE' facile riprendere da dove ci si è interrotti ed i contenuti sono molto utili! Sono felice della scelta fatta. \n\nConfido nel maggior temo che avrò a disposizione durante le vacanza per proseguire con la formazione\n\nGrazie\nBuona Estate!"
+    },
+    {
+      "source": "course",
+      "course_slug": "fitoterapia-sistemica",
+      "course_title": "FITOTERAPIA SISTEMICA",
+      "name": "Dott.ssa Francesca Foltran",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": "FITOTERAPIA SISTEMICA",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Ho seguito on line l'intero pacchetto di tre corsi dedicati alla fitoterapia",
+      "text": "Ciascun corso appare esaustivo e completo; le lezioni sono lezioni chiare, facilmente fruibili, supportate da materiale didattico completo e sempre consultabile; i docenti, di rilievo, forniscono esposizioni chiare e supportate da riferimenti di letteratura. la frequenza dell'intero pacchetto consente di integrare al meglio istanze scientifico-conoscitive (oggetto in particolare del corso di fitoterapia evidence based) e finalità maggiormente applicative.",
+      "text_raw": "Ciascun corso appare esaustivo e completo; le lezioni sono lezioni chiare, facilmente fruibili, supportate da materiale didattico completo e sempre consultabile; i docenti, di rilievo, forniscono esposizioni chiare e supportate da riferimenti di letteratura. la frequenza dell'intero pacchetto consente di integrare al meglio istanze scientifico-conoscitive (oggetto in particolare del corso di fitoterapia evidence based) e finalità maggiormente applicative."
+    },
+    {
+      "source": "course",
+      "course_slug": "fitoterapia-sistemica",
+      "course_title": "FITOTERAPIA SISTEMICA",
+      "name": "Dott.ssa Chiara D’Ottavio",
+      "role_or_meta": null,
+      "role": null,
+      "course_referenced": "FITOTERAPIA SISTEMICA",
+      "rating": null,
+      "date": null,
+      "photo": null,
+      "title": "Buongiorno Claudia",
+      "text": "Sono ancora un po' indietro, ma concordo sul fatto che sono molto ben strutturati.\n\nE' facile riprendere da dove ci si è interrotti ed i contenuti sono molto utili! Sono felice della scelta fatta.\n\nConfido nel maggior temo che avrò a disposizione durante le vacanza per proseguire con la formazione\n\nGrazie Buona Estate!",
+      "text_raw": "Sono ancora un po' indietro, ma concordo sul fatto che sono molto ben strutturati.\n\nE' facile riprendere da dove ci si è interrotti ed i contenuti sono molto utili! Sono felice della scelta fatta. \n\nConfido nel maggior temo che avrò a disposizione durante le vacanza per proseguire con la formazione\n\nGrazie\nBuona Estate!"
+    }
+  ]
+}

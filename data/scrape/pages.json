@@ -1,0 +1,368 @@
+{
+  "scraped_at": "2026-11-20T12:39:53.774Z",
+  "pages_found": [
+    {
+      "slug": "nutrizione-e-dietetica-applicata-nel-cane-e-nel-gatto",
+      "url": "https://www.corsidiformazionecm.it/pages/nutrizione-e-dietetica-applicata-nel-cane-e-nel-gatto",
+      "status": 200,
+      "title": "NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+      "in_sitemap": true,
+      "linked_from_nav_or_footer": false
+    },
+    {
+      "slug": "offerta-corso-allergie-e-intolleranze-200-coupon-sconto",
+      "url": "https://www.corsidiformazionecm.it/pages/offerta-corso-allergie-e-intolleranze-200-coupon-sconto",
+      "status": 200,
+      "title": "OFFERTA - Corso Allergie e Intolleranze + €200 Coupon Sconto",
+      "in_sitemap": true,
+      "linked_from_nav_or_footer": false
+    },
+    {
+      "slug": "docenti",
+      "url": "https://www.corsidiformazionecm.it/pages/docenti",
+      "status": 200,
+      "in_sitemap": true,
+      "linked_from_nav_or_footer": true
+    },
+    {
+      "slug": "terms",
+      "url": "https://www.corsidiformazionecm.it/pages/terms",
+      "status": 200,
+      "title": "Terms of Use",
+      "in_sitemap": true,
+      "linked_from_nav_or_footer": true
+    },
+    {
+      "slug": "privacy",
+      "url": "https://www.corsidiformazionecm.it/pages/privacy",
+      "status": 200,
+      "title": "Privacy Policy",
+      "in_sitemap": true,
+      "linked_from_nav_or_footer": false
+    },
+    {
+      "slug": "richiesta-informazioni-ecm",
+      "url": "https://www.corsidiformazionecm.it/pages/richiesta-informazioni-ecm",
+      "status": 200,
+      "title": "Richiesta informazioni ECM",
+      "in_sitemap": true,
+      "linked_from_nav_or_footer": false
+    },
+    {
+      "slug": "contatti",
+      "url": "https://www.corsidiformazionecm.it/pages/contatti",
+      "status": 200,
+      "title": "Contatti",
+      "in_sitemap": true,
+      "linked_from_nav_or_footer": true
+    },
+    {
+      "slug": "chi-siamo",
+      "url": "https://www.corsidiformazionecm.it/pages/chi-siamo",
+      "status": 200,
+      "title": "Chi Siamo",
+      "in_sitemap": true,
+      "linked_from_nav_or_footer": true
+    }
+  ],
+  "notes": {
+    "docenti": "Contenuto strutturato in data/scrape/docenti.json",
+    "terms_privacy": "Pagine di sistema Thinkific (Terms of Use / Privacy Policy): vedi anche site.json > legal"
+  },
+  "pages": {
+    "nutrizione-e-dietetica-applicata-nel-cane-e-nel-gatto": {
+      "url": "https://www.corsidiformazionecm.it/pages/nutrizione-e-dietetica-applicata-nel-cane-e-nel-gatto",
+      "http_status": 200,
+      "html_title": "NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+      "meta_description": null,
+      "in_sitemap": true,
+      "linked_from_site_nav": false,
+      "sections": [
+        {
+          "type": "description",
+          "uid": "QEaNGyaCw",
+          "heading": "NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO",
+          "subheading": null,
+          "html": "<p>Il corso che presentiamo in questa occasione intende formare le uniche due figure titolate e legalizzate in Italia a formulare piani alimentari e nutrizionali sugli animali: il Biologo Nutrizionista e il Medico Veterinario. Il corso si veste di una nuova linea di presentazione e veste pratica: si va dall’analisi della morfobiometria, della composizione corporea sino alla valutazione pratica dello standard della massa magra metabolicamente attiva. Un corso che approfondisce anche lo studio del metabolismo dal cucciolo sino al cane anziano e che parla anche della fertilità del cane e del cane non fertile: castrato e sterilizzato. Un corso che parla anche di patologia e di integrazione. Una visione completa e autorevole per iniziare a comprendere la metodologia mirata a formulare un piano alimentare per il cane e il gatto.</p>",
+          "text": "Il corso che presentiamo in questa occasione intende formare le uniche due figure titolate e legalizzate in Italia a formulare piani alimentari e nutrizionali sugli animali: il Biologo Nutrizionista e il Medico Veterinario. Il corso si veste di una nuova linea di presentazione e veste pratica: si va dall’analisi della morfobiometria, della composizione corporea sino alla valutazione pratica dello standard della massa magra metabolicamente attiva. Un corso che approfondisce anche lo studio del metabolismo dal cucciolo sino al cane anziano e che parla anche della fertilità del cane e del cane non fertile: castrato e sterilizzato. Un corso che parla anche di patologia e di integrazione. Una visione completa e autorevole per iniziare a comprendere la metodologia mirata a formulare un piano alimentare per il cane e il gatto.",
+          "raw_html": "Il corso che presentiamo in questa occasione intende formare le uniche due figure titolate e legalizzate in Italia a formulare piani alimentari e nutrizionali sugli animali: il Biologo Nutrizionista e il Medico Veterinario. Il corso si veste di una nuova linea di presentazione e veste pratica: si va dall’analisi della morfobiometria, della composizione corporea sino alla valutazione pratica dello standard della massa magra metabolicamente attiva. Un corso che approfondisce anche lo studio del metabolismo dal cucciolo sino al cane anziano e che parla anche della fertilità del cane e del cane non fertile: castrato e sterilizzato. Un corso che parla anche di patologia e di integrazione. Una visione completa e autorevole per iniziare a comprendere la metodologia mirata a formulare un piano alimentare per il cane e il gatto.",
+          "images": [],
+          "links": [
+            {
+              "label": "Scarica la Brochure",
+              "href": "https://drive.google.com/file/d/1K6BvA7toepcbv2iCVtwcz3joWLdkR4A7/view?usp=sharing",
+              "target": null,
+              "class": "button button-primary"
+            }
+          ],
+          "buttons": [
+            {
+              "label": "Scarica la Brochure",
+              "href": "https://drive.google.com/file/d/1K6BvA7toepcbv2iCVtwcz3joWLdkR4A7/view?usp=sharing",
+              "target": null,
+              "class": "button button-primary"
+            }
+          ]
+        }
+      ],
+      "main": null,
+      "images": [],
+      "files": [
+        {
+          "label": "Scarica la Brochure",
+          "url": "https://drive.google.com/file/d/1K6BvA7toepcbv2iCVtwcz3joWLdkR4A7/view?usp=sharing",
+          "drive_id": "1K6BvA7toepcbv2iCVtwcz3joWLdkR4A7",
+          "ok": true,
+          "file": "data/scrape/assets/pages/nutrizione-e-dietetica-applicata-nel-cane-e-nel-gatto/scarica-la-brochure-1K6BvA7t.pdf",
+          "bytes": 283844,
+          "pages": 3
+        }
+      ],
+      "has_newsletter_section": false,
+      "main_inner_text": "NUTRIZIONE E DIETETICA APPLICATA NEL CANE E NEL GATTO\nIl corso che presentiamo in questa occasione intende formare le uniche due figure titolate e legalizzate in Italia a formulare piani alimentari e nutrizionali sugli animali: il Biologo Nutrizionista e il Medico Veterinario. Il corso si veste di una nuova linea di presentazione e veste pratica: si va dall’analisi della morfobiometria, della composizione corporea sino alla valutazione pratica dello standard della massa magra metabolicamente attiva. Un corso che approfondisce anche lo studio del metabolismo dal cucciolo sino al cane anziano e che parla anche della fertilità del cane e del cane non fertile: castrato e sterilizzato. Un corso che parla anche di patologia e di integrazione. Una visione completa e autorevole per iniziare a comprendere la metodologia mirata a formulare un piano alimentare per il cane e il gatto.\nScarica la Brochure"
+    },
+    "offerta-corso-allergie-e-intolleranze-200-coupon-sconto": {
+      "url": "https://www.corsidiformazionecm.it/pages/offerta-corso-allergie-e-intolleranze-200-coupon-sconto",
+      "http_status": 200,
+      "html_title": "OFFERTA - Corso Allergie e Intolleranze + €200 Coupon Sconto",
+      "meta_description": null,
+      "in_sitemap": true,
+      "linked_from_site_nav": false,
+      "sections": [
+        {
+          "type": "banner",
+          "uid": "f0e331b81d",
+          "heading": "OFFERTA - Corso Reazioni Avverse agli Alimenti + €200 Coupon Sconto",
+          "subheading": null,
+          "html": "<h2>OFFERTA - Corso Reazioni Avverse agli Alimenti + €200 Coupon Sconto</h2><p><a href=\"/cart/add_product/2347110?price_id=3128806\">\n                Acquista €49\n              </a></p>",
+          "text": "OFFERTA - Corso Reazioni Avverse agli Alimenti + €200 Coupon Sconto\n\nAcquista €49",
+          "images": [],
+          "links": [
+            {
+              "label": "Acquista €49",
+              "href": "/cart/add_product/2347110?price_id=3128806",
+              "target": null,
+              "class": "button button-primary button--mobile-width-full"
+            }
+          ],
+          "buttons": [
+            {
+              "label": "Acquista €49",
+              "href": "/cart/add_product/2347110?price_id=3128806",
+              "target": null,
+              "class": "button button-primary button--mobile-width-full"
+            }
+          ]
+        }
+      ],
+      "main": null,
+      "images": [],
+      "files": [],
+      "has_newsletter_section": false,
+      "main_inner_text": "OFFERTA - Corso Reazioni Avverse agli Alimenti + €200 Coupon Sconto\nAcquista €49"
+    },
+    "docenti": {
+      "url": "https://www.corsidiformazionecm.it/pages/docenti",
+      "see": "data/scrape/docenti.json",
+      "in_sitemap": true,
+      "http_status": 200,
+      "linked_from_site_nav": true
+    },
+    "terms": {
+      "url": "https://www.corsidiformazionecm.it/pages/terms",
+      "http_status": 200,
+      "html_title": "Terms of Use",
+      "meta_description": null,
+      "in_sitemap": true,
+      "linked_from_site_nav": true,
+      "sections": [],
+      "main": {
+        "html": "<p><a href=\"https://d2saw6je89goi1.cloudfront.net/uploads/digital_asset/file/1072338/Termini_e_Condizioni.pdf\">Termini e Condizioni</a></p>",
+        "text": "Termini e Condizioni"
+      },
+      "images": [],
+      "files": [],
+      "has_newsletter_section": false,
+      "main_inner_text": "Termini e Condizioni"
+    },
+    "privacy": {
+      "url": "https://www.corsidiformazionecm.it/pages/privacy",
+      "http_status": 200,
+      "html_title": "Privacy Policy",
+      "meta_description": null,
+      "in_sitemap": true,
+      "linked_from_site_nav": false,
+      "sections": [],
+      "main": {
+        "html": "<p><a href=\"https://drive.google.com/file/d/1U_viZjpHNDR7ynzh96IRSIGSdpvt5VmT/view?usp=sharing\">Privacy Policy</a></p>",
+        "text": "Privacy Policy"
+      },
+      "images": [],
+      "files": [],
+      "has_newsletter_section": false,
+      "main_inner_text": "Privacy Policy"
+    },
+    "richiesta-informazioni-ecm": {
+      "url": "https://www.corsidiformazionecm.it/pages/richiesta-informazioni-ecm",
+      "http_status": 200,
+      "html_title": "Richiesta informazioni ECM",
+      "meta_description": null,
+      "in_sitemap": true,
+      "linked_from_site_nav": false,
+      "sections": [
+        {
+          "type": "banner",
+          "uid": "49efe866a4",
+          "heading": "Banner",
+          "subheading": "Add a concise subheading about your product or business to your students.",
+          "html": "<h2>Banner</h2><p>Add a concise subheading about your product or business to your students.</p>",
+          "text": "Banner\n\nAdd a concise subheading about your product or business to your students.",
+          "images": [],
+          "links": [],
+          "buttons": []
+        }
+      ],
+      "main": null,
+      "images": [],
+      "files": [],
+      "has_newsletter_section": false,
+      "main_inner_text": "Banner\n\nAdd a concise subheading about your product or business to your students."
+    },
+    "contatti": {
+      "url": "https://www.corsidiformazionecm.it/pages/contatti",
+      "http_status": 200,
+      "html_title": "Contatti",
+      "meta_description": null,
+      "in_sitemap": true,
+      "linked_from_site_nav": true,
+      "sections": [
+        {
+          "type": "call-to-action",
+          "uid": "6IlDxMz3t",
+          "heading": "Richiesta Informazioni",
+          "subheading": "Clicca il pulsante qua sotto per compilare il Modulo di richiesta informazioni",
+          "html": "<h2>Richiesta Informazioni</h2><p>Clicca il pulsante qua sotto per compilare il Modulo di richiesta informazioni</p><p><a href=\"https://forms.gle/PRtiYheGg1FAqnKe8\">Contatta ora</a></p>",
+          "text": "Richiesta Informazioni\n\nClicca il pulsante qua sotto per compilare il Modulo di richiesta informazioni\n\nContatta ora",
+          "images": [],
+          "links": [
+            {
+              "label": "Contatta ora",
+              "href": "https://forms.gle/PRtiYheGg1FAqnKe8",
+              "target": null,
+              "class": "button button-secondary"
+            }
+          ],
+          "buttons": [
+            {
+              "label": "Contatta ora",
+              "href": "https://forms.gle/PRtiYheGg1FAqnKe8",
+              "target": null,
+              "class": "button button-secondary"
+            }
+          ]
+        },
+        {
+          "type": "text-icon",
+          "uid": "MDweekM-D",
+          "heading": "Contatti",
+          "subheading": "Per ogni necessità contattare la Segreteria Organizzativa",
+          "html": "<li><h3>eMail Segreteria Organizzativa</h3><p>info@corsidiformazionecm.it</p></li><li><h3>eMail Supporto Studenti</h3><p>responsabile@corsidiformazionecm.it</p></li><li><h3>WhatsApp</h3><p>Cell. 339 4846020</p></li>",
+          "text": "-\n\neMail Segreteria Organizzativa\n\ninfo@corsidiformazionecm.it\n\n-\n\neMail Supporto Studenti\n\nresponsabile@corsidiformazionecm.it\n\n-\n\nWhatsApp\n\nCell. 339 4846020",
+          "images": [],
+          "links": [],
+          "buttons": [],
+          "items": [
+            {
+              "icon": "fa fa-commenting",
+              "heading": "eMail Segreteria Organizzativa",
+              "html": "<p>info@corsidiformazionecm.it</p>",
+              "text": "info@corsidiformazionecm.it",
+              "links": []
+            },
+            {
+              "icon": "fa fa-commenting-o",
+              "heading": "eMail Supporto Studenti",
+              "html": "<p>responsabile@corsidiformazionecm.it</p>",
+              "text": "responsabile@corsidiformazionecm.it",
+              "links": []
+            },
+            {
+              "icon": "fa fa-whatsapp",
+              "heading": "WhatsApp",
+              "html": "<p>Cell. 339 4846020</p>",
+              "text": "Cell. 339 4846020",
+              "links": []
+            }
+          ]
+        }
+      ],
+      "main": null,
+      "images": [],
+      "files": [],
+      "has_newsletter_section": true,
+      "main_inner_text": "Richiesta Informazioni\n\nClicca il pulsante qua sotto per compilare il Modulo di richiesta informazioni\n\nContatta ora\nContatti\n\nPer ogni necessità contattare la Segreteria Organizzativa\n\neMail Segreteria Organizzativa\n\ninfo@corsidiformazionecm.it\n\neMail Supporto Studenti\n\nresponsabile@corsidiformazionecm.it\n\nWhatsApp\n\nCell. 339 4846020\n\nNewsletter\n\nIscriviti alla Newsletter per essere sempre aggiornato!\n\nE-mail (obbligatorio)\n Acconsento al trattamento dei miei dati e alla ricezione di e-mail"
+    },
+    "chi-siamo": {
+      "url": "https://www.corsidiformazionecm.it/pages/chi-siamo",
+      "http_status": 200,
+      "html_title": "Chi Siamo",
+      "meta_description": null,
+      "in_sitemap": true,
+      "linked_from_site_nav": true,
+      "sections": [
+        {
+          "type": "rich_text",
+          "uid": "U7ldBiYY7",
+          "heading": null,
+          "subheading": null,
+          "html": "<p>Promuoviamo il progresso sociale e la cultura scientifica, puntando in particolare alle tematiche della sana e corretta alimentazione e del benessere psico-fisico.</p><p>A questo proposito, curiamo l’organizzazione di eventi formativi e di aggiornamento professionale, come convegni, seminari, corsi e manifestazioni, anche a carattere internazionale, rivolti a medici, biologi, farmacisti, agronomi, veterinari, dietisti e altri operatori delle professioni sanitarie.</p><p>Promuoviamo campagne di sensibilizzazione verso stili di vita eco-compatibili e corretti modelli alimentari, rivolte agli operatori sanitari e alla popolazione, ma anche progettare, produrre e diffondere materiale didattico informativo e formativo.</p><p>Ad oggi abbiamo organizzato corsi e convegni che hanno visto la partecipazione delle migliori menti accademiche provenienti dai migliori atenei di tutta Italia.&nbsp;</p><p><em><strong>Mission:</strong></em></p><p>Promuovere la cultura della formazione e dell’ alta professionalità nel settore sanitario attraverso corsi e percorsi formativi originali che coniugano l’innovazione tecnologica diagnostica e la ricerca scientifica.&nbsp;</p><p><em><strong>Vision:</strong></em></p><p>Il futuro ci vede attesi alla perfezione del nostro compito nel contribuire alla crescita specialistica degli operatori del compartimenti medico e del settore in genere. Con la collaborazioni di illustri docenti e con il seguito necessario ed illuminato, ci riusciremo.</p>",
+          "text": "Promuoviamo il progresso sociale e la cultura scientifica, puntando in particolare alle tematiche della sana e corretta alimentazione e del benessere psico-fisico.\n\nA questo proposito, curiamo l’organizzazione di eventi formativi e di aggiornamento professionale, come convegni, seminari, corsi e manifestazioni, anche a carattere internazionale, rivolti a medici, biologi, farmacisti, agronomi, veterinari, dietisti e altri operatori delle professioni sanitarie.\n\nPromuoviamo campagne di sensibilizzazione verso stili di vita eco-compatibili e corretti modelli alimentari, rivolte agli operatori sanitari e alla popolazione, ma anche progettare, produrre e diffondere materiale didattico informativo e formativo.\n\nAd oggi abbiamo organizzato corsi e convegni che hanno visto la partecipazione delle migliori menti accademiche provenienti dai migliori atenei di tutta Italia. \n\nMission:\n\nPromuovere la cultura della formazione e dell’ alta professionalità nel settore sanitario attraverso corsi e percorsi formativi originali che coniugano l’innovazione tecnologica diagnostica e la ricerca scientifica. \n\nVision:\n\nIl futuro ci vede attesi alla perfezione del nostro compito nel contribuire alla crescita specialistica degli operatori del compartimenti medico e del settore in genere. Con la collaborazioni di illustri docenti e con il seguito necessario ed illuminato, ci riusciremo.",
+          "raw_html": "<div class=\"custom-theme\"><div class=\"fr-view\">\n<p id=\"isPasted\" style=\"margin: 0px 0px 10px; color: rgb(68, 68, 68); font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><span style=\"font-size: 12pt; font-family: georgia, palatino;\">Promuoviamo il progresso sociale e la cultura scientifica, puntando in particolare alle tematiche della sana e corretta alimentazione e del benessere psico-fisico.</span></p>\n<p style=\"margin: 0px 0px 10px; color: rgb(68, 68, 68); font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><span style=\"font-size: 12pt; font-family: georgia, palatino;\">A questo proposito, curiamo l’organizzazione di eventi formativi e di aggiornamento professionale, come convegni, seminari, corsi e manifestazioni, anche a carattere internazionale, rivolti a medici, biologi, farmacisti, agronomi, veterinari, dietisti e altri operatori delle professioni sanitarie.</span></p>\n<p style=\"margin: 0px 0px 10px; color: rgb(68, 68, 68); font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><span style=\"font-size: 12pt; font-family: georgia, palatino;\">Promuoviamo campagne di sensibilizzazione verso stili di vita eco-compatibili e corretti modelli alimentari, rivolte agli operatori sanitari e alla popolazione, ma anche progettare, produrre e diffondere materiale didattico informativo e formativo.</span></p>\n<p style=\"margin: 0px 0px 10px; color: rgb(68, 68, 68); font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><span style=\"font-size: 12pt; font-family: georgia, palatino;\">Ad oggi abbiamo organizzato corsi e convegni che hanno visto la partecipazione delle migliori menti accademiche provenienti dai migliori atenei di tutta Italia.</span>&nbsp;</p>\n<p style=\"margin: 0px 0px 10px; color: rgb(68, 68, 68); font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><span style=\"font-size: 12pt; font-family: georgia, palatino;\">&nbsp;</span></p>\n<p style=\"margin: 0px 0px 10px; color: rgb(68, 68, 68); font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><em style=\"font-style: italic;\"><strong style=\"font-weight: bold;\"><span style=\"font-size: 14pt; font-family: georgia, palatino;\">Mission:</span></strong></em></p>\n<p style=\"margin: 0px 0px 10px; color: rgb(68, 68, 68); font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><span style=\"font-size: 12pt; font-family: georgia, palatino;\">Promuovere la cultura della formazione e dell’ alta professionalità nel settore sanitario attraverso corsi e percorsi formativi originali che coniugano l’innovazione tecnologica diagnostica e la ricerca scientifica.</span>&nbsp;</p>\n<p style=\"margin: 0px 0px 10px; color: rgb(68, 68, 68); font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><span style=\"font-size: 12pt; font-family: georgia, palatino;\">&nbsp;</span></p>\n<p style=\"margin: 0px 0px 10px; color: rgb(68, 68, 68); font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><em style=\"font-style: italic;\"><strong style=\"font-weight: bold;\"><span style=\"font-size: 14pt; font-family: georgia, palatino;\">Vision:</span></strong></em></p>\n<p style=\"margin: 0px 0px 10px; color: rgb(68, 68, 68); font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><span style=\"font-size: 12pt; font-family: georgia, palatino;\">Il futuro ci vede attesi alla perfezione del nostro compito nel contribuire alla crescita specialistica degli operatori del compartimenti medico e del settore in genere. Con la collaborazioni di illustri docenti e con il seguito necessario ed illuminato, ci riusciremo.</span></p>\n</div></div>",
+          "images": [],
+          "links": [],
+          "buttons": []
+        }
+      ],
+      "main": null,
+      "images": [],
+      "files": [],
+      "has_newsletter_section": false,
+      "main_inner_text": "Promuoviamo il progresso sociale e la cultura scientifica, puntando in particolare alle tematiche della sana e corretta alimentazione e del benessere psico-fisico.\n\nA questo proposito, curiamo l’organizzazione di eventi formativi e di aggiornamento professionale, come convegni, seminari, corsi e manifestazioni, anche a carattere internazionale, rivolti a medici, biologi, farmacisti, agronomi, veterinari, dietisti e altri operatori delle professioni sanitarie.\n\nPromuoviamo campagne di sensibilizzazione verso stili di vita eco-compatibili e corretti modelli alimentari, rivolte agli operatori sanitari e alla popolazione, ma anche progettare, produrre e diffondere materiale didattico informativo e formativo.\n\nAd oggi abbiamo organizzato corsi e convegni che hanno visto la partecipazione delle migliori menti accademiche provenienti dai migliori atenei di tutta Italia. \n\n \n\nMission:\n\nPromuovere la cultura della formazione e dell’ alta professionalità nel settore sanitario attraverso corsi e percorsi formativi originali che coniugano l’innovazione tecnologica diagnostica e la ricerca scientifica. \n\n \n\nVision:\n\nIl futuro ci vede attesi alla perfezione del nostro compito nel contribuire alla crescita specialistica degli operatori del compartimenti medico e del settore in genere. Con la collaborazioni di illustri docenti e con il seguito necessario ed illuminato, ci riusciremo.",
+      "intro_paragraphs": [
+        "Promuoviamo il progresso sociale e la cultura scientifica, puntando in particolare alle tematiche della sana e corretta alimentazione e del benessere psico-fisico.",
+        "A questo proposito, curiamo l’organizzazione di eventi formativi e di aggiornamento professionale, come convegni, seminari, corsi e manifestazioni, anche a carattere internazionale, rivolti a medici, biologi, farmacisti, agronomi, veterinari, dietisti e altri operatori delle professioni sanitarie.",
+        "Promuoviamo campagne di sensibilizzazione verso stili di vita eco-compatibili e corretti modelli alimentari, rivolte agli operatori sanitari e alla popolazione, ma anche progettare, produrre e diffondere materiale didattico informativo e formativo.",
+        "Ad oggi abbiamo organizzato corsi e convegni che hanno visto la partecipazione delle migliori menti accademiche provenienti dai migliori atenei di tutta Italia."
+      ],
+      "mission": {
+        "label": "Mission:",
+        "html": "<p>Promuovere la cultura della formazione e dell’ alta professionalità nel settore sanitario attraverso corsi e percorsi formativi originali che coniugano l’innovazione tecnologica diagnostica e la ricerca scientifica.&nbsp;</p>",
+        "text": "Promuovere la cultura della formazione e dell’ alta professionalità nel settore sanitario attraverso corsi e percorsi formativi originali che coniugano l’innovazione tecnologica diagnostica e la ricerca scientifica."
+      },
+      "vision": {
+        "label": "Vision:",
+        "html": "<p>Il futuro ci vede attesi alla perfezione del nostro compito nel contribuire alla crescita specialistica degli operatori del compartimenti medico e del settore in genere. Con la collaborazioni di illustri docenti e con il seguito necessario ed illuminato, ci riusciremo.</p>",
+        "text": "Il futuro ci vede attesi alla perfezione del nostro compito nel contribuire alla crescita specialistica degli operatori del compartimenti medico e del settore in genere. Con la collaborazioni di illustri docenti e con il seguito necessario ed illuminato, ci riusciremo."
+      },
+      "notes": [
+        "Pagina composta da un solo blocco rich_text senza titolo né immagini; i testi erano incollati con stili inline (Georgia 12pt/14pt, giustificato) rimossi in html.",
+        "Sulla pagina vendite GHL (sales.corsidiformazionecm.it) esiste una versione più ricca di \"Chi siamo\" (statistiche, mission/vision riscritte, citazione fondatrice): vedi chi_siamo_sales_version."
+      ],
+      "chi_siamo_sales_version": null,
+      "sales_stats": [
+        {
+          "value": "200+",
+          "label": "ORE DI CORSI"
+        },
+        {
+          "value": "14",
+          "label": "DOCENTI ESPERTI"
+        },
+        {
+          "value": "10k+",
+          "label": "CORSISTI"
+        }
+      ]
+    }
+  }
+}

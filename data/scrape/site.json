@@ -1,0 +1,2952 @@
+{
+  "scraped_at": "2026-11-20T12:48:14.202Z",
+  "platform": {
+    "main": "Thinkific (theme \"custom_site_themes\", tenant id 692348)",
+    "thinkific_subdomain": "corsidiformazionecm.thinkific.com",
+    "testimonials_subdomain": "sales.corsidiformazionecm.it (GoHighLevel / LeadConnector funnel, header x-ghl-*)",
+    "cdn": [
+      "import.cdn.thinkific.com",
+      "files.cdn.thinkific.com"
+    ],
+    "cloudflare_email_obfuscation": true
+  },
+  "head": {
+    "title": "Corsi di FormazionEcm",
+    "links": [
+      {
+        "rel": "icon",
+        "href": "/favicon.ico",
+        "type": "image/x-icon"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FDAbSRNR3aItVVGHCLfgk_Logo_CDF-02.png",
+        "type": "image/png"
+      },
+      {
+        "rel": "icon",
+        "href": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FDAbSRNR3aItVVGHCLfgk_Logo_CDF-02.png",
+        "type": "image/png"
+      },
+      {
+        "rel": "stylesheet",
+        "href": "https://fonts.googleapis.com/css?family=Libre Baskerville:100,200,300,400,400i,500,600,700,800,900&display=swap",
+        "type": null
+      },
+      {
+        "rel": "stylesheet",
+        "href": "https://fonts.googleapis.com/css?family=Source Sans Pro:100,200,300,400,400i,500,600,700,800,900&display=swap",
+        "type": null
+      }
+    ],
+    "metas": [
+      {
+        "name": "X-UA-Compatible",
+        "content": "IE=edge"
+      },
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1"
+      },
+      {
+        "name": "apple-mobile-web-app-status-bar-style",
+        "content": "black"
+      },
+      {
+        "name": "og:site_name",
+        "content": "Corsi di FormazionEcm"
+      },
+      {
+        "name": "og:url",
+        "content": "https://www.corsidiformazionecm.it/"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      }
+    ],
+    "lang": "it"
+  },
+  "header": {
+    "logo": {
+      "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FX826omBkQhq15BrP6duI_Logo_CDF-01.png",
+      "srcset": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FX826omBkQhq15BrP6duI_Logo_CDF-01.png?width=384&dpr=1 1x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FX826omBkQhq15BrP6duI_Logo_CDF-01.png?width=384&dpr=2 2x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FX826omBkQhq15BrP6duI_Logo_CDF-01.png?width=384&dpr=3 3x",
+      "alt": "",
+      "link": "/"
+    },
+    "site_name_sr_only": "Corsi di FormazionEcm",
+    "skip_link": "Passa al contenuto principale",
+    "nav": [
+      {
+        "label_source": "Tutti i corsi",
+        "href": "/collections",
+        "target": "_self",
+        "is_sign_in": false,
+        "label_displayed": "TUTTI I CORSI"
+      },
+      {
+        "label_source": "Contatti",
+        "href": "/pages/contatti",
+        "target": "_self",
+        "is_sign_in": false,
+        "label_displayed": "CONTATTI"
+      },
+      {
+        "label_source": "DOCENTI",
+        "href": "/pages/docenti",
+        "target": "_self",
+        "is_sign_in": false,
+        "label_displayed": "DOCENTI"
+      },
+      {
+        "label_source": "TESTIMONIANZE",
+        "href": "https://sales.corsidiformazionecm.it/testimonianze",
+        "target": "_blank",
+        "is_sign_in": false,
+        "label_displayed": "TESTIMONIANZE"
+      },
+      {
+        "label_source": "Accedi",
+        "href": "/users/sign_in",
+        "target": null,
+        "is_sign_in": true,
+        "label_displayed": "ACCEDI"
+      }
+    ],
+    "menu_style": "header__nav--overlay",
+    "mobile_button_label": "Menu",
+    "login": {
+      "label_source": "Accedi",
+      "label_displayed": "ACCEDI",
+      "href": "/users/sign_in",
+      "absolute_url": "https://www.corsidiformazionecm.it/users/sign_in"
+    },
+    "nav_text_transform": "uppercase"
+  },
+  "brand": {
+    "logos": [
+      {
+        "role": "header logo",
+        "url_original": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FX826omBkQhq15BrP6duI_Logo_CDF-01.png",
+        "url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FX826omBkQhq15BrP6duI_Logo_CDF-01.png",
+        "file": "data/scrape/assets/brand/logo-header.png",
+        "width": 4956,
+        "height": 784,
+        "bytes": 107847,
+        "sha1": "eb6d56d85cbd6dc781a7273cf4268abfe9ff2d86"
+      },
+      {
+        "role": "apple-touch-icon / png icon",
+        "url_original": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FDAbSRNR3aItVVGHCLfgk_Logo_CDF-02.png",
+        "url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FDAbSRNR3aItVVGHCLfgk_Logo_CDF-02.png",
+        "file": "data/scrape/assets/brand/logo-icon-apple-touch.png",
+        "width": 1029,
+        "height": 1029,
+        "sha1": "5d05e087d3cf5183a6d1edf1ff9c415bb2c695c1"
+      },
+      {
+        "role": "logo embedded (base64) in iubenda cookie banner config",
+        "file": "data/scrape/assets/brand/logo-iubenda-banner.png",
+        "width": 1080,
+        "height": 172,
+        "sha1": "fff63d8ff81af5ae234827c54c5d117f5da154c3"
+      }
+    ],
+    "favicon": {
+      "url": "https://www.corsidiformazionecm.it/favicon.ico",
+      "ok": true,
+      "file": "data/scrape/assets/brand/favicon.png",
+      "bytes": 54984,
+      "content_type": "image/png",
+      "width": 1029,
+      "height": 1029,
+      "sha1": "5d05e087d3cf5183a6d1edf1ff9c415bb2c695c1"
+    },
+    "apple_touch_icon": {
+      "url_original": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FDAbSRNR3aItVVGHCLfgk_Logo_CDF-02.png",
+      "url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FDAbSRNR3aItVVGHCLfgk_Logo_CDF-02.png",
+      "file": "data/scrape/assets/brand/logo-icon-apple-touch.png",
+      "width": 1029,
+      "height": 1029,
+      "sha1": "5d05e087d3cf5183a6d1edf1ff9c415bb2c695c1"
+    },
+    "svg_available": false,
+    "notes": [
+      "Nessuna versione SVG del logo trovata sul sito (solo PNG caricati nel tema Thinkific)."
+    ],
+    "colors": {
+      "computed": {
+        "body": {
+          "color": "rgb(33, 35, 38)",
+          "background-color": "rgb(255, 255, 255)",
+          "background-image": "none",
+          "font-family": "\"Source Sans Pro\", sans-serif",
+          "font-size": "18px",
+          "font-weight": "400",
+          "line-height": "27px",
+          "letter-spacing": "normal",
+          "text-transform": "none",
+          "border-radius": "0px",
+          "border-color": "rgb(33, 35, 38)",
+          "border-width": "0px",
+          "padding": "102.781px 0px 0px"
+        },
+        "header": {
+          "color": "rgb(33, 35, 38)",
+          "background-color": "rgb(242, 242, 242)",
+          "background-image": "none",
+          "font-family": "\"Source Sans Pro\", sans-serif",
+          "font-size": "18px",
+          "font-weight": "400",
+          "line-height": "27px",
+          "letter-spacing": "normal",
+          "text-transform": "none",
+          "border-radius": "0px",
+          "border-color": "rgb(33, 35, 38)",
+          "border-width": "0px",
+          "padding": "0px"
+        },
+        "header_nav_link": {
+          "color": "rgb(190, 21, 34)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "background-image": "none",
+          "font-family": "\"Source Sans Pro\", sans-serif",
+          "font-size": "15.75px",
+          "font-weight": "500",
+          "line-height": "23.625px",
+          "letter-spacing": "1px",
+          "text-transform": "uppercase",
+          "border-radius": "0px",
+          "border-color": "rgb(190, 21, 34)",
+          "border-width": "0px",
+          "padding": "0px"
+        },
+        "header_sign_in": {
+          "color": "rgb(190, 21, 34)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "background-image": "none",
+          "font-family": "\"Source Sans Pro\", sans-serif",
+          "font-size": "15.75px",
+          "font-weight": "500",
+          "line-height": "23.625px",
+          "letter-spacing": "1px",
+          "text-transform": "uppercase",
+          "border-radius": "0px",
+          "border-color": "rgb(190, 21, 34)",
+          "border-width": "0px",
+          "padding": "0px"
+        },
+        "header_logo_img": {
+          "rendered_width": 270,
+          "rendered_height": 42.1875,
+          "natural": [
+            384,
+            60
+          ]
+        },
+        "section_heading_h2": {
+          "color": "rgb(0, 0, 0)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "background-image": "none",
+          "font-family": "\"Libre Baskerville\", sans-serif",
+          "font-size": "36px",
+          "font-weight": "400",
+          "line-height": "43.2px",
+          "letter-spacing": "normal",
+          "text-transform": "none",
+          "border-radius": "0px",
+          "border-color": "rgb(0, 0, 0)",
+          "border-width": "0px",
+          "padding": "0px"
+        },
+        "card_name_h3": {
+          "color": "rgb(0, 0, 0)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "background-image": "none",
+          "font-family": "\"Libre Baskerville\", sans-serif",
+          "font-size": "20px",
+          "font-weight": "400",
+          "line-height": "25px",
+          "letter-spacing": "normal",
+          "text-transform": "none",
+          "border-radius": "0px",
+          "border-color": "rgb(0, 0, 0)",
+          "border-width": "0px",
+          "padding": "0px"
+        },
+        "card_description": {
+          "color": "rgb(33, 35, 38)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "background-image": "none",
+          "font-family": "\"Source Sans Pro\", sans-serif",
+          "font-size": "18px",
+          "font-weight": "400",
+          "line-height": "27px",
+          "letter-spacing": "normal",
+          "text-transform": "none",
+          "border-radius": "0px",
+          "border-color": "rgb(33, 35, 38)",
+          "border-width": "0px",
+          "padding": "0px"
+        },
+        "card_badge": {
+          "color": "rgb(255, 255, 255)",
+          "background-color": "rgb(0, 0, 0)",
+          "background-image": "none",
+          "font-family": "\"Source Sans Pro\", sans-serif",
+          "font-size": "18px",
+          "font-weight": "400",
+          "line-height": "27px",
+          "letter-spacing": "normal",
+          "text-transform": "none",
+          "border-radius": "4px",
+          "border-color": "rgb(255, 255, 255)",
+          "border-width": "0px",
+          "padding": "4px 12px"
+        },
+        "card": {
+          "color": "rgb(33, 35, 38)",
+          "background-color": "rgb(241, 241, 241)",
+          "background-image": "none",
+          "font-family": "\"Source Sans Pro\", sans-serif",
+          "font-size": "18px",
+          "font-weight": "400",
+          "line-height": "27px",
+          "letter-spacing": "normal",
+          "text-transform": "none",
+          "border-radius": "4px",
+          "border-color": "rgb(33, 35, 38)",
+          "border-width": "0px",
+          "padding": "0px"
+        },
+        "testimonial_title": {
+          "color": "rgb(33, 35, 38)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "background-image": "none",
+          "font-family": "\"Libre Baskerville\", sans-serif",
+          "font-size": "22px",
+          "font-weight": "400",
+          "line-height": "26.4px",
+          "letter-spacing": "normal",
+          "text-transform": "none",
+          "border-radius": "0px",
+          "border-color": "rgb(33, 35, 38)",
+          "border-width": "0px",
+          "padding": "0px"
+        },
+        "testimonial_author": {
+          "color": "rgb(33, 35, 38)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "background-image": "none",
+          "font-family": "\"Source Sans Pro\", sans-serif",
+          "font-size": "15.75px",
+          "font-weight": "700",
+          "line-height": "23.625px",
+          "letter-spacing": "normal",
+          "text-transform": "none",
+          "border-radius": "0px",
+          "border-color": "rgb(33, 35, 38)",
+          "border-width": "0px",
+          "padding": "0px"
+        },
+        "button_primary": {
+          "color": "rgb(173, 181, 189)",
+          "background-color": "rgb(229, 229, 229)",
+          "background-image": "none",
+          "font-family": "\"Source Sans Pro\", sans-serif",
+          "font-size": "18px",
+          "font-weight": "600",
+          "line-height": "normal",
+          "letter-spacing": "normal",
+          "text-transform": "none",
+          "border-radius": "100px",
+          "border-color": "rgb(229, 229, 229)",
+          "border-width": "2px",
+          "padding": "16px 24px"
+        },
+        "button_secondary": {
+          "color": "rgb(30, 28, 39)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "background-image": "none",
+          "font-family": "\"Source Sans Pro\", sans-serif",
+          "font-size": "18px",
+          "font-weight": "600",
+          "line-height": "normal",
+          "letter-spacing": "normal",
+          "text-transform": "none",
+          "border-radius": "100px",
+          "border-color": "rgb(190, 21, 34)",
+          "border-width": "2px",
+          "padding": "16px 24px"
+        },
+        "lead_capture_section": {
+          "color": "rgb(33, 35, 38)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "background-image": "none",
+          "font-family": "\"Source Sans Pro\", sans-serif",
+          "font-size": "18px",
+          "font-weight": "400",
+          "line-height": "27px",
+          "letter-spacing": "normal",
+          "text-transform": "none",
+          "border-radius": "0px",
+          "border-color": "rgb(33, 35, 38)",
+          "border-width": "0px",
+          "padding": "0px"
+        },
+        "form_control": {
+          "color": "rgb(33, 35, 38)",
+          "background-color": "rgb(241, 241, 241)",
+          "background-image": "none",
+          "font-family": "\"Source Sans Pro\", sans-serif",
+          "font-size": "18px",
+          "font-weight": "400",
+          "line-height": "normal",
+          "letter-spacing": "normal",
+          "text-transform": "none",
+          "border-radius": "0px",
+          "border-color": "rgb(203, 203, 203)",
+          "border-width": "2px",
+          "padding": "18px"
+        },
+        "footer": {
+          "color": "rgb(190, 21, 34)",
+          "background-color": "rgb(242, 242, 242)",
+          "background-image": "none",
+          "font-family": "\"Source Sans Pro\", sans-serif",
+          "font-size": "18px",
+          "font-weight": "400",
+          "line-height": "27px",
+          "letter-spacing": "normal",
+          "text-transform": "none",
+          "border-radius": "0px",
+          "border-color": "rgb(190, 21, 34)",
+          "border-width": "0px",
+          "padding": "36px 0px 18px"
+        },
+        "footer_link": {
+          "color": "rgb(190, 21, 34)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "background-image": "none",
+          "font-family": "\"Source Sans Pro\", sans-serif",
+          "font-size": "15.75px",
+          "font-weight": "400",
+          "line-height": "23.625px",
+          "letter-spacing": "1px",
+          "text-transform": "uppercase",
+          "border-radius": "0px",
+          "border-color": "rgb(190, 21, 34)",
+          "border-width": "0px",
+          "padding": "0px"
+        },
+        "footer_copyright": {
+          "color": "rgb(190, 21, 34)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "background-image": "none",
+          "font-family": "\"Source Sans Pro\", sans-serif",
+          "font-size": "15.75px",
+          "font-weight": "400",
+          "line-height": "23.625px",
+          "letter-spacing": "normal",
+          "text-transform": "none",
+          "border-radius": "0px",
+          "border-color": "rgb(190, 21, 34)",
+          "border-width": "0px",
+          "padding": "0px 18px"
+        },
+        "sections_bg": [
+          {
+            "type": "header",
+            "background-color": "rgb(242, 242, 242)",
+            "background-image": "none",
+            "color": "rgb(33, 35, 38)"
+          },
+          {
+            "type": "gallery",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "background-image": "none",
+            "color": "rgb(33, 35, 38)"
+          },
+          {
+            "type": "course-cards-all",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "background-image": "none",
+            "color": "rgb(33, 35, 38)"
+          },
+          {
+            "type": "testimonials",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "background-image": "none",
+            "color": "rgb(33, 35, 38)"
+          },
+          {
+            "type": "lead_capture",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "background-image": "none",
+            "color": "rgb(33, 35, 38)"
+          },
+          {
+            "type": "footer",
+            "background-color": "rgb(242, 242, 242)",
+            "background-image": "none",
+            "color": "rgb(190, 21, 34)"
+          }
+        ],
+        "color_frequency": [
+          {
+            "usage": "bg",
+            "color": "rgb(241, 241, 241)",
+            "weight": 2035
+          },
+          {
+            "usage": "bg",
+            "color": "rgb(242, 242, 242)",
+            "weight": 360
+          },
+          {
+            "usage": "bg",
+            "color": "rgb(249, 231, 233)",
+            "weight": 146
+          },
+          {
+            "usage": "text",
+            "color": "rgb(33, 35, 38)",
+            "weight": 61
+          },
+          {
+            "usage": "text",
+            "color": "rgb(0, 0, 0)",
+            "weight": 19
+          },
+          {
+            "usage": "text",
+            "color": "rgb(190, 21, 34)",
+            "weight": 18
+          },
+          {
+            "usage": "bg",
+            "color": "rgb(0, 0, 0)",
+            "weight": 8
+          },
+          {
+            "usage": "bg",
+            "color": "rgb(229, 229, 229)",
+            "weight": 5
+          },
+          {
+            "usage": "bg",
+            "color": "rgb(30, 28, 39)",
+            "weight": 3
+          },
+          {
+            "usage": "bg",
+            "color": "rgb(33, 35, 38)",
+            "weight": 1
+          },
+          {
+            "usage": "text",
+            "color": "rgb(255, 255, 255)",
+            "weight": 1
+          },
+          {
+            "usage": "text",
+            "color": "rgb(30, 28, 39)",
+            "weight": 1
+          },
+          {
+            "usage": "border",
+            "color": "rgb(190, 21, 34)",
+            "weight": 1
+          },
+          {
+            "usage": "border",
+            "color": "rgb(203, 203, 203)",
+            "weight": 1
+          },
+          {
+            "usage": "border",
+            "color": "rgb(229, 229, 229)",
+            "weight": 1
+          }
+        ],
+        "font_families_used": [
+          {
+            "font_family": "\"Source Sans Pro\", sans-serif",
+            "elements": 73
+          },
+          {
+            "font_family": "\"Libre Baskerville\", sans-serif",
+            "elements": 39
+          },
+          {
+            "font_family": "sans-serif",
+            "elements": 2
+          }
+        ],
+        "document_fonts_loaded": [
+          "Libre Baskerville 400 normal",
+          "Libre Baskerville 700 normal",
+          "Source Sans Pro 400 normal",
+          "Source Sans Pro 600 normal",
+          "Source Sans Pro 700 normal",
+          "FontAwesome normal normal"
+        ],
+        "course_page": {
+          "url": "https://www.corsidiformazionecm.it/courses/METABOLISMO,%20NUTRIZIONE%20E%20PERFORMANCE%20NEL%20CANE%20SPORTIVO%20E%20NEL%20CAVALLO%20ATLETA",
+          "description_heading": {
+            "color": "rgb(0, 0, 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "background-image": "none",
+            "font-family": "\"Libre Baskerville\", sans-serif",
+            "font-size": "36px",
+            "font-weight": "400",
+            "line-height": "43.2px",
+            "text-transform": "none",
+            "border-radius": "0px",
+            "border-color": "rgb(0, 0, 0)",
+            "border-width": "0px",
+            "padding": "0px"
+          },
+          "description_subheading": null,
+          "description_body": {
+            "color": "rgb(33, 35, 38)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "background-image": "none",
+            "font-family": "\"Source Sans Pro\", sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "27px",
+            "text-transform": "none",
+            "border-radius": "0px",
+            "border-color": "rgb(33, 35, 38)",
+            "border-width": "0px",
+            "padding": "0px"
+          },
+          "whatsapp_button_primary": {
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgb(30, 28, 39)",
+            "background-image": "none",
+            "font-family": "\"Source Sans Pro\", sans-serif",
+            "font-size": "18px",
+            "font-weight": "600",
+            "line-height": "normal",
+            "text-transform": "none",
+            "border-radius": "100px",
+            "border-color": "rgba(0, 0, 0, 0)",
+            "border-width": "2px",
+            "padding": "16px 24px"
+          },
+          "cta_section": {
+            "color": "rgb(33, 35, 38)",
+            "background-color": "rgb(255, 255, 255)",
+            "background-image": "none",
+            "font-family": "\"Source Sans Pro\", sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "27px",
+            "text-transform": "none",
+            "border-radius": "0px",
+            "border-color": "rgb(33, 35, 38)",
+            "border-width": "0px",
+            "padding": "0px",
+            "background-size": "auto",
+            "background-position": "0% 0%"
+          },
+          "cta_overlay_before": {
+            "content": "none",
+            "background": "rgba(0, 0, 0, 0)",
+            "opacity": "1"
+          },
+          "cta_heading": {
+            "color": "rgb(0, 0, 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "background-image": "none",
+            "font-family": "\"Libre Baskerville\", sans-serif",
+            "font-size": "36px",
+            "font-weight": "400",
+            "line-height": "43.2px",
+            "text-transform": "none",
+            "border-radius": "0px",
+            "border-color": "rgb(0, 0, 0)",
+            "border-width": "0px",
+            "padding": "0px"
+          },
+          "cta_subheading": {
+            "color": "rgb(0, 0, 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "background-image": "none",
+            "font-family": "\"Source Sans Pro\", sans-serif",
+            "font-size": "24px",
+            "font-weight": "400",
+            "line-height": "28.8px",
+            "text-transform": "none",
+            "border-radius": "0px",
+            "border-color": "rgb(0, 0, 0)",
+            "border-width": "0px",
+            "padding": "0px"
+          },
+          "brochure_button_secondary": {
+            "color": "rgb(30, 28, 39)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "background-image": "none",
+            "font-family": "\"Source Sans Pro\", sans-serif",
+            "font-size": "18px",
+            "font-weight": "600",
+            "line-height": "normal",
+            "text-transform": "none",
+            "border-radius": "100px",
+            "border-color": "rgb(190, 21, 34)",
+            "border-width": "2px",
+            "padding": "16px 24px"
+          },
+          "faq_question": {
+            "color": "rgb(33, 35, 38)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "background-image": "none",
+            "font-family": "\"Source Sans Pro\", sans-serif",
+            "font-size": "18px",
+            "font-weight": "600",
+            "line-height": "27px",
+            "text-transform": "none",
+            "border-radius": "0px",
+            "border-color": "rgb(33, 35, 38)",
+            "border-width": "0px",
+            "padding": "0px"
+          },
+          "faq_answer": {
+            "color": "rgb(33, 35, 38)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "background-image": "none",
+            "font-family": "\"Source Sans Pro\", sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "27px",
+            "text-transform": "none",
+            "border-radius": "0px",
+            "border-color": "rgb(33, 35, 38)",
+            "border-width": "0px",
+            "padding": "18px 0px"
+          },
+          "faq_item": {
+            "color": "rgb(33, 35, 38)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "background-image": "none",
+            "font-family": "\"Source Sans Pro\", sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "27px",
+            "text-transform": "none",
+            "border-radius": "0px",
+            "border-color": "rgb(33, 35, 38)",
+            "border-width": "0px",
+            "padding": "0px"
+          },
+          "testimonial_item": {
+            "color": "rgb(33, 35, 38)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "background-image": "none",
+            "font-family": "\"Source Sans Pro\", sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "27px",
+            "text-transform": "none",
+            "border-radius": "0px",
+            "border-color": "rgb(33, 35, 38)",
+            "border-width": "0px",
+            "padding": "0px 148px"
+          },
+          "testimonial_title": {
+            "color": "rgb(33, 35, 38)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "background-image": "none",
+            "font-family": "\"Libre Baskerville\", sans-serif",
+            "font-size": "22px",
+            "font-weight": "400",
+            "line-height": "26.4px",
+            "text-transform": "none",
+            "border-radius": "0px",
+            "border-color": "rgb(33, 35, 38)",
+            "border-width": "0px",
+            "padding": "0px"
+          },
+          "testimonial_author": {
+            "color": "rgb(33, 35, 38)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "background-image": "none",
+            "font-family": "\"Source Sans Pro\", sans-serif",
+            "font-size": "15.75px",
+            "font-weight": "700",
+            "line-height": "23.625px",
+            "text-transform": "none",
+            "border-radius": "0px",
+            "border-color": "rgb(33, 35, 38)",
+            "border-width": "0px",
+            "padding": "0px"
+          },
+          "sections_bg": [
+            {
+              "type": "header",
+              "background-color": "rgb(242, 242, 242)",
+              "background-image": "none",
+              "color": "rgb(33, 35, 38)"
+            },
+            {
+              "type": "rich_text",
+              "background-color": "rgba(0, 0, 0, 0)",
+              "background-image": "none",
+              "color": "rgb(33, 35, 38)"
+            },
+            {
+              "type": "description",
+              "background-color": "rgba(0, 0, 0, 0)",
+              "background-image": "none",
+              "color": "rgb(33, 35, 38)"
+            },
+            {
+              "type": "testimonials",
+              "background-color": "rgba(0, 0, 0, 0)",
+              "background-image": "none",
+              "color": "rgb(33, 35, 38)"
+            },
+            {
+              "type": "call-to-action",
+              "background-color": "rgb(255, 255, 255)",
+              "background-image": "none",
+              "color": "rgb(33, 35, 38)"
+            },
+            {
+              "type": "rich_text",
+              "background-color": "rgba(0, 0, 0, 0)",
+              "background-image": "none",
+              "color": "rgb(33, 35, 38)"
+            },
+            {
+              "type": "faq",
+              "background-color": "rgba(0, 0, 0, 0)",
+              "background-image": "none",
+              "color": "rgb(33, 35, 38)"
+            },
+            {
+              "type": "lead_capture",
+              "background-color": "rgba(0, 0, 0, 0)",
+              "background-image": "none",
+              "color": "rgb(33, 35, 38)"
+            },
+            {
+              "type": "footer",
+              "background-color": "rgb(242, 242, 242)",
+              "background-image": "none",
+              "color": "rgb(190, 21, 34)"
+            }
+          ]
+        },
+        "logo_palette": [
+          {
+            "rgb_bucket": "48,48,48",
+            "hex_approx": "#303030",
+            "pixels": 345701
+          },
+          {
+            "rgb_bucket": "184,16,40",
+            "hex_approx": "#B81028",
+            "pixels": 123086
+          },
+          {
+            "rgb_bucket": "248,240,232",
+            "hex_approx": "#F8F0E8",
+            "pixels": 464
+          },
+          {
+            "rgb_bucket": "184,40,48",
+            "hex_approx": "#B82830",
+            "pixels": 462
+          },
+          {
+            "rgb_bucket": "216,144,128",
+            "hex_approx": "#D89080",
+            "pixels": 392
+          },
+          {
+            "rgb_bucket": "232,200,192",
+            "hex_approx": "#E8C8C0",
+            "pixels": 385
+          }
+        ]
+      },
+      "theme_hex_in_html": [
+        {
+          "hex": "#000",
+          "occurrences": 50
+        },
+        {
+          "hex": "#FFF",
+          "occurrences": 36
+        },
+        {
+          "hex": "#BE1522",
+          "occurrences": 25
+        },
+        {
+          "hex": "#212326",
+          "occurrences": 25
+        },
+        {
+          "hex": "#F1F1F1",
+          "occurrences": 21
+        },
+        {
+          "hex": "#E75725",
+          "occurrences": 15
+        },
+        {
+          "hex": "#1E1C27",
+          "occurrences": 11
+        },
+        {
+          "hex": "#EAEAEA",
+          "occurrences": 7
+        },
+        {
+          "hex": "#403C54",
+          "occurrences": 6
+        },
+        {
+          "hex": "#F2F2F2",
+          "occurrences": 6
+        },
+        {
+          "hex": "#216E2F",
+          "occurrences": 5
+        },
+        {
+          "hex": "#909193",
+          "occurrences": 5
+        },
+        {
+          "hex": "#4A4A4A",
+          "occurrences": 5
+        },
+        {
+          "hex": "#FFFFFF",
+          "occurrences": 4
+        },
+        {
+          "hex": "#E93744",
+          "occurrences": 4
+        },
+        {
+          "hex": "#CBCBCB",
+          "occurrences": 4
+        },
+        {
+          "hex": "#FFDFE3",
+          "occurrences": 4
+        },
+        {
+          "hex": "#000000",
+          "occurrences": 3
+        },
+        {
+          "hex": "#FCCD56",
+          "occurrences": 3
+        },
+        {
+          "hex": "#CACCCD",
+          "occurrences": 2
+        },
+        {
+          "hex": "#FBBC05",
+          "occurrences": 2
+        },
+        {
+          "hex": "#F7F7F7",
+          "occurrences": 2
+        },
+        {
+          "hex": "#E5E5E5",
+          "occurrences": 2
+        },
+        {
+          "hex": "#707070",
+          "occurrences": 2
+        },
+        {
+          "hex": "#F2F3F5",
+          "occurrences": 1
+        }
+      ],
+      "iubenda_banner_colors": {
+        "acceptButtonCaptionColor": "#FFFFFF",
+        "acceptButtonColor": "#BE1522",
+        "backgroundColor": "#FFFFFF",
+        "brandBackgroundColor": "#BE1522",
+        "brandTextColor": "#000000",
+        "customizeButtonCaptionColor": "#4D4D4D",
+        "customizeButtonColor": "#DADADA",
+        "rejectButtonCaptionColor": "#FFFFFF",
+        "rejectButtonColor": "#BE1522",
+        "textColor": "#000000"
+      }
+    },
+    "fonts": {
+      "google_fonts_links": [
+        "https://fonts.googleapis.com/css?family=Libre Baskerville:100,200,300,400,400i,500,600,700,800,900&display=swap",
+        "https://fonts.googleapis.com/css?family=Source Sans Pro:100,200,300,400,400i,500,600,700,800,900&display=swap"
+      ],
+      "used": [
+        {
+          "font_family": "\"Source Sans Pro\", sans-serif",
+          "elements": 73
+        },
+        {
+          "font_family": "\"Libre Baskerville\", sans-serif",
+          "elements": 39
+        },
+        {
+          "font_family": "sans-serif",
+          "elements": 2
+        }
+      ],
+      "loaded": [
+        "Libre Baskerville 400 normal",
+        "Libre Baskerville 700 normal",
+        "Source Sans Pro 400 normal",
+        "Source Sans Pro 600 normal",
+        "Source Sans Pro 700 normal",
+        "FontAwesome normal normal"
+      ],
+      "headings": "\"Libre Baskerville\", sans-serif",
+      "body": "\"Source Sans Pro\", sans-serif",
+      "icon_fonts": [
+        "Font Awesome 4.7.0 (cdnjs)",
+        "Thinkific toga-icons"
+      ]
+    }
+  },
+  "footer": {
+    "links": [
+      {
+        "label_source": "Home",
+        "href": "/",
+        "target": "_self",
+        "label_displayed": "HOME"
+      },
+      {
+        "label_source": "Tutti i corsi",
+        "href": "/collections",
+        "target": "_self",
+        "label_displayed": "TUTTI I CORSI"
+      },
+      {
+        "label_source": "Chi siamo",
+        "href": "/pages/chi-siamo",
+        "target": "_self",
+        "label_displayed": "CHI SIAMO"
+      },
+      {
+        "label_source": "Termini e Condizioni",
+        "href": "https://corsidiformazionecm.thinkific.com/pages/terms",
+        "target": "_blank",
+        "label_displayed": "TERMINI E CONDIZIONI"
+      },
+      {
+        "label_source": "Cookie & Privacy Policy",
+        "href": "https://drive.google.com/file/d/1whvBhSjjck-_1FK-CixobW-uXPFI-G3i/view?usp=sharing",
+        "target": "_blank",
+        "label_displayed": "COOKIE & PRIVACY POLICY"
+      },
+      {
+        "label_source": "Contatti",
+        "href": "/pages/contatti",
+        "target": "_self",
+        "label_displayed": "CONTATTI"
+      }
+    ],
+    "footer_text_transform": "uppercase",
+    "social": [
+      {
+        "sr_label": "Instagram (Apri in una nuova finestra)",
+        "icon": "fa fa-instagram",
+        "href": "https://www.instagram.com/corsidiformazionecm/",
+        "target": "_blank"
+      },
+      {
+        "sr_label": "Facebooke (Apri in una nuova finestra)",
+        "icon": "fa fa-facebook-square",
+        "href": "https://www.facebook.com/corsidiformazionecm",
+        "target": "_blank"
+      },
+      {
+        "sr_label": "YouTube (Apri in una nuova finestra)",
+        "icon": "fa fa-youtube-play",
+        "href": "https://www.youtube.com/channel/UCooF9-KhcMD6aNzHepZZSNA?sub_confirmation=1",
+        "target": "_blank"
+      }
+    ],
+    "social_urls": {
+      "instagram": "https://www.instagram.com/corsidiformazionecm/",
+      "facebook": "https://www.facebook.com/corsidiformazionecm",
+      "youtube": "https://www.youtube.com/channel/UCooF9-KhcMD6aNzHepZZSNA?sub_confirmation=1"
+    },
+    "copyright_raw": "© Copyright Corsi di Formazionecm 2022\n\n- PARTITA IVA: 02297020469",
+    "copyright": "© Copyright Corsi di Formazionecm 2022 - PARTITA IVA: 02297020469",
+    "piva": "02297020469",
+    "company_name_in_footer": "Corsi di Formazionecm",
+    "address": null,
+    "white_label": {
+      "href": "//www.thinkific.com/?utm_source=corsidiformazionecm&utm_medium=powered-by&utm_campaign=Referral",
+      "title": "Insegna online con Thinkific"
+    },
+    "notes": [
+      "Nessun indirizzo/sede legale/ragione sociale completa nel footer: solo \"Corsi di Formazionecm\" + P.IVA.",
+      "Etichetta social Facebook nello screen-reader text: \"Facebooke\" (refuso nel tema)."
+    ]
+  },
+  "legal": {
+    "terms_url": "https://corsidiformazionecm.thinkific.com/pages/terms",
+    "cookie_privacy_url": "https://drive.google.com/file/d/1whvBhSjjck-_1FK-CixobW-uXPFI-G3i/view?usp=sharing",
+    "cookie_privacy": {
+      "label": "Cookie & Privacy Policy",
+      "url": "https://drive.google.com/file/d/1whvBhSjjck-_1FK-CixobW-uXPFI-G3i/view?usp=sharing",
+      "drive_id": "1whvBhSjjck-_1FK-CixobW-uXPFI-G3i",
+      "downloaded": true,
+      "file": "data/scrape/assets/legal/cookie-privacy-policy.pdf",
+      "bytes": 225768,
+      "pages": 8,
+      "sha1": "96addf9a7c6c80fbc125b5cf5731b7fc57626259"
+    },
+    "terms": {
+      "label": "Termini e Condizioni",
+      "url": "https://corsidiformazionecm.thinkific.com/pages/terms",
+      "http_status": 301,
+      "redirects_to": "https://www.corsidiformazionecm.it/pages/terms"
+    },
+    "page_terms": {
+      "url": "https://www.corsidiformazionecm.it/pages/terms",
+      "title": "Terms of Use",
+      "html": "<p><a href=\"https://d2saw6je89goi1.cloudfront.net/uploads/digital_asset/file/1072338/Termini_e_Condizioni.pdf\">Termini e Condizioni</a></p>",
+      "text": "Termini e Condizioni",
+      "links": [
+        {
+          "label": "Termini e Condizioni",
+          "href": "https://d2saw6je89goi1.cloudfront.net/uploads/digital_asset/file/1072338/Termini_e_Condizioni.pdf"
+        }
+      ],
+      "pdfs": [
+        {
+          "label": "Termini e Condizioni",
+          "url": "https://d2saw6je89goi1.cloudfront.net/uploads/digital_asset/file/1072338/Termini_e_Condizioni.pdf",
+          "ok": true,
+          "file": "data/scrape/assets/legal/termini-e-condizioni.pdf",
+          "bytes": 439659,
+          "pages": 8
+        }
+      ]
+    },
+    "page_privacy": {
+      "url": "https://www.corsidiformazionecm.it/pages/privacy",
+      "title": "Privacy Policy",
+      "html": "<p><a href=\"https://drive.google.com/file/d/1U_viZjpHNDR7ynzh96IRSIGSdpvt5VmT/view?usp=sharing\">Privacy Policy</a></p>",
+      "text": "Privacy Policy",
+      "links": [
+        {
+          "label": "Privacy Policy",
+          "href": "https://drive.google.com/file/d/1U_viZjpHNDR7ynzh96IRSIGSdpvt5VmT/view?usp=sharing"
+        }
+      ]
+    },
+    "cookie_banner": {
+      "provider": "iubenda Cookie Solution",
+      "config": {
+        "consentOnContinuedBrowsing": false,
+        "cookiePolicyInOtherWindow": true,
+        "invalidateConsentWithoutLog": true,
+        "perPurposeConsent": true,
+        "siteId": 2782689,
+        "whitelabel": false,
+        "cookiePolicyId": 13950599,
+        "lang": "it",
+        "banner": {
+          "acceptButtonCaptionColor": "#FFFFFF",
+          "acceptButtonColor": "#BE1522",
+          "acceptButtonDisplay": true,
+          "backgroundColor": "#FFFFFF",
+          "backgroundOverlay": true,
+          "brandBackgroundColor": "#BE1522",
+          "brandTextColor": "#000000",
+          "closeButtonDisplay": false,
+          "customizeButtonCaptionColor": "#4D4D4D",
+          "customizeButtonColor": "#DADADA",
+          "customizeButtonDisplay": true,
+          "explicitWithdrawal": true,
+          "fontSize": "12px",
+          "listPurposes": true,
+          "logo": "(base64 png)",
+          "position": "float-center",
+          "rejectButtonCaptionColor": "#FFFFFF",
+          "rejectButtonColor": "#BE1522",
+          "rejectButtonDisplay": true,
+          "textColor": "#000000"
+        }
+      },
+      "banner_on_load": {
+        "present": true,
+        "text": "Informativa\n\nNoi e terze parti selezionate utilizziamo cookie o tecnologie simili per finalità tecniche e, con il tuo consenso, anche per le finalità di funzionalità, esperienza, misurazione e “marketing (con annunci personalizzati)”.\n\nPuoi liberamente prestare, rifiutare o revocare il tuo consenso, in qualsiasi momento, accedendo al pannello delle preferenze. Il rifiuto del consenso può rendere non disponibili le relative funzioni.\n\nUsa il pulsante “Accetta” per acconsentire. Usa il pulsante “Rifiuta” per continuare senza accettare.\n\nScopri di più e personalizza\nRifiuta\nAccetta\nCreated with iubenda\n(il link si apre in una nuova scheda)",
+        "buttons": [
+          "×",
+          "Scopri di più e personalizza",
+          "Rifiuta",
+          "Accetta",
+          "Created with iubenda\n(il link si apre in una nuova scheda)"
+        ]
+      },
+      "dismissed_with": ".iubenda-cs-reject-btn"
+    }
+  },
+  "newsletter": {
+    "heading": "Newsletter",
+    "subheading": "Iscriviti alla Newsletter per essere sempre aggiornato!",
+    "form": {
+      "id": "new_lead_38a83ca8cd",
+      "action": "/tenant_leads",
+      "method": "post",
+      "data_remote": "true",
+      "fields": [
+        {
+          "tag": "input",
+          "type": "hidden",
+          "name": "authenticity_token",
+          "required": false,
+          "placeholder": null,
+          "value": "(csrf token)",
+          "label": null
+        },
+        {
+          "tag": "input",
+          "type": "hidden",
+          "name": "tenant_lead[page_url]",
+          "required": false,
+          "placeholder": null,
+          "value": "",
+          "label": null
+        },
+        {
+          "tag": "input",
+          "type": "email",
+          "name": "tenant_lead[email]",
+          "required": true,
+          "placeholder": "Digita il tuo indirizzo e-mail",
+          "value": "",
+          "label": "E-mail (obbligatorio)"
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "name": "accept",
+          "required": true,
+          "placeholder": null,
+          "value": "y",
+          "label": "Acconsento al trattamento dei miei dati e alla ricezione di e-mail"
+        },
+        {
+          "tag": "input",
+          "type": "submit",
+          "name": null,
+          "required": false,
+          "placeholder": null,
+          "value": "Invia",
+          "label": null
+        }
+      ],
+      "messages": [
+        {
+          "class": "form__error-msg hidden",
+          "text": "Si prega di inserire un indirizzo email valido"
+        },
+        {
+          "class": "form__error-msg hidden",
+          "text": "Seleziona questa casella se desideri procedere"
+        },
+        {
+          "class": "lead-capture__success-msg sr-only",
+          "text": "Grazie"
+        },
+        {
+          "class": "lead-capture__error-msg",
+          "text": "Ops, qualcosa è andato storto. Riprova con un indirizzo e-mail diverso."
+        }
+      ]
+    },
+    "provider": "Thinkific nativo (lead capture): POST /tenant_leads con data-remote (Rails UJS) — i contatti finiscono nella sezione Leads/Marketing di Thinkific; nessun Mailchimp/Brevo/ActiveCampaign rilevato nel markup.",
+    "consent_text": "Acconsento al trattamento dei miei dati e alla ricezione di e-mail",
+    "present_on": "home, tutte le pagine corso, contatti (sezione lead_capture)"
+  },
+  "contact": {
+    "url": "https://www.corsidiformazionecm.it/pages/contatti",
+    "emails": [
+      {
+        "label": "eMail Segreteria Organizzativa",
+        "email": "info@corsidiformazionecm.it",
+        "section": "text-icon"
+      },
+      {
+        "label": "eMail Supporto Studenti",
+        "email": "responsabile@corsidiformazionecm.it",
+        "section": "text-icon"
+      }
+    ],
+    "whatsapp": {
+      "label": "WhatsApp",
+      "text": "Cell. 339 4846020",
+      "number_display": "339 4846020",
+      "number_e164": "+393394846020",
+      "wa_link_on_contact_page": null,
+      "wa_link_used_in_course_pages": "https://wa.me/393394846020"
+    },
+    "phone": null,
+    "address": null,
+    "info_request": {
+      "label": "Contatta ora",
+      "href": "https://forms.gle/PRtiYheGg1FAqnKe8",
+      "provider": "Google Forms",
+      "form": {
+        "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSdXoceWp4BeYwEGmQ4XT78_-KNTwrsKQz_iXpRZ5yIa7IVDkA/viewform",
+        "title": "Richiesta Informazioni",
+        "description": "Richiesta Informazioni",
+        "body_text": "Richiesta Informazioni\nCompila i campi qui sotto per ricevere informazioni in merito ai nostri corsi\nAccedi a Google per salvare i risultati raggiunti. Scopri di più\n* Indica una domanda obbligatoria\nNome\n\n*\nLa tua risposta\nCognome\n\n*\nLa tua risposta\nEmail\n\n*\nLa tua risposta\nNumero di telefono\n\n*\nLa tua risposta\nRichiesta crediti ECM\nSi\nNo\nVorresti partecipare ai corsi in presenza o online?\nPresenza\nOnline\nMessaggio\n\nLa tua risposta\nInvia\nCancella modulo\nNon inviare mai le password tramite Moduli Google.\nQuesti contenuti non sono creati né avallati da Google. - Termini di servizio - Norme sulla privacy\n\nQuesto modulo sembra sospetto? Segnala\n\n Moduli\n \nGuida e feedback",
+        "items": [
+          {
+            "heading": "Nome\n\n*",
+            "required": true,
+            "inputs": [
+              "text"
+            ],
+            "options": [],
+            "text": "Nome\n\n*\nLa tua risposta"
+          },
+          {
+            "heading": "Cognome\n\n*",
+            "required": true,
+            "inputs": [
+              "text"
+            ],
+            "options": [],
+            "text": "Cognome\n\n*\nLa tua risposta"
+          },
+          {
+            "heading": "Email\n\n*",
+            "required": true,
+            "inputs": [
+              "text"
+            ],
+            "options": [],
+            "text": "Email\n\n*\nLa tua risposta"
+          },
+          {
+            "heading": "Numero di telefono\n\n*",
+            "required": true,
+            "inputs": [
+              "text"
+            ],
+            "options": [],
+            "text": "Numero di telefono\n\n*\nLa tua risposta"
+          },
+          {
+            "heading": "Richiesta crediti ECM",
+            "required": false,
+            "inputs": [
+              "hidden",
+              "radio"
+            ],
+            "options": [
+              "Si",
+              "No"
+            ],
+            "text": "Richiesta crediti ECM\nSi\nNo"
+          },
+          {
+            "heading": "Vorresti partecipare ai corsi in presenza o online?",
+            "required": false,
+            "inputs": [
+              "hidden",
+              "radio"
+            ],
+            "options": [
+              "Presenza",
+              "Online"
+            ],
+            "text": "Vorresti partecipare ai corsi in presenza o online?\nPresenza\nOnline"
+          },
+          {
+            "heading": "Messaggio",
+            "required": false,
+            "inputs": [
+              "textarea"
+            ],
+            "options": [],
+            "text": "Messaggio\n\nLa tua risposta"
+          }
+        ]
+      }
+    },
+    "on_page_form": "Nessun form sulla pagina oltre alla newsletter: la richiesta informazioni rimanda a Google Forms.",
+    "sections": [
+      {
+        "idx": 0,
+        "type": "call-to-action",
+        "uid": "6IlDxMz3t",
+        "class": "call-to-action overlay-opacity--30 section-background section-background-overlay section__content-alignment--center section-height__medium call-to-action___66f31",
+        "heading": "Richiesta Informazioni",
+        "heading_html": "Richiesta Informazioni",
+        "subheading": "Clicca il pulsante qua sotto per compilare il Modulo di richiesta informazioni",
+        "subheading_html": "Clicca il pulsante qua sotto per compilare il Modulo di richiesta informazioni",
+        "images": [],
+        "links": [
+          {
+            "label": "Contatta ora",
+            "href": "https://forms.gle/PRtiYheGg1FAqnKe8",
+            "target": null,
+            "class": "button button-secondary"
+          }
+        ],
+        "buttons": [
+          {
+            "label": "Contatta ora",
+            "href": "https://forms.gle/PRtiYheGg1FAqnKe8",
+            "target": null,
+            "class": "button button-secondary"
+          }
+        ],
+        "text": "Richiesta Informazioni\n\nClicca il pulsante qua sotto per compilare il Modulo di richiesta informazioni\n\nContatta ora",
+        "html": "<h2>Richiesta Informazioni</h2><p>Clicca il pulsante qua sotto per compilare il Modulo di richiesta informazioni</p><p><a href=\"https://forms.gle/PRtiYheGg1FAqnKe8\">Contatta ora</a></p>",
+        "html_text": "Richiesta Informazioni\n\nClicca il pulsante qua sotto per compilare il Modulo di richiesta informazioni\n\nContatta ora"
+      },
+      {
+        "idx": 1,
+        "type": "text-icon",
+        "uid": "MDweekM-D",
+        "class": "text-icon section-height__medium section__heading-alignment--center text-icon___694f8",
+        "heading": "Contatti",
+        "heading_html": "Contatti",
+        "subheading": "Per ogni necessità contattare la Segreteria Organizzativa",
+        "subheading_html": "Per ogni necessità contattare la Segreteria Organizzativa",
+        "images": [],
+        "links": [],
+        "buttons": [],
+        "text": "Contatti\n\nPer ogni necessità contattare la Segreteria Organizzativa\n\neMail Segreteria Organizzativa\n\ninfo@corsidiformazionecm.it\n\neMail Supporto Studenti\n\nresponsabile@corsidiformazionecm.it\n\nWhatsApp\n\nCell. 339 4846020",
+        "html": "<li><h3>eMail Segreteria Organizzativa</h3><p>info@corsidiformazionecm.it</p></li><li><h3>eMail Supporto Studenti</h3><p>responsabile@corsidiformazionecm.it</p></li><li><h3>WhatsApp</h3><p>Cell. 339 4846020</p></li>",
+        "html_text": "-\n\neMail Segreteria Organizzativa\n\ninfo@corsidiformazionecm.it\n\n-\n\neMail Supporto Studenti\n\nresponsabile@corsidiformazionecm.it\n\n-\n\nWhatsApp\n\nCell. 339 4846020",
+        "items": [
+          {
+            "icon": "fa fa-commenting",
+            "heading": "eMail Segreteria Organizzativa",
+            "html": "<p>info@corsidiformazionecm.it</p>",
+            "text": "info@corsidiformazionecm.it",
+            "links": []
+          },
+          {
+            "icon": "fa fa-commenting-o",
+            "heading": "eMail Supporto Studenti",
+            "html": "<p>responsabile@corsidiformazionecm.it</p>",
+            "text": "responsabile@corsidiformazionecm.it",
+            "links": []
+          },
+          {
+            "icon": "fa fa-whatsapp",
+            "heading": "WhatsApp",
+            "html": "<p>Cell. 339 4846020</p>",
+            "text": "Cell. 339 4846020",
+            "links": []
+          }
+        ]
+      },
+      {
+        "idx": 2,
+        "type": "lead_capture",
+        "uid": "vTDauRYXT",
+        "class": "lead-capture section__content-alignment--left section-height__medium",
+        "heading": "Newsletter",
+        "heading_html": "Newsletter",
+        "subheading": "Iscriviti alla Newsletter per essere sempre aggiornato!",
+        "subheading_html": "Iscriviti alla Newsletter per essere sempre aggiornato!",
+        "images": [],
+        "links": [],
+        "buttons": [],
+        "text": "Newsletter\n\nIscriviti alla Newsletter per essere sempre aggiornato!\n\nE-mail (obbligatorio)\n Acconsento al trattamento dei miei dati e alla ricezione di e-mail",
+        "html": "<h2>Newsletter</h2><p>Iscriviti alla Newsletter per essere sempre aggiornato!</p>",
+        "html_text": "Newsletter\n\nIscriviti alla Newsletter per essere sempre aggiornato!",
+        "form": {
+          "id": "new_lead_5f2e8ff94a",
+          "action": "/tenant_leads",
+          "method": "post",
+          "data_remote": "true",
+          "fields": [
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "authenticity_token",
+              "required": false,
+              "placeholder": null,
+              "value": "(csrf token)",
+              "label": null
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "tenant_lead[page_url]",
+              "required": false,
+              "placeholder": null,
+              "value": "",
+              "label": null
+            },
+            {
+              "tag": "input",
+              "type": "email",
+              "name": "tenant_lead[email]",
+              "required": true,
+              "placeholder": "Digita il tuo indirizzo e-mail",
+              "value": "",
+              "label": "E-mail (obbligatorio)"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "accept",
+              "required": true,
+              "placeholder": null,
+              "value": "y",
+              "label": "Acconsento al trattamento dei miei dati e alla ricezione di e-mail"
+            },
+            {
+              "tag": "input",
+              "type": "submit",
+              "name": null,
+              "required": false,
+              "placeholder": null,
+              "value": "Invia",
+              "label": null
+            }
+          ],
+          "messages": [
+            {
+              "class": "form__error-msg hidden",
+              "text": "Si prega di inserire un indirizzo email valido"
+            },
+            {
+              "class": "form__error-msg hidden",
+              "text": "Seleziona questa casella se desideri procedere"
+            },
+            {
+              "class": "lead-capture__success-msg sr-only",
+              "text": "Grazie"
+            },
+            {
+              "class": "lead-capture__error-msg",
+              "text": "Ops, qualcosa è andato storto. Riprova con un indirizzo e-mail diverso."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "home": {
+    "url": "https://www.corsidiformazionecm.it/",
+    "html_title": "Corsi di FormazionEcm",
+    "sections": [
+      {
+        "idx": 0,
+        "type": "gallery",
+        "uid": "6c8aYz-8N",
+        "class": "gallery gallery___d8095",
+        "heading": null,
+        "heading_html": null,
+        "subheading": null,
+        "subheading_html": null,
+        "images": [
+          {
+            "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fp9r6Gfb6SZ2PYAXkjgf7_homepage%20claudia_b.jpg?width=1920",
+            "alt": "",
+            "srcset": null,
+            "width_attr": null,
+            "style": null
+          }
+        ],
+        "links": [],
+        "buttons": [],
+        "text": "",
+        "html": "<ul><li><img src=\"https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fp9r6Gfb6SZ2PYAXkjgf7_homepage%20claudia_b.jpg?width=1920\" alt=\"\"></li></ul>",
+        "html_text": "- [img https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fp9r6Gfb6SZ2PYAXkjgf7_homepage%20claudia_b.jpg?width=1920]",
+        "gallery": [
+          {
+            "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fp9r6Gfb6SZ2PYAXkjgf7_homepage%20claudia_b.jpg?width=1920",
+            "alt": "",
+            "srcset": null,
+            "width_attr": null,
+            "style": null
+          }
+        ]
+      },
+      {
+        "idx": 1,
+        "type": "course-cards-all",
+        "uid": "5e2d38b6e2",
+        "class": "course-cards course-cards-all section-height__medium section__heading-alignment--center course-cards-all___63f23",
+        "heading": "Percorsi di Formazione",
+        "heading_html": "Percorsi di Formazione",
+        "subheading": null,
+        "subheading_html": null,
+        "images": [
+          {
+            "src": "https://import.cdn.thinkific.com/692348/H3F3sVONSvauB2XC1lr6_hf_20261008_173033_0c957f75-5ef6-4e97-b87d-e0f9dfdd55b7%20(1).png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348/H3F3sVONSvauB2XC1lr6_hf_20261008_173033_0c957f75-5ef6-4e97-b87d-e0f9dfdd55b7%20(1).png?width=380 1x, https://import.cdn.thinkific.com/692348/H3F3sVONSvauB2XC1lr6_hf_20261008_173033_0c957f75-5ef6-4e97-b87d-e0f9dfdd55b7%20(1).png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/H3F3sVONSvauB2XC1lr6_hf_20261008_173033_0c957f75-5ef6-4e97-b87d-e0f9dfdd55b7%20(1).png?width=380&dpr=3 3x",
+            "width_attr": null,
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348/TxTIqDSdQKmAlpLPVWOQ_50.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348/TxTIqDSdQKmAlpLPVWOQ_50.png?width=380 1x, https://import.cdn.thinkific.com/692348/TxTIqDSdQKmAlpLPVWOQ_50.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/TxTIqDSdQKmAlpLPVWOQ_50.png?width=380&dpr=3 3x",
+            "width_attr": null,
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348/courses/1975432/NR9Mc65CTluhKI41FCNd_Diapositiva1.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348/courses/1975432/NR9Mc65CTluhKI41FCNd_Diapositiva1.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975432/NR9Mc65CTluhKI41FCNd_Diapositiva1.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975432/NR9Mc65CTluhKI41FCNd_Diapositiva1.png?width=380&dpr=3 3x",
+            "width_attr": null,
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348/courses/1975437/pCj42alZR4u02vwASSzz_Diapositiva2.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348/courses/1975437/pCj42alZR4u02vwASSzz_Diapositiva2.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975437/pCj42alZR4u02vwASSzz_Diapositiva2.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975437/pCj42alZR4u02vwASSzz_Diapositiva2.png?width=380&dpr=3 3x",
+            "width_attr": null,
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348/courses/1975481/jWv0OvOrSXme50YaTgEH_Diapositiva3.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348/courses/1975481/jWv0OvOrSXme50YaTgEH_Diapositiva3.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975481/jWv0OvOrSXme50YaTgEH_Diapositiva3.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975481/jWv0OvOrSXme50YaTgEH_Diapositiva3.png?width=380&dpr=3 3x",
+            "width_attr": null,
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348/zAxOsGWIRvelBjwju8c5_Brochure%20cane%20gatto%20.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348/zAxOsGWIRvelBjwju8c5_Brochure%20cane%20gatto%20.png?width=380 1x, https://import.cdn.thinkific.com/692348/zAxOsGWIRvelBjwju8c5_Brochure%20cane%20gatto%20.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/zAxOsGWIRvelBjwju8c5_Brochure%20cane%20gatto%20.png?width=380&dpr=3 3x",
+            "width_attr": null,
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348/courses/1975459/cRBC8ecTuqsDOXKq4Yi0_Diapositiva4.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348/courses/1975459/cRBC8ecTuqsDOXKq4Yi0_Diapositiva4.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975459/cRBC8ecTuqsDOXKq4Yi0_Diapositiva4.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975459/cRBC8ecTuqsDOXKq4Yi0_Diapositiva4.png?width=380&dpr=3 3x",
+            "width_attr": null,
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348/courses/1975479/JivWtz0BQSSbitstmFHs_Diapositiva5.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348/courses/1975479/JivWtz0BQSSbitstmFHs_Diapositiva5.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975479/JivWtz0BQSSbitstmFHs_Diapositiva5.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975479/JivWtz0BQSSbitstmFHs_Diapositiva5.png?width=380&dpr=3 3x",
+            "width_attr": null,
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348/courses/1975455/L7QmySdiTnGpSIlK4M8F_Diapositiva6.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348/courses/1975455/L7QmySdiTnGpSIlK4M8F_Diapositiva6.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975455/L7QmySdiTnGpSIlK4M8F_Diapositiva6.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975455/L7QmySdiTnGpSIlK4M8F_Diapositiva6.png?width=380&dpr=3 3x",
+            "width_attr": null,
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348/courses/1975434/nGgb9P3AQf6KC2ohI75O_Diapositiva7.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348/courses/1975434/nGgb9P3AQf6KC2ohI75O_Diapositiva7.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975434/nGgb9P3AQf6KC2ohI75O_Diapositiva7.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975434/nGgb9P3AQf6KC2ohI75O_Diapositiva7.png?width=380&dpr=3 3x",
+            "width_attr": null,
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348/courses/1975486/nOvwU32AQUOVmaMqkvA3_Diapositiva8.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348/courses/1975486/nOvwU32AQUOVmaMqkvA3_Diapositiva8.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975486/nOvwU32AQUOVmaMqkvA3_Diapositiva8.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975486/nOvwU32AQUOVmaMqkvA3_Diapositiva8.png?width=380&dpr=3 3x",
+            "width_attr": null,
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348/courses/1975484/VZ0GVT5TSaXJNa1bvahA_Diapositiva9.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348/courses/1975484/VZ0GVT5TSaXJNa1bvahA_Diapositiva9.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975484/VZ0GVT5TSaXJNa1bvahA_Diapositiva9.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975484/VZ0GVT5TSaXJNa1bvahA_Diapositiva9.png?width=380&dpr=3 3x",
+            "width_attr": null,
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348/courses/1975485/1kF8tTLzQzaCMgle3JfZ_Diapositiva10.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348/courses/1975485/1kF8tTLzQzaCMgle3JfZ_Diapositiva10.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975485/1kF8tTLzQzaCMgle3JfZ_Diapositiva10.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975485/1kF8tTLzQzaCMgle3JfZ_Diapositiva10.png?width=380&dpr=3 3x",
+            "width_attr": null,
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348/courses/1975440/bhtdEj93RJSSGA9H1VzB_Diapositiva11.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348/courses/1975440/bhtdEj93RJSSGA9H1VzB_Diapositiva11.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975440/bhtdEj93RJSSGA9H1VzB_Diapositiva11.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975440/bhtdEj93RJSSGA9H1VzB_Diapositiva11.png?width=380&dpr=3 3x",
+            "width_attr": null,
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348/38zxBH3RS9S9o2E6MbLN_CORSO%20CHETOGENICA%20PER%20SITO.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348/38zxBH3RS9S9o2E6MbLN_CORSO%20CHETOGENICA%20PER%20SITO.png?width=380 1x, https://import.cdn.thinkific.com/692348/38zxBH3RS9S9o2E6MbLN_CORSO%20CHETOGENICA%20PER%20SITO.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/38zxBH3RS9S9o2E6MbLN_CORSO%20CHETOGENICA%20PER%20SITO.png?width=380&dpr=3 3x",
+            "width_attr": null,
+            "style": null
+          }
+        ],
+        "links": [
+          {
+            "label": "Pre-ordine disponibile ora! METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA La nutrizione rappresenta un elemento determinante per la salute, il benessere e la performance del cane sportivo e del cavallo atleta. Il corso fornisce una preparazione teorico-pratica sui principi del metabolismo energetico, sulla valutazione dei",
+            "href": "/courses/METABOLISMO,%20NUTRIZIONE%20E%20PERFORMANCE%20NEL%20CANE%20SPORTIVO%20E%20NEL%20CAVALLO%20ATLETA",
+            "target": null,
+            "class": "card card--presell"
+          },
+          {
+            "label": "ALIMENTAZIONE NEL CANE & GATTO COMPLETO Il corso che presentiamo in questa occasione intende formare le figure titolate e legalizzate in Italia a formulare piani alimentari e nutrizionali sugli animali: il Biologo Nutrizionista, i Dietisti e il Medico Veterinario.",
+            "href": "/courses/alimentazione-nel-gatto-completo",
+            "target": null,
+            "class": "card card--published"
+          },
+          {
+            "label": "ALIMENTAZIONE NELLO SPORTIVO - 20 CREDITI L’alimentazione e l’attività fisica, non posso essere viste come due pratiche separate, ma bensì, una come complemento dell’altra, al fine di un miglioramento dello stato psicofisico.",
+            "href": "/courses/alimentazione-nello-sportivo",
+            "target": null,
+            "class": "card card--published"
+          },
+          {
+            "label": "ALIMENTAZIONE VEGANA E VEGETARIANA Durante il corso verranno approfondite le differenze tra le varie tipologie di diete a base vegetale e verrà spiegato quali sono da ritenersi complete e quali no.",
+            "href": "/courses/alimentazione-vegana-e-vegetariana",
+            "target": null,
+            "class": "card card--published"
+          },
+          {
+            "label": "APPARATO DIGERENTE Approfondisce sia il razionale fisio-patologico che il razionale terapeutico, diversi protocolli terapeutici con farmaci omeopatici o fitoterapici e/o integratori nutrizionali, rivolti particolarmente al sistema immunitario e digerente.",
+            "href": "/courses/apparato-digerente",
+            "target": null,
+            "class": "card card--published"
+          },
+          {
+            "label": "COME ALIMENTI TUOI AMICI A 4 ZAMPE? Con questo corso, andiamo ad educare i proprietari, allevatori ed educatori allo scopo di guidarli verso le migliori scelte nutrizionali per i nostri amici a 4 zampe, tenendo conto delle singole razze; ma affronteremo anche temi comportamentali.",
+            "href": "/courses/privato-corso-cane-e-gatto-230",
+            "target": null,
+            "class": "card card--published"
+          },
+          {
+            "label": "COMPOSIZIONE CORPOREA E STATO DI NUTRIZIONE L’elaborazione di un piano nutrizionale personalizzato richiede un’attenta valutazione da parte del nutrizionista delle caratteristiche antropometriche e dello stato di nutrizione su base individuale.",
+            "href": "/courses/composizione-corporea-e-stato-di-nutrizione",
+            "target": null,
+            "class": "card card--published"
+          },
+          {
+            "label": "COUNSELING NUTRIZIONALE Le tecniche di counseling sono uno strumento particolarmente qualificato per la conduzione di colloqui con persone che vogliono risolvere una situazione di malessere e necessitano di cambiare uno o più aspetti dei loro comportamenti di salute.",
+            "href": "/courses/counseling-nutrizionale",
+            "target": null,
+            "class": "card card--published"
+          },
+          {
+            "label": "CURARE L’ECCESSO PONDERALE IN ETÀ EVOLUTIVA L’Obesità manifesta una crescente complessità man mano che viene studiata. Ancora troppo pochi studenti e professionisti sanitari, anche se coinvolti, hanno mai sentito parlare delle molteplici molecole coinvolte nella regolazione dell’appetito.",
+            "href": "/courses/curare-l-eccesso-ponderale-in-eta-evolutiva",
+            "target": null,
+            "class": "card card--published"
+          },
+          {
+            "label": "DALL'EUBIOSI ALLA DISBIOSI La conoscenza e l’identificazione delle cause della disbiosi intestinale consentirà di attivare un approccio terapeutico (nutrizionale e nutraceutico) differente a seconda della tipologia di disbiosi.",
+            "href": "/courses/dall-eubiosi-alla-disbiosi",
+            "target": null,
+            "class": "card card--published"
+          },
+          {
+            "label": "EVIDENCE-BASED PHYTOTHERAPY Questo Corso di Perfezionamento è indirizzato a fornire un’adeguata conoscenza delle basi scientifiche e delle evidenze cliniche che possano consentire un utilizzo razionale e fondato della fitoterapia nella prevenzione e nel trattamento di patologie",
+            "href": "/courses/evidence-based-phytotherapy",
+            "target": null,
+            "class": "card card--published"
+          },
+          {
+            "label": "FITOTERAPIA APPLICATA Il programma didattico prevede l’approfondimento delle conoscenze sulle caratteristiche farmaco-tossicologiche e terapeutiche delle piante medicinali o sulle loro preparazioni.",
+            "href": "/courses/fitoterapia-applicata",
+            "target": null,
+            "class": "card card--published"
+          },
+          {
+            "label": "FITOTERAPIA SISTEMICA La finalità del Corso di Perfezionamento è quella di fornire una preparazione professionale nel settore della fitoterapia. Il programma didattico prevede l’approfondimento delle conoscenze sulle caratteristiche farmaco-tossicologiche e terapeutiche.",
+            "href": "/courses/fitoterapia-sistemica",
+            "target": null,
+            "class": "card card--published"
+          },
+          {
+            "label": "L'INSULINO-RESISTENZA E LA DIABESITÀ Una diagnosi tempestiva ed una adeguata terapia nutrizionale e nutraceutica costituiranno una vera e propria prevenzione primaria.",
+            "href": "/courses/l-insulino-resistenza-e-la-diabesita",
+            "target": null,
+            "class": "card card--published"
+          },
+          {
+            "label": "LA DIETA CHETOGENICA COME SOLUZIONE TERAPEUTICA: Un approccio pratico In questo corso scoprirai cos'è e come funziona la dieta chetogenica: sfatiamo i falsi miti che circondano questo regime alimentare e analizziamo benefici comprovati e le problematiche più comuni. E molto altro!",
+            "href": "/courses/dieta-chetogenica",
+            "target": null,
+            "class": "card card--published"
+          },
+          {
+            "label": "Vedi tutti i Corsi",
+            "href": "/collections",
+            "target": null,
+            "class": "button button-secondary"
+          }
+        ],
+        "buttons": [
+          {
+            "label": "Vedi tutti i Corsi",
+            "href": "/collections",
+            "target": null,
+            "class": "button button-secondary"
+          }
+        ],
+        "text": "Percorsi di Formazione\nPre-ordine disponibile ora!\nMETABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA\n\nLa nutrizione rappresenta un elemento determinante per la salute, il benessere e la performance del cane sportivo e del cavallo atleta. Il corso fornisce una preparazione teorico-pratica sui principi del metabolismo energetico, sulla valutazione dei\n\nALIMENTAZIONE NEL CANE & GATTO COMPLETO\n\nIl corso che presentiamo in questa occasione intende formare le figure titolate e legalizzate in Italia a formulare piani alimentari e nutrizionali sugli animali: il Biologo Nutrizionista, i Dietisti e il Medico Veterinario.\n\nALIMENTAZIONE NELLO SPORTIVO - 20 CREDITI\n\nL’alimentazione e l’attività fisica, non posso essere viste come due pratiche separate, ma bensì, una come complemento dell’altra, al fine di un miglioramento dello stato psicofisico.\n\nALIMENTAZIONE VEGANA E VEGETARIANA\n\nDurante il corso verranno approfondite le differenze tra le varie tipologie di diete a base vegetale e verrà spiegato quali sono da ritenersi complete e quali no.\n\nAPPARATO DIGERENTE\n\nApprofondisce sia il razionale fisio-patologico che il razionale terapeutico, diversi protocolli terapeutici con farmaci omeopatici o fitoterapici e/o integratori nutrizionali, rivolti particolarmente al sistema immunitario e digerente.\n\nCOME ALIMENTI TUOI AMICI A 4 ZAMPE?\n\nCon questo corso, andiamo ad educare i proprietari, allevatori ed educatori allo scopo di guidarli verso le migliori scelte nutrizionali per i nostri amici a 4 zampe, tenendo conto delle singole razze; ma affronteremo anche temi comportamentali.\n\nCOMPOSIZIONE CORPOREA E STATO DI NUTRIZIONE\n\nL’elaborazione di un piano nutrizionale personalizzato richiede un’attenta valutazione da parte del nutrizionista delle caratteristiche antropometriche e dello stato di nutrizione su base individuale.\n\nCOUNSELING NUTRIZIONALE\n\nLe tecniche di counseling sono uno strumento particolarmente qualificato per la conduzione di colloqui con persone che vogliono risolvere una situazione di malessere e necessitano di cambiare uno o più aspetti dei loro comportamenti di salute.\n\nCURARE L’ECCESSO PONDERALE IN ETÀ EVOLUTIVA\n\nL’Obesità manifesta una crescente complessità man mano che viene studiata. Ancora troppo pochi studenti e professionisti sanitari, anche se coinvolti, hanno mai sentito parlare delle molteplici molecole coinvolte nella regolazione dell’appetito.\n\nDALL'EUBIOSI ALLA DISBIOSI\n\nLa conoscenza e l’identificazione delle cause della disbiosi intestinale consentirà di attivare un approccio terapeutico (nutrizionale e nutraceutico) differente a seconda della tipologia di disbiosi.\n\nEVIDENCE-BASED PHYTOTHERAPY\n\nQuesto Corso di Perfezionamento è indirizzato a fornire un’adeguata conoscenza delle basi scientifiche e delle evidenze cliniche che possano consentire un utilizzo razionale e fondato della fitoterapia nella prevenzione e nel trattamento di patologie\n\nFITOTERAPIA APPLICATA\n\nIl programma didattico prevede l’approfondimento delle conoscenze sulle caratteristiche farmaco-tossicologiche e terapeutiche delle piante medicinali o sulle loro preparazioni.\n\nFITOTERAPIA SISTEMICA\n\nLa finalità del Corso di Perfezionamento è quella di fornire una preparazione professionale nel settore della fitoterapia. Il programma didattico prevede l’approfondimento delle conoscenze sulle caratteristiche farmaco-tossicologiche e terapeutiche.\n\nL'INSULINO-RESISTENZA E LA DIABESITÀ\n\nUna diagnosi tempestiva ed una adeguata terapia nutrizionale e nutraceutica costituiranno una vera e propria prevenzione primaria.\n\nLA DIETA CHETOGENICA COME SOLUZIONE TERAPEUTICA: Un approccio pratico\n\nIn questo corso scoprirai cos'è e come funziona la dieta chetogenica: sfatiamo i falsi miti che circondano questo regime alimentare e analizziamo benefici comprovati e le problematiche più comuni. E molto altro!\n\nVedi tutti i Corsi",
+        "html": "<a href=\"/courses/METABOLISMO,%20NUTRIZIONE%20E%20PERFORMANCE%20NEL%20CANE%20SPORTIVO%20E%20NEL%20CAVALLO%20ATLETA\"><p>Pre-ordine disponibile ora!</p><img src=\"https://import.cdn.thinkific.com/692348/H3F3sVONSvauB2XC1lr6_hf_20261008_173033_0c957f75-5ef6-4e97-b87d-e0f9dfdd55b7%20(1).png\" alt=\"\"><h3>METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA</h3><p>La nutrizione rappresenta un elemento determinante per la salute, il benessere e la performance del cane sportivo e del cavallo atleta. Il corso fornisce una preparazione teorico-pratica sui principi del metabolismo energetico, sulla valutazione dei</p></a>",
+        "html_text": "Pre-ordine disponibile ora!\n\n[img https://import.cdn.thinkific.com/692348/H3F3sVONSvauB2XC1lr6_hf_20261008_173033_0c957f75-5ef6-4e97-b87d-e0f9dfdd55b7%20(1).png]\n\nMETABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA\n\nLa nutrizione rappresenta un elemento determinante per la salute, il benessere e la performance del cane sportivo e del cavallo atleta. Il corso fornisce una preparazione teorico-pratica sui principi del metabolismo energetico, sulla valutazione dei",
+        "cards": [
+          {
+            "href": "/courses/METABOLISMO,%20NUTRIZIONE%20E%20PERFORMANCE%20NEL%20CANE%20SPORTIVO%20E%20NEL%20CAVALLO%20ATLETA",
+            "card_class": "card card--presell",
+            "badge": "Pre-ordine disponibile ora!",
+            "name": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+            "description": "La nutrizione rappresenta un elemento determinante per la salute, il benessere e la performance del cane sportivo e del cavallo atleta. Il corso fornisce una preparazione teorico-pratica sui principi del metabolismo energetico, sulla valutazione dei",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348/H3F3sVONSvauB2XC1lr6_hf_20261008_173033_0c957f75-5ef6-4e97-b87d-e0f9dfdd55b7%20(1).png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348/H3F3sVONSvauB2XC1lr6_hf_20261008_173033_0c957f75-5ef6-4e97-b87d-e0f9dfdd55b7%20(1).png?width=380 1x, https://import.cdn.thinkific.com/692348/H3F3sVONSvauB2XC1lr6_hf_20261008_173033_0c957f75-5ef6-4e97-b87d-e0f9dfdd55b7%20(1).png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/H3F3sVONSvauB2XC1lr6_hf_20261008_173033_0c957f75-5ef6-4e97-b87d-e0f9dfdd55b7%20(1).png?width=380&dpr=3 3x",
+              "width_attr": null,
+              "style": null
+            }
+          },
+          {
+            "href": "/courses/alimentazione-nel-gatto-completo",
+            "card_class": "card card--published",
+            "badge": null,
+            "name": "ALIMENTAZIONE NEL CANE & GATTO COMPLETO",
+            "description": "Il corso che presentiamo in questa occasione intende formare le figure titolate e legalizzate in Italia a formulare piani alimentari e nutrizionali sugli animali: il Biologo Nutrizionista, i Dietisti e il Medico Veterinario.",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348/TxTIqDSdQKmAlpLPVWOQ_50.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348/TxTIqDSdQKmAlpLPVWOQ_50.png?width=380 1x, https://import.cdn.thinkific.com/692348/TxTIqDSdQKmAlpLPVWOQ_50.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/TxTIqDSdQKmAlpLPVWOQ_50.png?width=380&dpr=3 3x",
+              "width_attr": null,
+              "style": null
+            }
+          },
+          {
+            "href": "/courses/alimentazione-nello-sportivo",
+            "card_class": "card card--published",
+            "badge": null,
+            "name": "ALIMENTAZIONE NELLO SPORTIVO - 20 CREDITI",
+            "description": "L’alimentazione e l’attività fisica, non posso essere viste come due pratiche separate, ma bensì, una come complemento dell’altra, al fine di un miglioramento dello stato psicofisico.",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348/courses/1975432/NR9Mc65CTluhKI41FCNd_Diapositiva1.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348/courses/1975432/NR9Mc65CTluhKI41FCNd_Diapositiva1.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975432/NR9Mc65CTluhKI41FCNd_Diapositiva1.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975432/NR9Mc65CTluhKI41FCNd_Diapositiva1.png?width=380&dpr=3 3x",
+              "width_attr": null,
+              "style": null
+            }
+          },
+          {
+            "href": "/courses/alimentazione-vegana-e-vegetariana",
+            "card_class": "card card--published",
+            "badge": null,
+            "name": "ALIMENTAZIONE VEGANA E VEGETARIANA",
+            "description": "Durante il corso verranno approfondite le differenze tra le varie tipologie di diete a base vegetale e verrà spiegato quali sono da ritenersi complete e quali no.",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348/courses/1975437/pCj42alZR4u02vwASSzz_Diapositiva2.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348/courses/1975437/pCj42alZR4u02vwASSzz_Diapositiva2.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975437/pCj42alZR4u02vwASSzz_Diapositiva2.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975437/pCj42alZR4u02vwASSzz_Diapositiva2.png?width=380&dpr=3 3x",
+              "width_attr": null,
+              "style": null
+            }
+          },
+          {
+            "href": "/courses/apparato-digerente",
+            "card_class": "card card--published",
+            "badge": null,
+            "name": "APPARATO DIGERENTE",
+            "description": "Approfondisce sia il razionale fisio-patologico che il razionale terapeutico, diversi protocolli terapeutici con farmaci omeopatici o fitoterapici e/o integratori nutrizionali, rivolti particolarmente al sistema immunitario e digerente.",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348/courses/1975481/jWv0OvOrSXme50YaTgEH_Diapositiva3.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348/courses/1975481/jWv0OvOrSXme50YaTgEH_Diapositiva3.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975481/jWv0OvOrSXme50YaTgEH_Diapositiva3.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975481/jWv0OvOrSXme50YaTgEH_Diapositiva3.png?width=380&dpr=3 3x",
+              "width_attr": null,
+              "style": null
+            }
+          },
+          {
+            "href": "/courses/privato-corso-cane-e-gatto-230",
+            "card_class": "card card--published",
+            "badge": null,
+            "name": "COME ALIMENTI TUOI AMICI A 4 ZAMPE?",
+            "description": "Con questo corso, andiamo ad educare i proprietari, allevatori ed educatori allo scopo di guidarli verso le migliori scelte nutrizionali per i nostri amici a 4 zampe, tenendo conto delle singole razze; ma affronteremo anche temi comportamentali.",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348/zAxOsGWIRvelBjwju8c5_Brochure%20cane%20gatto%20.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348/zAxOsGWIRvelBjwju8c5_Brochure%20cane%20gatto%20.png?width=380 1x, https://import.cdn.thinkific.com/692348/zAxOsGWIRvelBjwju8c5_Brochure%20cane%20gatto%20.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/zAxOsGWIRvelBjwju8c5_Brochure%20cane%20gatto%20.png?width=380&dpr=3 3x",
+              "width_attr": null,
+              "style": null
+            }
+          },
+          {
+            "href": "/courses/composizione-corporea-e-stato-di-nutrizione",
+            "card_class": "card card--published",
+            "badge": null,
+            "name": "COMPOSIZIONE CORPOREA E STATO DI NUTRIZIONE",
+            "description": "L’elaborazione di un piano nutrizionale personalizzato richiede un’attenta valutazione da parte del nutrizionista delle caratteristiche antropometriche e dello stato di nutrizione su base individuale.",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348/courses/1975459/cRBC8ecTuqsDOXKq4Yi0_Diapositiva4.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348/courses/1975459/cRBC8ecTuqsDOXKq4Yi0_Diapositiva4.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975459/cRBC8ecTuqsDOXKq4Yi0_Diapositiva4.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975459/cRBC8ecTuqsDOXKq4Yi0_Diapositiva4.png?width=380&dpr=3 3x",
+              "width_attr": null,
+              "style": null
+            }
+          },
+          {
+            "href": "/courses/counseling-nutrizionale",
+            "card_class": "card card--published",
+            "badge": null,
+            "name": "COUNSELING NUTRIZIONALE",
+            "description": "Le tecniche di counseling sono uno strumento particolarmente qualificato per la conduzione di colloqui con persone che vogliono risolvere una situazione di malessere e necessitano di cambiare uno o più aspetti dei loro comportamenti di salute.",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348/courses/1975479/JivWtz0BQSSbitstmFHs_Diapositiva5.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348/courses/1975479/JivWtz0BQSSbitstmFHs_Diapositiva5.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975479/JivWtz0BQSSbitstmFHs_Diapositiva5.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975479/JivWtz0BQSSbitstmFHs_Diapositiva5.png?width=380&dpr=3 3x",
+              "width_attr": null,
+              "style": null
+            }
+          },
+          {
+            "href": "/courses/curare-l-eccesso-ponderale-in-eta-evolutiva",
+            "card_class": "card card--published",
+            "badge": null,
+            "name": "CURARE L’ECCESSO PONDERALE IN ETÀ EVOLUTIVA",
+            "description": "L’Obesità manifesta una crescente complessità man mano che viene studiata. Ancora troppo pochi studenti e professionisti sanitari, anche se coinvolti, hanno mai sentito parlare delle molteplici molecole coinvolte nella regolazione dell’appetito.",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348/courses/1975455/L7QmySdiTnGpSIlK4M8F_Diapositiva6.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348/courses/1975455/L7QmySdiTnGpSIlK4M8F_Diapositiva6.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975455/L7QmySdiTnGpSIlK4M8F_Diapositiva6.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975455/L7QmySdiTnGpSIlK4M8F_Diapositiva6.png?width=380&dpr=3 3x",
+              "width_attr": null,
+              "style": null
+            }
+          },
+          {
+            "href": "/courses/dall-eubiosi-alla-disbiosi",
+            "card_class": "card card--published",
+            "badge": null,
+            "name": "DALL'EUBIOSI ALLA DISBIOSI",
+            "description": "La conoscenza e l’identificazione delle cause della disbiosi intestinale consentirà di attivare un approccio terapeutico (nutrizionale e nutraceutico) differente a seconda della tipologia di disbiosi.",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348/courses/1975434/nGgb9P3AQf6KC2ohI75O_Diapositiva7.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348/courses/1975434/nGgb9P3AQf6KC2ohI75O_Diapositiva7.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975434/nGgb9P3AQf6KC2ohI75O_Diapositiva7.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975434/nGgb9P3AQf6KC2ohI75O_Diapositiva7.png?width=380&dpr=3 3x",
+              "width_attr": null,
+              "style": null
+            }
+          },
+          {
+            "href": "/courses/evidence-based-phytotherapy",
+            "card_class": "card card--published",
+            "badge": null,
+            "name": "EVIDENCE-BASED PHYTOTHERAPY",
+            "description": "Questo Corso di Perfezionamento è indirizzato a fornire un’adeguata conoscenza delle basi scientifiche e delle evidenze cliniche che possano consentire un utilizzo razionale e fondato della fitoterapia nella prevenzione e nel trattamento di patologie",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348/courses/1975486/nOvwU32AQUOVmaMqkvA3_Diapositiva8.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348/courses/1975486/nOvwU32AQUOVmaMqkvA3_Diapositiva8.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975486/nOvwU32AQUOVmaMqkvA3_Diapositiva8.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975486/nOvwU32AQUOVmaMqkvA3_Diapositiva8.png?width=380&dpr=3 3x",
+              "width_attr": null,
+              "style": null
+            }
+          },
+          {
+            "href": "/courses/fitoterapia-applicata",
+            "card_class": "card card--published",
+            "badge": null,
+            "name": "FITOTERAPIA APPLICATA",
+            "description": "Il programma didattico prevede l’approfondimento delle conoscenze sulle caratteristiche farmaco-tossicologiche e terapeutiche delle piante medicinali o sulle loro preparazioni.",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348/courses/1975484/VZ0GVT5TSaXJNa1bvahA_Diapositiva9.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348/courses/1975484/VZ0GVT5TSaXJNa1bvahA_Diapositiva9.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975484/VZ0GVT5TSaXJNa1bvahA_Diapositiva9.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975484/VZ0GVT5TSaXJNa1bvahA_Diapositiva9.png?width=380&dpr=3 3x",
+              "width_attr": null,
+              "style": null
+            }
+          },
+          {
+            "href": "/courses/fitoterapia-sistemica",
+            "card_class": "card card--published",
+            "badge": null,
+            "name": "FITOTERAPIA SISTEMICA",
+            "description": "La finalità del Corso di Perfezionamento è quella di fornire una preparazione professionale nel settore della fitoterapia. Il programma didattico prevede l’approfondimento delle conoscenze sulle caratteristiche farmaco-tossicologiche e terapeutiche.",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348/courses/1975485/1kF8tTLzQzaCMgle3JfZ_Diapositiva10.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348/courses/1975485/1kF8tTLzQzaCMgle3JfZ_Diapositiva10.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975485/1kF8tTLzQzaCMgle3JfZ_Diapositiva10.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975485/1kF8tTLzQzaCMgle3JfZ_Diapositiva10.png?width=380&dpr=3 3x",
+              "width_attr": null,
+              "style": null
+            }
+          },
+          {
+            "href": "/courses/l-insulino-resistenza-e-la-diabesita",
+            "card_class": "card card--published",
+            "badge": null,
+            "name": "L'INSULINO-RESISTENZA E LA DIABESITÀ",
+            "description": "Una diagnosi tempestiva ed una adeguata terapia nutrizionale e nutraceutica costituiranno una vera e propria prevenzione primaria.",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348/courses/1975440/bhtdEj93RJSSGA9H1VzB_Diapositiva11.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348/courses/1975440/bhtdEj93RJSSGA9H1VzB_Diapositiva11.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975440/bhtdEj93RJSSGA9H1VzB_Diapositiva11.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975440/bhtdEj93RJSSGA9H1VzB_Diapositiva11.png?width=380&dpr=3 3x",
+              "width_attr": null,
+              "style": null
+            }
+          },
+          {
+            "href": "/courses/dieta-chetogenica",
+            "card_class": "card card--published",
+            "badge": null,
+            "name": "LA DIETA CHETOGENICA COME SOLUZIONE TERAPEUTICA: Un approccio pratico",
+            "description": "In questo corso scoprirai cos'è e come funziona la dieta chetogenica:\nsfatiamo i falsi miti che circondano questo regime alimentare e analizziamo benefici comprovati e le problematiche più comuni. E molto altro!",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348/38zxBH3RS9S9o2E6MbLN_CORSO%20CHETOGENICA%20PER%20SITO.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348/38zxBH3RS9S9o2E6MbLN_CORSO%20CHETOGENICA%20PER%20SITO.png?width=380 1x, https://import.cdn.thinkific.com/692348/38zxBH3RS9S9o2E6MbLN_CORSO%20CHETOGENICA%20PER%20SITO.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/38zxBH3RS9S9o2E6MbLN_CORSO%20CHETOGENICA%20PER%20SITO.png?width=380&dpr=3 3x",
+              "width_attr": null,
+              "style": null
+            }
+          }
+        ]
+      },
+      {
+        "idx": 2,
+        "type": "testimonials",
+        "uid": "skOS7bv7z",
+        "class": "testimonials section-height__medium section__heading-alignment--center testimonials___9224e",
+        "heading": "Testimonianze e Recensioni",
+        "heading_html": "Testimonianze e Recensioni",
+        "subheading": null,
+        "subheading_html": null,
+        "images": [
+          {
+            "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fr3zyE353Sj2QrHWEm5Gz_Logo_CDF-02.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fr3zyE353Sj2QrHWEm5Gz_Logo_CDF-02.png?width=100&dpr=1 1x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fr3zyE353Sj2QrHWEm5Gz_Logo_CDF-02.png?width=100&dpr=2 2x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fr3zyE353Sj2QrHWEm5Gz_Logo_CDF-02.png?width=100&dpr=3 3x",
+            "width_attr": "100",
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FOj6A3zpQ3u4y6BBTM2hl_Logo_CDF-02.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FOj6A3zpQ3u4y6BBTM2hl_Logo_CDF-02.png?width=100&dpr=1 1x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FOj6A3zpQ3u4y6BBTM2hl_Logo_CDF-02.png?width=100&dpr=2 2x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FOj6A3zpQ3u4y6BBTM2hl_Logo_CDF-02.png?width=100&dpr=3 3x",
+            "width_attr": "100",
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FYMRlbNawQgO3dw4bTQWm_Logo_CDF-02.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FYMRlbNawQgO3dw4bTQWm_Logo_CDF-02.png?width=100&dpr=1 1x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FYMRlbNawQgO3dw4bTQWm_Logo_CDF-02.png?width=100&dpr=2 2x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FYMRlbNawQgO3dw4bTQWm_Logo_CDF-02.png?width=100&dpr=3 3x",
+            "width_attr": "100",
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FbCD1tElJQG2vb1JBg8hX_Logo_CDF-02.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FbCD1tElJQG2vb1JBg8hX_Logo_CDF-02.png?width=100&dpr=1 1x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FbCD1tElJQG2vb1JBg8hX_Logo_CDF-02.png?width=100&dpr=2 2x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FbCD1tElJQG2vb1JBg8hX_Logo_CDF-02.png?width=100&dpr=3 3x",
+            "width_attr": "100",
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FL6b8B7zHTWaZ82dAidLM_Logo_CDF-02.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FL6b8B7zHTWaZ82dAidLM_Logo_CDF-02.png?width=100&dpr=1 1x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FL6b8B7zHTWaZ82dAidLM_Logo_CDF-02.png?width=100&dpr=2 2x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FL6b8B7zHTWaZ82dAidLM_Logo_CDF-02.png?width=100&dpr=3 3x",
+            "width_attr": "100",
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FjMTJWUVRJqdYzxyjVCQ0_Logo_CDF-02.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FjMTJWUVRJqdYzxyjVCQ0_Logo_CDF-02.png?width=100&dpr=1 1x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FjMTJWUVRJqdYzxyjVCQ0_Logo_CDF-02.png?width=100&dpr=2 2x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FjMTJWUVRJqdYzxyjVCQ0_Logo_CDF-02.png?width=100&dpr=3 3x",
+            "width_attr": "100",
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FEz4RjubgRq3vUdeaL5lV_Logo_CDF-02.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FEz4RjubgRq3vUdeaL5lV_Logo_CDF-02.png?width=100&dpr=1 1x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FEz4RjubgRq3vUdeaL5lV_Logo_CDF-02.png?width=100&dpr=2 2x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FEz4RjubgRq3vUdeaL5lV_Logo_CDF-02.png?width=100&dpr=3 3x",
+            "width_attr": "100",
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FSpfKiiZOQFe6hdwdSFXs_Logo_CDF-02.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FSpfKiiZOQFe6hdwdSFXs_Logo_CDF-02.png?width=100&dpr=1 1x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FSpfKiiZOQFe6hdwdSFXs_Logo_CDF-02.png?width=100&dpr=2 2x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FSpfKiiZOQFe6hdwdSFXs_Logo_CDF-02.png?width=100&dpr=3 3x",
+            "width_attr": "100",
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FNifkf5hyS5OsSI5O03ON_Logo_CDF-02.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FNifkf5hyS5OsSI5O03ON_Logo_CDF-02.png?width=100&dpr=1 1x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FNifkf5hyS5OsSI5O03ON_Logo_CDF-02.png?width=100&dpr=2 2x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FNifkf5hyS5OsSI5O03ON_Logo_CDF-02.png?width=100&dpr=3 3x",
+            "width_attr": "100",
+            "style": null
+          },
+          {
+            "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FcBTx3DAkRZs75I3mbZug_Logo_CDF-02.png",
+            "alt": "",
+            "srcset": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FcBTx3DAkRZs75I3mbZug_Logo_CDF-02.png?width=100&dpr=1 1x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FcBTx3DAkRZs75I3mbZug_Logo_CDF-02.png?width=100&dpr=2 2x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FcBTx3DAkRZs75I3mbZug_Logo_CDF-02.png?width=100&dpr=3 3x",
+            "width_attr": "100",
+            "style": null
+          }
+        ],
+        "links": [],
+        "buttons": [],
+        "text": "Testimonianze e Recensioni\nMartina M.\n\nNutrizione e Donna\n\nEra la prima volta che usavo questa metodologia di aggiornamento, e ad essere sincera avevo molti dubbi sull'efficacia.. Invece mi è molto piaciuto perché sembrava di essere in aula! E' stato possibile interagire con docente ed organizzazione. Il materiale didattico completo è stato consegnato subito dopo il corso, insomma veramente soddisfacente!\nDott. Andrea M.\n\nNutrizione e Donna\n\nDopo il corso ho sentito di avere maggiori stimoli e informazioni sull'argomento che mi possono permettere di arricchire il colloquio con il paziente.\nFrancesca G.\n\nÈ la mia seconda esperienza con CORSIDIFORMAZIONECM e le mie aspettative sono sempre state soddisfatte. Professionalità e cortesia. Ottimo binomio!\nStudente\n\nInteressante visione degli aspetti medici con un approccio che mette il paziente e non la malattia al centro dell'attenzione\nMarco P.\n\nUn corso interessante, stimolante e utile per approfondire la conoscenza delle piante terapeutiche andando ben oltre gli insegnamenti della classica formazione universitaria.\nFrancesco L.Marco\n\nOttimo corso e grande professionalità da parte dei docenti.\nStudente Corso\n\nConsiglio questi corsi perché ben organizzati, molto interessanti, ma soprattutto, è possibile trovare un ambiente familiare e fortemente formativo.\nGiovanni F.\n\nIl corso non ha rispettato le mie aspettative... le ha ampiamente superate! Complimenti.\nDott. Fracassi S.\n\nCorso di elevata qualità scientifica, non deve mancare nel curriculum di un professionista della salute.\nFrancesco L.\n\nCorso ricco di materiale informativo e formativo. Ottima organizzazione... esperienza sicuramente da ripetere.",
+        "html": "<img src=\"https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fr3zyE353Sj2QrHWEm5Gz_Logo_CDF-02.png\" alt=\"\"><h3>Martina M.</h3><p>Nutrizione e Donna</p><p>Era la prima volta che usavo questa metodologia di aggiornamento, e ad essere sincera avevo molti dubbi sull'efficacia.. Invece mi è molto piaciuto perché sembrava di essere in aula! E' stato possibile interagire con docente ed organizzazione. Il materiale didattico completo è stato consegnato subito dopo il corso, insomma veramente soddisfacente!</p><img src=\"https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FOj6A3zpQ3u4y6BBTM2hl_Logo_CDF-02.png\" alt=\"\"><h3>Dott. Andrea M.</h3><p>Nutrizione e Donna</p><p>Dopo il corso ho sentito di avere maggiori stimoli e informazioni sull'argomento che mi possono permettere di arricchire il colloquio con il paziente.</p><img src=\"https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FYMRlbNawQgO3dw4bTQWm_Logo_CDF-02.png\" alt=\"\"><h3>Francesca G.</h3><p>È la mia seconda esperienza con CORSIDIFORMAZIONECM e le mie aspettative sono sempre state soddisfatte. Professionalità e cortesia. Ottimo binomio!</p><img src=\"https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FbCD1tElJQG2vb1JBg8hX_Logo_CDF-02.png\" alt=\"\"><h3>Studente</h3><p>Interessante visione degli aspetti medici con un approccio che mette il paziente e non la malattia al centro dell'attenzione</p><img src=\"https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FL6b8B7zHTWaZ82dAidLM_Logo_CDF-02.png\" alt=\"\"><h3>Marco P.</h3><p>Un corso interessante, stimolante e utile per approfondire la conoscenza delle piante terapeutiche andando ben oltre gli insegnamenti della classica formazione universitaria.</p><img src=\"https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FjMTJWUVRJqdYzxyjVCQ0_Logo_CDF-02.png\" alt=\"\"><h3>Francesco L.Marco</h3><p>Ottimo corso e grande professionalità da parte dei docenti.</p><img src=\"https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FEz4RjubgRq3vUdeaL5lV_Logo_CDF-02.png\" alt=\"\"><h3>Studente Corso</h3><p>Consiglio questi corsi perché ben organizzati, molto interessanti, ma soprattutto, è possibile trovare un ambiente familiare e fortemente formativo.</p><img src=\"https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FSpfKiiZOQFe6hdwdSFXs_Logo_CDF-02.png\" alt=\"\"><h3>Giovanni F.</h3><p>Il corso non ha rispettato le mie aspettative... le ha ampiamente superate! Complimenti.</p><img src=\"https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FNifkf5hyS5OsSI5O03ON_Logo_CDF-02.png\" alt=\"\"><h3>Dott. Fracassi S.</h3><p>Corso di elevata qualità scientifica, non deve mancare nel curriculum di un professionista della salute.</p><img src=\"https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FcBTx3DAkRZs75I3mbZug_Logo_CDF-02.png\" alt=\"\"><h3>Francesco L.</h3><p>Corso ricco di materiale informativo e formativo. Ottima organizzazione... esperienza sicuramente da ripetere.</p>",
+        "html_text": "[img https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fr3zyE353Sj2QrHWEm5Gz_Logo_CDF-02.png]\n\nMartina M.\n\nNutrizione e Donna\n\nEra la prima volta che usavo questa metodologia di aggiornamento, e ad essere sincera avevo molti dubbi sull'efficacia.. Invece mi è molto piaciuto perché sembrava di essere in aula! E' stato possibile interagire con docente ed organizzazione. Il materiale didattico completo è stato consegnato subito dopo il corso, insomma veramente soddisfacente!\n\n[img https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FOj6A3zpQ3u4y6BBTM2hl_Logo_CDF-02.png]\n\nDott. Andrea M.\n\nNutrizione e Donna\n\nDopo il corso ho sentito di avere maggiori stimoli e informazioni sull'argomento che mi possono permettere di arricchire il colloquio con il paziente.\n\n[img https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FYMRlbNawQgO3dw4bTQWm_Logo_CDF-02.png]\n\nFrancesca G.\n\nÈ la mia seconda esperienza con CORSIDIFORMAZIONECM e le mie aspettative sono sempre state soddisfatte. Professionalità e cortesia. Ottimo binomio!\n\n[img https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FbCD1tElJQG2vb1JBg8hX_Logo_CDF-02.png]\n\nStudente\n\nInteressante visione degli aspetti medici con un approccio che mette il paziente e non la malattia al centro dell'attenzione\n\n[img https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FL6b8B7zHTWaZ82dAidLM_Logo_CDF-02.png]\n\nMarco P.\n\nUn corso interessante, stimolante e utile per approfondire la conoscenza delle piante terapeutiche andando ben oltre gli insegnamenti della classica formazione universitaria.\n\n[img https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FjMTJWUVRJqdYzxyjVCQ0_Logo_CDF-02.png]\n\nFrancesco L.Marco\n\nOttimo corso e grande professionalità da parte dei docenti.\n\n[img https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FEz4RjubgRq3vUdeaL5lV_Logo_CDF-02.png]\n\nStudente Corso\n\nConsiglio questi corsi perché ben organizzati, molto interessanti, ma soprattutto, è possibile trovare un ambiente familiare e fortemente formativo.\n\n[img https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FSpfKiiZOQFe6hdwdSFXs_Logo_CDF-02.png]\n\nGiovanni F.\n\nIl corso non ha rispettato le mie aspettative... le ha ampiamente superate! Complimenti.\n\n[img https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FNifkf5hyS5OsSI5O03ON_Logo_CDF-02.png]\n\nDott. Fracassi S.\n\nCorso di elevata qualità scientifica, non deve mancare nel curriculum di un professionista della salute.\n\n[img https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FcBTx3DAkRZs75I3mbZug_Logo_CDF-02.png]\n\nFrancesco L.\n\nCorso ricco di materiale informativo e formativo. Ottima organizzazione... esperienza sicuramente da ripetere.",
+        "items": [
+          {
+            "title": "Martina M.",
+            "author": "Nutrizione e Donna",
+            "text_raw": "Era la prima volta che usavo questa metodologia di aggiornamento, e ad essere sincera avevo molti dubbi sull'efficacia.. Invece mi è molto piaciuto perché sembrava di essere in aula! E' stato possibile interagire con docente ed organizzazione. Il materiale didattico completo è stato consegnato subito dopo il corso, insomma veramente soddisfacente!",
+            "text_html": "<p>Era la prima volta che usavo questa metodologia di aggiornamento, e ad essere sincera avevo molti dubbi sull'efficacia.. Invece mi è molto piaciuto perché sembrava di essere in aula! E' stato possibile interagire con docente ed organizzazione. Il materiale didattico completo è stato consegnato subito dopo il corso, insomma veramente soddisfacente!</p>",
+            "text": "Era la prima volta che usavo questa metodologia di aggiornamento, e ad essere sincera avevo molti dubbi sull'efficacia.. Invece mi è molto piaciuto perché sembrava di essere in aula! E' stato possibile interagire con docente ed organizzazione. Il materiale didattico completo è stato consegnato subito dopo il corso, insomma veramente soddisfacente!",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fr3zyE353Sj2QrHWEm5Gz_Logo_CDF-02.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fr3zyE353Sj2QrHWEm5Gz_Logo_CDF-02.png?width=100&dpr=1 1x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fr3zyE353Sj2QrHWEm5Gz_Logo_CDF-02.png?width=100&dpr=2 2x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fr3zyE353Sj2QrHWEm5Gz_Logo_CDF-02.png?width=100&dpr=3 3x",
+              "width_attr": "100",
+              "style": null
+            }
+          },
+          {
+            "title": "Dott. Andrea M.",
+            "author": "Nutrizione e Donna",
+            "text_raw": "Dopo il corso ho sentito di avere maggiori stimoli e informazioni sull'argomento che mi possono permettere di arricchire il colloquio con il paziente.",
+            "text_html": "<p>Dopo il corso ho sentito di avere maggiori stimoli e informazioni sull'argomento che mi possono permettere di arricchire il colloquio con il paziente.</p>",
+            "text": "Dopo il corso ho sentito di avere maggiori stimoli e informazioni sull'argomento che mi possono permettere di arricchire il colloquio con il paziente.",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FOj6A3zpQ3u4y6BBTM2hl_Logo_CDF-02.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FOj6A3zpQ3u4y6BBTM2hl_Logo_CDF-02.png?width=100&dpr=1 1x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FOj6A3zpQ3u4y6BBTM2hl_Logo_CDF-02.png?width=100&dpr=2 2x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FOj6A3zpQ3u4y6BBTM2hl_Logo_CDF-02.png?width=100&dpr=3 3x",
+              "width_attr": "100",
+              "style": null
+            }
+          },
+          {
+            "title": "Francesca G.",
+            "author": null,
+            "text_raw": "È la mia seconda esperienza con CORSIDIFORMAZIONECM e le mie aspettative sono sempre state soddisfatte. Professionalità e cortesia. Ottimo binomio!",
+            "text_html": "<p>È la mia seconda esperienza con CORSIDIFORMAZIONECM e le mie aspettative sono sempre state soddisfatte. Professionalità e cortesia. Ottimo binomio!</p>",
+            "text": "È la mia seconda esperienza con CORSIDIFORMAZIONECM e le mie aspettative sono sempre state soddisfatte. Professionalità e cortesia. Ottimo binomio!",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FYMRlbNawQgO3dw4bTQWm_Logo_CDF-02.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FYMRlbNawQgO3dw4bTQWm_Logo_CDF-02.png?width=100&dpr=1 1x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FYMRlbNawQgO3dw4bTQWm_Logo_CDF-02.png?width=100&dpr=2 2x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FYMRlbNawQgO3dw4bTQWm_Logo_CDF-02.png?width=100&dpr=3 3x",
+              "width_attr": "100",
+              "style": null
+            }
+          },
+          {
+            "title": "Studente",
+            "author": null,
+            "text_raw": "Interessante visione degli aspetti medici con un approccio che mette il paziente e non la malattia al centro dell'attenzione",
+            "text_html": "<p>Interessante visione degli aspetti medici con un approccio che mette il paziente e non la malattia al centro dell'attenzione</p>",
+            "text": "Interessante visione degli aspetti medici con un approccio che mette il paziente e non la malattia al centro dell'attenzione",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FbCD1tElJQG2vb1JBg8hX_Logo_CDF-02.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FbCD1tElJQG2vb1JBg8hX_Logo_CDF-02.png?width=100&dpr=1 1x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FbCD1tElJQG2vb1JBg8hX_Logo_CDF-02.png?width=100&dpr=2 2x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FbCD1tElJQG2vb1JBg8hX_Logo_CDF-02.png?width=100&dpr=3 3x",
+              "width_attr": "100",
+              "style": null
+            }
+          },
+          {
+            "title": "Marco P.",
+            "author": null,
+            "text_raw": "Un corso interessante, stimolante e utile per approfondire la conoscenza delle piante terapeutiche andando ben oltre gli insegnamenti della classica formazione universitaria.",
+            "text_html": "<p>Un corso interessante, stimolante e utile per approfondire la conoscenza delle piante terapeutiche andando ben oltre gli insegnamenti della classica formazione universitaria.</p>",
+            "text": "Un corso interessante, stimolante e utile per approfondire la conoscenza delle piante terapeutiche andando ben oltre gli insegnamenti della classica formazione universitaria.",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FL6b8B7zHTWaZ82dAidLM_Logo_CDF-02.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FL6b8B7zHTWaZ82dAidLM_Logo_CDF-02.png?width=100&dpr=1 1x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FL6b8B7zHTWaZ82dAidLM_Logo_CDF-02.png?width=100&dpr=2 2x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FL6b8B7zHTWaZ82dAidLM_Logo_CDF-02.png?width=100&dpr=3 3x",
+              "width_attr": "100",
+              "style": null
+            }
+          },
+          {
+            "title": "Francesco L.Marco",
+            "author": null,
+            "text_raw": "Ottimo corso e grande professionalità da parte dei docenti.",
+            "text_html": "<p>Ottimo corso e grande professionalità da parte dei docenti.</p>",
+            "text": "Ottimo corso e grande professionalità da parte dei docenti.",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FjMTJWUVRJqdYzxyjVCQ0_Logo_CDF-02.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FjMTJWUVRJqdYzxyjVCQ0_Logo_CDF-02.png?width=100&dpr=1 1x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FjMTJWUVRJqdYzxyjVCQ0_Logo_CDF-02.png?width=100&dpr=2 2x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FjMTJWUVRJqdYzxyjVCQ0_Logo_CDF-02.png?width=100&dpr=3 3x",
+              "width_attr": "100",
+              "style": null
+            }
+          },
+          {
+            "title": "Studente Corso",
+            "author": null,
+            "text_raw": "Consiglio questi corsi perché ben organizzati, molto interessanti, ma soprattutto, è possibile trovare un ambiente familiare e fortemente formativo.",
+            "text_html": "<p>Consiglio questi corsi perché ben organizzati, molto interessanti, ma soprattutto, è possibile trovare un ambiente familiare e fortemente formativo.</p>",
+            "text": "Consiglio questi corsi perché ben organizzati, molto interessanti, ma soprattutto, è possibile trovare un ambiente familiare e fortemente formativo.",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FEz4RjubgRq3vUdeaL5lV_Logo_CDF-02.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FEz4RjubgRq3vUdeaL5lV_Logo_CDF-02.png?width=100&dpr=1 1x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FEz4RjubgRq3vUdeaL5lV_Logo_CDF-02.png?width=100&dpr=2 2x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FEz4RjubgRq3vUdeaL5lV_Logo_CDF-02.png?width=100&dpr=3 3x",
+              "width_attr": "100",
+              "style": null
+            }
+          },
+          {
+            "title": "Giovanni F.",
+            "author": null,
+            "text_raw": "Il corso non ha rispettato le mie aspettative... le ha ampiamente superate! Complimenti.",
+            "text_html": "<p>Il corso non ha rispettato le mie aspettative... le ha ampiamente superate! Complimenti.</p>",
+            "text": "Il corso non ha rispettato le mie aspettative... le ha ampiamente superate! Complimenti.",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FSpfKiiZOQFe6hdwdSFXs_Logo_CDF-02.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FSpfKiiZOQFe6hdwdSFXs_Logo_CDF-02.png?width=100&dpr=1 1x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FSpfKiiZOQFe6hdwdSFXs_Logo_CDF-02.png?width=100&dpr=2 2x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FSpfKiiZOQFe6hdwdSFXs_Logo_CDF-02.png?width=100&dpr=3 3x",
+              "width_attr": "100",
+              "style": null
+            }
+          },
+          {
+            "title": "Dott. Fracassi S.",
+            "author": null,
+            "text_raw": "Corso di elevata qualità scientifica, non deve mancare nel curriculum di un professionista della salute.",
+            "text_html": "<p>Corso di elevata qualità scientifica, non deve mancare nel curriculum di un professionista della salute.</p>",
+            "text": "Corso di elevata qualità scientifica, non deve mancare nel curriculum di un professionista della salute.",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FNifkf5hyS5OsSI5O03ON_Logo_CDF-02.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FNifkf5hyS5OsSI5O03ON_Logo_CDF-02.png?width=100&dpr=1 1x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FNifkf5hyS5OsSI5O03ON_Logo_CDF-02.png?width=100&dpr=2 2x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FNifkf5hyS5OsSI5O03ON_Logo_CDF-02.png?width=100&dpr=3 3x",
+              "width_attr": "100",
+              "style": null
+            }
+          },
+          {
+            "title": "Francesco L.",
+            "author": null,
+            "text_raw": "Corso ricco di materiale informativo e formativo. Ottima organizzazione... esperienza sicuramente da ripetere.",
+            "text_html": "<p>Corso ricco di materiale informativo e formativo. Ottima organizzazione... esperienza sicuramente da ripetere.</p>",
+            "text": "Corso ricco di materiale informativo e formativo. Ottima organizzazione... esperienza sicuramente da ripetere.",
+            "image": {
+              "src": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FcBTx3DAkRZs75I3mbZug_Logo_CDF-02.png",
+              "alt": "",
+              "srcset": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FcBTx3DAkRZs75I3mbZug_Logo_CDF-02.png?width=100&dpr=1 1x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FcBTx3DAkRZs75I3mbZug_Logo_CDF-02.png?width=100&dpr=2 2x, https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FcBTx3DAkRZs75I3mbZug_Logo_CDF-02.png?width=100&dpr=3 3x",
+              "width_attr": "100",
+              "style": null
+            }
+          }
+        ]
+      },
+      {
+        "idx": 3,
+        "type": "lead_capture",
+        "uid": "4xCZMjYV3",
+        "class": "lead-capture section__content-alignment--left section-height__medium",
+        "heading": "Newsletter",
+        "heading_html": "Newsletter",
+        "subheading": "Iscriviti alla Newsletter per essere sempre aggiornato!",
+        "subheading_html": "Iscriviti alla Newsletter per essere sempre aggiornato!",
+        "images": [],
+        "links": [],
+        "buttons": [],
+        "text": "Newsletter\n\nIscriviti alla Newsletter per essere sempre aggiornato!\n\nE-mail (obbligatorio)\n Acconsento al trattamento dei miei dati e alla ricezione di e-mail",
+        "html": "<h2>Newsletter</h2><p>Iscriviti alla Newsletter per essere sempre aggiornato!</p>",
+        "html_text": "Newsletter\n\nIscriviti alla Newsletter per essere sempre aggiornato!",
+        "form": {
+          "id": "new_lead_38a83ca8cd",
+          "action": "/tenant_leads",
+          "method": "post",
+          "data_remote": "true",
+          "fields": [
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "authenticity_token",
+              "required": false,
+              "placeholder": null,
+              "value": "(csrf token)",
+              "label": null
+            },
+            {
+              "tag": "input",
+              "type": "hidden",
+              "name": "tenant_lead[page_url]",
+              "required": false,
+              "placeholder": null,
+              "value": "",
+              "label": null
+            },
+            {
+              "tag": "input",
+              "type": "email",
+              "name": "tenant_lead[email]",
+              "required": true,
+              "placeholder": "Digita il tuo indirizzo e-mail",
+              "value": "",
+              "label": "E-mail (obbligatorio)"
+            },
+            {
+              "tag": "input",
+              "type": "checkbox",
+              "name": "accept",
+              "required": true,
+              "placeholder": null,
+              "value": "y",
+              "label": "Acconsento al trattamento dei miei dati e alla ricezione di e-mail"
+            },
+            {
+              "tag": "input",
+              "type": "submit",
+              "name": null,
+              "required": false,
+              "placeholder": null,
+              "value": "Invia",
+              "label": null
+            }
+          ],
+          "messages": [
+            {
+              "class": "form__error-msg hidden",
+              "text": "Si prega di inserire un indirizzo email valido"
+            },
+            {
+              "class": "form__error-msg hidden",
+              "text": "Seleziona questa casella se desideri procedere"
+            },
+            {
+              "class": "lead-capture__success-msg sr-only",
+              "text": "Grazie"
+            },
+            {
+              "class": "lead-capture__error-msg",
+              "text": "Ops, qualcosa è andato storto. Riprova con un indirizzo e-mail diverso."
+            }
+          ]
+        }
+      }
+    ],
+    "images": [
+      {
+        "section": "gallery",
+        "section_idx": 0,
+        "url_original": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fp9r6Gfb6SZ2PYAXkjgf7_homepage%20claudia_b.jpg?width=1920",
+        "url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fp9r6Gfb6SZ2PYAXkjgf7_homepage%20claudia_b.jpg",
+        "file": "data/scrape/assets/home/00-gallery-01-p9r6gfb6sz2pyaxkjgf7-homepage-claudia-b-jpg.jpg",
+        "width": 2080,
+        "height": 1254,
+        "sha1": "329562d55c20d573d156480f6af7747264efe45b",
+        "alt": ""
+      },
+      {
+        "section": "course-cards-all",
+        "section_idx": 1,
+        "url_original": "https://import.cdn.thinkific.com/692348/H3F3sVONSvauB2XC1lr6_hf_20261008_173033_0c957f75-5ef6-4e97-b87d-e0f9dfdd55b7%20(1).png",
+        "url_best": "https://import.cdn.thinkific.com/692348/H3F3sVONSvauB2XC1lr6_hf_20261008_173033_0c957f75-5ef6-4e97-b87d-e0f9dfdd55b7%20(1).png",
+        "file": "data/scrape/assets/home/01-course-cards-all-01-h3f3svonsvaub2xc1lr6-hf-20261008-173033-0c957f75-5.png",
+        "width": 800,
+        "height": 452,
+        "sha1": "30b1ef4045f522b3d86c3d0fda1d341990aece98",
+        "alt": ""
+      },
+      {
+        "section": "course-cards-all",
+        "section_idx": 1,
+        "url_original": "https://import.cdn.thinkific.com/692348/TxTIqDSdQKmAlpLPVWOQ_50.png",
+        "url_best": "https://import.cdn.thinkific.com/692348/TxTIqDSdQKmAlpLPVWOQ_50.png",
+        "file": "data/scrape/assets/home/01-course-cards-all-02-txtiqdsdqkmalplpvwoq-50-png.png",
+        "width": 800,
+        "height": 450,
+        "sha1": "4435d75ea53c9efb2095b47b2a88b7d6b5187f5b",
+        "alt": ""
+      },
+      {
+        "section": "course-cards-all",
+        "section_idx": 1,
+        "url_original": "https://import.cdn.thinkific.com/692348/courses/1975432/NR9Mc65CTluhKI41FCNd_Diapositiva1.png",
+        "url_best": "https://import.cdn.thinkific.com/692348/courses/1975432/NR9Mc65CTluhKI41FCNd_Diapositiva1.png",
+        "file": "data/scrape/assets/home/01-course-cards-all-03-nr9mc65ctluhki41fcnd-diapositiva1-png.png",
+        "width": 1080,
+        "height": 597,
+        "sha1": "96c51409b567e3c11d1ff6b5b35f904f0ce0ad4e",
+        "alt": ""
+      },
+      {
+        "section": "course-cards-all",
+        "section_idx": 1,
+        "url_original": "https://import.cdn.thinkific.com/692348/courses/1975437/pCj42alZR4u02vwASSzz_Diapositiva2.png",
+        "url_best": "https://import.cdn.thinkific.com/692348/courses/1975437/pCj42alZR4u02vwASSzz_Diapositiva2.png",
+        "file": "data/scrape/assets/home/01-course-cards-all-04-pcj42alzr4u02vwasszz-diapositiva2-png.png",
+        "width": 1080,
+        "height": 597,
+        "sha1": "f1b9aaaca85617466e4d1d0231aa15320a6b05a8",
+        "alt": ""
+      },
+      {
+        "section": "course-cards-all",
+        "section_idx": 1,
+        "url_original": "https://import.cdn.thinkific.com/692348/courses/1975481/jWv0OvOrSXme50YaTgEH_Diapositiva3.png",
+        "url_best": "https://import.cdn.thinkific.com/692348/courses/1975481/jWv0OvOrSXme50YaTgEH_Diapositiva3.png",
+        "file": "data/scrape/assets/home/01-course-cards-all-05-jwv0ovorsxme50yatgeh-diapositiva3-png.png",
+        "width": 1080,
+        "height": 597,
+        "sha1": "d8b8efb5049ccf914abdac980207527022df5a8a",
+        "alt": ""
+      },
+      {
+        "section": "course-cards-all",
+        "section_idx": 1,
+        "url_original": "https://import.cdn.thinkific.com/692348/zAxOsGWIRvelBjwju8c5_Brochure%20cane%20gatto%20.png",
+        "url_best": "https://import.cdn.thinkific.com/692348/zAxOsGWIRvelBjwju8c5_Brochure%20cane%20gatto%20.png",
+        "file": "data/scrape/assets/home/01-course-cards-all-06-zaxosgwirvelbjwju8c5-brochure-cane-gatto-png.png",
+        "width": 800,
+        "height": 450,
+        "sha1": "3f73e0a9a1bcb4860034855e1156344f0a89be68",
+        "alt": ""
+      },
+      {
+        "section": "course-cards-all",
+        "section_idx": 1,
+        "url_original": "https://import.cdn.thinkific.com/692348/courses/1975459/cRBC8ecTuqsDOXKq4Yi0_Diapositiva4.png",
+        "url_best": "https://import.cdn.thinkific.com/692348/courses/1975459/cRBC8ecTuqsDOXKq4Yi0_Diapositiva4.png",
+        "file": "data/scrape/assets/home/01-course-cards-all-07-crbc8ectuqsdoxkq4yi0-diapositiva4-png.png",
+        "width": 1080,
+        "height": 597,
+        "sha1": "95e7bad19e1b676b34c2e3f4970f23d10c66a598",
+        "alt": ""
+      },
+      {
+        "section": "course-cards-all",
+        "section_idx": 1,
+        "url_original": "https://import.cdn.thinkific.com/692348/courses/1975479/JivWtz0BQSSbitstmFHs_Diapositiva5.png",
+        "url_best": "https://import.cdn.thinkific.com/692348/courses/1975479/JivWtz0BQSSbitstmFHs_Diapositiva5.png",
+        "file": "data/scrape/assets/home/01-course-cards-all-08-jivwtz0bqssbitstmfhs-diapositiva5-png.png",
+        "width": 1080,
+        "height": 597,
+        "sha1": "1a0b6b78ea24231b9ae01b227328dbbafcb0cc68",
+        "alt": ""
+      },
+      {
+        "section": "course-cards-all",
+        "section_idx": 1,
+        "url_original": "https://import.cdn.thinkific.com/692348/courses/1975455/L7QmySdiTnGpSIlK4M8F_Diapositiva6.png",
+        "url_best": "https://import.cdn.thinkific.com/692348/courses/1975455/L7QmySdiTnGpSIlK4M8F_Diapositiva6.png",
+        "file": "data/scrape/assets/home/01-course-cards-all-09-l7qmysditngpsilk4m8f-diapositiva6-png.png",
+        "width": 1080,
+        "height": 597,
+        "sha1": "0e41fe9aafa4fa353aa62febfc04325c7451c6e9",
+        "alt": ""
+      },
+      {
+        "section": "course-cards-all",
+        "section_idx": 1,
+        "url_original": "https://import.cdn.thinkific.com/692348/courses/1975434/nGgb9P3AQf6KC2ohI75O_Diapositiva7.png",
+        "url_best": "https://import.cdn.thinkific.com/692348/courses/1975434/nGgb9P3AQf6KC2ohI75O_Diapositiva7.png",
+        "file": "data/scrape/assets/home/01-course-cards-all-10-nggb9p3aqf6kc2ohi75o-diapositiva7-png.png",
+        "width": 1080,
+        "height": 597,
+        "sha1": "d6e4187c6515b7407cbebeb6a9f39537afcc12f1",
+        "alt": ""
+      },
+      {
+        "section": "course-cards-all",
+        "section_idx": 1,
+        "url_original": "https://import.cdn.thinkific.com/692348/courses/1975486/nOvwU32AQUOVmaMqkvA3_Diapositiva8.png",
+        "url_best": "https://import.cdn.thinkific.com/692348/courses/1975486/nOvwU32AQUOVmaMqkvA3_Diapositiva8.png",
+        "file": "data/scrape/assets/home/01-course-cards-all-11-novwu32aquovmamqkva3-diapositiva8-png.png",
+        "width": 1080,
+        "height": 597,
+        "sha1": "41f24bbcc1aefa019bff29affa262a9b330df3d4",
+        "alt": ""
+      },
+      {
+        "section": "course-cards-all",
+        "section_idx": 1,
+        "url_original": "https://import.cdn.thinkific.com/692348/courses/1975484/VZ0GVT5TSaXJNa1bvahA_Diapositiva9.png",
+        "url_best": "https://import.cdn.thinkific.com/692348/courses/1975484/VZ0GVT5TSaXJNa1bvahA_Diapositiva9.png",
+        "file": "data/scrape/assets/home/01-course-cards-all-12-vz0gvt5tsaxjna1bvaha-diapositiva9-png.png",
+        "width": 1080,
+        "height": 597,
+        "sha1": "9c2c391a3a90f2030d099907ea794c41d4149310",
+        "alt": ""
+      },
+      {
+        "section": "course-cards-all",
+        "section_idx": 1,
+        "url_original": "https://import.cdn.thinkific.com/692348/courses/1975485/1kF8tTLzQzaCMgle3JfZ_Diapositiva10.png",
+        "url_best": "https://import.cdn.thinkific.com/692348/courses/1975485/1kF8tTLzQzaCMgle3JfZ_Diapositiva10.png",
+        "file": "data/scrape/assets/home/01-course-cards-all-13-1kf8ttlzqzacmgle3jfz-diapositiva10-png.png",
+        "width": 1080,
+        "height": 597,
+        "sha1": "775b4b86160b19c8aa2c4d878b06fab2806e7894",
+        "alt": ""
+      },
+      {
+        "section": "course-cards-all",
+        "section_idx": 1,
+        "url_original": "https://import.cdn.thinkific.com/692348/courses/1975440/bhtdEj93RJSSGA9H1VzB_Diapositiva11.png",
+        "url_best": "https://import.cdn.thinkific.com/692348/courses/1975440/bhtdEj93RJSSGA9H1VzB_Diapositiva11.png",
+        "file": "data/scrape/assets/home/01-course-cards-all-14-bhtdej93rjssga9h1vzb-diapositiva11-png.png",
+        "width": 1080,
+        "height": 597,
+        "sha1": "d9a36ba3f27597655b6a5483facadd49d8c1d381",
+        "alt": ""
+      },
+      {
+        "section": "course-cards-all",
+        "section_idx": 1,
+        "url_original": "https://import.cdn.thinkific.com/692348/38zxBH3RS9S9o2E6MbLN_CORSO%20CHETOGENICA%20PER%20SITO.png",
+        "url_best": "https://import.cdn.thinkific.com/692348/38zxBH3RS9S9o2E6MbLN_CORSO%20CHETOGENICA%20PER%20SITO.png",
+        "file": "data/scrape/assets/home/01-course-cards-all-15-38zxbh3rs9s9o2e6mbln-corso-chetogenica-per-sito-pn.png",
+        "width": 800,
+        "height": 450,
+        "sha1": "5edc511f1be73cd4113c216f8866d647858b37bb",
+        "alt": ""
+      },
+      {
+        "section": "testimonials",
+        "section_idx": 2,
+        "url_original": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fr3zyE353Sj2QrHWEm5Gz_Logo_CDF-02.png",
+        "url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fr3zyE353Sj2QrHWEm5Gz_Logo_CDF-02.png",
+        "file": "data/scrape/assets/home/02-testimonials-01-r3zye353sj2qrhwem5gz-logo-cdf-02-png.png",
+        "width": 1029,
+        "height": 1029,
+        "sha1": "5d05e087d3cf5183a6d1edf1ff9c415bb2c695c1",
+        "alt": ""
+      },
+      {
+        "section": "testimonials",
+        "section_idx": 2,
+        "url_original": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FOj6A3zpQ3u4y6BBTM2hl_Logo_CDF-02.png",
+        "url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FOj6A3zpQ3u4y6BBTM2hl_Logo_CDF-02.png",
+        "file": "data/scrape/assets/home/02-testimonials-02-oj6a3zpq3u4y6bbtm2hl-logo-cdf-02-png.png",
+        "width": 1029,
+        "height": 1029,
+        "sha1": "5d05e087d3cf5183a6d1edf1ff9c415bb2c695c1",
+        "alt": ""
+      },
+      {
+        "section": "testimonials",
+        "section_idx": 2,
+        "url_original": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FYMRlbNawQgO3dw4bTQWm_Logo_CDF-02.png",
+        "url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FYMRlbNawQgO3dw4bTQWm_Logo_CDF-02.png",
+        "file": "data/scrape/assets/home/02-testimonials-03-ymrlbnawqgo3dw4btqwm-logo-cdf-02-png.png",
+        "width": 1029,
+        "height": 1029,
+        "sha1": "5d05e087d3cf5183a6d1edf1ff9c415bb2c695c1",
+        "alt": ""
+      },
+      {
+        "section": "testimonials",
+        "section_idx": 2,
+        "url_original": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FbCD1tElJQG2vb1JBg8hX_Logo_CDF-02.png",
+        "url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FbCD1tElJQG2vb1JBg8hX_Logo_CDF-02.png",
+        "file": "data/scrape/assets/home/02-testimonials-04-bcd1teljqg2vb1jbg8hx-logo-cdf-02-png.png",
+        "width": 1029,
+        "height": 1029,
+        "sha1": "5d05e087d3cf5183a6d1edf1ff9c415bb2c695c1",
+        "alt": ""
+      },
+      {
+        "section": "testimonials",
+        "section_idx": 2,
+        "url_original": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FL6b8B7zHTWaZ82dAidLM_Logo_CDF-02.png",
+        "url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FL6b8B7zHTWaZ82dAidLM_Logo_CDF-02.png",
+        "file": "data/scrape/assets/home/02-testimonials-05-l6b8b7zhtwaz82daidlm-logo-cdf-02-png.png",
+        "width": 1029,
+        "height": 1029,
+        "sha1": "5d05e087d3cf5183a6d1edf1ff9c415bb2c695c1",
+        "alt": ""
+      },
+      {
+        "section": "testimonials",
+        "section_idx": 2,
+        "url_original": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FjMTJWUVRJqdYzxyjVCQ0_Logo_CDF-02.png",
+        "url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FjMTJWUVRJqdYzxyjVCQ0_Logo_CDF-02.png",
+        "file": "data/scrape/assets/home/02-testimonials-06-jmtjwuvrjqdyzxyjvcq0-logo-cdf-02-png.png",
+        "width": 1029,
+        "height": 1029,
+        "sha1": "5d05e087d3cf5183a6d1edf1ff9c415bb2c695c1",
+        "alt": ""
+      },
+      {
+        "section": "testimonials",
+        "section_idx": 2,
+        "url_original": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FEz4RjubgRq3vUdeaL5lV_Logo_CDF-02.png",
+        "url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FEz4RjubgRq3vUdeaL5lV_Logo_CDF-02.png",
+        "file": "data/scrape/assets/home/02-testimonials-07-ez4rjubgrq3vudeal5lv-logo-cdf-02-png.png",
+        "width": 1029,
+        "height": 1029,
+        "sha1": "5d05e087d3cf5183a6d1edf1ff9c415bb2c695c1",
+        "alt": ""
+      },
+      {
+        "section": "testimonials",
+        "section_idx": 2,
+        "url_original": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FSpfKiiZOQFe6hdwdSFXs_Logo_CDF-02.png",
+        "url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FSpfKiiZOQFe6hdwdSFXs_Logo_CDF-02.png",
+        "file": "data/scrape/assets/home/02-testimonials-08-spfkiizoqfe6hdwdsfxs-logo-cdf-02-png.png",
+        "width": 1029,
+        "height": 1029,
+        "sha1": "5d05e087d3cf5183a6d1edf1ff9c415bb2c695c1",
+        "alt": ""
+      },
+      {
+        "section": "testimonials",
+        "section_idx": 2,
+        "url_original": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FNifkf5hyS5OsSI5O03ON_Logo_CDF-02.png",
+        "url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FNifkf5hyS5OsSI5O03ON_Logo_CDF-02.png",
+        "file": "data/scrape/assets/home/02-testimonials-09-nifkf5hys5ossi5o03on-logo-cdf-02-png.png",
+        "width": 1029,
+        "height": 1029,
+        "sha1": "5d05e087d3cf5183a6d1edf1ff9c415bb2c695c1",
+        "alt": ""
+      },
+      {
+        "section": "testimonials",
+        "section_idx": 2,
+        "url_original": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FcBTx3DAkRZs75I3mbZug_Logo_CDF-02.png",
+        "url_best": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FcBTx3DAkRZs75I3mbZug_Logo_CDF-02.png",
+        "file": "data/scrape/assets/home/02-testimonials-10-cbtx3dakrzs75i3mbzug-logo-cdf-02-png.png",
+        "width": 1029,
+        "height": 1029,
+        "sha1": "5d05e087d3cf5183a6d1edf1ff9c415bb2c695c1",
+        "alt": ""
+      }
+    ],
+    "featured_courses": [
+      {
+        "href": "/courses/METABOLISMO,%20NUTRIZIONE%20E%20PERFORMANCE%20NEL%20CANE%20SPORTIVO%20E%20NEL%20CAVALLO%20ATLETA",
+        "card_class": "card card--presell",
+        "badge": "Pre-ordine disponibile ora!",
+        "name": "METABOLISMO, NUTRIZIONE E PERFORMANCE NEL CANE SPORTIVO E NEL CAVALLO ATLETA",
+        "description": "La nutrizione rappresenta un elemento determinante per la salute, il benessere e la performance del cane sportivo e del cavallo atleta. Il corso fornisce una preparazione teorico-pratica sui principi del metabolismo energetico, sulla valutazione dei",
+        "image": {
+          "src": "https://import.cdn.thinkific.com/692348/H3F3sVONSvauB2XC1lr6_hf_20261008_173033_0c957f75-5ef6-4e97-b87d-e0f9dfdd55b7%20(1).png",
+          "alt": "",
+          "srcset": "https://import.cdn.thinkific.com/692348/H3F3sVONSvauB2XC1lr6_hf_20261008_173033_0c957f75-5ef6-4e97-b87d-e0f9dfdd55b7%20(1).png?width=380 1x, https://import.cdn.thinkific.com/692348/H3F3sVONSvauB2XC1lr6_hf_20261008_173033_0c957f75-5ef6-4e97-b87d-e0f9dfdd55b7%20(1).png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/H3F3sVONSvauB2XC1lr6_hf_20261008_173033_0c957f75-5ef6-4e97-b87d-e0f9dfdd55b7%20(1).png?width=380&dpr=3 3x",
+          "width_attr": null,
+          "style": null
+        }
+      },
+      {
+        "href": "/courses/alimentazione-nel-gatto-completo",
+        "card_class": "card card--published",
+        "badge": null,
+        "name": "ALIMENTAZIONE NEL CANE & GATTO COMPLETO",
+        "description": "Il corso che presentiamo in questa occasione intende formare le figure titolate e legalizzate in Italia a formulare piani alimentari e nutrizionali sugli animali: il Biologo Nutrizionista, i Dietisti e il Medico Veterinario.",
+        "image": {
+          "src": "https://import.cdn.thinkific.com/692348/TxTIqDSdQKmAlpLPVWOQ_50.png",
+          "alt": "",
+          "srcset": "https://import.cdn.thinkific.com/692348/TxTIqDSdQKmAlpLPVWOQ_50.png?width=380 1x, https://import.cdn.thinkific.com/692348/TxTIqDSdQKmAlpLPVWOQ_50.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/TxTIqDSdQKmAlpLPVWOQ_50.png?width=380&dpr=3 3x",
+          "width_attr": null,
+          "style": null
+        }
+      },
+      {
+        "href": "/courses/alimentazione-nello-sportivo",
+        "card_class": "card card--published",
+        "badge": null,
+        "name": "ALIMENTAZIONE NELLO SPORTIVO - 20 CREDITI",
+        "description": "L’alimentazione e l’attività fisica, non posso essere viste come due pratiche separate, ma bensì, una come complemento dell’altra, al fine di un miglioramento dello stato psicofisico.",
+        "image": {
+          "src": "https://import.cdn.thinkific.com/692348/courses/1975432/NR9Mc65CTluhKI41FCNd_Diapositiva1.png",
+          "alt": "",
+          "srcset": "https://import.cdn.thinkific.com/692348/courses/1975432/NR9Mc65CTluhKI41FCNd_Diapositiva1.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975432/NR9Mc65CTluhKI41FCNd_Diapositiva1.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975432/NR9Mc65CTluhKI41FCNd_Diapositiva1.png?width=380&dpr=3 3x",
+          "width_attr": null,
+          "style": null
+        }
+      },
+      {
+        "href": "/courses/alimentazione-vegana-e-vegetariana",
+        "card_class": "card card--published",
+        "badge": null,
+        "name": "ALIMENTAZIONE VEGANA E VEGETARIANA",
+        "description": "Durante il corso verranno approfondite le differenze tra le varie tipologie di diete a base vegetale e verrà spiegato quali sono da ritenersi complete e quali no.",
+        "image": {
+          "src": "https://import.cdn.thinkific.com/692348/courses/1975437/pCj42alZR4u02vwASSzz_Diapositiva2.png",
+          "alt": "",
+          "srcset": "https://import.cdn.thinkific.com/692348/courses/1975437/pCj42alZR4u02vwASSzz_Diapositiva2.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975437/pCj42alZR4u02vwASSzz_Diapositiva2.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975437/pCj42alZR4u02vwASSzz_Diapositiva2.png?width=380&dpr=3 3x",
+          "width_attr": null,
+          "style": null
+        }
+      },
+      {
+        "href": "/courses/apparato-digerente",
+        "card_class": "card card--published",
+        "badge": null,
+        "name": "APPARATO DIGERENTE",
+        "description": "Approfondisce sia il razionale fisio-patologico che il razionale terapeutico, diversi protocolli terapeutici con farmaci omeopatici o fitoterapici e/o integratori nutrizionali, rivolti particolarmente al sistema immunitario e digerente.",
+        "image": {
+          "src": "https://import.cdn.thinkific.com/692348/courses/1975481/jWv0OvOrSXme50YaTgEH_Diapositiva3.png",
+          "alt": "",
+          "srcset": "https://import.cdn.thinkific.com/692348/courses/1975481/jWv0OvOrSXme50YaTgEH_Diapositiva3.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975481/jWv0OvOrSXme50YaTgEH_Diapositiva3.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975481/jWv0OvOrSXme50YaTgEH_Diapositiva3.png?width=380&dpr=3 3x",
+          "width_attr": null,
+          "style": null
+        }
+      },
+      {
+        "href": "/courses/privato-corso-cane-e-gatto-230",
+        "card_class": "card card--published",
+        "badge": null,
+        "name": "COME ALIMENTI TUOI AMICI A 4 ZAMPE?",
+        "description": "Con questo corso, andiamo ad educare i proprietari, allevatori ed educatori allo scopo di guidarli verso le migliori scelte nutrizionali per i nostri amici a 4 zampe, tenendo conto delle singole razze; ma affronteremo anche temi comportamentali.",
+        "image": {
+          "src": "https://import.cdn.thinkific.com/692348/zAxOsGWIRvelBjwju8c5_Brochure%20cane%20gatto%20.png",
+          "alt": "",
+          "srcset": "https://import.cdn.thinkific.com/692348/zAxOsGWIRvelBjwju8c5_Brochure%20cane%20gatto%20.png?width=380 1x, https://import.cdn.thinkific.com/692348/zAxOsGWIRvelBjwju8c5_Brochure%20cane%20gatto%20.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/zAxOsGWIRvelBjwju8c5_Brochure%20cane%20gatto%20.png?width=380&dpr=3 3x",
+          "width_attr": null,
+          "style": null
+        }
+      },
+      {
+        "href": "/courses/composizione-corporea-e-stato-di-nutrizione",
+        "card_class": "card card--published",
+        "badge": null,
+        "name": "COMPOSIZIONE CORPOREA E STATO DI NUTRIZIONE",
+        "description": "L’elaborazione di un piano nutrizionale personalizzato richiede un’attenta valutazione da parte del nutrizionista delle caratteristiche antropometriche e dello stato di nutrizione su base individuale.",
+        "image": {
+          "src": "https://import.cdn.thinkific.com/692348/courses/1975459/cRBC8ecTuqsDOXKq4Yi0_Diapositiva4.png",
+          "alt": "",
+          "srcset": "https://import.cdn.thinkific.com/692348/courses/1975459/cRBC8ecTuqsDOXKq4Yi0_Diapositiva4.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975459/cRBC8ecTuqsDOXKq4Yi0_Diapositiva4.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975459/cRBC8ecTuqsDOXKq4Yi0_Diapositiva4.png?width=380&dpr=3 3x",
+          "width_attr": null,
+          "style": null
+        }
+      },
+      {
+        "href": "/courses/counseling-nutrizionale",
+        "card_class": "card card--published",
+        "badge": null,
+        "name": "COUNSELING NUTRIZIONALE",
+        "description": "Le tecniche di counseling sono uno strumento particolarmente qualificato per la conduzione di colloqui con persone che vogliono risolvere una situazione di malessere e necessitano di cambiare uno o più aspetti dei loro comportamenti di salute.",
+        "image": {
+          "src": "https://import.cdn.thinkific.com/692348/courses/1975479/JivWtz0BQSSbitstmFHs_Diapositiva5.png",
+          "alt": "",
+          "srcset": "https://import.cdn.thinkific.com/692348/courses/1975479/JivWtz0BQSSbitstmFHs_Diapositiva5.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975479/JivWtz0BQSSbitstmFHs_Diapositiva5.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975479/JivWtz0BQSSbitstmFHs_Diapositiva5.png?width=380&dpr=3 3x",
+          "width_attr": null,
+          "style": null
+        }
+      },
+      {
+        "href": "/courses/curare-l-eccesso-ponderale-in-eta-evolutiva",
+        "card_class": "card card--published",
+        "badge": null,
+        "name": "CURARE L’ECCESSO PONDERALE IN ETÀ EVOLUTIVA",
+        "description": "L’Obesità manifesta una crescente complessità man mano che viene studiata. Ancora troppo pochi studenti e professionisti sanitari, anche se coinvolti, hanno mai sentito parlare delle molteplici molecole coinvolte nella regolazione dell’appetito.",
+        "image": {
+          "src": "https://import.cdn.thinkific.com/692348/courses/1975455/L7QmySdiTnGpSIlK4M8F_Diapositiva6.png",
+          "alt": "",
+          "srcset": "https://import.cdn.thinkific.com/692348/courses/1975455/L7QmySdiTnGpSIlK4M8F_Diapositiva6.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975455/L7QmySdiTnGpSIlK4M8F_Diapositiva6.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975455/L7QmySdiTnGpSIlK4M8F_Diapositiva6.png?width=380&dpr=3 3x",
+          "width_attr": null,
+          "style": null
+        }
+      },
+      {
+        "href": "/courses/dall-eubiosi-alla-disbiosi",
+        "card_class": "card card--published",
+        "badge": null,
+        "name": "DALL'EUBIOSI ALLA DISBIOSI",
+        "description": "La conoscenza e l’identificazione delle cause della disbiosi intestinale consentirà di attivare un approccio terapeutico (nutrizionale e nutraceutico) differente a seconda della tipologia di disbiosi.",
+        "image": {
+          "src": "https://import.cdn.thinkific.com/692348/courses/1975434/nGgb9P3AQf6KC2ohI75O_Diapositiva7.png",
+          "alt": "",
+          "srcset": "https://import.cdn.thinkific.com/692348/courses/1975434/nGgb9P3AQf6KC2ohI75O_Diapositiva7.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975434/nGgb9P3AQf6KC2ohI75O_Diapositiva7.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975434/nGgb9P3AQf6KC2ohI75O_Diapositiva7.png?width=380&dpr=3 3x",
+          "width_attr": null,
+          "style": null
+        }
+      },
+      {
+        "href": "/courses/evidence-based-phytotherapy",
+        "card_class": "card card--published",
+        "badge": null,
+        "name": "EVIDENCE-BASED PHYTOTHERAPY",
+        "description": "Questo Corso di Perfezionamento è indirizzato a fornire un’adeguata conoscenza delle basi scientifiche e delle evidenze cliniche che possano consentire un utilizzo razionale e fondato della fitoterapia nella prevenzione e nel trattamento di patologie",
+        "image": {
+          "src": "https://import.cdn.thinkific.com/692348/courses/1975486/nOvwU32AQUOVmaMqkvA3_Diapositiva8.png",
+          "alt": "",
+          "srcset": "https://import.cdn.thinkific.com/692348/courses/1975486/nOvwU32AQUOVmaMqkvA3_Diapositiva8.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975486/nOvwU32AQUOVmaMqkvA3_Diapositiva8.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975486/nOvwU32AQUOVmaMqkvA3_Diapositiva8.png?width=380&dpr=3 3x",
+          "width_attr": null,
+          "style": null
+        }
+      },
+      {
+        "href": "/courses/fitoterapia-applicata",
+        "card_class": "card card--published",
+        "badge": null,
+        "name": "FITOTERAPIA APPLICATA",
+        "description": "Il programma didattico prevede l’approfondimento delle conoscenze sulle caratteristiche farmaco-tossicologiche e terapeutiche delle piante medicinali o sulle loro preparazioni.",
+        "image": {
+          "src": "https://import.cdn.thinkific.com/692348/courses/1975484/VZ0GVT5TSaXJNa1bvahA_Diapositiva9.png",
+          "alt": "",
+          "srcset": "https://import.cdn.thinkific.com/692348/courses/1975484/VZ0GVT5TSaXJNa1bvahA_Diapositiva9.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975484/VZ0GVT5TSaXJNa1bvahA_Diapositiva9.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975484/VZ0GVT5TSaXJNa1bvahA_Diapositiva9.png?width=380&dpr=3 3x",
+          "width_attr": null,
+          "style": null
+        }
+      },
+      {
+        "href": "/courses/fitoterapia-sistemica",
+        "card_class": "card card--published",
+        "badge": null,
+        "name": "FITOTERAPIA SISTEMICA",
+        "description": "La finalità del Corso di Perfezionamento è quella di fornire una preparazione professionale nel settore della fitoterapia. Il programma didattico prevede l’approfondimento delle conoscenze sulle caratteristiche farmaco-tossicologiche e terapeutiche.",
+        "image": {
+          "src": "https://import.cdn.thinkific.com/692348/courses/1975485/1kF8tTLzQzaCMgle3JfZ_Diapositiva10.png",
+          "alt": "",
+          "srcset": "https://import.cdn.thinkific.com/692348/courses/1975485/1kF8tTLzQzaCMgle3JfZ_Diapositiva10.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975485/1kF8tTLzQzaCMgle3JfZ_Diapositiva10.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975485/1kF8tTLzQzaCMgle3JfZ_Diapositiva10.png?width=380&dpr=3 3x",
+          "width_attr": null,
+          "style": null
+        }
+      },
+      {
+        "href": "/courses/l-insulino-resistenza-e-la-diabesita",
+        "card_class": "card card--published",
+        "badge": null,
+        "name": "L'INSULINO-RESISTENZA E LA DIABESITÀ",
+        "description": "Una diagnosi tempestiva ed una adeguata terapia nutrizionale e nutraceutica costituiranno una vera e propria prevenzione primaria.",
+        "image": {
+          "src": "https://import.cdn.thinkific.com/692348/courses/1975440/bhtdEj93RJSSGA9H1VzB_Diapositiva11.png",
+          "alt": "",
+          "srcset": "https://import.cdn.thinkific.com/692348/courses/1975440/bhtdEj93RJSSGA9H1VzB_Diapositiva11.png?width=380 1x, https://import.cdn.thinkific.com/692348/courses/1975440/bhtdEj93RJSSGA9H1VzB_Diapositiva11.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/courses/1975440/bhtdEj93RJSSGA9H1VzB_Diapositiva11.png?width=380&dpr=3 3x",
+          "width_attr": null,
+          "style": null
+        }
+      },
+      {
+        "href": "/courses/dieta-chetogenica",
+        "card_class": "card card--published",
+        "badge": null,
+        "name": "LA DIETA CHETOGENICA COME SOLUZIONE TERAPEUTICA: Un approccio pratico",
+        "description": "In questo corso scoprirai cos'è e come funziona la dieta chetogenica:\nsfatiamo i falsi miti che circondano questo regime alimentare e analizziamo benefici comprovati e le problematiche più comuni. E molto altro!",
+        "image": {
+          "src": "https://import.cdn.thinkific.com/692348/38zxBH3RS9S9o2E6MbLN_CORSO%20CHETOGENICA%20PER%20SITO.png",
+          "alt": "",
+          "srcset": "https://import.cdn.thinkific.com/692348/38zxBH3RS9S9o2E6MbLN_CORSO%20CHETOGENICA%20PER%20SITO.png?width=380 1x, https://import.cdn.thinkific.com/692348/38zxBH3RS9S9o2E6MbLN_CORSO%20CHETOGENICA%20PER%20SITO.png?width=380&dpr=2 2x, https://import.cdn.thinkific.com/692348/38zxBH3RS9S9o2E6MbLN_CORSO%20CHETOGENICA%20PER%20SITO.png?width=380&dpr=3 3x",
+          "width_attr": null,
+          "style": null
+        }
+      }
+    ],
+    "reviews": [
+      {
+        "position": 1,
+        "name": "Martina M.",
+        "course_or_meta": "Nutrizione e Donna",
+        "text": "Era la prima volta che usavo questa metodologia di aggiornamento, e ad essere sincera avevo molti dubbi sull'efficacia.. Invece mi è molto piaciuto perché sembrava di essere in aula! E' stato possibile interagire con docente ed organizzazione. Il materiale didattico completo è stato consegnato subito dopo il corso, insomma veramente soddisfacente!",
+        "text_html": "<p>Era la prima volta che usavo questa metodologia di aggiornamento, e ad essere sincera avevo molti dubbi sull'efficacia.. Invece mi è molto piaciuto perché sembrava di essere in aula! E' stato possibile interagire con docente ed organizzazione. Il materiale didattico completo è stato consegnato subito dopo il corso, insomma veramente soddisfacente!</p>",
+        "text_raw": "Era la prima volta che usavo questa metodologia di aggiornamento, e ad essere sincera avevo molti dubbi sull'efficacia.. Invece mi è molto piaciuto perché sembrava di essere in aula! E' stato possibile interagire con docente ed organizzazione. Il materiale didattico completo è stato consegnato subito dopo il corso, insomma veramente soddisfacente!",
+        "rating": null,
+        "image": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2Fr3zyE353Sj2QrHWEm5Gz_Logo_CDF-02.png"
+      },
+      {
+        "position": 2,
+        "name": "Dott. Andrea M.",
+        "course_or_meta": "Nutrizione e Donna",
+        "text": "Dopo il corso ho sentito di avere maggiori stimoli e informazioni sull'argomento che mi possono permettere di arricchire il colloquio con il paziente.",
+        "text_html": "<p>Dopo il corso ho sentito di avere maggiori stimoli e informazioni sull'argomento che mi possono permettere di arricchire il colloquio con il paziente.</p>",
+        "text_raw": "Dopo il corso ho sentito di avere maggiori stimoli e informazioni sull'argomento che mi possono permettere di arricchire il colloquio con il paziente.",
+        "rating": null,
+        "image": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FOj6A3zpQ3u4y6BBTM2hl_Logo_CDF-02.png"
+      },
+      {
+        "position": 3,
+        "name": "Francesca G.",
+        "course_or_meta": null,
+        "text": "È la mia seconda esperienza con CORSIDIFORMAZIONECM e le mie aspettative sono sempre state soddisfatte. Professionalità e cortesia. Ottimo binomio!",
+        "text_html": "<p>È la mia seconda esperienza con CORSIDIFORMAZIONECM e le mie aspettative sono sempre state soddisfatte. Professionalità e cortesia. Ottimo binomio!</p>",
+        "text_raw": "È la mia seconda esperienza con CORSIDIFORMAZIONECM e le mie aspettative sono sempre state soddisfatte. Professionalità e cortesia. Ottimo binomio!",
+        "rating": null,
+        "image": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FYMRlbNawQgO3dw4bTQWm_Logo_CDF-02.png"
+      },
+      {
+        "position": 4,
+        "name": "Studente",
+        "course_or_meta": null,
+        "text": "Interessante visione degli aspetti medici con un approccio che mette il paziente e non la malattia al centro dell'attenzione",
+        "text_html": "<p>Interessante visione degli aspetti medici con un approccio che mette il paziente e non la malattia al centro dell'attenzione</p>",
+        "text_raw": "Interessante visione degli aspetti medici con un approccio che mette il paziente e non la malattia al centro dell'attenzione",
+        "rating": null,
+        "image": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FbCD1tElJQG2vb1JBg8hX_Logo_CDF-02.png"
+      },
+      {
+        "position": 5,
+        "name": "Marco P.",
+        "course_or_meta": null,
+        "text": "Un corso interessante, stimolante e utile per approfondire la conoscenza delle piante terapeutiche andando ben oltre gli insegnamenti della classica formazione universitaria.",
+        "text_html": "<p>Un corso interessante, stimolante e utile per approfondire la conoscenza delle piante terapeutiche andando ben oltre gli insegnamenti della classica formazione universitaria.</p>",
+        "text_raw": "Un corso interessante, stimolante e utile per approfondire la conoscenza delle piante terapeutiche andando ben oltre gli insegnamenti della classica formazione universitaria.",
+        "rating": null,
+        "image": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FL6b8B7zHTWaZ82dAidLM_Logo_CDF-02.png"
+      },
+      {
+        "position": 6,
+        "name": "Francesco L.Marco",
+        "course_or_meta": null,
+        "text": "Ottimo corso e grande professionalità da parte dei docenti.",
+        "text_html": "<p>Ottimo corso e grande professionalità da parte dei docenti.</p>",
+        "text_raw": "Ottimo corso e grande professionalità da parte dei docenti.",
+        "rating": null,
+        "image": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FjMTJWUVRJqdYzxyjVCQ0_Logo_CDF-02.png"
+      },
+      {
+        "position": 7,
+        "name": "Studente Corso",
+        "course_or_meta": null,
+        "text": "Consiglio questi corsi perché ben organizzati, molto interessanti, ma soprattutto, è possibile trovare un ambiente familiare e fortemente formativo.",
+        "text_html": "<p>Consiglio questi corsi perché ben organizzati, molto interessanti, ma soprattutto, è possibile trovare un ambiente familiare e fortemente formativo.</p>",
+        "text_raw": "Consiglio questi corsi perché ben organizzati, molto interessanti, ma soprattutto, è possibile trovare un ambiente familiare e fortemente formativo.",
+        "rating": null,
+        "image": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FEz4RjubgRq3vUdeaL5lV_Logo_CDF-02.png"
+      },
+      {
+        "position": 8,
+        "name": "Giovanni F.",
+        "course_or_meta": null,
+        "text": "Il corso non ha rispettato le mie aspettative... le ha ampiamente superate! Complimenti.",
+        "text_html": "<p>Il corso non ha rispettato le mie aspettative... le ha ampiamente superate! Complimenti.</p>",
+        "text_raw": "Il corso non ha rispettato le mie aspettative... le ha ampiamente superate! Complimenti.",
+        "rating": null,
+        "image": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FSpfKiiZOQFe6hdwdSFXs_Logo_CDF-02.png"
+      },
+      {
+        "position": 9,
+        "name": "Dott. Fracassi S.",
+        "course_or_meta": null,
+        "text": "Corso di elevata qualità scientifica, non deve mancare nel curriculum di un professionista della salute.",
+        "text_html": "<p>Corso di elevata qualità scientifica, non deve mancare nel curriculum di un professionista della salute.</p>",
+        "text_raw": "Corso di elevata qualità scientifica, non deve mancare nel curriculum di un professionista della salute.",
+        "rating": null,
+        "image": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FNifkf5hyS5OsSI5O03ON_Logo_CDF-02.png"
+      },
+      {
+        "position": 10,
+        "name": "Francesco L.",
+        "course_or_meta": null,
+        "text": "Corso ricco di materiale informativo e formativo. Ottima organizzazione... esperienza sicuramente da ripetere.",
+        "text_html": "<p>Corso ricco di materiale informativo e formativo. Ottima organizzazione... esperienza sicuramente da ripetere.</p>",
+        "text_raw": "Corso ricco di materiale informativo e formativo. Ottima organizzazione... esperienza sicuramente da ripetere.",
+        "rating": null,
+        "image": "https://import.cdn.thinkific.com/692348%2Fcustom_site_themes%2Fid%2FcBTx3DAkRZs75I3mbZug_Logo_CDF-02.png"
+      }
+    ],
+    "patrocini_logos": [],
+    "notes": [
+      "Nessuna sezione statistiche/numeri e nessun logo patrocinio in home (solo hero gallery, griglia corsi, testimonianze, newsletter).",
+      "Le immagini delle testimonianze in home sono tutte il logo Corsi di Formazione ECM (avatar generico)."
+    ]
+  }
+}

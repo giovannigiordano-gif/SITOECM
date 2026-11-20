@@ -1,0 +1,310 @@
+{
+  "generated_at": "2026-11-20T12:54:06.102Z",
+  "courses": 27,
+  "validation": {
+    "title": {
+      "ok": 27,
+      "fail": []
+    },
+    "cover_file": {
+      "ok": 27,
+      "fail": []
+    },
+    "description": {
+      "ok": 26,
+      "fail": [
+        "nutrigenomica-nutrigenetica-ed-epigenetica"
+      ]
+    },
+    "whatsapp": {
+      "ok": 27,
+      "fail": []
+    },
+    "whatsapp_text_matches_title": {
+      "ok": 18,
+      "fail": [
+        "metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+        "alimentazione-nel-gatto-completo",
+        "privato-corso-cane-e-gatto-230",
+        "dieta-chetogenica",
+        "le-reazioni-avverse-agli-alimenti",
+        "microbiota",
+        "bundle-microbiota-ed-epigenetica-nell-alimentazione-del-cane-e-del-gatto",
+        "nutrigenomica-nutrigenetica-ed-epigenetica",
+        "caneegatto2"
+      ]
+    },
+    "brochure_ok": {
+      "ok": 27,
+      "fail": []
+    },
+    "brochure_preview": {
+      "ok": 27,
+      "fail": []
+    },
+    "faq": {
+      "ok": 27,
+      "fail": []
+    },
+    "per_chi_e_adatto": {
+      "ok": 27,
+      "fail": []
+    },
+    "js_dom_consistent": {
+      "ok": 27,
+      "fail": []
+    },
+    "patrocini_files": {
+      "ok": 16,
+      "total": 16
+    },
+    "docenti_photos": {
+      "ok": 18,
+      "total": 18
+    },
+    "docenti_cv": {
+      "downloadable": 18,
+      "total": 18
+    },
+    "typos_snippets_verified": [
+      {
+        "course": "alimentazione-nello-sportivo",
+        "field": "description_text",
+        "snippet": "non posso essere viste",
+        "suggestion": "non possono essere viste",
+        "found": true
+      },
+      {
+        "course": "alimentazione-nello-sportivo",
+        "field": "catalog_excerpt",
+        "snippet": "non posso essere viste",
+        "suggestion": "non possono essere viste",
+        "found": true
+      },
+      {
+        "course": "alimentazione-nello-sportivo",
+        "field": "description_text",
+        "snippet": "ma bensì",
+        "suggestion": "\"ma\" oppure \"bensì\" (pleonasmo)",
+        "found": true
+      },
+      {
+        "course": "alimentazione-vegana-e-vegetariana",
+        "field": "description_text",
+        "snippet": "discussine",
+        "suggestion": "discussione",
+        "found": true
+      },
+      {
+        "course": "alimentazione-vegana-e-vegetariana",
+        "field": "description_text",
+        "snippet": "nel trattamento della patologie",
+        "suggestion": "nel trattamento delle patologie",
+        "found": true
+      },
+      {
+        "course": "alimentazione-vegana-e-vegetariana",
+        "field": "description_text",
+        "snippet": "così detto",
+        "suggestion": "cosiddetto",
+        "found": true
+      },
+      {
+        "course": "alimentazione-vegana-e-vegetariana",
+        "field": "description_text",
+        "snippet": "L’analisi delle posizioni delle più importanti società scientifiche di nutrizione permetteranno",
+        "suggestion": "… permetterà (concordanza soggetto/verbo)",
+        "found": true
+      },
+      {
+        "course": "alimentazione-vegana-e-vegetariana",
+        "field": "description_text",
+        "snippet": "verranno presi in considerazione le modalità",
+        "suggestion": "verranno prese in considerazione le modalità",
+        "found": true
+      },
+      {
+        "course": "alimentazione-vegana-e-vegetariana",
+        "field": "description_text",
+        "snippet": "L’obbiettivo",
+        "suggestion": "L’obiettivo (variante meno comune)",
+        "found": true
+      },
+      {
+        "course": "nutrizione-e-donna",
+        "field": "description_text",
+        "snippet": "obbiettivo",
+        "suggestion": "obiettivo (variante meno comune)",
+        "found": true
+      },
+      {
+        "course": "nutrizione-e-donna",
+        "field": "description_text",
+        "snippet": "dall’ azione",
+        "suggestion": "dall’azione",
+        "found": true
+      },
+      {
+        "course": "nutrizione-e-donna",
+        "field": "description_text",
+        "snippet": "donna,ma",
+        "suggestion": "donna, ma",
+        "found": true
+      },
+      {
+        "course": "composizione-corporea-e-stato-di-nutrizione",
+        "field": "faq",
+        "snippet": "si dovra' inviare",
+        "suggestion": "si dovrà inviare",
+        "found": true
+      },
+      {
+        "course": "curare-l-eccesso-ponderale-in-eta-evolutiva",
+        "field": "description_text",
+        "snippet": "responsabiltà",
+        "suggestion": "responsabilità",
+        "found": true
+      },
+      {
+        "course": "dall-eubiosi-alla-disbiosi",
+        "field": "subtitle",
+        "snippet": "macrobiota",
+        "suggestion": "microbiota (probabile refuso)",
+        "found": true
+      },
+      {
+        "course": "dieta-chetogenica",
+        "field": "description_text",
+        "snippet": "alcuni un marker",
+        "suggestion": "alcuni marker",
+        "found": true
+      },
+      {
+        "course": "dieta-chetogenica",
+        "field": "faq",
+        "snippet": "É possibile pagare a rate?",
+        "suggestion": "È possibile pagare a rate? (accento)",
+        "found": true
+      },
+      {
+        "course": "bundle-microbiota-ed-epigenetica-nell-alimentazione-del-cane-e-del-gatto",
+        "field": "title",
+        "snippet": "NELL'ALIMENTAZIONEDEL",
+        "suggestion": "NELL'ALIMENTAZIONE DEL",
+        "found": true
+      },
+      {
+        "course": "bundle-microbiota-ed-epigenetica-nell-alimentazione-del-cane-e-del-gatto",
+        "field": "faq",
+        "snippet": "É possibile pagare a rate?",
+        "suggestion": "È possibile pagare a rate?",
+        "found": true
+      },
+      {
+        "course": "caneegatto2",
+        "field": "faq",
+        "snippet": "É possibile pagare a rate?",
+        "suggestion": "È possibile pagare a rate?",
+        "found": true
+      },
+      {
+        "course": "counseling-nutrizionale",
+        "field": "description_text",
+        "snippet": "esplicativo- affermativo",
+        "suggestion": "esplicativo-affermativo",
+        "found": true
+      },
+      {
+        "course": "nutrizione-clinica",
+        "field": "description_text",
+        "snippet": "mirata al biotipologia",
+        "suggestion": "mirata alla biotipologia",
+        "found": true
+      },
+      {
+        "course": "l-invecchiamento-in-salute",
+        "field": "description_text",
+        "snippet": "adeguati strategie",
+        "suggestion": "adeguate strategie",
+        "found": true
+      },
+      {
+        "course": "l-invecchiamento-in-salute",
+        "field": "description_text",
+        "snippet": "ecc)",
+        "suggestion": "ecc.)",
+        "found": true
+      },
+      {
+        "course": "ritmi-circadiani-e-metabolismo",
+        "field": "description_text",
+        "snippet": "de sincronizzato",
+        "suggestion": "desincronizzato",
+        "found": true
+      },
+      {
+        "course": "ritmi-circadiani-e-metabolismo",
+        "field": "description_text",
+        "snippet": "E’ ormai noto",
+        "suggestion": "È ormai noto",
+        "found": true
+      },
+      {
+        "course": "ritmi-circadiani-e-metabolismo",
+        "field": "description_text",
+        "snippet": "presente nel suprachiasmatico",
+        "suggestion": "presente nel nucleo suprachiasmatico",
+        "found": true
+      },
+      {
+        "course": "ritmi-circadiani-e-metabolismo",
+        "field": "description_text",
+        "snippet": "la posologia di un principio dovrebbe essere condotto",
+        "suggestion": "… dovrebbero essere condotti",
+        "found": true
+      },
+      {
+        "course": "nuovo-approccio-alla-prevenzione-e-cura-dell-obesita-infantile",
+        "field": "description_text",
+        "snippet": "È tempo di cambiare ormai la via",
+        "suggestion": "È tempo di cambiare: ormai la via",
+        "found": true
+      },
+      {
+        "course": "le-reazioni-avverse-agli-alimenti",
+        "field": "description_text",
+        "snippet": "posseduto;",
+        "suggestion": "il paragrafo successivo inizia in minuscolo (\"attualmente\") dopo un punto e virgola e una riga vuota",
+        "found": true
+      },
+      {
+        "course": "nutrizione-e-dietetica-applicata",
+        "field": "description_text",
+        "snippet": "La conoscenza per lavorare con successo, è lo scopo",
+        "suggestion": "virgola tra soggetto e verbo",
+        "found": true
+      },
+      {
+        "course": "pnl-applicata-alla-comunicazione-sanitaria",
+        "field": "description_text",
+        "snippet": "efﬁcace",
+        "suggestion": "contiene la legatura tipografica Unicode ﬁ (U+FB01) incollata da PDF: \"efﬁcace\", \"ﬁgura\", \"ﬁno\", \"efﬁciente\", \"modiﬁcherà\", \"ﬁnale\" — da normalizzare in fi/ff",
+        "found": true
+      },
+      {
+        "course": "*",
+        "field": "faq",
+        "snippet": "Laureandi nelle su dette categorie",
+        "suggestion": "suddette (in tutte le FAQ \"Per chi…\")",
+        "found": true
+      },
+      {
+        "course": "*",
+        "field": "faq",
+        "snippet": "Sì, La ricevuta",
+        "suggestion": "Sì, la ricevuta (maiuscola dopo virgola)",
+        "found": true
+      }
+    ]
+  }
+}

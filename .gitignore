@@ -1,0 +1,13 @@
+node_modules/
+tools/**/node_modules/
+.claude/settings.local.json
+*.log
+/dist/
+/data/scrape/assets/brochures/*.pdf
+.DS_Store
+Thumbs.db
+/tools/test/node_modules/
+/tools/build/node_modules/
+/tools/scrape/node_modules/
+/data/scrape/assets/brochures/
+/data/scrape/assets/cv/

@@ -1,0 +1,109 @@
+// =====================================================================
+// Deploy di un plugin o tema da ZIP caricato in wp-content/uploads/ecm-deploy/
+// Incollare come "code" di novamira/execute-php (senza tag <?php).
+// Modificare solo i PARAMETRI qui sotto. Non usa exit/die. Durata tipica < 5 s.
+// =====================================================================
+
+// ---- PARAMETRI ------------------------------------------------------
+$type     = 'plugin';                 // 'plugin' oppure 'theme'
+$slug     = 'ecm-core';               // nome della cartella (= cartella radice nello zip)
+$main     = 'ecm-core/ecm-core.php';  // solo plugin: file principale da attivare
+$activate = true;                     // plugin: attiva se non attivo. tema: switch_theme se true
+// ---------------------------------------------------------------------
+
+$zip_path = WP_CONTENT_DIR . '/uploads/ecm-deploy/' . $slug . '.zip';
+$base     = 'plugin' === $type ? WP_PLUGIN_DIR : get_theme_root();
+$target   = $base . '/' . $slug;
+$report   = array( 'zip' => $zip_path, 'target' => $target );
+
+if ( ! file_exists( $zip_path ) ) {
+	return array_merge( $report, array( 'error' => 'ZIP non trovato: caricarlo prima con create-upload-link + curl PUT.' ) );
+}
+
+// 1. Controllo dello ZIP prima di toccare la cartella esistente.
+$zip = new ZipArchive();
+if ( true !== $zip->open( $zip_path ) ) {
+	return array_merge( $report, array( 'error' => 'ZIP non apribile (corrotto o upload incompleto).' ) );
+}
+$bad = array();
+for ( $i = 0; $i < $zip->numFiles; $i++ ) {
+	$name = (string) $zip->getNameIndex( $i );
+	if ( false !== strpos( $name, '\\' ) || false !== strpos( $name, '..' ) || 0 !== strpos( $name, $slug . '/' ) ) {
+		$bad[] = $name;
+	}
+}
+if ( $bad ) {
+	$zip->close();
+	return array_merge( $report, array( 'error' => 'Percorsi non validi nello ZIP (backslash, .. o cartella radice diversa). Usare tar.exe di Windows.', 'bad' => array_slice( $bad, 0, 10 ) ) );
+}
+$report['files_in_zip'] = $zip->numFiles;
+
+// 2. Rimozione ricorsiva della versione precedente.
+if ( is_dir( $target ) ) {
+	$it = new RecursiveIteratorIterator( new RecursiveDirectoryIterator( $target, FilesystemIterator::SKIP_DOTS ), RecursiveIteratorIterator::CHILD_FIRST );
+	foreach ( $it as $f ) {
+		$f->isDir() ? rmdir( $f->getPathname() ) : unlink( $f->getPathname() );
+	}
+	rmdir( $target );
+}
+
+// 3. Estrazione e rimozione dello ZIP.
+$ok = $zip->extractTo( $base );
+$zip->close();
+unlink( $zip_path );
+if ( ! $ok || ! is_dir( $target ) ) {
+	return array_merge( $report, array( 'error' => 'Estrazione non riuscita.' ) );
+}
+
+// 4. Lint di tutti i file PHP + invalidazione OPcache.
+$lint  = array();
+$count = 0;
+$it    = new RecursiveIteratorIterator( new RecursiveDirectoryIterator( $target, FilesystemIterator::SKIP_DOTS ) );
+foreach ( $it as $f ) {
+	if ( 'php' !== strtolower( $f->getExtension() ) ) {
+		continue;
+	}
+	++$count;
+	try {
+		token_get_all( file_get_contents( $f->getPathname() ), TOKEN_PARSE );
+	} catch ( ParseError $e ) {
+		$lint[] = str_replace( $target, '', $f->getPathname() ) . ':' . $e->getLine() . ' ' . $e->getMessage();
+	}
+	if ( function_exists( 'opcache_invalidate' ) ) {
+		opcache_invalidate( $f->getPathname(), true );
+	}
+}
+$report['php_files']   = $count;
+$report['lint_errors'] = $lint;
+if ( $lint ) {
+	return array_merge( $report, array( 'error' => 'Errori di sintassi: non attivato.' ) );
+}
+
+// 5. Attivazione (prima volta) o verifica via loopback (aggiornamento di un plugin già attivo).
+if ( 'plugin' === $type ) {
+	require_once ABSPATH . 'wp-admin/includes/plugin.php';
+	$was_active          = is_plugin_active( $main );
+	$report['was_active'] = $was_active;
+	if ( $activate && ! $was_active ) {
+		$result = activate_plugin( $main ); // Esegue il plugin in sandbox: WP_Error in caso di fatal.
+		$report['activation'] = is_wp_error( $result ) ? 'ERRORE: ' . $result->get_error_message() : 'ok';
+		if ( is_wp_error( $result ) ) {
+			return $report;
+		}
+	}
+	$report['active'] = is_plugin_active( $main );
+} elseif ( $activate && get_stylesheet() !== $slug ) {
+	switch_theme( $slug );
+	$report['theme'] = get_stylesheet();
+}
+
+// 6. Permalink: rigenerati alla prossima richiesta con il codice nuovo.
+delete_option( 'rewrite_rules' );
+
+// 7. Controllo del front end con il codice nuovo (richiesta separata).
+$response              = wp_remote_get( add_query_arg( 'ecm_deploy_check', time(), home_url( '/' ) ), array( 'timeout' => 20, 'sslverify' => false ) );
+$body                  = is_wp_error( $response ) ? '' : (string) wp_remote_retrieve_body( $response );
+$report['home_status'] = is_wp_error( $response ) ? $response->get_error_message() : wp_remote_retrieve_response_code( $response );
+$report['home_fatal']  = false !== stripos( $body, 'critical error' ) || false !== stripos( $body, 'errore critico' ) || false !== stripos( $body, 'Fatal error' );
+
+return $report;
