@@ -141,8 +141,46 @@
 	color: var(--c-ink-soft);
 	font-size: var(--fs-lg);
 }
-.areas__ring {
-	display: none;
+.areas__index {
+	display: grid;
+	margin: clamp(1.5rem, 1rem + 2vw, 2.5rem) 0 0;
+	padding: 0;
+	list-style: none;
+	border-top: 1px solid var(--c-line);
+}
+.areas__index li {
+	border-bottom: 1px solid var(--c-line);
+}
+.areas__index a {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: var(--s-5);
+	padding: clamp(0.7rem, 0.5rem + 0.6vw, 1.1rem) 0;
+	color: inherit;
+	text-decoration: none;
+}
+.areas__index-name {
+	font-size: clamp(1.5rem, 1rem + 2.2vw, 3.1rem);
+	font-weight: 600;
+	font-stretch: 116%;
+	letter-spacing: -0.035em;
+	line-height: 1.02;
+	transition: transform var(--dur-3) var(--ease-out), color var(--dur-2) var(--ease-out);
+}
+.areas__index-count {
+	flex: none;
+	font-size: var(--fs-sm);
+	font-weight: 600;
+	font-stretch: 112%;
+	color: var(--c-crimson-deep);
+	font-variant-numeric: tabular-nums;
+}
+@media (hover: hover) {
+	.areas__index a:hover .areas__index-name {
+		transform: translateX(12px);
+		color: var(--c-crimson-deep);
+	}
 }
 .area {
 	width: 100%;
@@ -222,41 +260,42 @@
 	max-width: none;
 	margin: 0;
 	display: grid;
-	grid-template-rows: auto 1fr auto;
-	justify-items: center;
-	text-align: center;
-	padding: calc(var(--header-h) + clamp(1rem, 4svh, 3.5rem)) var(--margin) clamp(1.5rem, 6svh, 4rem);
-	pointer-events: none;
+	align-content: center;
+	gap: clamp(1.5rem, 1rem + 3vh, 3.5rem) var(--gutter);
+	padding: calc(var(--header-h) + 2rem) max(var(--margin), calc((100vw - var(--wrap-max)) / 2)) clamp(2rem, 6svh, 4rem);
+}
+@media (min-width: 1000px) {
+	.areas.is-pinned .areas__intro {
+		grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+		align-items: center;
+	}
 }
 .areas.is-pinned .areas__heading {
-	grid-row: 1;
 	color: var(--c-on-ink);
 	font-size: clamp(2.4rem, min(1.2rem + 4.6vw, 9svh), 6rem);
+	max-width: 9ch;
 }
 .areas.is-pinned .areas__sub {
-	grid-row: 3;
 	color: var(--c-on-ink-soft);
+}
+.areas.is-pinned .areas__index {
 	margin: 0;
+	border-top-color: color-mix(in oklch, var(--c-on-ink) 22%, transparent);
 }
-.areas.is-pinned .areas__ring {
-	display: block;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	z-index: 5;
-	width: var(--size, 420px);
-	height: var(--size, 420px);
-	margin: calc(var(--size, 420px) / -2) 0 0 calc(var(--size, 420px) / -2);
-	pointer-events: none;
+.areas.is-pinned .areas__index li {
+	border-bottom-color: color-mix(in oklch, var(--c-on-ink) 22%, transparent);
 }
-.areas.is-pinned .areas__ring .lens-ring__stroke {
-	stroke: var(--c-crimson-soft);
-	stroke-width: 1.6;
+.areas.is-pinned .areas__index-name {
+	color: var(--c-on-ink);
+	font-size: clamp(1.4rem, min(0.9rem + 2vw, 5.2svh), 3rem);
 }
-.areas.is-pinned .areas__ring .lens-ring__type text {
-	fill: var(--c-on-ink);
-	font-size: 12.5px;
-	letter-spacing: 0.08em;
+.areas.is-pinned .areas__index-count {
+	color: oklch(0.76 0.12 22);
+}
+@media (hover: hover) {
+	.areas.is-pinned .areas__index a:hover .areas__index-name {
+		color: oklch(0.8 0.1 22);
+	}
 }
 .areas.is-pinned .area {
 	position: absolute;

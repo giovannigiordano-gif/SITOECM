@@ -21,8 +21,8 @@
    1920,
    2560
   ],
-  "width": 2560,
-  "height": 1440,
+  "width": 5504,
+  "height": 3072,
   "alt": ""
  },
  "hero-corsi": {
@@ -34,8 +34,8 @@
    1920,
    2560
   ],
-  "width": 2560,
-  "height": 1440,
+  "width": 5504,
+  "height": 3072,
   "alt": ""
  },
  "hero-docenti": {
@@ -59,8 +59,8 @@
    1080,
    1440
   ],
-  "width": 1440,
-  "height": 2560,
+  "width": 3072,
+  "height": 5504,
   "alt": ""
  },
  "hero-home": {
@@ -72,8 +72,8 @@
    1920,
    2560
   ],
-  "width": 2560,
-  "height": 1440,
+  "width": 5504,
+  "height": 3072,
   "alt": ""
  },
  "hero-testimonianze": {
@@ -97,8 +97,8 @@
    1920,
    2560
   ],
-  "width": 2560,
-  "height": 1440,
+  "width": 5504,
+  "height": 3072,
   "alt": ""
  },
  "lens-fitoterapia": {
@@ -110,8 +110,8 @@
    1920,
    2560
   ],
-  "width": 2560,
-  "height": 1440,
+  "width": 5504,
+  "height": 3072,
   "alt": ""
  },
  "lens-microbiota": {
@@ -123,8 +123,8 @@
    1920,
    2560
   ],
-  "width": 2560,
-  "height": 1440,
+  "width": 5504,
+  "height": 3072,
   "alt": ""
  },
  "lens-nutrizione-animale": {
@@ -136,8 +136,8 @@
    1920,
    2560
   ],
-  "width": 2560,
-  "height": 1440,
+  "width": 5504,
+  "height": 3072,
   "alt": ""
  },
  "lens-nutrizione-umana": {
@@ -149,8 +149,8 @@
    1920,
    2560
   ],
-  "width": 2560,
-  "height": 1440,
+  "width": 5504,
+  "height": 3072,
   "alt": ""
  }
 }

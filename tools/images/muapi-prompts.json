@@ -1,0 +1,43 @@
+{
+  "model": "nano-banana-2",
+  "resolution": "4k",
+  "style": "Cinematic fine-art photograph, photorealistic, chiaroscuro with one soft key light from the upper right, deep ink-violet near-black background, rich crimson red accents, porcelain white highlights, small touches of natural green, medium format camera, 80mm lens, tack-sharp subject, subtle film grain, quiet museum-quality mood. The subject sits in the right half of the frame; the left half and the bottom-left corner fall off into smooth dark shadow, leaving generous empty negative space for a headline. No text, no letters, no logos, no watermarks, no hands, no human faces.",
+  "images": {
+    "hero-home": {
+      "aspect_ratio": "16:9",
+      "prompt": "A modern scientific still life staged like a Dutch Golden Age painting: on a dark slate ledge a halved pomegranate spilling glistening crimson seeds, a white porcelain mortar holding dried herbs, fresh sprigs of echinacea and purple sage, a glass petri dish with crimson cultures catching the light, a few red currants and a single fig."
+    },
+    "hero-home-m": {
+      "aspect_ratio": "9:16",
+      "prompt": "Vertical composition. A modern scientific still life staged like a Dutch Golden Age painting: on a dark slate ledge a halved pomegranate spilling glistening crimson seeds, a white porcelain mortar holding dried herbs, sprigs of echinacea and purple sage, a glass petri dish with crimson cultures. The arrangement fills the upper half of the frame; the lower half is smooth deep shadow for a headline."
+    },
+    "hero-corsi": {
+      "aspect_ratio": "16:9",
+      "prompt": "A long row of round glass petri dishes receding diagonally across a dark laboratory bench, each dish holding a different specimen: pomegranate seeds, a purple sage leaf, crimson and violet bacterial colonies on agar, red currants, a slice of beetroot with concentric rings, a few dry pet kibbles, a chamomile flower; a narrow raking beam of light makes the glass rims glow."
+    },
+    "hero-contatti": {
+      "aspect_ratio": "16:9",
+      "prompt": "Still life on dark ink-violet paper: a black fountain pen resting on a cream envelope sealed with crimson wax, beside it a white porcelain cup of ruby red hibiscus infusion with a thin wisp of steam and a small sprig of purple basil."
+    },
+    "lens-nutrizione-umana": {
+      "aspect_ratio": "16:9",
+      "prompt": "A white porcelain plate on dark stone holding a precise specimen-like arrangement of whole foods: a halved pomegranate with glistening crimson seeds, thin beetroot slices showing concentric rings, a red cabbage cross-section revealing deep violet veins, a halved fig, blueberries and a sprig of purple basil, seen from a low three-quarter angle."
+    },
+    "lens-microbiota": {
+      "aspect_ratio": "16:9",
+      "prompt": "A round glass petri dish backlit on a dark surface: translucent agar with bacterial colonies grown in organic branching and dotted patterns in crimson red, deep violet and soft pink like a delicate abstract painting, a thin rim of light on the glass edge; scientific macro photography with an art-gallery sensibility."
+    },
+    "lens-fitoterapia": {
+      "aspect_ratio": "16:9",
+      "prompt": "An apothecary still life on a dark wooden table: a white porcelain mortar and pestle, small amber glass dropper bottles without labels, fresh echinacea flowers with magenta petals, purple sage, lavender sprigs, a hawthorn branch with small red berries, chamomile heads and a few pale dried roots."
+    },
+    "lens-nutrizione-animale": {
+      "aspect_ratio": "16:9",
+      "prompt": "A calm golden retriever dog and a tabby cat resting side by side on dark velvet, rim light outlining their fur, serene expressions, a small white porcelain bowl nearby; fine-art pet portrait, tack-sharp eyes."
+    },
+    "lens-comunicazione": {
+      "aspect_ratio": "16:9",
+      "prompt": "Two white porcelain cups of ruby red hibiscus infusion facing each other on a dark table as if two people were in conversation, a thin wisp of steam rising between them, an open notebook with blank pages and a black fountain pen beside them."
+    }
+  }
+}

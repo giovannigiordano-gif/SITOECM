@@ -14,3 +14,5 @@ Thumbs.db
 
 # Sorgenti immagini (rigenerabili: render 3D o generazione AI), si versionano le versioni ottimizzate nel tema
 /tools/images/src/
+/tools/images/src-ai/
+/tools/images/src-3d/

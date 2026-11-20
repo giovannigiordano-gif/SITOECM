@@ -9,7 +9,23 @@ node tools/build/images.mjs     # crea AVIF/WebP + manifest da tools/images/src/
 bash tools/deploy/pack.sh theme # poi deploy (tools/deploy/README.md)
 ```
 
-## Da dove vengono (stato al 20/11/2026)
+## Fotografie generate con MuAPI (in uso)
+
+Le 9 immagini della home (orizzontale e verticale), del catalogo, dei contatti e delle 5 aree sono fotografie generate con
+**MuAPI**: modello `nano-banana-2`, risoluzione 4k, 0,022 USD l'una (0,198 USD in tutto il 20/11/2026). Prompt e stile
+comune in `muapi-prompts.json`.
+
+```sh
+MUAPI_API_KEY=la-tua-chiave node tools/images/muapi-generate.mjs             # tutte (preventivo prima, si ferma oltre 1 USD)
+MUAPI_API_KEY=la-tua-chiave node tools/images/muapi-generate.mjs hero-home   # una sola
+```
+
+Lo script usa direttamente l'API REST (il pacchetto npm `muapi-cli` non si installa su Windows), fa il preventivo,
+scarica subito i file in `tools/images/src-ai/` (gli URL scadono) e mostra il saldo prima e dopo. Le immagini scelte si
+copiano in `tools/images/src/` con la stessa chiave e si ottimizzano con `images.mjs`. La chiave non va mai scritta in un
+file del progetto.
+
+## Storico: da dove venivano prima delle fotografie MuAPI
 
 La generazione AI non era disponibile: Higgsfield risponde ancora "daily generation limit for your grace period"
 (anche con 1185 crediti in saldo) e su questo PC non c'è una chiave MuAPI (`MUAPI_API_KEY`). Le immagini sono quindi:

@@ -565,3 +565,11 @@ a.review__course {
 .is-scrub > * {
 	transition: color 0.45s var(--ease-out);
 }
+
+/* Scheda corso: la foto dell'area resta sullo sfondo, la copertina è il soggetto */
+.hero--course .hero__shade {
+	background:
+		linear-gradient(180deg, oklch(0.15 0.04 285 / 0.7) 0%, oklch(0.15 0.04 285 / 0) calc(var(--header-h) + 110px)),
+		radial-gradient(120% 95% at 0% 100%, oklch(0.15 0.04 285 / 0.95) 0%, oklch(0.15 0.04 285 / 0.75) 40%, oklch(0.15 0.04 285 / 0.35) 75%),
+		oklch(0.15 0.04 285 / 0.42);
+}

@@ -458,22 +458,15 @@
 		const medias = areas.map((a) => $('[data-area-media]', a));
 		const panels = areas.map((a) => $('[data-area-panel]', a));
 		const intro = $('[data-areas-intro]', areasEl);
-		const ring = $('[data-areas-ring]', areasEl);
+		const index = $$('[data-areas-index]', areasEl);
 		const navBtns = $$('[data-areas-go]', areasEl);
 		areasEl.classList.add('is-pinned');
 
-		const R0 = 0.17; // raggio iniziale della lente (frazione di circle())
-		const sizeRing = () => {
-			if (!ring) return;
-			const ref = Math.sqrt((areasEl.offsetWidth ** 2 + areasEl.offsetHeight ** 2) / 2);
-			ring.style.setProperty('--size', `${ref * R0 * 2 * 1.16}px`);
-		};
-		sizeRing();
-
+		// Apertura: l'indice tipografico sale e si dissolve, la prima area si apre con un cerchio pulito dal centro.
 		const tl = gsap.timeline({ defaults: { ease: 'none' } });
-		tl.fromTo(medias[0], { clipPath: `circle(${R0 * 100}% at 50% 50%)`, '--ms': 1.3 }, { clipPath: 'circle(75% at 50% 50%)', '--ms': 1, duration: 1.1, ease: 'power2.inOut' }, 0);
-		ring && tl.fromTo(ring, { scale: 1, autoAlpha: 1 }, { scale: 4.2, autoAlpha: 0, duration: 1.05, ease: 'power2.in' }, 0);
-		intro && tl.to(intro, { autoAlpha: 0, yPercent: -30, duration: 0.5, ease: 'power2.in' }, 0.05);
+		if (index.length) tl.to(index, { autoAlpha: 0, y: -36, stagger: 0.05, duration: 0.4, ease: 'power2.in' }, 0);
+		intro && tl.to(intro, { autoAlpha: 0, y: -50, duration: 0.45, ease: 'power2.in' }, 0.2);
+		tl.fromTo(medias[0], { clipPath: 'circle(0% at 50% 50%)', '--ms': 1.25 }, { clipPath: 'circle(75% at 50% 50%)', '--ms': 1, duration: 1.05, ease: 'power2.inOut' }, 0.15);
 		let t = 0.95;
 		const labels = [t];
 		tl.fromTo(panels[0], { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0, duration: 0.45, ease: 'power3.out' }, t);
@@ -495,7 +488,6 @@
 			scrub: 0.7,
 			animation: tl,
 			invalidateOnRefresh: true,
-			onRefresh: sizeRing,
 		});
 		const setCurrent = () => {
 			const time = tl.time();
@@ -622,23 +614,6 @@
 				f.focus();
 			})
 		);
-	}
-
-	/* Patrocini: i due nastri obliqui scorrono in direzioni opposte seguendo lo scroll */
-	function initBands() {
-		if (REDUCED || !HAS_GSAP) return;
-		$$('[data-pband]').forEach((band) => {
-			$$('[data-pband-track]', band).forEach((track) => {
-				const dir = parseFloat(track.dataset.dir) || 1;
-				// spostamento in pixel: al massimo quanto il nastro eccede la sua cornice, così non resta mai vuoto
-				const span = () => Math.max(0, track.scrollWidth - track.parentElement.clientWidth) * 0.85;
-				gsap.fromTo(
-					track,
-					{ x: () => (dir > 0 ? -span() : 0) },
-					{ x: () => (dir > 0 ? 0 : -span()), ease: 'none', scrollTrigger: { trigger: band, start: 'top bottom', end: 'bottom top', scrub: 0.8, invalidateOnRefresh: true } }
-				);
-			});
-		});
 	}
 
 	/* Frasi che si "accendono" parola per parola allo scroll */
@@ -1143,7 +1118,6 @@
 					initAreas();
 					initFeatured();
 					initFaculty();
-					initBands();
 					initScrubWords();
 					if (HAS_GSAP) {
 						ScrollTrigger.sort();
@@ -1155,7 +1129,7 @@
 				}
 			};
 			const idle = w.requestIdleCallback ? (cb) => w.requestIdleCallback(cb, { timeout: 1500 }) : (cb) => setTimeout(cb, 200);
-			const hasScenes = $('[data-areas], [data-featured], [data-faculty-list], [data-scrub-words], [data-pband]');
+			const hasScenes = $('[data-areas], [data-featured], [data-faculty-list], [data-scrub-words]');
 			if (hasScenes) {
 				if (d.readyState === 'complete') idle(scenes);
 				else w.addEventListener('load', () => idle(scenes), { once: true });

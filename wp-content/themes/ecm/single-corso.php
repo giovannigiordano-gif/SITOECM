@@ -155,13 +155,13 @@ while ( have_posts() ) :
 		)
 	);
 
-	// Patrocini subito sotto la hero: nastri obliqui con i loghi a colori.
+	// Patrocini subito sotto la hero: loghi a colori con il nome dell'ente.
 	if ( $c['patrocini'] ) {
 		ecm_patrons_band(
 			(array) $c['patrocini'],
 			array(
 				'id'         => 'patrocini',
-				'class'      => 'pband--course',
+				'theme'      => 'paper',
 				'count_text' => $ecm_pat_text,
 			)
 		);

@@ -27,10 +27,10 @@ $ecm_wa      = ecm_opt( 'whatsapp_number' ) ? ecm_whatsapp_generic() : '';
 $ecm_logos = array();
 foreach ( ecm_courses() as $ecm_c ) {
 	foreach ( (array) $ecm_c['patrocini'] as $ecm_p ) {
-		$ecm_k = $ecm_p['name'] ? sanitize_title( $ecm_p['name'] ) : 'img-' . $ecm_p['image_id'];
-		// I banner compositi (più loghi in un'immagine) restano nella scheda del corso, non nel nastro.
+		// I banner compositi (più loghi in un'immagine) entrano anche loro: così si vedono tutti gli enti dichiarati.
 		$ecm_wide = $ecm_p['height'] > 0 && ( $ecm_p['width'] / $ecm_p['height'] ) > 2.6;
-		if ( $ecm_p['image_id'] && ! $ecm_wide && ! isset( $ecm_logos[ $ecm_k ] ) ) {
+		$ecm_k    = ( $ecm_wide || ! $ecm_p['name'] ) ? 'img-' . $ecm_p['image_id'] : sanitize_title( $ecm_p['name'] );
+		if ( $ecm_p['image_id'] && ! isset( $ecm_logos[ $ecm_k ] ) ) {
 			$ecm_logos[ $ecm_k ] = $ecm_p;
 		}
 	}
@@ -108,7 +108,7 @@ ecm_hero(
 			array(
 				'id'         => 'patrocini',
 				'heading'    => 'h3',
-				'class'      => 'pband--home',
+				'theme'      => 'ink',
 				/* translators: %d numero enti */
 				'count_text' => $ecm_stats['patrocini_ordini'] ? sprintf( __( '%d enti e ordini professionali', 'ecm' ), (int) $ecm_stats['patrocini_ordini'] ) : '',
 			)
@@ -121,15 +121,26 @@ ecm_hero(
 <?php if ( $ecm_areas ) : ?>
 <section class="areas" data-areas aria-labelledby="areas-title">
 	<div class="areas__intro" data-areas-intro>
-		<h2 class="areas__heading" id="areas-title"><?php esc_html_e( 'Le aree tematiche', 'ecm' ); ?></h2>
-		<p class="areas__sub">
-			<?php
-			/* translators: 1: numero aree, 2: numero corsi */
-			echo esc_html( sprintf( __( '%1$d ambiti, %2$d corsi: scorri per entrare in ognuno.', 'ecm' ), count( $ecm_areas ), (int) $ecm_stats['corsi'] ) );
-			?>
-		</p>
+		<div class="areas__intro-head">
+			<h2 class="areas__heading" id="areas-title"><?php esc_html_e( 'Le aree tematiche', 'ecm' ); ?></h2>
+			<p class="areas__sub">
+				<?php
+				/* translators: 1: numero aree, 2: numero corsi */
+				echo esc_html( sprintf( __( '%1$d ambiti, %2$d corsi: scorri per entrare in ognuno.', 'ecm' ), count( $ecm_areas ), (int) $ecm_stats['corsi'] ) );
+				?>
+			</p>
+		</div>
+		<ol class="areas__index" aria-label="<?php esc_attr_e( 'Indice delle aree', 'ecm' ); ?>">
+			<?php foreach ( $ecm_areas as $ecm_a ) : ?>
+				<li data-areas-index>
+					<a href="<?php echo esc_url( $ecm_a['url'] ); ?>">
+						<span class="areas__index-name"><?php echo esc_html( $ecm_a['name'] ); ?></span>
+						<span class="areas__index-count"><?php echo esc_html( sprintf( _n( '%d corso', '%d corsi', (int) $ecm_a['count'], 'ecm' ), (int) $ecm_a['count'] ) ); ?></span>
+					</a>
+				</li>
+			<?php endforeach; ?>
+		</ol>
 	</div>
-	<div class="areas__ring" data-areas-ring aria-hidden="true"><?php echo ecm_lens_ring_svg( 'areas-ring', __( 'Le aree tematiche', 'ecm' ) ); // phpcs:ignore WordPress.Security.EscapeOutput ?></div>
 	<?php foreach ( $ecm_areas as $ecm_i => $ecm_a ) : ?>
 		<article class="area" data-area style="--i: <?php echo (int) $ecm_i; ?>" aria-labelledby="area-<?php echo esc_attr( $ecm_a['slug'] ); ?>">
 			<div class="area__media" data-area-media>

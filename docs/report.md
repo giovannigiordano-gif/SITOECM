@@ -278,5 +278,17 @@ nel campo "Video" della sua testimonianza compare da solo il pulsante play.
   della descrizione. La vecchia griglia di loghi grigi in fondo è stata tolta.
 - Verifiche: axe 0 violazioni; Lighthouse mobile home 95, scheda corso 94 (accessibilità 100, CLS 0-0,012).
 - **MuAPI**: `npm install -g muapi-cli` non funziona su Windows (il pacchetto scarica un eseguibile che nelle release non
-  esiste, errore 404; il ripiego `pip` richiede Python, assente). La chiave non è sul PC: con `setx MUAPI_API_KEY "…"`
-  posso usare direttamente l'API REST, senza il programma.
+  esiste, errore 404; il ripiego `pip` richiede Python, assente). Uso quindi direttamente l'API REST.
+
+### Fotografie MuAPI, aree e patrocini (seconda revisione)
+
+- **Fotografie generate con MuAPI**: 9 immagini (hero della home orizzontale e verticale, catalogo, contatti, 5 aree)
+  con `nano-banana-2` in 4k, preventivo prima della generazione; costo totale **0,198 USD** (saldo da 10,00 a 9,802 USD).
+  Sostituiscono i render 3D, che restano rigenerabili con Blender. Script: `tools/images/muapi-generate.mjs`.
+  La chiave è stata usata solo nei comandi, mai scritta in un file; essendo stata incollata in chat conviene rigenerarla.
+- **Aree tematiche**: tolto l'anello con il testo. L'apertura è tipografica (titolo e indice delle 5 aree con il numero di
+  corsi, ogni voce è un link) e la prima area si apre con un cerchio pulito dal centro.
+- **Patrocini**: tolti i nastri obliqui. Griglia dritta di schede chiare con il logo a colori più grande e il nome
+  dell'ente sotto, ultima riga centrata. In home ci sono tutti gli enti (anche i due banner con più loghi); nelle schede
+  corso la sezione è subito sotto la hero, che ora ha lo sfondo più scuro perché il soggetto sia la copertina.
+- Verifiche: axe 0 violazioni; Lighthouse mobile home 94, scheda corso 94, catalogo 96 (accessibilità 100).
