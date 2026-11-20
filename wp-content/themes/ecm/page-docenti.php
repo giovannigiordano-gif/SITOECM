@@ -19,7 +19,7 @@ $ecm_docenti = ecm_docenti();
 			if ( '' !== trim( get_the_content() ) ) {
 				the_content();
 			} else {
-				echo '<p>' . esc_html__( 'Docenti universitari, ricercatori e professionisti della clinica: chi insegna nei nostri corsi lavora ogni giorno sui temi che porta in aula.', 'ecm' ) . '</p>';
+				echo '<p>' . esc_html__( 'Docenti universitari, ricercatori e professionisti della clinica: chi insegna nei nostri corsi lavora ogni giorno sui temi che porta nelle lezioni.', 'ecm' ) . '</p>';
 			}
 			?>
 		</div>

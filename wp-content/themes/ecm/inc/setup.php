@@ -145,3 +145,9 @@ add_action(
 		}
 	}
 );
+
+/**
+ * Testi identici all'originale: niente sostituzioni tipografiche automatiche
+ * (virgolette curve, trattini, puntini) su titoli e descrizioni dei corsi.
+ */
+add_filter( 'run_wptexturize', '__return_false' );

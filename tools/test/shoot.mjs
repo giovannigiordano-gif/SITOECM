@@ -42,7 +42,7 @@ for (const [name, vp] of vps) {
 			await page.waitForTimeout(1200);
 			await page.evaluate(() => window.scrollTo(0, 0));
 			await page.waitForTimeout(600);
-			await page.screenshot({ path: join(out, `${slug}-${name}-full.png`), fullPage: true, type: 'jpeg', quality: 72 });
+			await page.screenshot({ path: join(out, `${slug}-${name}-full.jpg`), fullPage: true, type: 'jpeg', quality: 72 });
 		} else {
 			await page.screenshot({ path: join(out, `${slug}-${name}.png`) });
 		}

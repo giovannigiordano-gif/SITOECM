@@ -55,7 +55,7 @@ $ecm_login = (string) ecm_opt( 'login_url', '' );
 				);
 				?>
 			<?php endif; ?>
-			<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-panel" data-menu-toggle>
+			<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-panel" aria-label="<?php esc_attr_e( 'Menu', 'ecm' ); ?>" data-menu-toggle>
 				<span class="menu-toggle__label"><?php esc_html_e( 'Menu', 'ecm' ); ?></span>
 				<span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span></span>
 			</button>

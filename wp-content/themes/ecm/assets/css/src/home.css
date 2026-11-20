@@ -689,15 +689,25 @@
 	isolation: isolate;
 	overflow: hidden;
 	padding-block: var(--section);
-	background: var(--c-paper);
+	background: var(--c-crimson);
 	text-align: center;
+}
+/* Velatura porcellana con un foro circolare: il foro si allarga allo scroll (la lente si apre). */
+.cta-final::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	background: var(--c-paper);
+	-webkit-mask: radial-gradient(circle at 50% 50%, transparent var(--hole, 200vmax), #000 calc(var(--hole, 200vmax) + 1px));
+	mask: radial-gradient(circle at 50% 50%, transparent var(--hole, 200vmax), #000 calc(var(--hole, 200vmax) + 1px));
+	pointer-events: none;
 }
 .cta-final__disc {
 	position: absolute;
 	inset: 0;
 	z-index: -1;
-	background: var(--c-crimson);
-	clip-path: circle(var(--disc, 75%) at 50% 50%);
+	pointer-events: none;
 }
 .cta-final__disc::after {
 	content: "";
@@ -712,6 +722,7 @@
 }
 .cta-final__inner {
 	position: relative;
+	z-index: 1;
 	display: grid;
 	justify-items: center;
 	color: var(--c-on-ink);

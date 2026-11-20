@@ -80,7 +80,7 @@ const options = {
 	termini_url: termsPdf ? `{media:${termsPdf}}` : legal.terms_url || '',
 	privacy_url: privacyPdf ? `{media:${privacyPdf}}` : legal.cookie_privacy_url || '',
 	cookie_url: privacyPdf ? `{media:${privacyPdf}}` : legal.cookie_privacy_url || '',
-	newsletter_title: site.newsletter?.heading === 'Newsletter' ? 'Iscriviti alla newsletter' : site.newsletter?.heading || '',
+	newsletter_title: site.newsletter?.heading || 'Newsletter',
 	newsletter_text: site.newsletter?.subheading || '',
 	newsletter_consent: newsletterConsent,
 	newsletter_provider: 'none',
@@ -322,6 +322,7 @@ const menus = {
 
 const redirects = [
 	{ from: '/collections', to: '/corsi/' },
+	{ from: '/courses', to: '/corsi/' },
 	{ from: '/pages/chi-siamo', to: '/chi-siamo/' },
 	{ from: '/pages/docenti', to: '/docenti/' },
 	{ from: '/pages/contatti', to: '/contatti/' },

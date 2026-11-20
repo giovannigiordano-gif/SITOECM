@@ -1,5 +1,5 @@
 /**
- * ECM · La Lente — comportamento e motion del tema.
+ * ECM La Lente: comportamento e motion del tema.
  * Dipendenze globali (caricate localmente): gsap, ScrollTrigger, SplitText, Flip (solo catalogo), Lenis.
  * Tutto degrada: senza JS il sito è completo; con prefers-reduced-motion niente smooth scroll, pin o reveal.
  */
@@ -377,10 +377,13 @@
 	function initCtaDisc() {
 		if (REDUCED || !HAS_GSAP) return;
 		$$('[data-cta-final]').forEach((sec) => {
-			const disc = $('.cta-final__disc', sec);
-			if (!disc) return;
-			const from = w.innerWidth < 700 ? '58%' : '40%';
-			gsap.fromTo(disc, { '--disc': from }, { '--disc': '75%', ease: 'none', scrollTrigger: { trigger: sec, start: 'top 90%', end: 'top 20%', scrub: 0.6 } });
+			const radius = () => Math.hypot(sec.offsetWidth, sec.offsetHeight) / 2 + 2;
+			const start = () => {
+				const inner = $('.cta-final__inner', sec);
+				const r = inner.getBoundingClientRect();
+				return Math.hypot(r.width, r.height) / 2 + 24; // il testo è sempre dentro il cerchio
+			};
+			gsap.fromTo(sec, { '--hole': () => `${start()}px` }, { '--hole': () => `${radius()}px`, ease: 'none', immediateRender: true, scrollTrigger: { trigger: sec, start: 'top 90%', end: 'top 20%', scrub: 0.6, invalidateOnRefresh: true } });
 		});
 	}
 

@@ -88,10 +88,11 @@ function ecm_img( string $key, array $args = array() ): string {
  * una "lente" tipografica con il cerchio del marchio, mai un rettangolo vuoto.
  */
 function ecm_img_fallback( string $key, array $args ): string {
+	$alt = (string) ( $args['alt'] ?? '' );
 	return sprintf(
-		'<span class="pic pic--fallback %s" role="img" aria-label="%s"><span class="pic__ring" aria-hidden="true"></span></span>',
+		'<span class="pic pic--fallback %s" %s><span class="pic__ring" aria-hidden="true"></span></span>',
 		esc_attr( (string) $args['class'] ),
-		esc_attr( (string) ( $args['alt'] ?? '' ) )
+		'' === $alt ? 'aria-hidden="true"' : 'role="img" aria-label="' . esc_attr( $alt ) . '"'
 	);
 }
 

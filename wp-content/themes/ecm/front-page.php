@@ -62,7 +62,7 @@ $ecm_ring = static function ( string $id ): string {
 			<div class="hero__inner wrap">
 				<div class="hero__copy">
 					<h1 class="hero__title" data-reveal="lines"><?php echo esc_html( (string) ecm_opt( 'hero_title', __( 'Formazione ECM per chi si prende cura della salute.', 'ecm' ) ) ); ?></h1>
-					<p class="hero__lead" data-reveal="fade"><?php echo esc_html( (string) ecm_opt( 'hero_text', __( 'Corsi online accreditati per nutrizionisti, medici, farmacisti e veterinari, con docenti universitari e il patrocinio degli ordini professionali.', 'ecm' ) ) ); ?></p>
+					<p class="hero__lead" data-reveal="fade"><?php echo esc_html( (string) ecm_opt( 'hero_text', __( 'Corsi ECM online per nutrizionisti, medici, farmacisti e veterinari, con docenti universitari e il patrocinio degli ordini professionali.', 'ecm' ) ) ); ?></p>
 					<div class="hero__ctas" data-reveal="fade">
 						<?php
 						echo ecm_button( // phpcs:ignore WordPress.Security.EscapeOutput
@@ -109,7 +109,7 @@ $ecm_ring = static function ( string $id ): string {
 
 		<?php if ( $ecm_areas ) : ?>
 			<div class="areas" data-areas>
-				<h2 class="areas__heading wrap"><?php esc_html_e( 'Cinque aree, un metodo', 'ecm' ); ?></h2>
+				<h2 class="areas__heading wrap"><?php esc_html_e( 'Le aree tematiche', 'ecm' ); ?></h2>
 				<?php foreach ( $ecm_areas as $ecm_i => $ecm_a ) : ?>
 					<article class="area" data-area style="--i: <?php echo (int) $ecm_i; ?>" aria-labelledby="area-<?php echo esc_attr( $ecm_a['slug'] ); ?>">
 						<div class="area__media" data-area-media>
@@ -231,7 +231,7 @@ $ecm_ring = static function ( string $id ): string {
 	<div class="wrap faculty__grid">
 		<header class="faculty__head">
 			<h2 class="section-title" id="faculty-title" data-reveal="lines"><?php esc_html_e( 'Chi insegna', 'ecm' ); ?></h2>
-			<p class="faculty__intro"><?php esc_html_e( 'Docenti universitari, ricercatori e clinici che portano in aula ciò che fanno ogni giorno.', 'ecm' ); ?></p>
+			<p class="faculty__intro"><?php esc_html_e( 'Docenti universitari, ricercatori e clinici che portano nei corsi ciò che fanno ogni giorno.', 'ecm' ); ?></p>
 			<a class="link-arrow" href="<?php echo esc_url( ecm_page_url( 'docenti' ) ); ?>"><span><?php esc_html_e( 'Tutti i docenti', 'ecm' ); ?></span><?php echo ecm_icon( 'arrow-right' ); // phpcs:ignore WordPress.Security.EscapeOutput ?></a>
 		</header>
 		<ul class="faculty__list">
@@ -264,7 +264,7 @@ $ecm_ring = static function ( string $id ): string {
 			<h2 class="section-title" id="voices-title" data-reveal="lines"><?php esc_html_e( 'Testimonianze', 'ecm' ); ?></h2>
 			<a class="link-arrow" href="<?php echo esc_url( ecm_page_url( 'testimonianze' ) ); ?>"><span><?php esc_html_e( 'Leggi tutte', 'ecm' ); ?></span><?php echo ecm_icon( 'arrow-right' ); // phpcs:ignore WordPress.Security.EscapeOutput ?></a>
 		</header>
-		<div class="voices__viewport" data-voices-viewport tabindex="0" aria-label="<?php esc_attr_e( 'Testimonianze, scorri orizzontalmente', 'ecm' ); ?>">
+		<div class="voices__viewport" data-voices-viewport tabindex="0" role="region" aria-label="<?php esc_attr_e( 'Testimonianze, scorri orizzontalmente', 'ecm' ); ?>">
 			<ul class="voices__track">
 				<?php foreach ( $ecm_testi as $ecm_t ) : ?>
 					<li class="voice">

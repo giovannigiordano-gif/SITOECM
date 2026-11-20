@@ -34,6 +34,7 @@ final class ECM_Plugin {
 		ECM_Meta::init();
 		ECM_Media::init();
 		ECM_Redirects::init();
+		ECM_Platform_Redirects::init();
 		ECM_SEO::init();
 		ECM_Consent::init();
 		ECM_Forms::init();

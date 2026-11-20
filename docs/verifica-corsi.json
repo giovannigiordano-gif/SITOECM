@@ -1,0 +1,527 @@
+[
+ {
+  "n": 1,
+  "slug": "metabolismo-nutrizione-e-performance-nel-cane-sportivo-e-nel-cavallo-atleta",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true,
+   "redirect301": true
+  },
+  "notes": [
+   "WhatsApp corretto (sul sito originale il testo non corrispondeva al titolo)"
+  ],
+  "ok": true
+ },
+ {
+  "n": 2,
+  "slug": "alimentazione-nel-gatto-completo",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [
+   "WhatsApp corretto (sul sito originale il testo non corrispondeva al titolo)"
+  ],
+  "ok": true
+ },
+ {
+  "n": 3,
+  "slug": "alimentazione-nello-sportivo",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [
+   "descrizione con refusi corretti"
+  ],
+  "ok": true
+ },
+ {
+  "n": 4,
+  "slug": "alimentazione-vegana-e-vegetariana",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [
+   "descrizione con refusi corretti"
+  ],
+  "ok": true
+ },
+ {
+  "n": 5,
+  "slug": "apparato-digerente",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [],
+  "ok": true
+ },
+ {
+  "n": 6,
+  "slug": "privato-corso-cane-e-gatto-230",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [
+   "WhatsApp corretto (sul sito originale il testo non corrispondeva al titolo)"
+  ],
+  "ok": true
+ },
+ {
+  "n": 7,
+  "slug": "composizione-corporea-e-stato-di-nutrizione",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [],
+  "ok": true
+ },
+ {
+  "n": 8,
+  "slug": "counseling-nutrizionale",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [
+   "descrizione con refusi corretti"
+  ],
+  "ok": true
+ },
+ {
+  "n": 9,
+  "slug": "curare-l-eccesso-ponderale-in-eta-evolutiva",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [
+   "descrizione con refusi corretti"
+  ],
+  "ok": true
+ },
+ {
+  "n": 10,
+  "slug": "dall-eubiosi-alla-disbiosi",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [],
+  "ok": true
+ },
+ {
+  "n": 11,
+  "slug": "evidence-based-phytotherapy",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [],
+  "ok": true
+ },
+ {
+  "n": 12,
+  "slug": "fitoterapia-applicata",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [],
+  "ok": true
+ },
+ {
+  "n": 13,
+  "slug": "fitoterapia-sistemica",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [],
+  "ok": true
+ },
+ {
+  "n": 14,
+  "slug": "l-insulino-resistenza-e-la-diabesita",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [],
+  "ok": true
+ },
+ {
+  "n": 15,
+  "slug": "dieta-chetogenica",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [
+   "WhatsApp corretto (sul sito originale il testo non corrispondeva al titolo)"
+  ],
+  "ok": true
+ },
+ {
+  "n": 16,
+  "slug": "le-reazioni-avverse-agli-alimenti",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [
+   "WhatsApp corretto (sul sito originale il testo non corrispondeva al titolo)"
+  ],
+  "ok": true
+ },
+ {
+  "n": 17,
+  "slug": "microbiota",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [
+   "WhatsApp corretto (sul sito originale il testo non corrispondeva al titolo)"
+  ],
+  "ok": true
+ },
+ {
+  "n": 18,
+  "slug": "l-invecchiamento-in-salute",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [
+   "descrizione con refusi corretti"
+  ],
+  "ok": true
+ },
+ {
+  "n": 19,
+  "slug": "nutrizione-e-dietetica-applicata",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [],
+  "ok": true
+ },
+ {
+  "n": 20,
+  "slug": "bundle-microbiota-ed-epigenetica-nell-alimentazione-del-cane-e-del-gatto",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true,
+   "redirect301": true
+  },
+  "notes": [
+   "titolo corretto: \"MICROBIOTA ED EPIGENETICA NELL'ALIMENTAZIONEDEL CANE E DEL GATTO: PRINCIPI ED APPLICAZIONI CLINICHE\" → \"MICROBIOTA ED EPIGENETICA NELL'ALIMENTAZIONE DEL CANE E DEL GATTO: PRINCIPI ED APPLICAZIONI CLINICHE\"",
+   "WhatsApp corretto (sul sito originale il testo non corrispondeva al titolo)"
+  ],
+  "ok": true
+ },
+ {
+  "n": 21,
+  "slug": "nuovo-approccio-alla-prevenzione-e-cura-dell-obesita-infantile",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [],
+  "ok": true
+ },
+ {
+  "n": 22,
+  "slug": "nutrigenomica-nutrigenetica-ed-epigenetica",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [
+   "WhatsApp corretto (sul sito originale il testo non corrispondeva al titolo)"
+  ],
+  "ok": true
+ },
+ {
+  "n": 23,
+  "slug": "nutrizione-clinica",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [
+   "descrizione con refusi corretti"
+  ],
+  "ok": true
+ },
+ {
+  "n": 24,
+  "slug": "nutrizione-e-donna",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [
+   "descrizione con refusi corretti"
+  ],
+  "ok": true
+ },
+ {
+  "n": 25,
+  "slug": "caneegatto2",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [
+   "WhatsApp corretto (sul sito originale il testo non corrispondeva al titolo)"
+  ],
+  "ok": true
+ },
+ {
+  "n": 26,
+  "slug": "pnl-applicata-alla-comunicazione-sanitaria",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [
+   "descrizione con refusi corretti"
+  ],
+  "ok": true
+ },
+ {
+  "n": 27,
+  "slug": "ritmi-circadiani-e-metabolismo",
+  "checks": {
+   "http200": true,
+   "title": true,
+   "description": true,
+   "cover": true,
+   "brochure": true,
+   "patrocini": true,
+   "testimonianze": true,
+   "whatsapp": true,
+   "perChi": true,
+   "seo": true
+  },
+  "notes": [
+   "descrizione con refusi corretti"
+  ],
+  "ok": true
+ }
+]

@@ -3,5 +3,9 @@
   "private": true,
   "type": "module",
   "description": "Playwright checks and screenshots for the ECM WordPress site",
-  "dependencies": { "playwright": "1.65.1" }
+  "dependencies": {
+    "axe-core": "^4.10.3",
+    "lighthouse": "^12.6.1",
+    "playwright": "1.65.1"
+  }
 }

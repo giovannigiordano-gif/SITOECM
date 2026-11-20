@@ -33,7 +33,7 @@ $ecm_count_l = 0 === $ecm_visible ? __( 'Nessun corso', 'ecm' ) : sprintf( _n( '
 				ecm_breadcrumbs( array( array( __( 'Corsi', 'ecm' ), ecm_catalog_url() ), array( $ecm_term->name, '' ) ) );
 			}
 			?>
-			<h1 class="page-title" data-reveal="lines"><?php echo esc_html( $ecm_title ); ?></h1>
+			<h1 class="page-title page-title--count"><span data-reveal="lines"><?php echo esc_html( $ecm_title ); ?></span> <sup class="page-title__count" aria-label="<?php echo esc_attr( sprintf( /* translators: %d */ _n( '%d corso', '%d corsi', $ecm_term instanceof WP_Term ? (int) $ecm_term->count : count( $ecm_all ), 'ecm' ), $ecm_term instanceof WP_Term ? (int) $ecm_term->count : count( $ecm_all ) ) ); ?>"><?php echo (int) ( $ecm_term instanceof WP_Term ? $ecm_term->count : count( $ecm_all ) ); ?></sup></h1>
 		</div>
 		<p class="page-head__intro" data-reveal="fade"><?php echo esc_html( $ecm_intro ); ?></p>
 	</div>
@@ -109,7 +109,7 @@ $ecm_count_l = 0 === $ecm_visible ? __( 'Nessun corso', 'ecm' ) : sprintf( _n( '
 			<div class="empty__actions">
 				<a class="btn btn--secondary btn--sm" href="<?php echo esc_url( ecm_catalog_url() ); ?>" data-filters-reset><span class="btn__fill" aria-hidden="true"></span><span class="btn__label"><?php esc_html_e( 'Mostra tutti i corsi', 'ecm' ); ?></span></a>
 				<?php if ( ecm_opt( 'whatsapp_number' ) ) : ?>
-					<a class="btn btn--ghost btn--sm has-icon" href="<?php echo esc_url( ecm_whatsapp_generic() ); ?>" target="_blank" rel="noopener"><span class="btn__icon"><?php echo ecm_icon( 'whatsapp' ); // phpcs:ignore WordPress.Security.EscapeOutput ?></span><span class="btn__label"><?php esc_html_e( 'Chiedi su WhatsApp', 'ecm' ); ?></span></a>
+					<a class="btn btn--ghost btn--sm has-icon" href="<?php echo esc_url( ecm_whatsapp_generic() ); ?>" target="_blank" rel="noopener"><span class="btn__icon"><?php echo ecm_icon( 'whatsapp' ); // phpcs:ignore WordPress.Security.EscapeOutput ?></span><span class="btn__label"><?php esc_html_e( 'Scrivici su WhatsApp', 'ecm' ); ?></span></a>
 				<?php endif; ?>
 			</div>
 		</div>

@@ -88,3 +88,15 @@ return ECM_Importer::run( 'media', array( 'offset' => 0, 'limit' => 5 ) );
 Argomenti facoltativi: `force` (riscrive anche se invariato), `preserve_manual` (non sovrascrive i campi modificati a
 mano dopo l'ultima importazione), `dir` (bundle in un'altra cartella). In alternativa: wp-admin › Impostazioni ECM ›
 Importazione (pulsanti per step, avanzamento media, Verifica).
+
+## Nota OPcache (importante)
+
+Dopo aver sostituito i file di un plugin o del tema, eseguire sempre `opcache_reset();` nello stesso
+`novamira/execute-php` (o subito dopo). Durante il primo test di aggiornamento del plugin, una richiesta arrivata
+mentre OPcache serviva ancora la versione precedente di `ecm-core.php` e quella nuova di `class-ecm-plugin.php`
+ha prodotto un errore 500 temporaneo, risolto con il reset. Sequenza consigliata:
+
+1. estrarre lo ZIP in una cartella temporanea e fare il lint di tutti i PHP;
+2. solo se il lint è pulito, sostituire la cartella (rename);
+3. `opcache_reset();` e svuotare la cache (`do_action( 'litespeed_purge_all' );` e, su Hostinger, la cache CDN da hPanel);
+4. verificare `wp_remote_get( home_url() )` = 200.

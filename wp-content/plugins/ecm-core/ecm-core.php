@@ -29,6 +29,7 @@ require_once ECM_CORE_DIR . 'includes/class-ecm-meta.php';
 require_once ECM_CORE_DIR . 'includes/helpers.php';
 require_once ECM_CORE_DIR . 'includes/class-ecm-media.php';
 require_once ECM_CORE_DIR . 'includes/class-ecm-redirects.php';
+require_once ECM_CORE_DIR . 'includes/class-ecm-platform-redirects.php';
 require_once ECM_CORE_DIR . 'includes/class-ecm-seo.php';
 require_once ECM_CORE_DIR . 'includes/class-ecm-consent.php';
 require_once ECM_CORE_DIR . 'includes/class-ecm-newsletter.php';

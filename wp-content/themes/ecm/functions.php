@@ -1,6 +1,6 @@
 <?php
 /**
- * ECM · La Lente — bootstrap del tema.
+ * ECM La Lente: bootstrap del tema.
  *
  * Il tema si occupa solo della presentazione. Dati, opzioni, SEO, form e redirect
  * sono nel plugin "ECM Core" (vedi docs/contract-ecm-core.md).

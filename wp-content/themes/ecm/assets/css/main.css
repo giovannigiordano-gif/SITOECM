@@ -952,7 +952,7 @@ hr {
 	}
 }
 .card--large .card__mat {
-	aspect-ratio: 4 / 3;
+	aspect-ratio: 16 / 10;
 }
 .card--large .card__title {
 	font-size: var(--fs-xl);
@@ -2655,15 +2655,25 @@ body.menu-open .btn--login {
 	isolation: isolate;
 	overflow: hidden;
 	padding-block: var(--section);
-	background: var(--c-paper);
+	background: var(--c-crimson);
 	text-align: center;
+}
+/* Velatura porcellana con un foro circolare: il foro si allarga allo scroll (la lente si apre). */
+.cta-final::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	background: var(--c-paper);
+	-webkit-mask: radial-gradient(circle at 50% 50%, transparent var(--hole, 200vmax), #000 calc(var(--hole, 200vmax) + 1px));
+	mask: radial-gradient(circle at 50% 50%, transparent var(--hole, 200vmax), #000 calc(var(--hole, 200vmax) + 1px));
+	pointer-events: none;
 }
 .cta-final__disc {
 	position: absolute;
 	inset: 0;
 	z-index: -1;
-	background: var(--c-crimson);
-	clip-path: circle(var(--disc, 75%) at 50% 50%);
+	pointer-events: none;
 }
 .cta-final__disc::after {
 	content: "";
@@ -2678,6 +2688,7 @@ body.menu-open .btn--login {
 }
 .cta-final__inner {
 	position: relative;
+	z-index: 1;
 	display: grid;
 	justify-items: center;
 	color: var(--c-on-ink);
@@ -2711,6 +2722,32 @@ body.menu-open .btn--login {
    ========================================================================== */
 .page-head--catalog {
 	padding-bottom: clamp(2rem, 1rem + 3vw, 3.5rem);
+}
+.page-title--count {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.12em;
+}
+.page-title--count > span {
+	display: block;
+}
+.page-title__count {
+	display: grid;
+	place-items: center;
+	min-width: 1.9em;
+	height: 1.9em;
+	margin-top: 0.1em;
+	padding: 0 0.4em;
+	border-radius: var(--r-pill);
+	background: var(--c-crimson);
+	color: var(--c-on-ink);
+	font-size: 0.26em;
+	font-stretch: 125%;
+	font-weight: 700;
+	letter-spacing: 0;
+	line-height: 1;
+	vertical-align: top;
+	font-variant-numeric: tabular-nums;
 }
 
 .filters {

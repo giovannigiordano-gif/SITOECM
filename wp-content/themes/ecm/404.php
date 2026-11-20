@@ -18,7 +18,7 @@ get_header();
 			<p><?php esc_html_e( 'Il sito è stato rinnovato e alcuni indirizzi sono cambiati. Il corso che cerchi è quasi certamente nel catalogo.', 'ecm' ); ?></p>
 			<div class="notfound__actions">
 				<?php
-				echo ecm_button( array( 'label' => __( 'Vai ai corsi', 'ecm' ), 'url' => ecm_catalog_url(), 'icon' => 'arrow-right' ) ); // phpcs:ignore WordPress.Security.EscapeOutput
+				echo ecm_button( array( 'label' => __( 'Esplora i corsi', 'ecm' ), 'url' => ecm_catalog_url(), 'icon' => 'arrow-right' ) ); // phpcs:ignore WordPress.Security.EscapeOutput
 				echo ecm_button( array( 'label' => __( 'Torna alla home', 'ecm' ), 'url' => home_url( '/' ), 'variant' => 'secondary' ) ); // phpcs:ignore WordPress.Security.EscapeOutput
 				?>
 			</div>
