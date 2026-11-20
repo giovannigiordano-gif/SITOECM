@@ -370,3 +370,15 @@ function ecm_review_card( array $t, bool $clamp = false ): string {
 		$course
 	);
 }
+
+/**
+ * Icona di un'area tematica (Phosphor light, nello sprite come "area-{slug}"); per le aree nuove una lente da microscopio.
+ *
+ * @param array|null $area Area (ecm_areas()).
+ * @param string     $class Classi extra.
+ */
+function ecm_area_icon( ?array $area, string $class = '' ): string {
+	$known = array( 'nutrizione-umana', 'nutrizione-animale', 'fitoterapia', 'microbiota-genomica', 'comunicazione-sanitaria' );
+	$slug  = $area ? (string) $area['slug'] : '';
+	return ecm_icon( in_array( $slug, $known, true ) ? 'area-' . $slug : 'area-default', $class );
+}

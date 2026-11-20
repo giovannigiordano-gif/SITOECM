@@ -3052,6 +3052,41 @@ body.menu-open .btn--login {
 	--btn-fill: var(--c-ink);
 }
 
+/* Indice delle aree: icona nel cerchio del logo */
+.areas__index a {
+	justify-content: flex-start;
+	align-items: center;
+}
+.areas__index-name {
+	flex: 1 1 auto;
+}
+.areas__index-icon {
+	flex: none;
+	display: grid;
+	place-items: center;
+	width: clamp(2.6rem, 2rem + 1.6vw, 3.6rem);
+	aspect-ratio: 1;
+	border-radius: 50%;
+	color: var(--c-crimson-deep);
+	box-shadow: inset 0 0 0 1.5px currentColor;
+	transition: background-color var(--dur-2) var(--ease-out), color var(--dur-2) var(--ease-out), transform var(--dur-3) var(--ease-out);
+}
+.areas__index-icon .icon {
+	width: 52%;
+	height: 52%;
+}
+.areas.is-pinned .areas__index-icon {
+	color: oklch(0.76 0.12 22);
+}
+@media (hover: hover) {
+	.areas__index a:hover .areas__index-icon {
+		background: var(--c-crimson);
+		color: var(--c-on-ink);
+		box-shadow: none;
+		transform: rotate(-8deg) scale(1.06);
+	}
+}
+
 /* C:\Users\UTENTE\Desktop\Restyling sito ecm\wp-content\themes\ecm\assets\css\src\stories.css */
 /* ==========================================================================
    Testimonianze: recensioni scorrevoli, citazione con ritratto, video degli eventi,

@@ -124,6 +124,7 @@ ecm_hero(
 			<?php foreach ( $ecm_areas as $ecm_a ) : ?>
 				<li data-areas-index>
 					<a href="<?php echo esc_url( $ecm_a['url'] ); ?>">
+						<span class="areas__index-icon" aria-hidden="true"><?php echo ecm_area_icon( $ecm_a ); // phpcs:ignore WordPress.Security.EscapeOutput ?></span>
 						<span class="areas__index-name"><?php echo esc_html( $ecm_a['name'] ); ?></span>
 						<span class="areas__index-count"><?php echo esc_html( sprintf( _n( '%d corso', '%d corsi', (int) $ecm_a['count'], 'ecm' ), (int) $ecm_a['count'] ) ); ?></span>
 					</a>

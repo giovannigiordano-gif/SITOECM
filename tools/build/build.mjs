@@ -28,7 +28,9 @@ const icons = {
   'sign-in': 'sign-in', 'check': 'check', 'caret-down': 'caret-down', 'menu': 'list', 'copy': 'copy', 'phone': 'phone',
   'quote': 'quotes', 'student': 'student', 'certificate': 'certificate', 'warning': 'warning-circle', 'funnel': 'funnel-simple',
   'chat': 'chat-circle-text', 'user': 'user', 'calendar': 'calendar-blank', 'cookie': 'cookie', 'sliders': 'sliders-horizontal',
-  'arrow-down': 'arrow-down', 'star': 'fill/star-fill', 'play': 'fill/play-fill', 'pause': 'fill/pause-fill'
+  'arrow-down': 'arrow-down', 'star': 'fill/star-fill', 'play': 'fill/play-fill', 'pause': 'fill/pause-fill',
+  'area-nutrizione-umana': 'light/fork-knife-light', 'area-nutrizione-animale': 'light/paw-print-light', 'area-fitoterapia': 'light/leaf-light',
+  'area-microbiota-genomica': 'light/dna-light', 'area-comunicazione-sanitaria': 'light/chats-circle-light', 'area-default': 'light/microscope-light'
 };
 let sprite = '<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">';
 for (const [id, file] of Object.entries(icons)) {
