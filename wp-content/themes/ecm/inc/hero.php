@@ -1,7 +1,7 @@
 <?php
 /**
  * Hero condivisa da tutte le pagine: immagine a tutto schermo, titolo in basso a sinistra,
- * lente WebGL che ingrandisce l'immagine sotto il cursore (in automatico sui dispositivi touch).
+ * luce radente WebGL che segue il cursore con lieve parallasse (deriva lenta sui dispositivi touch).
  * Senza JS o con motion ridotto resta un'immagine statica con il testo leggibile sopra.
  *
  * @package ecm
@@ -127,9 +127,6 @@ function ecm_hero( array $a ): void {
 			<?php endif; ?>
 		</div>
 		<div class="hero__shade" aria-hidden="true"></div>
-		<?php if ( $a['lens'] && $has_img ) : ?>
-			<div class="hero__ring" data-hero-ring aria-hidden="true"><?php echo ecm_lens_ring_svg( 'hero-ring-' . $n, $a['ring_text'] ); // phpcs:ignore WordPress.Security.EscapeOutput ?></div>
-		<?php endif; ?>
 
 		<div class="hero__body wrap">
 			<div class="hero__copy">

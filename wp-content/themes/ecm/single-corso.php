@@ -77,9 +77,18 @@ while ( have_posts() ) :
 	}
 	$ecm_crumbs[] = array( wp_trim_words( $c['title'], 6, '…' ), '' );
 
+	// Patrocini: i banner compositi contengono più loghi, quindi in quel caso non diamo un numero.
+	$ecm_pat_n    = count( (array) $c['patrocini'] );
+	$ecm_pat_wide = (bool) array_filter( (array) $c['patrocini'], static fn( $p ) => (int) $p['height'] > 0 && ( (int) $p['width'] / (int) $p['height'] ) > 2.6 );
+	/* translators: %d numero enti */
+	$ecm_pat_text = ( $ecm_pat_n && ! $ecm_pat_wide ) ? sprintf( _n( '%d ente patrocinante', '%d enti patrocinanti', $ecm_pat_n, 'ecm' ), $ecm_pat_n ) : '';
+
 	$ecm_meta = ecm_badge_stato( $c['stato'] );
 	if ( '' !== (string) $c['crediti'] ) {
 		$ecm_meta .= ' <span class="credits credits--on-ink"><span class="credits__num">' . esc_html( (string) $c['crediti'] ) . '</span> ' . esc_html__( 'crediti ECM', 'ecm' ) . '</span>';
+	}
+	if ( $ecm_pat_n ) {
+		$ecm_meta .= ' <a class="badge badge--patrons" href="#patrocini"><span class="badge__ring" aria-hidden="true"></span>' . esc_html( $ecm_pat_text ? sprintf( /* translators: %d numero enti */ _n( 'Con il patrocinio di %d ente', 'Con il patrocinio di %d enti', $ecm_pat_n, 'ecm' ), $ecm_pat_n ) : __( 'Con il patrocinio di enti e ordini', 'ecm' ) ) . '</a>';
 	}
 
 	$ecm_ctas = array();
@@ -145,9 +154,50 @@ while ( have_posts() ) :
 			'focus'       => '78% 50%',
 		)
 	);
+
+	// Patrocini subito sotto la hero: nastri obliqui con i loghi a colori.
+	if ( $c['patrocini'] ) {
+		ecm_patrons_band(
+			(array) $c['patrocini'],
+			array(
+				'id'         => 'patrocini',
+				'class'      => 'pband--course',
+				'count_text' => $ecm_pat_text,
+			)
+		);
+	}
+
+	// Dati chiave del corso (solo quelli presenti).
+	$ecm_facts = array();
+	if ( ! empty( $c['area'] ) ) {
+		$ecm_facts[] = array( __( 'Area', 'ecm' ), '<a href="' . esc_url( $c['area']['url'] ) . '">' . esc_html( $c['area']['name'] ) . '</a>' );
+	}
+	$ecm_facts[] = array( __( 'Stato', 'ecm' ), esc_html( $c['stato']['label'] ) );
+	if ( '' !== (string) $c['crediti'] ) {
+		$ecm_facts[] = array( __( 'Crediti ECM', 'ecm' ), esc_html( (string) $c['crediti'] ) );
+	}
+	if ( $c['destinatari'] ) {
+		/* translators: %d numero professioni */
+		$ecm_facts[] = array( __( 'Per', 'ecm' ), esc_html( sprintf( _n( '%d professione', '%d professioni', count( $c['destinatari'] ), 'ecm' ), count( $c['destinatari'] ) ) ) );
+	}
+	if ( $ecm_b ) {
+		$ecm_facts[] = array( __( 'Brochure', 'ecm' ), esc_html( implode( ', ', $ecm_b_meta ) ) );
+	}
+	if ( $ecm_pat_n ) {
+		$ecm_facts[] = array( __( 'Patrocini', 'ecm' ), '<a href="#patrocini">' . esc_html( $ecm_pat_text ? $ecm_pat_text : __( 'Enti e ordini', 'ecm' ) ) . '</a>' );
+	}
 	?>
 
 	<div class="course-body">
+		<?php if ( $ecm_facts ) : ?>
+			<div class="wrap">
+				<dl class="course-facts" data-reveal="fade">
+					<?php foreach ( $ecm_facts as $ecm_fact ) : ?>
+						<div class="course-facts__item"><dt><?php echo esc_html( $ecm_fact[0] ); ?></dt><dd><?php echo wp_kses( $ecm_fact[1], array( 'a' => array( 'href' => true ) ) ); ?></dd></div>
+					<?php endforeach; ?>
+				</dl>
+			</div>
+		<?php endif; ?>
 		<div class="wrap course-body__grid">
 			<div class="course-body__main">
 				<h2 class="course-kicker"><?php esc_html_e( 'Il corso', 'ecm' ); ?></h2>
@@ -211,36 +261,6 @@ while ( have_posts() ) :
 						</ul>
 					<?php endif; ?>
 				</div>
-			</div>
-		</section>
-	<?php endif; ?>
-
-	<?php if ( $c['patrocini'] ) : ?>
-		<section class="patrons" aria-labelledby="patrons-title">
-			<div class="wrap">
-				<h2 class="patrons__title" id="patrons-title" data-reveal="lines"><?php esc_html_e( 'Con il patrocinio di', 'ecm' ); ?></h2>
-				<ul class="patrons__grid">
-					<?php foreach ( $c['patrocini'] as $ecm_p ) : ?>
-						<?php $ecm_is_wide = $ecm_p['height'] > 0 && ( $ecm_p['width'] / $ecm_p['height'] ) > 2.6; ?>
-						<li class="logo-tile logo-tile--lg<?php echo $ecm_is_wide ? ' logo-tile--wide' : ''; ?>">
-							<?php
-							echo wp_get_attachment_image(
-								$ecm_p['image_id'],
-								'ecm-logo',
-								false,
-								array(
-									'alt'     => $ecm_p['name'] ? $ecm_p['name'] : __( 'Logo ente patrocinante', 'ecm' ),
-									'loading' => 'lazy',
-									'style'   => '--h:' . ( $ecm_is_wide ? 120 : ecm_logo_height( (int) $ecm_p['width'], (int) $ecm_p['height'], 72 ) ) . 'px',
-								)
-							);
-							?>
-							<?php if ( $ecm_p['name'] ) : ?>
-								<span class="visually-hidden"><?php echo esc_html( $ecm_p['name'] ); ?></span>
-							<?php endif; ?>
-						</li>
-					<?php endforeach; ?>
-				</ul>
 			</div>
 		</section>
 	<?php endif; ?>

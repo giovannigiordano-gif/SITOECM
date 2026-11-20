@@ -101,33 +101,20 @@ ecm_hero(
 			?>
 		</p>
 	</div>
-	<?php if ( $ecm_logos ) : ?>
-		<div class="marquee" data-marquee>
-			<p class="marquee__label wrap"><?php esc_html_e( 'Con il patrocinio di', 'ecm' ); ?></p>
-			<div class="marquee__viewport">
-				<?php for ( $ecm_loop = 0; $ecm_loop < 2; $ecm_loop++ ) : ?>
-					<ul class="marquee__track" <?php echo $ecm_loop ? 'aria-hidden="true"' : ''; ?>>
-						<?php foreach ( $ecm_logos as $ecm_p ) : ?>
-							<li class="logo-tile">
-								<?php
-								echo wp_get_attachment_image(
-									$ecm_p['image_id'],
-									'ecm-logo',
-									false,
-									array(
-										'alt'     => $ecm_loop ? '' : $ecm_p['name'],
-										'loading' => 'lazy',
-										'style'   => '--h:' . ecm_logo_height( (int) $ecm_p['width'], (int) $ecm_p['height'], 56 ) . 'px',
-									)
-								);
-								?>
-							</li>
-						<?php endforeach; ?>
-					</ul>
-				<?php endfor; ?>
-			</div>
-		</div>
-	<?php endif; ?>
+	<?php
+	if ( $ecm_logos ) {
+		ecm_patrons_band(
+			array_values( $ecm_logos ),
+			array(
+				'id'         => 'patrocini',
+				'heading'    => 'h3',
+				'class'      => 'pband--home',
+				/* translators: %d numero enti */
+				'count_text' => $ecm_stats['patrocini_ordini'] ? sprintf( __( '%d enti e ordini professionali', 'ecm' ), (int) $ecm_stats['patrocini_ordini'] ) : '',
+			)
+		);
+	}
+	?>
 </section>
 <?php endif; ?>
 

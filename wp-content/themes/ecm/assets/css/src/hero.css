@@ -94,37 +94,6 @@
 	}
 }
 
-/* Anello che segue la lente */
-.hero__ring {
-	position: absolute;
-	left: 0;
-	top: 0;
-	z-index: 1;
-	width: var(--rs, 0px);
-	height: var(--rs, 0px);
-	transform: translate3d(calc(var(--rx, -999px) - 50%), calc(var(--ry, -999px) - 50%), 0);
-	pointer-events: none;
-	opacity: 0;
-	transition: opacity 0.6s var(--ease-out);
-	will-change: transform;
-}
-.hero.is-gl .hero__ring {
-	opacity: 1;
-}
-.hero__ring .lens-ring__stroke {
-	stroke: var(--c-crimson-soft);
-	stroke-width: 1.6;
-}
-.hero__ring .lens-ring__stroke--thin {
-	stroke: color-mix(in oklch, var(--c-on-ink) 45%, transparent);
-	stroke-width: 0.8;
-}
-.hero__ring .lens-ring__type text {
-	fill: var(--c-on-ink);
-	font-size: 12.5px;
-	letter-spacing: 0.08em;
-}
-
 /* Testo */
 .hero__body {
 	position: relative;

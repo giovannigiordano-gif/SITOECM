@@ -258,3 +258,25 @@ nel campo "Video" della sua testimonianza compare da solo il pulsante play.
 - Cartella vuota `C:\tools\images\src` creata per errore da Blender sul PC (percorso relativo risolto dalla radice del
   disco): i file sono stati spostati nel progetto, la cancellazione della cartella vuota è stata bloccata dal controllo
   di sicurezza e va fatta a mano.
+
+### Aggiornamento successivo (stesso giorno)
+
+- **Sito bianco risolto**: WordPress risultava sul tema `hostinger-ai-theme` invece di `ecm`. Due plugin Hostinger
+  installati possono cambiare tema (`hostinger-easy-onboarding` e `hostinger-ai-assistant`); la causa più probabile è che
+  uno dei due abbia visto per un istante la cartella del tema mancante durante un deploy fatto rinominando la cartella.
+  Ho riattivato `ecm` (menu e impostazioni intatti) e svuotato LiteSpeed e la CDN Hostinger (serviva copie vecchie).
+  Il deploy (`tools/deploy/deploy-staged.php.txt`) ora aggiorna i file al loro posto, verifica che il tema attivo sia
+  `ecm` e svuota anche la CDN. Consiglio: non avviare l'onboarding o l'assistente AI di Hostinger su questo sito, oppure
+  disattivare i due plugin se non servono.
+- **Effetto del mouse più fine**: al posto della lente d'ingrandimento con l'anello e il testo, una luce radente
+  morbida che segue il cursore con un leggero ritardo (la scena resta in penombra, schiarisce dove passa la luce) e una
+  parallasse appena percettibile; nella pagina Docenti la luce riporta il colore nei ritratti.
+- **Patrocini più leggibili (home)**: due nastri obliqui che si incrociano e scorrono in direzioni opposte seguendo lo
+  scroll: bianco con i loghi a colori più grandi, cremisi con "Con il patrocinio di · 12 enti e ordini professionali".
+- **Schede corso**: patrocini subito sotto la hero con gli stessi nastri e un badge "Con il patrocinio di N enti" nella
+  hero; riga di dati chiave (area, stato, crediti se presenti, professioni, brochure, patrocini); più respiro prima
+  della descrizione. La vecchia griglia di loghi grigi in fondo è stata tolta.
+- Verifiche: axe 0 violazioni; Lighthouse mobile home 95, scheda corso 94 (accessibilità 100, CLS 0-0,012).
+- **MuAPI**: `npm install -g muapi-cli` non funziona su Windows (il pacchetto scarica un eseguibile che nelle release non
+  esiste, errore 404; il ripiego `pip` richiede Python, assente). La chiave non è sul PC: con `setx MUAPI_API_KEY "…"`
+  posso usare direttamente l'API REST, senza il programma.

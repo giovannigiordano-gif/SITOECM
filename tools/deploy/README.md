@@ -44,7 +44,7 @@ Risposta attesa: `{"bytes_written": ..., "created": true}`.
 
 ## 3. Estrazione, lint, attivazione
 
-**Consigliato (aggiornamenti):** usare [`deploy-staged.php.txt`](deploy-staged.php.txt) come `code` di `novamira/execute-php`: estrae tema e/o plugin in una cartella temporanea, fa il lint di ogni PHP e sostituisce la versione online solo se è tutto pulito (altrimenti il sito resta com'era); unisce l'eventuale `ecm-import-delta.zip` al bundle di importazione, resetta OPcache e svuota la cache. Poi verificare le pagine con una nuova chiamata.
+**Consigliato (aggiornamenti):** usare [`deploy-staged.php.txt`](deploy-staged.php.txt) come `code` di `novamira/execute-php`: estrae tema e/o plugin in una cartella temporanea, fa il lint di ogni PHP e solo se è tutto pulito aggiorna i file **al loro posto** (la cartella del tema non sparisce mai: rinominarla ha fatto attivare a un plugin Hostinger il tema `hostinger-ai-theme`, sito bianco), controlla che il tema attivo sia `ecm`, unisce l'eventuale `ecm-import-delta.zip`, resetta OPcache e svuota LiteSpeed e la CDN Hostinger. Poi verificare le pagine con una nuova chiamata.
 
 Procedura originale (prima installazione):
 

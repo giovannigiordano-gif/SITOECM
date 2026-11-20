@@ -3,10 +3,13 @@
 // (ecm.zip per il tema, ecm-core.zip per il plugin, ecm-import-delta.zip facoltativo per il bundle).
 // Incollare come "code" di novamira/execute-php (senza tag <?php). Non usa exit/die.
 //
-// 1. estrae ogni ZIP in una cartella temporanea accanto a quella definitiva;
-// 2. controlla i percorsi (niente backslash, niente "..", radice = slug) e fa il lint di ogni PHP;
-// 3. solo se il lint è pulito sostituisce la cartella (rename), altrimenti lascia online la versione attuale;
-// 4. unisce l'eventuale delta del bundle di importazione, resetta OPcache e svuota la cache LiteSpeed.
+// 1. estrae ogni ZIP in una cartella temporanea e controlla i percorsi (niente backslash, niente "..");
+// 2. fa il lint di ogni PHP: se c'è un errore non tocca nulla e la versione online resta com'è;
+// 3. aggiorna i file AL LORO POSTO (sovrascrive e poi elimina quelli non più presenti): la cartella del tema
+//    non sparisce mai, nemmeno per un istante. (Il 20/11/2026 un deploy fatto rinominando la cartella ha fatto
+//    attivare a un plugin Hostinger il suo tema "hostinger-ai-theme": sito bianco.)
+// 4. controlla che il tema attivo sia ancora "ecm" (e lo riattiva se serve), resetta OPcache,
+//    svuota LiteSpeed e la CDN Hostinger (stessa azione del pulsante "Svuota cache" del plugin Hostinger).
 // Verificare poi le pagine in una NUOVA chiamata (il codice nuovo vale dalla richiesta successiva).
 // =====================================================================
 $rm = function ( $dir ) use ( &$rm ) {
@@ -19,11 +22,10 @@ $deploy = function ( $type, $slug ) use ( $rm ) {
 	$zip_path = WP_CONTENT_DIR . '/uploads/ecm-deploy/' . $slug . '.zip';
 	$base     = 'plugin' === $type ? WP_PLUGIN_DIR : get_theme_root();
 	$target   = $base . '/' . $slug;
-	$stage    = $base . '/.' . $slug . '-stage';
-	$old      = $base . '/.' . $slug . '-old';
+	$stage    = WP_CONTENT_DIR . '/uploads/ecm-deploy/stage-' . $slug;
 	$r        = array( 'slug' => $slug );
 	if ( ! file_exists( $zip_path ) ) { return $r + array( 'skipped' => 'zip non caricato' ); }
-	$rm( $stage ); $rm( $old );
+	$rm( $stage );
 	$zip = new ZipArchive();
 	if ( true !== $zip->open( $zip_path ) ) { return $r + array( 'error' => 'zip non apribile' ); }
 	for ( $i = 0; $i < $zip->numFiles; $i++ ) {
@@ -36,8 +38,7 @@ $deploy = function ( $type, $slug ) use ( $rm ) {
 	if ( ! $ok ) { return $r + array( 'error' => 'estrazione' ); }
 	$src = $stage . '/' . $slug;
 	$errors = array(); $count = 0;
-	$it = new RecursiveIteratorIterator( new RecursiveDirectoryIterator( $src, FilesystemIterator::SKIP_DOTS ) );
-	foreach ( $it as $f ) {
+	foreach ( new RecursiveIteratorIterator( new RecursiveDirectoryIterator( $src, FilesystemIterator::SKIP_DOTS ) ) as $f ) {
 		if ( '.php' !== substr( $f->getFilename(), -4 ) ) { continue; }
 		++$count;
 		try { token_get_all( (string) file_get_contents( $f->getPathname() ), TOKEN_PARSE ); } catch ( \ParseError $e ) { $errors[] = str_replace( $src, '', $f->getPathname() ) . ':' . $e->getLine() . ' ' . $e->getMessage(); }
@@ -45,11 +46,26 @@ $deploy = function ( $type, $slug ) use ( $rm ) {
 	$r['php_files']   = $count;
 	$r['lint_errors'] = $errors;
 	if ( $errors ) { $rm( $stage ); return $r; }
-	if ( is_dir( $target ) ) { rename( $target, $old ); }
-	rename( $src, $target );
-	$rm( $stage ); $rm( $old );
+	// Copia al posto: prima i file nuovi/aggiornati, poi via quelli che non esistono più.
+	$keep = array(); $copied = 0;
+	foreach ( new RecursiveIteratorIterator( new RecursiveDirectoryIterator( $src, FilesystemIterator::SKIP_DOTS ), RecursiveIteratorIterator::SELF_FIRST ) as $f ) {
+		$rel = substr( $f->getPathname(), strlen( $src ) );
+		$keep[ $rel ] = true;
+		$dst = $target . $rel;
+		if ( $f->isDir() ) { wp_mkdir_p( $dst ); continue; }
+		if ( ! file_exists( $dst ) || md5_file( $dst ) !== md5_file( $f->getPathname() ) ) { copy( $f->getPathname(), $dst ); ++$copied; }
+	}
+	$deleted = 0;
+	foreach ( new RecursiveIteratorIterator( new RecursiveDirectoryIterator( $target, FilesystemIterator::SKIP_DOTS ), RecursiveIteratorIterator::CHILD_FIRST ) as $f ) {
+		$rel = substr( $f->getPathname(), strlen( $target ) );
+		if ( isset( $keep[ $rel ] ) ) { continue; }
+		$f->isDir() ? @rmdir( $f->getPathname() ) : unlink( $f->getPathname() );
+		++$deleted;
+	}
+	$rm( $stage );
 	unlink( $zip_path );
-	$r['deployed'] = is_dir( $target );
+	$r['copied']  = $copied;
+	$r['deleted'] = $deleted;
 	return $r;
 };
 $out = array(
@@ -61,6 +77,16 @@ if ( file_exists( $dz ) ) {
 	$z = new ZipArchive();
 	if ( true === $z->open( $dz ) ) { wp_mkdir_p( WP_CONTENT_DIR . '/uploads/ecm-import' ); $out['delta'] = $z->extractTo( WP_CONTENT_DIR . '/uploads/ecm-import' ); $z->close(); unlink( $dz ); }
 }
+if ( 'ecm' !== get_option( 'stylesheet' ) && wp_get_theme( 'ecm' )->exists() ) {
+	$out['theme_was'] = get_option( 'stylesheet' );
+	switch_theme( 'ecm' );
+}
+$out['active_theme'] = get_option( 'stylesheet' );
 if ( function_exists( 'opcache_reset' ) ) { $out['opcache'] = opcache_reset(); }
 do_action( 'litespeed_purge_all' );
+if ( defined( 'HOSTINGER_PLUGIN_REST_API_BASE' ) ) {
+	do_action( 'rest_api_init', rest_get_server() );
+	$res        = rest_do_request( new WP_REST_Request( 'DELETE', '/' . trim( HOSTINGER_PLUGIN_REST_API_BASE, '/' ) . '/clear-cache' ) );
+	$out['cdn'] = $res->get_data();
+}
 return $out;

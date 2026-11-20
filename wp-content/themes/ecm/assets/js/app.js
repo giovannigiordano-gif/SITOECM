@@ -227,17 +227,17 @@
 	}
 
 	/* ------------------------------------------------------------------ */
-	/* Hero: lente WebGL che ingrandisce l'immagine sotto il cursore        */
-	/* (in automatico, con una deriva lenta, sui dispositivi touch)         */
+	/* Hero: luce radente WebGL che segue il cursore con un leggero ritardo  */
+	/* e lieve parallasse (deriva lenta automatica sui dispositivi touch)   */
 	/* ------------------------------------------------------------------ */
 	const LENS_VERT = 'attribute vec2 p;varying vec2 v;void main(){v=p*.5+.5;gl_Position=vec4(p,0.,1.);}';
 	const LENS_FRAG = [
 		'precision highp float;',
 		'varying vec2 v;',
-		'uniform sampler2D t;uniform vec2 res;uniform vec2 img;uniform vec2 focus;uniform vec2 mouse;',
-		'uniform float rad;uniform float zoom;uniform float mono;uniform float kz;uniform float shift;',
+		'uniform sampler2D t;uniform vec2 res;uniform vec2 img;uniform vec2 focus;uniform vec2 mouse;uniform vec2 par;',
+		'uniform float rad;uniform float mono;uniform float kz;uniform float shift;',
 		'vec2 cover(vec2 uv){',
-		'  uv=(uv-.5)/kz+.5;uv.y+=shift;',
+		'  uv=(uv-.5)/kz+.5+par;uv.y+=shift;',
 		'  float rc=res.x/res.y, ri=img.x/img.y;',
 		'  vec2 s=rc>ri?vec2(1.,ri/rc):vec2(rc/ri,1.);',
 		'  vec2 f=vec2(focus.x,1.-focus.y);',
@@ -245,23 +245,13 @@
 		'}',
 		'void main(){',
 		'  vec2 px=vec2(v.x*res.x,(1.-v.y)*res.y);',
-		'  vec2 m=vec2(mouse.x/res.x,1.-mouse.y/res.y);',
-		'  float d=distance(px,mouse);',
-		'  float tt=d/max(rad,1.);',
-		'  float inside=rad>1.?1.-smoothstep(.985,1.,tt):0.;',
-		'  float k=mix(1./zoom,1.,pow(clamp(tt,0.,1.),2.4));',
-		'  vec2 uv=mix(v,m+(v-m)*k,inside);',
-		'  float edge=smoothstep(.5,1.,tt)*inside;',
-		'  vec2 dir=normalize(v-m+1e-5);',
-		'  vec2 off=dir*edge*.007;',
-		'  vec3 c=vec3(texture2D(t,cover(uv+off)).r,texture2D(t,cover(uv)).g,texture2D(t,cover(uv-off)).b);',
+		'  float d=distance(px,mouse)/max(rad,1.);',
+		'  float light=1.-smoothstep(0.,1.,d);',
+		'  light*=light;',
+		'  vec3 c=texture2D(t,cover(v)).rgb;',
 		'  float l=dot(c,vec3(.299,.587,.114));',
-		'  c=mix(c,vec3(l*1.04),mono*(1.-inside));',
-		'  c*=1.+.12*inside;',
-		'  float rim=smoothstep(.93,.985,tt)*(1.-smoothstep(.985,1.,tt));',
-		'  c+=rim*.22;',
-		'  float sh=rad>1.?(1.-smoothstep(1.,1.08,tt))*step(1.,tt):0.;',
-		'  c*=1.-.28*sh;',
+		'  c=mix(c,vec3(l*1.03),mono*(1.-light));',
+		'  c*=mix(.86,1.16,light);',
 		'  gl_FragColor=vec4(c,1.);',
 		'}',
 	].join('\n');
@@ -304,7 +294,7 @@
 		gl.enableVertexAttribArray(aP);
 		gl.vertexAttribPointer(aP, 2, gl.FLOAT, false, 0, 0);
 		const U = {};
-		['t', 'res', 'img', 'focus', 'mouse', 'rad', 'zoom', 'mono', 'kz', 'shift'].forEach((n) => (U[n] = gl.getUniformLocation(prog, n)));
+		['t', 'res', 'img', 'focus', 'mouse', 'par', 'rad', 'mono', 'kz', 'shift'].forEach((n) => (U[n] = gl.getUniformLocation(prog, n)));
 		gl.bindTexture(gl.TEXTURE_2D, gl.createTexture());
 		gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);
 		gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
@@ -314,7 +304,7 @@
 
 		const mono = hero.hasAttribute('data-hero-mono') ? 1 : 0;
 		const dpr = Math.min(w.devicePixelRatio || 1, 1.5);
-		const st = { x: 0, y: 0, tx: 0, ty: 0, r: 0, tr: 0, hover: false, ready: false, running: false, W: 0, H: 0, base: 120, focus: [0.72, 0.5], kz: 1, shift: 0 };
+		const st = { x: 0, y: 0, tx: 0, ty: 0, r: 0, tr: 0, hover: false, ready: false, running: false, W: 0, H: 0, base: 120, focus: [0.72, 0.5], kz: 1.025, shift: 0, px: 0, py: 0 };
 
 		const readFocus = () => {
 			const op = (getComputedStyle(img).objectPosition || '50% 50%').split(' ');
@@ -329,7 +319,8 @@
 			canvas.width = Math.round(st.W * dpr);
 			canvas.height = Math.round(st.H * dpr);
 			gl.viewport(0, 0, canvas.width, canvas.height);
-			st.base = st.W >= 900 ? Math.max(110, Math.min(230, Math.min(st.W, st.H) * 0.19)) : Math.max(84, st.W * 0.25);
+			// raggio ampio e morbido: una luce, non una lente
+			st.base = Math.max(st.W, st.H) * (st.W >= 900 ? 0.4 : 0.5);
 			if (st.ready && !st.hover) st.tr = st.base;
 			readFocus();
 			if (!st.x) {
@@ -354,8 +345,8 @@
 			gl.uniform1f(U.shift, st.shift);
 			gl.uniform2f(U.focus, st.focus[0], st.focus[1]);
 			gl.uniform2f(U.mouse, st.x * dpr, st.y * dpr);
+			gl.uniform2f(U.par, st.px, st.py);
 			gl.uniform1f(U.rad, st.r * dpr);
-			gl.uniform1f(U.zoom, mono ? 1.35 : 1.6);
 			gl.uniform1f(U.mono, mono);
 			gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
 			if (ring) {
@@ -370,12 +361,16 @@
 			const t = (now - t0) / 1000;
 			if (!st.hover) {
 				const [rx, ry] = rest();
-				st.tx = rx + Math.sin(t * 0.33) * st.W * 0.05;
-				st.ty = ry + Math.sin(t * 0.27 + 1.3) * st.H * 0.06;
+				st.tx = rx + Math.sin(t * 0.21) * st.W * 0.06;
+				st.ty = ry + Math.sin(t * 0.17 + 1.3) * st.H * 0.07;
 			}
-			st.x += (st.tx - st.x) * 0.09;
-			st.y += (st.ty - st.y) * 0.09;
-			st.r += (st.tr - st.r) * 0.07;
+			// inseguimento lento: la luce arriva dopo il cursore, mai a scatti
+			st.x += (st.tx - st.x) * 0.055;
+			st.y += (st.ty - st.y) * 0.055;
+			st.r += (st.tr - st.r) * 0.04;
+			// parallasse: l'immagine scivola di poco nella direzione opposta
+			st.px += ((0.5 - st.x / (st.W || 1)) * 0.016 - st.px) * 0.05;
+			st.py += ((st.y / (st.H || 1) - 0.5) * 0.016 - st.py) * 0.05;
 			draw();
 			requestAnimationFrame(frame);
 		};
@@ -402,7 +397,7 @@
 		if (FINE) {
 			hero.addEventListener('pointerenter', () => {
 				st.hover = true;
-				st.tr = st.base * 1.12;
+				st.tr = st.base * 1.06;
 			});
 			hero.addEventListener('pointermove', (e) => {
 				const r = hero.getBoundingClientRect();
@@ -627,6 +622,23 @@
 				f.focus();
 			})
 		);
+	}
+
+	/* Patrocini: i due nastri obliqui scorrono in direzioni opposte seguendo lo scroll */
+	function initBands() {
+		if (REDUCED || !HAS_GSAP) return;
+		$$('[data-pband]').forEach((band) => {
+			$$('[data-pband-track]', band).forEach((track) => {
+				const dir = parseFloat(track.dataset.dir) || 1;
+				// spostamento in pixel: al massimo quanto il nastro eccede la sua cornice, così non resta mai vuoto
+				const span = () => Math.max(0, track.scrollWidth - track.parentElement.clientWidth) * 0.85;
+				gsap.fromTo(
+					track,
+					{ x: () => (dir > 0 ? -span() : 0) },
+					{ x: () => (dir > 0 ? 0 : -span()), ease: 'none', scrollTrigger: { trigger: band, start: 'top bottom', end: 'bottom top', scrub: 0.8, invalidateOnRefresh: true } }
+				);
+			});
+		});
 	}
 
 	/* Frasi che si "accendono" parola per parola allo scroll */
@@ -1131,6 +1143,7 @@
 					initAreas();
 					initFeatured();
 					initFaculty();
+					initBands();
 					initScrubWords();
 					if (HAS_GSAP) {
 						ScrollTrigger.sort();
@@ -1142,7 +1155,7 @@
 				}
 			};
 			const idle = w.requestIdleCallback ? (cb) => w.requestIdleCallback(cb, { timeout: 1500 }) : (cb) => setTimeout(cb, 200);
-			const hasScenes = $('[data-areas], [data-featured], [data-faculty-list], [data-scrub-words]');
+			const hasScenes = $('[data-areas], [data-featured], [data-faculty-list], [data-scrub-words], [data-pband]');
 			if (hasScenes) {
 				if (d.readyState === 'complete') idle(scenes);
 				else w.addEventListener('load', () => idle(scenes), { once: true });

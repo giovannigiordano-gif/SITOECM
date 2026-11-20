@@ -251,3 +251,6 @@ WCAG 2.2 AA: contrasti verificati, focus visibile (anello cremisi 2px, offset 3p
   seguono il cursore; recensioni su due nastri opposti con pausa; video caricati solo al play.
 - **Testimonianze**: struttura del sito originale (recensioni con stelle e professione, citazione con ritratto in una
   lente, video degli eventi su fondo cremisi, numeri con foto, fondatrice).
+- **Aggiornamento**: la lente d'ingrandimento con anello è stata sostituita da una luce radente morbida (alone senza
+  bordi, inseguimento lento, scena in penombra) con parallasse minima. Patrocini su due nastri obliqui incrociati
+  (bianco con loghi a colori, cremisi con la scritta) che scorrono con lo scroll, in home e sotto la hero dei corsi.

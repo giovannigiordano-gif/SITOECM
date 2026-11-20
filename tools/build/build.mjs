@@ -41,7 +41,7 @@ sprite += '</svg>';
 writeFileSync(join(theme, 'assets/icons/sprite.svg'), sprite);
 
 // 4. CSS bundle: concatenate src in order, then a light minify
-const order = ['tokens', 'fonts', 'base', 'layout', 'components', 'header-footer', 'hero', 'home', 'stories', 'catalog', 'course', 'pages', 'motion', 'utilities'];
+const order = ['tokens', 'fonts', 'base', 'layout', 'components', 'header-footer', 'hero', 'home', 'stories', 'patrons', 'catalog', 'course', 'pages', 'motion', 'utilities'];
 const srcDir = join(theme, 'assets/css/src');
 const files = order.map((n) => join(srcDir, `${n}.css`)).filter(existsSync);
 const extra = readdirSync(srcDir).filter((f) => f.endsWith('.css') && !order.includes(f.replace('.css', '')));
