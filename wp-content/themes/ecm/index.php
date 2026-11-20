@@ -9,9 +9,15 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 ?>
-<section class="page-head page-head--simple">
-	<div class="wrap"><h1 class="page-title page-title--md"><?php echo esc_html( wp_get_document_title() ); ?></h1></div>
-</section>
+<?php
+ecm_hero(
+	array(
+		'size'  => 'compact',
+		'title' => wp_get_document_title(),
+		'image' => 'hero-corsi',
+	)
+);
+?>
 <section class="section-tight">
 	<div class="wrap prose prose--editorial">
 		<?php

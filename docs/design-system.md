@@ -234,3 +234,20 @@ Copertine dei corsi e loghi dei patrocini: **quelli reali**, mai rigenerati.
 ## 9. Accessibilità e qualità (sintesi)
 
 WCAG 2.2 AA: contrasti verificati, focus visibile (anello cremisi 2px, offset 3px), skip link, landmark e titoli in ordine, target ≥ 44px (24px minimo WCAG 2.5.8), etichette form vere, errori annunciati (`aria-live`), menu e accordion con stati ARIA, alternative testuali scritte, nessuna informazione solo a colore, motion ridotto rispettato, zoom non bloccato.
+
+## Seconda iterazione: "La Lente", versione scenografica (20/11/2026)
+
+- **Hero ovunque** (`ecm_hero()`): immagine a tutto schermo, titolo in basso a sinistra, velatura radiale dal basso a
+  sinistra, header chiaro sopra la hero. Taglie: `full` (100svh, home e 404), `page` (88svh), `compact` (74svh).
+- **Lente WebGL**: shader proprio (ingrandimento 1,6×, profilo a barile, aberrazione cromatica sul bordo, alone e
+  ombra esterna), anello con testo circolare che la segue. Desktop: segue il cursore. Touch: deriva lenta automatica.
+  Docenti: immagine in scala di grigi fuori dalla lente, a colori dentro. Spenta con "riduci movimento" e nella
+  scheda corso.
+- **Immagini**: "il mondo della lente" 3D (anello cremisi laccato + flusso di soggetti per sezione) e foto reali dove
+  contano le persone; tutte con soggetto a destra e buio a sinistra per il titolo.
+- **Motion aggiunto**: ingresso della hero in CSS (opacità, spostamento, larghezza del carattere 84% → 112%);
+  manifesto che si accende parola per parola (colore, non trasparenza); aree che si aprono da una lente centrale;
+  corsi in evidenza in orizzontale guidati dallo scroll con parallasse delle copertine; ritratti dei docenti che
+  seguono il cursore; recensioni su due nastri opposti con pausa; video caricati solo al play.
+- **Testimonianze**: struttura del sito originale (recensioni con stelle e professione, citazione con ritratto in una
+  lente, video degli eventi su fondo cremisi, numeri con foto, fondatrice).

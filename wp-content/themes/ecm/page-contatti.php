@@ -26,22 +26,21 @@ if ( ecm_opt( 'whatsapp_number' ) ) {
 // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- preselezione del corso via link.
 $ecm_pre = isset( $_GET['corso'] ) ? absint( $_GET['corso'] ) : 0;
 ?>
-<section class="page-head">
-	<div class="wrap page-head__grid">
-		<h1 class="page-title" data-reveal="lines"><?php the_title(); ?></h1>
-		<div class="page-head__intro prose" data-reveal="fade">
-			<?php
-			if ( '' !== trim( get_the_content() ) ) {
-				the_content();
-			} else {
-				echo '<p>' . esc_html__( 'Scrivici per informazioni su un corso, sull’iscrizione o sull’accesso alla piattaforma.', 'ecm' ) . '</p>';
-			}
-			?>
-		</div>
-	</div>
-</section>
+<?php
+$ecm_intro = trim( (string) get_the_content() );
+ecm_hero(
+	array(
+		'size'      => 'compact',
+		'title'     => get_the_title(),
+		'lead_html' => '' !== $ecm_intro ? apply_filters( 'the_content', $ecm_intro ) : '<p>' . esc_html__( 'Scrivici per informazioni su un corso, sull’iscrizione o sull’accesso alla piattaforma.', 'ecm' ) . '</p>',
+		'image'     => 'hero-contatti',
+		'ring_text' => __( 'Scrivici', 'ecm' ),
+		'scroll'    => '#canali',
+	)
+);
+?>
 
-<section class="channels section-tight" aria-label="<?php esc_attr_e( 'Canali di contatto', 'ecm' ); ?>">
+<section class="channels section-tight" id="canali" aria-label="<?php esc_attr_e( 'Canali di contatto', 'ecm' ); ?>">
 	<div class="wrap">
 		<ul class="channels__list">
 			<?php foreach ( $ecm_channels as $ecm_ch ) : ?>

@@ -1,6 +1,8 @@
 <?php
 /**
- * Testimonianze (/testimonianze/): tutte le recensioni dal CPT testimonianza, in colonne.
+ * Testimonianze (/testimonianze/): la stessa struttura della pagina originale.
+ * Hero con foto, recensioni a 5 stelle che scorrono, citazione con ritratto, video degli eventi dal vivo,
+ * formazione continua con i numeri e la foto di un corso, citazione della fondatrice.
  *
  * @package ecm
  */
@@ -9,49 +11,41 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 the_post();
-$ecm_testi = ecm_testimonianze();
-?>
-<section class="page-head">
-	<div class="wrap page-head__grid">
-		<h1 class="page-title" data-reveal="lines"><?php the_title(); ?></h1>
-		<div class="page-head__intro prose" data-reveal="fade">
-			<?php
-			if ( '' !== trim( get_the_content() ) ) {
-				the_content();
-			} else {
-				/* translators: %d numero testimonianze */
-				echo '<p>' . esc_html( sprintf( _n( '%d recensione di chi ha seguito i nostri corsi.', '%d recensioni di chi ha seguito i nostri corsi.', count( $ecm_testi ), 'ecm' ), count( $ecm_testi ) ) ) . '</p>';
-			}
-			?>
-		</div>
-	</div>
-</section>
 
-<section class="wall section-tight" aria-label="<?php esc_attr_e( 'Recensioni', 'ecm' ); ?>">
-	<div class="wrap">
-		<ul class="wall__cols">
-			<?php foreach ( $ecm_testi as $ecm_t ) : ?>
-				<li class="voice voice--wall" data-reveal="fade">
-					<figure>
-						<?php echo ecm_icon( 'quote', 'voice__mark' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
-						<blockquote class="voice__text"><p><?php echo nl2br( esc_html( $ecm_t['text'] ) ); ?></p></blockquote>
-						<figcaption class="voice__by">
-							<span class="voice__name"><?php echo esc_html( $ecm_t['name'] ); ?></span>
-							<?php if ( $ecm_t['corso_title'] ) : ?>
-								<?php if ( $ecm_t['corso_url'] ) : ?>
-									<a class="voice__course" href="<?php echo esc_url( $ecm_t['corso_url'] ); ?>"><?php echo esc_html( $ecm_t['corso_title'] ); ?></a>
-								<?php else : ?>
-									<span class="voice__course"><?php echo esc_html( $ecm_t['corso_title'] ); ?></span>
-								<?php endif; ?>
-							<?php endif; ?>
-						</figcaption>
-					</figure>
-				</li>
-			<?php endforeach; ?>
-		</ul>
-	</div>
-</section>
+$ecm_lead = trim( (string) get_the_content() );
+ecm_hero(
+	array(
+		'size'      => 'page',
+		'photo'     => true,
+		'title'     => get_the_title(),
+		'lead_html' => '' !== $ecm_lead ? apply_filters( 'the_content', $ecm_lead ) : '<p>' . esc_html__( 'Ecco cosa dicono i professionisti sanitari che ogni giorno si formano con noi.', 'ecm' ) . '</p>',
+		'image'     => 'hero-testimonianze',
+		'focus'     => '34% 30%',
+		'focus_m'   => '30% 22%',
+		'ctas'      => array(
+			array(
+				'label' => __( 'Leggi le testimonianze', 'ecm' ),
+				'url'   => '#recensioni',
+				'icon'  => 'arrow-down',
+				'attrs' => array( 'data-scroll-to' => '' ),
+			),
+		),
+		'scroll'    => '#recensioni',
+	)
+);
 
-<?php get_template_part( 'template-parts/cta-final' ); ?>
-<?php
+get_template_part(
+	'template-parts/reviews',
+	null,
+	array(
+		'context' => 'page',
+		'id'      => 'recensioni',
+		'heading' => __( 'Cosa dicono di noi', 'ecm' ),
+	)
+);
+get_template_part( 'template-parts/quote-featured' );
+get_template_part( 'template-parts/videos-eventi' );
+get_template_part( 'template-parts/founder' );
+get_template_part( 'template-parts/cta-final' );
+
 get_footer();

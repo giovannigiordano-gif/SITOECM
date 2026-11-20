@@ -12,21 +12,23 @@ get_header();
 the_post();
 $ecm_stats = ecm_stats();
 ?>
-<section class="about-hero">
-	<div class="wrap about-hero__grid">
-		<div class="about-hero__copy">
-			<h1 class="page-title" data-reveal="lines"><?php the_title(); ?></h1>
-			<?php if ( has_excerpt() ) : ?>
-				<p class="about-hero__lead" data-reveal="fade"><?php echo esc_html( get_the_excerpt() ); ?></p>
-			<?php endif; ?>
-		</div>
-		<div class="about-hero__lens" data-img-lens>
-			<?php echo ecm_img( 'chi-siamo', array( 'sizes' => '(min-width: 900px) 40vw, 80vw', 'priority' => true, 'alt' => '' ) ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
-		</div>
-	</div>
-</section>
+<?php
+ecm_hero(
+	array(
+		'size'      => 'page',
+		'photo'     => true,
+		'title'     => get_the_title(),
+		'lead'      => has_excerpt() ? get_the_excerpt() : '',
+		'image'     => 'hero-chi-siamo',
+		'focus'     => '42% 40%',
+		'focus_m'   => '36% 30%',
+		'ring_text' => __( 'Formazione continua', 'ecm' ),
+		'scroll'    => '#chi-siamo-testo',
+	)
+);
+?>
 
-<section class="about-body section-tight">
+<section class="about-body section-tight" id="chi-siamo-testo">
 	<div class="wrap">
 		<div class="prose prose--editorial" data-prose>
 			<?php the_content(); ?>

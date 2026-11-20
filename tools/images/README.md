@@ -1,41 +1,51 @@
-# Immagini art-directed (Higgsfield)
+# Immagini del tema
 
-Stato al 20/11/2026: **da generare**. Higgsfield ha risposto per tutta la sessione "daily generation limit for your grace period" su ogni modello (`gpt_image_2_6`, `nano_banana_2_1`, `soul_2`), quindi nessuna immagine è stata prodotta. Il tema mostra al loro posto un segnaposto grafico coerente (cerchio del marchio), mai un riquadro vuoto.
+Tutte le immagini del tema stanno in `wp-content/themes/ecm/assets/img/` (AVIF + WebP, 480-2560 px) con il
+`manifest.json` letto da `ecm_img()`. Le sorgenti ad alta risoluzione vanno in `tools/images/src/` (non versionata:
+si rigenera) e si ottimizzano con:
 
-## Come completarle (circa 15 minuti)
+```sh
+node tools/build/images.mjs     # crea AVIF/WebP + manifest da tools/images/src/ e images.json
+bash tools/deploy/pack.sh theme # poi deploy (tools/deploy/README.md)
+```
 
-1. Generare con Higgsfield i 9 prompt qui sotto (formato 1:1 per le lenti, 21:9 per `docenti` e `texture-he`, 2K). Modello consigliato: `gpt_image_2_6` qualità `high` (foto realistica) oppure `nano_banana_2_1`. Scegliere tra 2-4 varianti la più nitida e coerente con la palette (cremisi, viola, porcellana).
-2. Salvare ogni immagine scelta in `tools/images/src/<chiave>.png` (le chiavi sono quelle dei titoli qui sotto).
-3. `node tools/build/images.mjs` crea le versioni AVIF + WebP (480-2000 px) in `wp-content/themes/ecm/assets/img/` e il `manifest.json` con i testi alternativi (da `images.json`).
-4. `bash tools/deploy/pack.sh theme` e distribuire il tema (vedi `tools/deploy/README.md`). Nessuna modifica ai template: le immagini compaiono da sole al posto dei segnaposto.
+## Da dove vengono (stato al 20/11/2026)
 
-Stile comune da aggiungere a ogni prompt: *top-down editorial still life, pale cool grey seamless paper surface, soft diffused north-window daylight, crisp delicate shadows, medium format, 100mm macro, f/8, ultra sharp, restricted palette of crimson red, deep violet and porcelain white with small touches of natural green, generous negative space, circular centered composition, no text, no logos, no hands*.
+La generazione AI non era disponibile: Higgsfield risponde ancora "daily generation limit for your grace period"
+(anche con 1185 crediti in saldo) e su questo PC non c'è una chiave MuAPI (`MUAPI_API_KEY`). Le immagini sono quindi:
 
-## Prompt
+| Chiave | Origine | Uso |
+|---|---|---|
+| `hero-home`, `hero-home-m` | render 3D Blender, scena `home` (orizzontale e verticale) | hero della home |
+| `hero-corsi` | render 3D, scena `corsi` | catalogo, 404, fallback |
+| `hero-contatti` | render 3D, scena `contatti` | Contatti, pagine generiche |
+| `lens-nutrizione-umana`, `lens-microbiota`, `lens-fitoterapia`, `lens-nutrizione-animale`, `lens-comunicazione` | render 3D, una scena per area | aree in home, pagine area, sfondo delle schede corso, newsletter |
+| `hero-chi-siamo` | foto reale di un corso dal vivo (pagina testimonianze originale), ritagliata dentro la vecchia cornice grafica | Chi siamo |
+| `hero-testimonianze` | foto della hero della pagina testimonianze originale | Testimonianze |
+| `hero-docenti` | mosaico delle foto reali dei 18 docenti, senza la cornice rossa stampata sopra | Docenti (in bianco e nero, a colori dentro la lente) |
 
-### lens-nutrizione-umana (1:1)
-A single round white porcelain plate centered on the surface; on the plate a precise specimen-like arrangement of whole foods: a halved pomegranate with glistening crimson seeds, thin beetroot slices showing concentric rings, a red cabbage cross-section revealing deep violet veins, a few blueberries, a halved fig, one sprig of purple basil.
+### Render 3D: "il mondo della lente"
 
-### lens-microbiota (1:1)
-A single round glass petri dish centered on the surface; inside, bacterial cultures grown on translucent agar in organic branching and dotted patterns, colonies in crimson red, deep violet and soft pink like a delicate abstract painting, subtle light reflections on the glass rim. Scientific laboratory photography with an art-gallery sensibility.
+Scena procedurale in `tools/render/lens_world.py` (Blender 5.x, Cycles su GPU): l'anello cremisi laccato del logo,
+con il secondo anello sottile, sospeso nel buio viola-inchiostro e attraversato da un flusso di soggetti diversi per
+sezione (globuli rossi, arilli di melograno, batteri, foglie e gocce d'olio essenziale, crocchette, anelli intrecciati).
+Il soggetto sta nella metà destra: la metà sinistra resta in ombra per il titolo in basso a sinistra.
 
-### lens-fitoterapia (1:1)
-Fresh medicinal plants arranged in a perfect circular wreath like a museum herbarium specimen, empty center: echinacea flowers with magenta petals, purple sage leaves, lavender sprigs, rosemary, hawthorn branches with small red berries, a few pale dried roots and chamomile heads.
+```sh
+bash tools/render/render-all.sh                 # tutte le scene (circa 1 minuto l'una su RTX 5070 Ti)
+bash tools/render/render-all.sh microbiota      # una sola scena
+"/c/Program Files/Blender Foundation/Blender 5.2/blender.exe" -b -P tools/render/lens_world.py -- --scene home --preview --out /percorso/prova.png
+```
 
-### lens-nutrizione-animale (1:1)
-A calm tabby cat curled up asleep in an almost perfect circle on a pale cool grey linen surface, fine fur detail, serene, high-end editorial photography.
+### Foto reali
 
-### lens-comunicazione (1:1)
-Two white porcelain cups of ruby red hibiscus infusion facing each other as if two people were in conversation, a thin wisp of steam, between them an open notebook with blank pages and a dark fountain pen, one small sprig of purple basil.
+```sh
+node tools/images/compose.mjs   # hero-chi-siamo, hero-testimonianze, hero-docenti da data/scrape/assets
+```
 
-### chi-siamo (1:1)
-A modern laboratory microscope on a bright white desk next to a porcelain bowl of red currants and pomegranate seeds and an open notebook with blank pages, morning light, calm and precise.
+## Sostituirle con fotografie generate (quando l'AI sarà disponibile)
 
-### docenti (21:9)
-A long table seen from above with a few scientific textbooks and journals with crimson and deep violet covers, a pair of reading glasses and a fountain pen, soft morning light, lots of negative space.
-
-### texture-he (21:9)
-Abstract macro of a histology slide stained with hematoxylin and eosin: soft pink and deep violet cellular patterns, out-of-focus edges, painterly and calm, suitable as a dark background texture.
-
-### empty-plate (1:1)
-A single empty round white porcelain plate centered on the surface, perfectly clean, quiet and minimal.
+Basta salvare in `tools/images/src/` un file con la stessa chiave (es. `hero-home.png`, 16:9, almeno 2560 px; per
+`hero-home-m` 9:16) e rilanciare `images.mjs`: i template non cambiano. Direzione per i prompt: fotografia still life
+cinematografica, chiaroscuro con una sola luce da destra in alto, fondo viola-inchiostro quasi nero, accenti cremisi,
+bianco porcellana, soggetto nella metà destra e metà sinistra in ombra; niente testo, loghi, mani o volti riconoscibili.

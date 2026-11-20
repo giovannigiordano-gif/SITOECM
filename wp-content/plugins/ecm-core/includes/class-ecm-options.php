@@ -32,6 +32,7 @@ final class ECM_Options {
 			'faq'        => __( 'FAQ comuni', 'ecm' ),
 			'social'     => __( 'Social & legale', 'ecm' ),
 			'home'       => __( 'Home', 'ecm' ),
+			'storie'     => __( 'Testimonianze & fondatrice', 'ecm' ),
 			'newsletter' => __( 'Newsletter & cookie', 'ecm' ),
 		);
 	}
@@ -215,6 +216,47 @@ final class ECM_Options {
 				'label' => __( 'Numeri dichiarati (una riga per numero: valore|etichetta)', 'ecm' ),
 				'type'  => 'lines',
 				'desc'  => __( 'Es. 10k+|Corsisti. Mostrati in home e in Chi siamo.', 'ecm' ),
+			),
+
+			// Testimonianze & fondatrice.
+			'video_titolo'        => array(
+				'tab'     => 'storie',
+				'label'   => __( 'Titolo sezione video', 'ecm' ),
+				'type'    => 'text',
+				'default' => 'Testimonianze dei nostri eventi dal vivo',
+			),
+			'video_eventi'        => array(
+				'tab'   => 'storie',
+				'label' => __( 'Video degli eventi dal vivo (uno per riga: indirizzo|titolo|ID immagine di anteprima)', 'ecm' ),
+				'type'  => 'lines',
+				'desc'  => __( 'Indirizzo Vimeo o YouTube, poi titolo e ID dell\'immagine di anteprima nella Libreria media (facoltativi). Il video si carica solo quando il visitatore preme play.', 'ecm' ),
+			),
+			'fondatrice_nome'     => array(
+				'tab'   => 'storie',
+				'label' => __( 'Fondatrice: nome', 'ecm' ),
+				'type'  => 'text',
+			),
+			'fondatrice_ruolo'    => array(
+				'tab'   => 'storie',
+				'label' => __( 'Fondatrice: ruolo', 'ecm' ),
+				'type'  => 'text',
+			),
+			'fondatrice_citazione' => array(
+				'tab'   => 'storie',
+				'label' => __( 'Fondatrice: citazione', 'ecm' ),
+				'type'  => 'textarea',
+			),
+			'fondatrice_foto'     => array(
+				'tab'   => 'storie',
+				'label' => __( 'Fondatrice: foto', 'ecm' ),
+				'type'  => 'media',
+				'desc'  => __( 'Ritratto scontornato (PNG trasparente) o su fondo chiaro.', 'ecm' ),
+			),
+			'evento_foto'         => array(
+				'tab'   => 'storie',
+				'label' => __( 'Foto di un corso dal vivo', 'ecm' ),
+				'type'  => 'media',
+				'desc'  => __( 'Mostrata nella pagina Testimonianze accanto ai numeri.', 'ecm' ),
 			),
 
 			// Newsletter & cookie.

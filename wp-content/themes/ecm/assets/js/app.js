@@ -227,149 +227,447 @@
 	}
 
 	/* ------------------------------------------------------------------ */
-	/* Home: la lente diventa il palcoscenico delle aree tematiche          */
+	/* Hero: lente WebGL che ingrandisce l'immagine sotto il cursore        */
+	/* (in automatico, con una deriva lenta, sui dispositivi touch)         */
 	/* ------------------------------------------------------------------ */
-	function initStory() {
-		const story = $('[data-story]');
-		if (!story || REDUCED || !HAS_GSAP) return;
-		const areasEl = $('[data-areas]', story);
-		const areas = $$('[data-area]', story);
-		if (!areasEl || !areas.length) return;
+	const LENS_VERT = 'attribute vec2 p;varying vec2 v;void main(){v=p*.5+.5;gl_Position=vec4(p,0.,1.);}';
+	const LENS_FRAG = [
+		'precision highp float;',
+		'varying vec2 v;',
+		'uniform sampler2D t;uniform vec2 res;uniform vec2 img;uniform vec2 focus;uniform vec2 mouse;',
+		'uniform float rad;uniform float zoom;uniform float mono;uniform float kz;uniform float shift;',
+		'vec2 cover(vec2 uv){',
+		'  uv=(uv-.5)/kz+.5;uv.y+=shift;',
+		'  float rc=res.x/res.y, ri=img.x/img.y;',
+		'  vec2 s=rc>ri?vec2(1.,ri/rc):vec2(rc/ri,1.);',
+		'  vec2 f=vec2(focus.x,1.-focus.y);',
+		'  return (uv-.5)*s+.5+(f-.5)*(1.-s);',
+		'}',
+		'void main(){',
+		'  vec2 px=vec2(v.x*res.x,(1.-v.y)*res.y);',
+		'  vec2 m=vec2(mouse.x/res.x,1.-mouse.y/res.y);',
+		'  float d=distance(px,mouse);',
+		'  float tt=d/max(rad,1.);',
+		'  float inside=rad>1.?1.-smoothstep(.985,1.,tt):0.;',
+		'  float k=mix(1./zoom,1.,pow(clamp(tt,0.,1.),2.4));',
+		'  vec2 uv=mix(v,m+(v-m)*k,inside);',
+		'  float edge=smoothstep(.5,1.,tt)*inside;',
+		'  vec2 dir=normalize(v-m+1e-5);',
+		'  vec2 off=dir*edge*.007;',
+		'  vec3 c=vec3(texture2D(t,cover(uv+off)).r,texture2D(t,cover(uv)).g,texture2D(t,cover(uv-off)).b);',
+		'  float l=dot(c,vec3(.299,.587,.114));',
+		'  c=mix(c,vec3(l*1.04),mono*(1.-inside));',
+		'  c*=1.+.12*inside;',
+		'  float rim=smoothstep(.93,.985,tt)*(1.-smoothstep(.985,1.,tt));',
+		'  c+=rim*.22;',
+		'  float sh=rad>1.?(1.-smoothstep(1.,1.08,tt))*step(1.,tt):0.;',
+		'  c*=1.-.28*sh;',
+		'  gl_FragColor=vec4(c,1.);',
+		'}',
+	].join('\n');
 
-		const stage = $('[data-story-stage]', story);
-		const slot = $('[data-lens-slot]', story);
-		const lens = $('[data-lens]', story);
-		const ringWrap = $('[data-lens-ringwrap]', story);
-		const heroCopy = $('.hero__copy', story);
-		const navBtns = $$('[data-areas-go]', story);
+	function createHeroLens(hero) {
+		const canvas = $('[data-hero-gl]', hero);
+		const img = $('[data-hero-img]', hero);
+		const ring = $('[data-hero-ring]', hero);
+		const media = $('[data-hero-media]', hero);
+		if (!canvas || !img || !media) return null;
+		let gl;
+		try {
+			gl = canvas.getContext('webgl', { alpha: false, antialias: false, premultipliedAlpha: false, preserveDrawingBuffer: false });
+		} catch (_) {
+			gl = null;
+		}
+		if (!gl) return null;
+		const compile = (type, src) => {
+			const s = gl.createShader(type);
+			gl.shaderSource(s, src);
+			gl.compileShader(s);
+			if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(s) || 'shader');
+			return s;
+		};
+		const prog = gl.createProgram();
+		try {
+			gl.attachShader(prog, compile(gl.VERTEX_SHADER, LENS_VERT));
+			gl.attachShader(prog, compile(gl.FRAGMENT_SHADER, LENS_FRAG));
+			gl.linkProgram(prog);
+			if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) return null;
+		} catch (err) {
+			// eslint-disable-next-line no-console
+			console.warn('[ECM] lente non disponibile', err);
+			return null;
+		}
+		gl.useProgram(prog);
+		gl.bindBuffer(gl.ARRAY_BUFFER, gl.createBuffer());
+		gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), gl.STATIC_DRAW);
+		const aP = gl.getAttribLocation(prog, 'p');
+		gl.enableVertexAttribArray(aP);
+		gl.vertexAttribPointer(aP, 2, gl.FLOAT, false, 0, 0);
+		const U = {};
+		['t', 'res', 'img', 'focus', 'mouse', 'rad', 'zoom', 'mono', 'kz', 'shift'].forEach((n) => (U[n] = gl.getUniformLocation(prog, n)));
+		gl.bindTexture(gl.TEXTURE_2D, gl.createTexture());
+		gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);
+		gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+		gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+		gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+		gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+
+		const mono = hero.hasAttribute('data-hero-mono') ? 1 : 0;
+		const dpr = Math.min(w.devicePixelRatio || 1, 1.5);
+		const st = { x: 0, y: 0, tx: 0, ty: 0, r: 0, tr: 0, hover: false, ready: false, running: false, W: 0, H: 0, base: 120, focus: [0.72, 0.5], kz: 1, shift: 0 };
+
+		const readFocus = () => {
+			const op = (getComputedStyle(img).objectPosition || '50% 50%').split(' ');
+			const pct = (s) => (s && s.endsWith('%') ? parseFloat(s) / 100 : 0.5);
+			st.focus = [pct(op[0]), pct(op[1] || op[0])];
+		};
+		const rest = () => (st.W >= 900 ? [st.W * 0.7, st.H * 0.44] : [st.W * 0.6, st.H * 0.3]);
+		const resize = () => {
+			const r = hero.getBoundingClientRect();
+			st.W = r.width;
+			st.H = r.height;
+			canvas.width = Math.round(st.W * dpr);
+			canvas.height = Math.round(st.H * dpr);
+			gl.viewport(0, 0, canvas.width, canvas.height);
+			st.base = st.W >= 900 ? Math.max(110, Math.min(230, Math.min(st.W, st.H) * 0.19)) : Math.max(84, st.W * 0.25);
+			if (st.ready && !st.hover) st.tr = st.base;
+			readFocus();
+			if (!st.x) {
+				const [rx, ry] = rest();
+				st.x = st.tx = rx;
+				st.y = st.ty = ry;
+			}
+		};
+		const upload = () => {
+			try {
+				gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, gl.RGB, gl.UNSIGNED_BYTE, img);
+				gl.uniform2f(U.img, img.naturalWidth, img.naturalHeight);
+				return true;
+			} catch (_) {
+				return false;
+			}
+		};
+		const draw = () => {
+			// canvas = dimensioni della hero: coordinate della lente dirette, nessuna misura del layout per frame
+			gl.uniform2f(U.res, canvas.width, canvas.height);
+			gl.uniform1f(U.kz, st.kz);
+			gl.uniform1f(U.shift, st.shift);
+			gl.uniform2f(U.focus, st.focus[0], st.focus[1]);
+			gl.uniform2f(U.mouse, st.x * dpr, st.y * dpr);
+			gl.uniform1f(U.rad, st.r * dpr);
+			gl.uniform1f(U.zoom, mono ? 1.35 : 1.6);
+			gl.uniform1f(U.mono, mono);
+			gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+			if (ring) {
+				ring.style.setProperty('--rx', `${st.x.toFixed(1)}px`);
+				ring.style.setProperty('--ry', `${st.y.toFixed(1)}px`);
+				ring.style.setProperty('--rs', `${(st.r * 2.36).toFixed(1)}px`);
+			}
+		};
+		const t0 = performance.now();
+		const frame = (now) => {
+			if (!st.running) return;
+			const t = (now - t0) / 1000;
+			if (!st.hover) {
+				const [rx, ry] = rest();
+				st.tx = rx + Math.sin(t * 0.33) * st.W * 0.05;
+				st.ty = ry + Math.sin(t * 0.27 + 1.3) * st.H * 0.06;
+			}
+			st.x += (st.tx - st.x) * 0.09;
+			st.y += (st.ty - st.y) * 0.09;
+			st.r += (st.tr - st.r) * 0.07;
+			draw();
+			requestAnimationFrame(frame);
+		};
+		const start = () => {
+			if (st.running || !st.ready) return;
+			st.running = true;
+			requestAnimationFrame(frame);
+		};
+		const stop = () => (st.running = false);
+
+		const boot = () => {
+			resize();
+			if (!upload()) return;
+			st.ready = true;
+			hero.classList.add('is-gl');
+			setTimeout(() => (st.tr = st.base), 650);
+			start();
+		};
+		const whenLoaded = img.complete && img.naturalWidth ? Promise.resolve() : new Promise((res) => img.addEventListener('load', res, { once: true }));
+		whenLoaded.then(() => (img.decode ? img.decode().catch(() => {}) : null)).then(boot);
+		// cambio di sorgente responsive (rotazione, resize importante)
+		img.addEventListener('load', () => st.ready && upload());
+
+		if (FINE) {
+			hero.addEventListener('pointerenter', () => {
+				st.hover = true;
+				st.tr = st.base * 1.12;
+			});
+			hero.addEventListener('pointermove', (e) => {
+				const r = hero.getBoundingClientRect();
+				st.tx = e.clientX - r.left;
+				st.ty = e.clientY - r.top;
+			});
+			hero.addEventListener('pointerleave', () => {
+				st.hover = false;
+				st.tr = st.base;
+			});
+		}
+		let rT;
+		w.addEventListener('resize', () => {
+			clearTimeout(rT);
+			rT = setTimeout(resize, 120);
+		});
+		new IntersectionObserver(([en]) => (en.isIntersecting ? start() : stop())).observe(hero);
+		d.addEventListener('visibilitychange', () => (d.hidden ? stop() : start()));
+		return st;
+	}
+
+	function initHeroes() {
+		$$('[data-hero]').forEach((hero) => {
+			const media = $('[data-hero-media]', hero);
+			const body = $('.hero__body', hero);
+			const lens = !REDUCED && hero.hasAttribute('data-hero-lens') ? createHeroLens(hero) : null;
+			if (HAS_GSAP && !REDUCED && media) {
+				if (lens) {
+					// con la lente attiva zoom e parallasse avvengono nello shader
+					ScrollTrigger.create({ trigger: hero, start: 'top top', end: 'bottom top', onUpdate: (s) => (lens.shift = s.progress * 0.1) });
+				} else {
+					gsap.fromTo(media, { scale: 1.12 }, { scale: 1, duration: 2.6, ease: 'expo.out' });
+					gsap.to(media, { yPercent: 12, ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom top', scrub: true } });
+				}
+				body && gsap.to(body, { y: -70, ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom top', scrub: true } });
+			}
+		});
+		$$('[data-scroll-to]').forEach((a) =>
+			a.addEventListener('click', (e) => {
+				const target = $(a.getAttribute('href'));
+				if (!target) return;
+				e.preventDefault();
+				scrollToY(target.getBoundingClientRect().top + w.scrollY);
+				target.setAttribute('tabindex', '-1');
+				target.focus({ preventScroll: true });
+			})
+		);
+	}
+
+	/* ------------------------------------------------------------------ */
+	/* Home: aree tematiche, ognuna si apre come una lente al centro        */
+	/* ------------------------------------------------------------------ */
+	function initAreas() {
+		const areasEl = $('[data-areas]');
+		if (!areasEl || REDUCED || !HAS_GSAP) return;
+		const areas = $$('[data-area]', areasEl);
+		if (!areas.length) return;
 		const medias = areas.map((a) => $('[data-area-media]', a));
 		const panels = areas.map((a) => $('[data-area-panel]', a));
+		const intro = $('[data-areas-intro]', areasEl);
+		const ring = $('[data-areas-ring]', areasEl);
+		const navBtns = $$('[data-areas-go]', areasEl);
+		areasEl.classList.add('is-pinned');
 
+		const R0 = 0.17; // raggio iniziale della lente (frazione di circle())
+		const sizeRing = () => {
+			if (!ring) return;
+			const ref = Math.sqrt((areasEl.offsetWidth ** 2 + areasEl.offsetHeight ** 2) / 2);
+			ring.style.setProperty('--size', `${ref * R0 * 2 * 1.16}px`);
+		};
+		sizeRing();
+
+		const tl = gsap.timeline({ defaults: { ease: 'none' } });
+		tl.fromTo(medias[0], { clipPath: `circle(${R0 * 100}% at 50% 50%)`, '--ms': 1.3 }, { clipPath: 'circle(75% at 50% 50%)', '--ms': 1, duration: 1.1, ease: 'power2.inOut' }, 0);
+		ring && tl.fromTo(ring, { scale: 1, autoAlpha: 1 }, { scale: 4.2, autoAlpha: 0, duration: 1.05, ease: 'power2.in' }, 0);
+		intro && tl.to(intro, { autoAlpha: 0, yPercent: -30, duration: 0.5, ease: 'power2.in' }, 0.05);
+		let t = 0.95;
+		const labels = [t];
+		tl.fromTo(panels[0], { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0, duration: 0.45, ease: 'power3.out' }, t);
+		t += 0.6;
+		for (let i = 1; i < areas.length; i++) {
+			tl.fromTo(medias[i], { clipPath: 'circle(0% at 50% 50%)', '--ms': 1.2 }, { clipPath: 'circle(75% at 50% 50%)', '--ms': 1, duration: 1, ease: 'power2.inOut' }, t);
+			tl.to(panels[i - 1], { autoAlpha: 0, y: -40, duration: 0.35, ease: 'power2.in' }, t);
+			tl.fromTo(panels[i], { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0, duration: 0.45, ease: 'power3.out' }, t + 0.65);
+			labels.push(t + 0.65);
+			t += 1.35;
+		}
+		tl.to({}, { duration: 0.45 }, t);
+
+		const st = ScrollTrigger.create({
+			trigger: areasEl,
+			start: 'top top',
+			end: () => `+=${Math.round(w.innerHeight * tl.duration() * 0.68)}`,
+			pin: true,
+			scrub: 0.7,
+			animation: tl,
+			invalidateOnRefresh: true,
+			onRefresh: sizeRing,
+		});
+		const setCurrent = () => {
+			const time = tl.time();
+			areasEl.classList.toggle('is-visible', time >= 0.9);
+			let idx = 0;
+			labels.forEach((l, i) => {
+				if (time >= l - 0.35) idx = i;
+			});
+			navBtns.forEach((b, i) => b.setAttribute('aria-current', String(i === idx)));
+		};
+		tl.eventCallback('onUpdate', setCurrent);
+		navBtns.forEach((b, i) => {
+			b.addEventListener('click', () => {
+				const p = (labels[i] + 0.3) / tl.duration();
+				scrollToY(st.start + (st.end - st.start) * p);
+			});
+		});
+		setCurrent();
+	}
+
+	/* Home: corsi in evidenza in scorrimento orizzontale (desktop) */
+	function initFeatured() {
+		const sec = $('[data-featured]');
+		if (!sec || REDUCED || !HAS_GSAP) return;
+		const vp = $('[data-featured-viewport]', sec);
+		const track = $('[data-featured-track]', sec);
 		const mm = gsap.matchMedia();
-
-		const buildAreasTimeline = (tl, start) => {
-			// Ogni area si apre come una lente al centro dello schermo.
-			let t = start;
-			const labels = [t];
-			tl.fromTo(panels[0], { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, duration: 0.45, ease: 'power3.out' }, t);
-			t += 0.6;
-			for (let i = 1; i < areas.length; i++) {
-				tl.fromTo(medias[i], { clipPath: 'circle(0% at 50% 50%)', '--ms': 1.18 }, { clipPath: 'circle(75% at 50% 50%)', '--ms': 1, duration: 1, ease: 'power2.inOut' }, t);
-				tl.to(panels[i - 1], { autoAlpha: 0, y: -30, duration: 0.35, ease: 'power2.in' }, t);
-				tl.fromTo(panels[i], { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, duration: 0.45, ease: 'power3.out' }, t + 0.65);
-				labels.push(t + 0.65);
-				t += 1.35;
-			}
-			tl.to({}, { duration: 0.5 }, t); // pausa finale prima di sbloccare
-			return labels;
-		};
-
-		const wireNav = (st, tl, labels, visibleFrom) => {
-			const setCurrent = () => {
-				const time = tl.time();
-				areasEl.classList.toggle('is-visible', time >= visibleFrom - 0.05);
-				let idx = 0;
-				labels.forEach((l, i) => {
-					if (time >= l - 0.35) idx = i;
-				});
-				navBtns.forEach((b, i) => b.setAttribute('aria-current', String(i === idx)));
-			};
-			tl.eventCallback('onUpdate', setCurrent);
-			navBtns.forEach((b, i) => {
-				b.onclick = () => {
-					const p = (labels[i] + 0.3) / tl.duration();
-					scrollToY(st.start + (st.end - st.start) * p);
-				};
+		mm.add('(min-width: 900px) and (min-height: 600px)', () => {
+			sec.classList.add('is-horizontal');
+			const dist = () => Math.max(0, track.scrollWidth - vp.clientWidth);
+			const tween = gsap.to(track, { x: () => -dist(), ease: 'none' });
+			ScrollTrigger.create({ trigger: sec, start: 'top top', end: () => `+=${dist()}`, pin: true, scrub: 0.6, animation: tween, invalidateOnRefresh: true });
+			$$('.card__mat img', track).forEach((im) => {
+				gsap.fromTo(im, { xPercent: -6, scale: 1.12 }, { xPercent: 6, scale: 1.12, ease: 'none', scrollTrigger: { trigger: im.closest('.card'), containerAnimation: tween, start: 'left right', end: 'right left', scrub: true } });
 			});
-			setCurrent();
-		};
-
-		// Desktop: la lente della hero cresce fino a coprire lo schermo.
-		mm.add('(min-width: 900px) and (min-height: 560px)', () => {
-			story.classList.add('is-story');
-			areasEl.classList.add('is-pinned');
-			const state = { p: 0, k: 0 };
-			let g = null;
-			const measure = () => {
-				const s = slot.getBoundingClientRect();
-				const st = stage.getBoundingClientRect();
-				const W = st.width;
-				const H = st.height;
-				const cx = s.left - st.left + s.width / 2;
-				const cy = s.top - st.top + s.height / 2;
-				const r0 = s.width / 2 - s.width * 0.07;
-				g = { W, H, cx, cy, r0, rMax: Math.hypot(Math.max(cx, W - cx), Math.max(cy, H - cy)) + 2, s0: (r0 * 2) / Math.max(W, H), sx: s.left - st.left, sy: s.top - st.top, sw: s.width };
-				lens.style.setProperty('--rx', `${g.sx}px`);
-				lens.style.setProperty('--ry', `${g.sy}px`);
-				lens.style.setProperty('--rs', `${g.sw}px`);
-				apply();
-			};
-			const lerp = (a, b, t) => a + (b - a) * t;
-			const apply = () => {
-				if (!g) return;
-				const p = state.p;
-				const e = p; // l'easing è nel tween
-				lens.style.setProperty('--lr', `${lerp(g.r0 * state.k, g.rMax, e)}px`);
-				lens.style.setProperty('--lx', `${lerp(g.cx, g.W / 2, e)}px`);
-				lens.style.setProperty('--ly', `${lerp(g.cy, g.H / 2, e)}px`);
-				lens.style.setProperty('--ix', `${lerp(g.cx - g.W / 2, 0, e)}px`);
-				lens.style.setProperty('--iy', `${lerp(g.cy - g.H / 2, 0, e)}px`);
-				lens.style.setProperty('--is', `${lerp(g.s0, 1, e)}`);
-				const ringScale = lerp(1, g.rMax / g.r0, e);
-				ringWrap.style.transform = `scale(${ringScale})`;
-				ringWrap.style.opacity = String(Math.max(0, 1 - e * 2.2));
-			};
-
-			const tl = gsap.timeline({ defaults: { ease: 'none' } });
-			tl.to(state, { p: 1, duration: 1.2, ease: 'power2.inOut', onUpdate: apply }, 0);
-			tl.to(heroCopy, { y: () => -0.14 * w.innerHeight, autoAlpha: 0, duration: 0.6, ease: 'power2.in' }, 0.05);
-			const labels = buildAreasTimeline(tl, 1.15);
-
-			const st = ScrollTrigger.create({
-				trigger: story,
-				start: 'top top',
-				end: () => `+=${Math.round(w.innerHeight * (tl.duration() * 0.7))}`,
-				pin: stage,
-				scrub: 0.9,
-				animation: tl,
-				invalidateOnRefresh: true,
-				onRefreshInit: () => {
-					g = null;
-				},
-				onRefresh: measure,
-			});
-			measure();
-			wireNav(st, tl, labels, 1.15);
-			// Ingresso: la lente si apre da zero al raggio della hero.
-			gsap.to(state, { k: 1, duration: 1.6, ease: 'expo.out', delay: 0.4, onUpdate: apply });
-
 			return () => {
-				story.classList.remove('is-story');
-				areasEl.classList.remove('is-pinned', 'is-visible');
-				['--lr', '--lx', '--ly', '--ix', '--iy', '--is', '--rx', '--ry', '--rs'].forEach((p) => lens.style.removeProperty(p));
-				ringWrap.removeAttribute('style');
+				sec.classList.remove('is-horizontal');
+				gsap.set(track, { clearProps: 'transform' });
 			};
 		});
+	}
 
-		// Mobile e schermi bassi: hero in flusso normale, il palcoscenico delle aree si apre da una lente centrale.
-		mm.add('(max-width: 899px), (max-height: 559px)', () => {
-			areasEl.classList.add('is-pinned');
-			const tl = gsap.timeline({ defaults: { ease: 'none' } });
-			tl.fromTo(medias[0], { clipPath: 'circle(30% at 50% 42%)', '--ms': 1.25 }, { clipPath: 'circle(75% at 50% 50%)', '--ms': 1, duration: 1, ease: 'power2.inOut' }, 0);
-			const labels = buildAreasTimeline(tl, 0.85);
-			const st = ScrollTrigger.create({
-				trigger: areasEl,
-				start: 'top top',
-				end: () => `+=${Math.round(w.innerHeight * (tl.duration() * 0.62))}`,
-				pin: true,
-				scrub: 0.6,
-				animation: tl,
-				invalidateOnRefresh: true,
+	/* Home: i ritratti dei docenti seguono il cursore sui nomi */
+	function initFaculty() {
+		const list = $('[data-faculty-list]');
+		const float = $('[data-faculty-float]');
+		if (!list || !float || !FINE || REDUCED) return;
+		const pics = $$('[data-faculty-pic]', float);
+		let x = 0;
+		let y = 0;
+		let tx = 0;
+		let ty = 0;
+		let raf = 0;
+		let on = false;
+		const loop = () => {
+			x += (tx - x) * 0.14;
+			y += (ty - y) * 0.14;
+			float.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+			raf = on || Math.abs(tx - x) > 0.5 ? requestAnimationFrame(loop) : 0;
+		};
+		list.addEventListener('pointermove', (e) => {
+			tx = e.clientX;
+			ty = e.clientY;
+			if (!on) {
+				x = tx;
+				y = ty;
+			}
+			if (!raf) raf = requestAnimationFrame(loop);
+		});
+		$$('[data-faculty-item]', list).forEach((item) => {
+			item.addEventListener('pointerenter', () => {
+				on = true;
+				float.classList.add('is-on');
+				const i = item.dataset.facultyItem;
+				pics.forEach((p) => p.classList.toggle('is-current', p.dataset.facultyPic === i));
 			});
-			wireNav(st, tl, labels, 0.85);
-			return () => {
-				areasEl.classList.remove('is-pinned', 'is-visible');
-			};
+		});
+		list.addEventListener('pointerleave', () => {
+			on = false;
+			float.classList.remove('is-on');
+		});
+	}
+
+	/* Recensioni scorrevoli: pausa (WCAG 2.2.2) e "leggi tutte" */
+	function initReviews() {
+		$$('[data-reviews]').forEach((sec) => {
+			const pause = $('[data-reviews-pause]', sec);
+			pause &&
+				pause.addEventListener('click', () => {
+					const paused = sec.classList.toggle('is-paused');
+					pause.setAttribute('aria-pressed', String(paused));
+					const label = $('.btn__label', pause) || pause;
+					label.textContent = paused ? T.play || 'Riprendi lo scorrimento' : T.pause || 'Metti in pausa';
+				});
+			const more = $('[data-reviews-more]', sec);
+			const wall = $('[data-reviews-wall]', sec);
+			more &&
+				wall &&
+				more.addEventListener('click', () => {
+					const open = wall.hidden;
+					wall.hidden = !open;
+					more.setAttribute('aria-expanded', String(open));
+					const label = $('.btn__label', more) || more;
+					label.textContent = open ? T.reviewsLess || 'Nascondi le recensioni' : T.reviewsAll || 'Leggi tutte le recensioni';
+					if (open && HAS_GSAP && !REDUCED) gsap.from($$('.review', wall), { y: 30, autoAlpha: 0, stagger: 0.03, duration: 0.7, ease: 'expo.out' });
+					if (HAS_GSAP) ScrollTrigger.refresh();
+				});
+		});
+	}
+
+	/* Video: si caricano (Vimeo/YouTube) solo quando il visitatore preme play */
+	function initVideos() {
+		$$('[data-video]').forEach((btn) =>
+			btn.addEventListener('click', () => {
+				const src = btn.dataset.video;
+				if (!src) return;
+				const f = d.createElement('iframe');
+				f.src = src;
+				f.title = btn.dataset.videoTitle || btn.getAttribute('aria-label') || 'Video';
+				f.allow = 'autoplay; fullscreen; picture-in-picture';
+				f.allowFullscreen = true;
+				f.className = 'video__frame';
+				btn.replaceWith(f);
+				f.focus();
+			})
+		);
+	}
+
+	/* Frasi che si "accendono" parola per parola allo scroll */
+	function initScrubWords() {
+		if (REDUCED || !HAS_GSAP) return;
+		$$('[data-scrub-words]').forEach((el) => {
+			const units = [];
+			Array.from(el.childNodes).forEach((n) => {
+				if (n.nodeType === 3) {
+					const frag = d.createDocumentFragment();
+					n.textContent.split(/(\s+)/).forEach((part) => {
+						if (!part) return;
+						if (/^\s+$/.test(part)) {
+							frag.appendChild(d.createTextNode(part));
+							return;
+						}
+						const s = d.createElement('span');
+						s.className = 'w';
+						s.textContent = part;
+						frag.appendChild(s);
+						units.push(s);
+					});
+					n.replaceWith(frag);
+				} else if (n.nodeType === 1) {
+					units.push(n);
+				}
+			});
+			el.classList.add('is-scrub');
+			let lit = -1;
+			ScrollTrigger.create({
+				trigger: el,
+				start: 'top 85%',
+				end: 'bottom 55%',
+				onUpdate: (s) => {
+					const n = Math.round(s.progress * units.length);
+					if (n === lit) return;
+					lit = n;
+					units.forEach((u, i) => u.classList.toggle('is-lit', i < n));
+				},
+				onLeave: () => units.forEach((u) => u.classList.add('is-lit')),
+			});
 		});
 	}
 
@@ -606,28 +904,6 @@
 		});
 	}
 
-	/* Carosello testimonianze */
-	function initVoices() {
-		$$('[data-voices]').forEach((sec) => {
-			const vp = $('[data-voices-viewport]', sec);
-			const prev = $('[data-voices-prev]', sec);
-			const next = $('[data-voices-next]', sec);
-			if (!vp) return;
-			const step = () => {
-				const item = $('.voice', vp);
-				return item ? item.getBoundingClientRect().width + 24 : vp.clientWidth * 0.8;
-			};
-			const sync = () => {
-				prev && (prev.disabled = vp.scrollLeft < 8);
-				next && (next.disabled = vp.scrollLeft + vp.clientWidth > vp.scrollWidth - 8);
-			};
-			prev && prev.addEventListener('click', () => vp.scrollBy({ left: -step(), behavior: REDUCED ? 'auto' : 'smooth' }));
-			next && next.addEventListener('click', () => vp.scrollBy({ left: step(), behavior: REDUCED ? 'auto' : 'smooth' }));
-			vp.addEventListener('scroll', sync, { passive: true });
-			sync();
-		});
-	}
-
 	/* ------------------------------------------------------------------ */
 	/* Form (contatti, newsletter) via REST di ECM Core                     */
 	/* ------------------------------------------------------------------ */
@@ -823,24 +1099,6 @@
 		}, true);
 	}
 
-	/* Hero home: coreografia d'ingresso (lente che si apre, anello che si disegna). */
-	function initHeroIntro() {
-		const slot = $('[data-lens-slot]');
-		if (!slot || REDUCED || !HAS_GSAP) return;
-		const story = $('[data-story]');
-		const isStory = story && story.classList.contains('is-story');
-		const clipEl = isStory ? $('[data-lens-clip]') : $('.lens-static__clip', slot);
-		const ring = isStory ? $('[data-lens-ringwrap] .lens-ring') : $('.lens-ring', slot);
-		const strokes = ring ? $$('.lens-ring__stroke', ring) : [];
-		const type = ring ? $('.lens-ring__type text', ring) : null;
-		strokes.forEach((c) => {
-			const len = 2 * Math.PI * parseFloat(c.getAttribute('r'));
-			gsap.fromTo(c, { strokeDasharray: len, strokeDashoffset: len }, { strokeDashoffset: 0, duration: 1.8, ease: 'expo.inOut', delay: 0.1 });
-		});
-		type && gsap.from(type, { autoAlpha: 0, duration: 1.2, delay: 1.1 });
-		if (clipEl && !isStory) gsap.fromTo(clipEl, { clipPath: 'circle(0% at 50% 50%)' }, { clipPath: 'circle(50% at 50% 50%)', duration: 1.5, ease: 'expo.out', delay: 0.45, clearProps: 'clipPath' });
-	}
-
 	/* ------------------------------------------------------------------ */
 	/* Avvio                                                               */
 	/* ------------------------------------------------------------------ */
@@ -849,9 +1107,10 @@
 			initLenis();
 			initHeader();
 			initMenu();
-			initStory();
+			initHeroes();
+			initReviews();
+			initVideos();
 			initReveals();
-			initHeroIntro();
 			initCounters();
 			initCtaDisc();
 			initCourse();
@@ -859,13 +1118,35 @@
 			initCatalog();
 			initAccordions();
 			initClamps();
-			initVoices();
 			initForms();
 			initCopy();
 			initCookies();
 			initButtons();
 			initPageTransitions();
 			clearTimeout(failsafe);
+			// Scene sotto la piega (palcoscenici fissati, nastri, parole): preparate quando il browser è libero,
+			// dopo il caricamento, per non rallentare il primo disegno della pagina.
+			const scenes = () => {
+				try {
+					initAreas();
+					initFeatured();
+					initFaculty();
+					initScrubWords();
+					if (HAS_GSAP) {
+						ScrollTrigger.sort();
+						ScrollTrigger.refresh();
+					}
+				} catch (err) {
+					// eslint-disable-next-line no-console
+					console.error('[ECM]', err);
+				}
+			};
+			const idle = w.requestIdleCallback ? (cb) => w.requestIdleCallback(cb, { timeout: 1500 }) : (cb) => setTimeout(cb, 200);
+			const hasScenes = $('[data-areas], [data-featured], [data-faculty-list], [data-scrub-words]');
+			if (hasScenes) {
+				if (d.readyState === 'complete') idle(scenes);
+				else w.addEventListener('load', () => idle(scenes), { once: true });
+			}
 			if (HAS_GSAP) {
 				if (d.fonts && d.fonts.ready) d.fonts.ready.then(() => ScrollTrigger.refresh());
 				w.addEventListener('load', () => ScrollTrigger.refresh());

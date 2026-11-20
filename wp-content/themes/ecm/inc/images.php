@@ -46,19 +46,37 @@ function ecm_img( string $key, array $args = array() ): string {
 			'lazy'      => true,
 			'priority'  => false,
 			'attrs'     => array(),
+			'mobile'    => '',
 		)
 	);
 	$m = ecm_img_manifest();
 	if ( empty( $m[ $key ]['widths'] ) ) {
 		return ecm_img_fallback( $key, $args );
 	}
-	$item   = $m[ $key ];
+	$item    = $m[ $key ];
+	$srcsets = static function ( string $k ) use ( $m ): callable {
+		$it     = $m[ $k ];
+		$base   = ECM_THEME_URI . '/assets/img/' . $it['dir'] . '/' . $k;
+		$widths = array_map( 'intval', (array) $it['widths'] );
+		sort( $widths );
+		return static function ( string $ext ) use ( $widths, $base ): string {
+			return implode( ', ', array_map( static fn( $w ) => esc_url( "{$base}-{$w}.{$ext}" ) . " {$w}w", $widths ) );
+		};
+	};
 	$base   = ECM_THEME_URI . '/assets/img/' . $item['dir'] . '/' . $key;
 	$widths = array_map( 'intval', (array) $item['widths'] );
 	sort( $widths );
-	$srcset = static function ( string $ext ) use ( $widths, $base ): string {
-		return implode( ', ', array_map( static fn( $w ) => esc_url( "{$base}-{$w}.{$ext}" ) . " {$w}w", $widths ) );
-	};
+	$srcset = $srcsets( $key );
+	// Variante verticale per gli schermi stretti (art direction).
+	$mobile = '';
+	if ( $args['mobile'] && ! empty( $m[ $args['mobile'] ]['widths'] ) ) {
+		$ms     = $srcsets( (string) $args['mobile'] );
+		$mobile = sprintf(
+			'<source media="(max-aspect-ratio: 4/5)" type="image/avif" srcset="%1$s" sizes="100vw"><source media="(max-aspect-ratio: 4/5)" type="image/webp" srcset="%2$s" sizes="100vw">',
+			$ms( 'avif' ),
+			$ms( 'webp' )
+		);
+	}
 	$alt   = null !== $args['alt'] ? $args['alt'] : ( $item['alt'] ?? '' );
 	$fallw = $widths[ (int) floor( ( count( $widths ) - 1 ) / 2 ) ];
 	$extra = '';
@@ -68,7 +86,7 @@ function ecm_img( string $key, array $args = array() ): string {
 	$loading = $args['priority'] ? ' fetchpriority="high" loading="eager"' : ( $args['lazy'] ? ' loading="lazy"' : '' );
 
 	return sprintf(
-		'<picture class="%1$s"><source type="image/avif" srcset="%2$s" sizes="%4$s"><source type="image/webp" srcset="%3$s" sizes="%4$s"><img class="%5$s" src="%6$s" width="%7$d" height="%8$d" alt="%9$s" decoding="async"%10$s%11$s></picture>',
+		'<picture class="%1$s">%12$s<source type="image/avif" srcset="%2$s" sizes="%4$s"><source type="image/webp" srcset="%3$s" sizes="%4$s"><img class="%5$s" src="%6$s" width="%7$d" height="%8$d" alt="%9$s" decoding="async"%10$s%11$s></picture>',
 		esc_attr( trim( 'pic ' . $args['class'] ) ),
 		$srcset( 'avif' ),
 		$srcset( 'webp' ),
@@ -79,7 +97,8 @@ function ecm_img( string $key, array $args = array() ): string {
 		(int) ( $item['height'] ?? 1600 ),
 		esc_attr( (string) $alt ),
 		$loading,
-		$extra
+		$extra,
+		$mobile
 	);
 }
 

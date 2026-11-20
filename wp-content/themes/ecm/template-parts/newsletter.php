@@ -13,7 +13,7 @@ $ecm_uid  = wp_unique_id( 'nl-' );
 ?>
 <section class="newsletter" aria-labelledby="<?php echo esc_attr( $ecm_uid ); ?>-title">
 	<div class="newsletter__bg" aria-hidden="true">
-		<?php echo ecm_img( 'texture-he', array( 'sizes' => '100vw', 'alt' => '' ) ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
+		<?php echo ecm_img( 'lens-microbiota', array( 'sizes' => '100vw', 'alt' => '' ) ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
 	</div>
 	<div class="wrap newsletter__grid">
 		<div class="newsletter__copy">

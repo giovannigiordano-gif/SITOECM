@@ -600,6 +600,7 @@ final class ECM_Importer {
 	private static function step_testimonianze( array $data, array $args, array $summary ): array {
 		$existing = self::map_by_meta( 'testimonianza', '_ecm_source_key' );
 		$courses  = self::map_by_meta( 'corso', '_ecm_source_slug' );
+		$media    = self::media_map();
 
 		foreach ( (array) ( $data['testimonianze'] ?? array() ) as $item ) {
 			$item = (array) $item;
@@ -635,9 +636,19 @@ final class ECM_Importer {
 				'_ecm_corso_label' => sanitize_text_field( (string) ( $item['corso_label'] ?? '' ) ),
 				'_ecm_fonte'       => ECM_Meta::sanitize_fonte( (string) ( $item['fonte'] ?? 'entrambe' ) ),
 				'_ecm_rating'      => ECM_Meta::sanitize_rating( $item['rating'] ?? '' ),
+				'_ecm_ruolo'       => sanitize_text_field( (string) ( $item['ruolo'] ?? '' ) ),
+				'_ecm_video'       => esc_url_raw( (string) ( $item['video'] ?? '' ) ),
 			);
 
-			$summary = self::upsert( 'testimonianza', $existing[ $key ] ?? 0, $post, $meta, null, array(), $args, $summary, $label );
+			// Foto (facoltativa): la stessa immagine fa da anteprima del video.
+			$errors    = array();
+			$photo_key = (string) ( $item['photo'] ?? '' );
+			$thumbnail = '' !== $photo_key ? self::media_id( $media, $photo_key, $label . ' foto', $errors ) : 0;
+
+			$summary = self::upsert( 'testimonianza', $existing[ $key ] ?? 0, $post, $meta, $thumbnail, array(), $args, $summary, $label );
+			foreach ( $errors as $error ) {
+				$summary['errors'][] = $error;
+			}
 		}
 		return $summary;
 	}
@@ -989,6 +1000,28 @@ final class ECM_Importer {
 				$out[ $k ] = $resolved;
 			}
 			return $out;
+		}
+		// {media_id:KEY}: ID dell'allegato (campi di tipo "media" o righe "url|titolo|ID").
+		if ( is_string( $value ) && false !== strpos( $value, '{media_id:' ) ) {
+			if ( preg_match( '/^\{media_id:([^}\s]+)\}$/', $value, $whole ) ) {
+				$id = (int) ( $media[ trim( $whole[1] ) ] ?? 0 );
+				return $id ? $id : null;
+			}
+			$failed = false;
+			$value  = (string) preg_replace_callback(
+				'/\{media_id:([^}\s]+)\}/',
+				static function ( $m ) use ( $media, &$failed ) {
+					$id = (int) ( $media[ trim( $m[1] ) ] ?? 0 );
+					if ( ! $id ) {
+						$failed = true;
+					}
+					return (string) $id;
+				},
+				$value
+			);
+			if ( $failed ) {
+				return null;
+			}
 		}
 		if ( ! is_string( $value ) || false === strpos( $value, '{media:' ) ) {
 			return $value;

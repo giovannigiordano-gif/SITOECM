@@ -121,14 +121,14 @@ function ecm_theme_initials( string $name ): string {
 /**
  * Logo: versione scura (header) o chiara (footer, menu).
  */
-function ecm_logo( string $variant = 'dark', string $class = '' ): string {
+function ecm_logo( string $variant = 'dark', string $class = '', ?string $alt = null ): string {
 	$file = 'light' === $variant ? 'logo-light' : 'logo-dark';
 	$base = ECM_THEME_URI . '/assets/img/brand/' . $file;
 	return sprintf(
 		'<picture class="logo %1$s"><source srcset="%2$s.webp" type="image/webp"><img src="%2$s.png" width="840" height="90" alt="%3$s" decoding="async"></picture>',
 		esc_attr( $class ),
 		esc_url( $base ),
-		esc_attr( get_bloginfo( 'name' ) ?: 'Corsi di Formazione ECM' )
+		esc_attr( null !== $alt ? $alt : ( get_bloginfo( 'name' ) ?: 'Corsi di Formazione ECM' ) )
 	);
 }
 
@@ -299,4 +299,74 @@ function ecm_stat_html( string $value ): string {
 		return '<span class="num">' . esc_html( $m[1] ) . '<span data-count="' . (int) $m[2] . '">' . esc_html( $m[2] ) . '</span>' . esc_html( $m[3] ) . '</span>';
 	}
 	return '<span class="num">' . esc_html( $value ) . '</span>';
+}
+
+/**
+ * Indirizzo del lettore incorporato per un video Vimeo o YouTube (senza tracciamento, avvio automatico al click).
+ *
+ * @param string $url Indirizzo del video.
+ * @return string Vuoto se il servizio non è riconosciuto.
+ */
+function ecm_video_embed( string $url ): string {
+	if ( preg_match( '~vimeo\.com/(?:video/)?(\d{5,12})~', $url, $m ) ) {
+		return 'https://player.vimeo.com/video/' . $m[1] . '?autoplay=1&dnt=1&title=0&byline=0&portrait=0';
+	}
+	if ( preg_match( '~(?:youtube\.com/(?:watch\?v=|shorts/|embed/)|youtu\.be/)([\w-]{6,15})~', $url, $m ) ) {
+		return 'https://www.youtube-nocookie.com/embed/' . $m[1] . '?autoplay=1&rel=0';
+	}
+	return '';
+}
+
+/**
+ * Video degli eventi dal vivo dalle impostazioni (una riga: indirizzo|titolo|ID anteprima).
+ *
+ * @return array<int,array{url:string,embed:string,title:string,thumb_id:int}>
+ */
+function ecm_video_eventi(): array {
+	$out = array();
+	foreach ( preg_split( '/\r\n|\r|\n/', (string) ecm_opt( 'video_eventi', '' ) ) as $line ) {
+		$parts = array_map( 'trim', explode( '|', $line ) );
+		$embed = ecm_video_embed( $parts[0] ?? '' );
+		if ( '' === $embed ) {
+			continue;
+		}
+		$out[] = array(
+			'url'      => $parts[0],
+			'embed'    => $embed,
+			'title'    => $parts[1] ?? '',
+			'thumb_id' => absint( $parts[2] ?? 0 ),
+		);
+	}
+	return $out;
+}
+
+/**
+ * Card di una recensione (stelle, testo, nome, professione, corso).
+ *
+ * @param array $t     Testimonianza (ecm_testimonianze()).
+ * @param bool  $clamp Testo accorciato (nastro scorrevole).
+ */
+function ecm_review_card( array $t, bool $clamp = false ): string {
+	$rating = (int) ( $t['rating'] ?? 0 );
+	$stars  = '';
+	if ( $rating > 0 ) {
+		$stars = '<p class="review__stars" role="img" aria-label="' . esc_attr( sprintf( /* translators: %d valutazione */ __( 'Valutazione: %d stelle su 5', 'ecm' ), $rating ) ) . '">' . str_repeat( ecm_icon( 'star' ), $rating ) . '</p>';
+	}
+	$course = '';
+	if ( ! empty( $t['corso_title'] ) ) {
+		$course = ! empty( $t['corso_url'] )
+			? '<a class="review__course" href="' . esc_url( $t['corso_url'] ) . '">' . esc_html( $t['corso_title'] ) . '</a>'
+			: '<span class="review__course">' . esc_html( $t['corso_title'] ) . '</span>';
+	}
+	$text = trim( (string) $t['text'] );
+	$text = preg_replace( '/^[“"”]+|[“"”]+$/u', '', $text );
+	return sprintf(
+		'<figure class="review%1$s">%2$s<blockquote class="review__text"><p>%3$s</p></blockquote><figcaption class="review__by"><span class="review__name">%4$s</span>%5$s%6$s</figcaption></figure>',
+		$clamp ? ' review--clamp' : '',
+		$stars,
+		nl2br( esc_html( (string) $text ) ),
+		esc_html( (string) $t['name'] ),
+		! empty( $t['ruolo'] ) ? '<span class="review__role">' . esc_html( (string) $t['ruolo'] ) . '</span>' : '',
+		$course
+	);
 }

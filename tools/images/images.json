@@ -1,11 +1,14 @@
 {
-  "lens-nutrizione-umana": { "dir": "lens", "alt": "Piatto di porcellana visto dall'alto con melograno, barbabietola, cavolo rosso e fico disposti come un campione scientifico" },
-  "lens-microbiota": { "dir": "lens", "alt": "Capsula di Petri con colture batteriche rosse e viola su agar" },
-  "lens-fitoterapia": { "dir": "lens", "alt": "Corona di piante officinali: echinacea, salvia viola, lavanda, rosmarino e biancospino" },
-  "lens-nutrizione-animale": { "dir": "lens", "alt": "Gatto tigrato acciambellato che dorme, visto dall'alto" },
-  "lens-comunicazione": { "dir": "lens", "alt": "Due tazze di infuso di ibisco una di fronte all'altra con un taccuino e una penna" },
-  "chi-siamo": { "dir": "art", "alt": "Microscopio su un tavolo luminoso accanto a una ciotola di frutti rossi e a un taccuino" },
-  "docenti": { "dir": "art", "alt": "Testi scientifici e riviste su un tavolo, luce del mattino" },
-  "texture-he": { "dir": "art", "widths": [800, 1600, 2400], "alt": "" },
-  "empty-plate": { "dir": "art", "widths": [480, 800], "alt": "Piatto di porcellana vuoto" }
+  "hero-home": { "dir": "hero", "widths": [640, 960, 1280, 1920, 2560], "alt": "" },
+  "hero-home-m": { "dir": "hero", "widths": [480, 720, 1080, 1440], "alt": "" },
+  "hero-corsi": { "dir": "hero", "widths": [640, 960, 1280, 1920, 2560], "alt": "" },
+  "hero-contatti": { "dir": "hero", "widths": [640, 960, 1280, 1920, 2560], "alt": "" },
+  "hero-docenti": { "dir": "hero", "widths": [640, 960, 1280, 1920, 2560], "alt": "" },
+  "hero-chi-siamo": { "dir": "hero", "widths": [640, 960, 1280, 1920, 2560], "alt": "" },
+  "hero-testimonianze": { "dir": "hero", "widths": [640, 960, 1280, 1920], "alt": "" },
+  "lens-nutrizione-umana": { "dir": "lens", "widths": [640, 960, 1280, 1920, 2560], "alt": "" },
+  "lens-microbiota": { "dir": "lens", "widths": [640, 960, 1280, 1920, 2560], "alt": "" },
+  "lens-fitoterapia": { "dir": "lens", "widths": [640, 960, 1280, 1920, 2560], "alt": "" },
+  "lens-nutrizione-animale": { "dir": "lens", "widths": [640, 960, 1280, 1920, 2560], "alt": "" },
+  "lens-comunicazione": { "dir": "lens", "widths": [640, 960, 1280, 1920, 2560], "alt": "" }
 }

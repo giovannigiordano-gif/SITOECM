@@ -20,7 +20,7 @@
 	transition: opacity var(--dur-2) var(--ease-out);
 }
 .site-header.is-scrolled::before,
-body:not(.is-home) .site-header::before {
+body:not(.has-hero) .site-header::before {
 	opacity: 1;
 }
 .site-header.is-hidden {

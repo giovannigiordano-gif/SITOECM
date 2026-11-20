@@ -36,7 +36,7 @@ for (const sc of scraped) {
 		const q = (s) => document.querySelector(s);
 		const prose = q('.prose--course');
 		return {
-			h1: q('h1.course-title')?.textContent || '',
+			h1: q('h1.hero__title, h1.course-title')?.textContent || '',
 			desc: prose ? prose.innerText : '',
 			cover: q('.cover-frame img')?.currentSrc || q('.cover-frame img')?.src || '',
 			coverNatural: q('.cover-frame img')?.naturalWidth || 0,

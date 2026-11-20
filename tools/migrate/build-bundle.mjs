@@ -269,21 +269,66 @@ const courseByTitle = (label) => {
 	const hit = outCourses.find((c) => slugify(c.title).includes(n) || n.includes(slugify(c.title)));
 	return hit ? hit.slug : '';
 };
+// Professioni dalle schede della pagina testimonianze originale ("Biologa Nutrizionista · Corso ...").
+const salesPage = existsSync(join(SCR, '_sales_page.json')) ? rd('_sales_page.json') : { cards: [], quotes: [], videos: [] };
+const roleByName = {};
+for (const c of salesPage.cards || []) {
+	if (!c.name || !c.role || roleByName[c.name]) continue;
+	const [role, course] = c.role.split(/\s+·\s+/);
+	roleByName[c.name] = { role: normChars(role || '').trim(), course: normChars((course || '').replace(/^Corso\s+/i, '')).trim() };
+}
+// Citazione con foto (Marco Neri): ruolo dalla firma della citazione, foto scontornata della pagina originale.
+const featuredQuote = (salesPage.quotes || []).find((q) => /Marco Neri/.test(q.text || ''));
+const featuredRole = featuredQuote ? normChars(featuredQuote.text.split('Marco Neri,')[1] || '').trim() : '';
+const neriPhoto = addMedia('testimonianza-marco-neri', 'data/scrape/assets/testimonianze/03-687e0cfe0b60d273076dc87f-png.png', 'testimonianze', { title: 'Marco Neri', alt: 'Marco Neri', kind: 'image' });
+
 const outTesti = (testiData.testimonials || [])
 	.filter((t) => (t.sources || []).some((s) => /home|sales/i.test(typeof s === 'string' ? s : s.source || s.type || '')))
 	.map((t, i) => {
 		const srcs = (t.sources || []).map((s) => (typeof s === 'string' ? s : s.source || s.type || '')).join(' ');
+		const name = normChars(t.name || '').trim();
+		const role = roleByName[t.name] || roleByName[name] || {};
+		const isNeri = /^Marco Neri$/.test(name);
+		const courseLabel = t.course_referenced || role.course || '';
 		return {
 			key: `t-${t.id}-${slugify(t.name || 'anonimo').slice(0, 30)}`,
-			name: normChars(t.name || '').trim(),
+			name,
 			text: normChars(t.text || ''),
-			corso_slug: courseByTitle(t.course_referenced),
-			corso_label: t.course_referenced || '',
+			corso_slug: courseByTitle(courseLabel),
+			corso_label: courseLabel,
 			fonte: /home/i.test(srcs) && /sales/i.test(srcs) ? 'entrambe' : /home/i.test(srcs) ? 'home' : 'testimonianze',
 			rating: t.rating || '',
+			ruolo: isNeri ? featuredRole : role.role || '',
+			// Il video della citazione di Marco Neri è in un lettore GoHighLevel che non espone l'indirizzo:
+			// si aggiunge da admin (campo "Video") e il pulsante play compare da solo.
+			video: '',
+			photo: isNeri && neriPhoto ? neriPhoto : '',
 			menu_order: i + 1,
 		};
 	});
+
+// Video degli eventi dal vivo (Vimeo), con anteprime scaricate in locale: nessuna richiesta a Vimeo prima del play.
+const videoLines = (salesPage.videos || [])
+	.map((v) => {
+		const thumb = addMedia(`video-${v.vimeo_id}`, `data/scrape/assets/video/${v.vimeo_id}.jpg`, 'video', { title: v.title || `Video ${v.vimeo_id}`, alt: '', kind: 'image' });
+		const title = /recensione/i.test(v.title || '') ? 'Recensione del corso Microbiota' : 'Evento dal vivo';
+		return `https://vimeo.com/${v.vimeo_id}|${title}|${thumb ? `{media_id:${thumb}}` : ''}`;
+	})
+	.join(String.fromCharCode(10));
+const founderQuote = (salesPage.quotes || []).find((q) => /nostro Obiettivo/i.test(q.text || ''));
+const founderPhoto = addMedia('fondatrice-claudia-petrazzuolo', 'data/scrape/assets/testimonianze/05-687f45e67f24c6e7c23c9995-png.png', 'testimonianze', { title: 'Dott.ssa Claudia Petrazzuolo', alt: 'Dott.ssa Claudia Petrazzuolo', kind: 'image' });
+const eventPhoto = addMedia('evento-dal-vivo', 'data/scrape/assets/derived/evento-dal-vivo.jpg', 'testimonianze', { title: 'Corso dal vivo', alt: 'Un corso dal vivo: il docente in aula davanti ai partecipanti', kind: 'image' });
+Object.assign(options, {
+	video_titolo: 'Testimonianze dei nostri eventi dal vivo',
+	video_eventi: videoLines,
+	fondatrice_nome: 'Dott.ssa Claudia Petrazzuolo',
+	fondatrice_ruolo: 'Fondatrice di Corsi di Formazione ECM',
+	fondatrice_citazione: founderQuote ? normChars(founderQuote.text).replace(/^[“"]|[”"]$/g, '').trim() : '',
+	fondatrice_foto: founderPhoto ? `{media_id:${founderPhoto}}` : '',
+	evento_foto: eventPhoto ? `{media_id:${eventPhoto}}` : '',
+	...(overrides.options || {}),
+});
+const salesIntro = (salesPage.blocks || []).find((b) => /professionisti sanitari che ogni giorno/i.test(b.text || ''))?.text || '';
 
 /* ---------------- Pagine ---------------- */
 const pageObj = (k) => (Array.isArray(pagesData.pages) ? pagesData.pages.find((p) => p.slug === k) : pagesData.pages[k]) || {};
@@ -300,7 +345,7 @@ const outPages = [
 	{ slug: 'home', title: 'Home', template: '', content_html: '', menu_order: 0 },
 	{ slug: 'chi-siamo', title: 'Chi siamo', template: '', content_html: overrides.pages?.['chi-siamo']?.content_html || chiHtml, excerpt: '', menu_order: 2 },
 	{ slug: 'docenti', title: 'Docenti', template: '', content_html: `<p>${(docData.intro?.[0]?.subheading || '').trim()}</p>`, menu_order: 3 },
-	{ slug: 'testimonianze', title: 'Testimonianze', template: '', content_html: '', menu_order: 4 },
+	{ slug: 'testimonianze', title: 'Testimonianze', template: '', content_html: salesIntro ? `<p>${normChars(salesIntro)}</p>` : '', menu_order: 4 },
 	{ slug: 'contatti', title: 'Contatti', template: '', content_html: overrides.pages?.contatti?.content_html || '', menu_order: 5 },
 ];
 

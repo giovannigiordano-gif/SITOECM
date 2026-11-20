@@ -11,29 +11,28 @@ get_header();
 the_post();
 $ecm_docenti = ecm_docenti();
 ?>
-<section class="page-head">
-	<div class="wrap page-head__grid">
-		<h1 class="page-title" data-reveal="lines"><?php the_title(); ?></h1>
-		<div class="page-head__intro prose" data-reveal="fade">
-			<?php
-			if ( '' !== trim( get_the_content() ) ) {
-				the_content();
-			} else {
-				echo '<p>' . esc_html__( 'Docenti universitari, ricercatori e professionisti della clinica: chi insegna nei nostri corsi lavora ogni giorno sui temi che porta nelle lezioni.', 'ecm' ) . '</p>';
-			}
-			?>
-		</div>
-	</div>
-	<?php if ( ecm_has_img( 'docenti' ) ) : ?>
-		<div class="wrap page-head__visual"><?php echo ecm_img( 'docenti', array( 'class' => 'band-img', 'sizes' => '(min-width: 1480px) 1336px, 92vw', 'priority' => true, 'alt' => '' ) ); // phpcs:ignore WordPress.Security.EscapeOutput ?></div>
-	<?php endif; ?>
-</section>
+<?php
+$ecm_intro = trim( (string) get_the_content() );
+ecm_hero(
+	array(
+		'size'      => 'page',
+		'photo'     => true,
+		'mono'      => true,
+		'title'     => get_the_title(),
+		'lead_html' => '' !== $ecm_intro ? apply_filters( 'the_content', $ecm_intro ) : '<p>' . esc_html__( 'Docenti universitari, ricercatori e professionisti della clinica: chi insegna nei nostri corsi lavora ogni giorno sui temi che porta nelle lezioni.', 'ecm' ) . '</p>',
+		'image'     => 'hero-docenti',
+		'focus'     => '60% 40%',
+		'ring_text' => __( 'I nostri docenti', 'ecm' ),
+		'scroll'    => '#elenco-docenti',
+	)
+);
+?>
 
-<section class="people section-tight" aria-label="<?php esc_attr_e( 'Elenco docenti', 'ecm' ); ?>">
+<section class="people section-tight" id="elenco-docenti" aria-label="<?php esc_attr_e( 'Elenco docenti', 'ecm' ); ?>">
 	<div class="wrap">
 		<ul class="people__list">
 			<?php foreach ( $ecm_docenti as $ecm_d ) : ?>
-				<li class="person" data-reveal="fade">
+				<li class="person" id="docente-<?php echo esc_attr( sanitize_title( $ecm_d['name'] ) ); ?>" data-reveal="fade">
 					<div class="person__avatar">
 						<?php
 						if ( $ecm_d['photo_id'] ) {

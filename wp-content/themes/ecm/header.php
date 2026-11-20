@@ -22,7 +22,7 @@ $ecm_login = (string) ecm_opt( 'login_url', '' );
 <header class="site-header" data-header>
 	<div class="site-header__inner wrap">
 		<a class="site-header__brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="<?php esc_attr_e( 'Corsi di Formazione ECM, vai alla home', 'ecm' ); ?>">
-			<?php echo ecm_logo( 'dark' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
+			<?php echo ecm_logo( 'dark', 'logo--dark' ) . ecm_logo( 'light', 'logo--light', '' ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
 		</a>
 
 		<nav class="site-nav" aria-label="<?php esc_attr_e( 'Principale', 'ecm' ); ?>">

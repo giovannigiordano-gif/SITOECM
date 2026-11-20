@@ -75,6 +75,8 @@ final class ECM_Meta {
 			'_ecm_corso_label' => array( 'string', '', 'sanitize_text_field' ),
 			'_ecm_fonte'       => array( 'string', 'entrambe', array( __CLASS__, 'sanitize_fonte' ) ),
 			'_ecm_rating'      => array( 'string', '', array( __CLASS__, 'sanitize_rating' ) ),
+			'_ecm_ruolo'       => array( 'string', '', 'sanitize_text_field' ),
+			'_ecm_video'       => array( 'string', '', 'esc_url_raw' ),
 			'_ecm_source_key'  => array( 'string', '', 'sanitize_text_field' ),
 		);
 		foreach ( $testimonianza as $key => $def ) {

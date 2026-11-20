@@ -27,11 +27,12 @@ const icons = {
   'mail': 'envelope-simple', 'instagram': 'instagram-logo', 'facebook': 'facebook-logo', 'youtube': 'youtube-logo',
   'sign-in': 'sign-in', 'check': 'check', 'caret-down': 'caret-down', 'menu': 'list', 'copy': 'copy', 'phone': 'phone',
   'quote': 'quotes', 'student': 'student', 'certificate': 'certificate', 'warning': 'warning-circle', 'funnel': 'funnel-simple',
-  'chat': 'chat-circle-text', 'user': 'user', 'calendar': 'calendar-blank', 'cookie': 'cookie', 'sliders': 'sliders-horizontal'
+  'chat': 'chat-circle-text', 'user': 'user', 'calendar': 'calendar-blank', 'cookie': 'cookie', 'sliders': 'sliders-horizontal',
+  'arrow-down': 'arrow-down', 'star': 'fill/star-fill', 'play': 'fill/play-fill', 'pause': 'fill/pause-fill'
 };
 let sprite = '<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">';
 for (const [id, file] of Object.entries(icons)) {
-  const svg = readFileSync(join(nm, '@phosphor-icons/core/assets/regular', `${file}.svg`), 'utf8');
+  const svg = readFileSync(join(nm, '@phosphor-icons/core/assets', file.includes('/') ? `${file}.svg` : `regular/${file}.svg`), 'utf8');
   const vb = (svg.match(/viewBox="([^"]+)"/) || [])[1] || '0 0 256 256';
   const inner = svg.replace(/^[\s\S]*?<svg[^>]*>/, '').replace(/<\/svg>\s*$/, '');
   sprite += `<symbol id="i-${id}" viewBox="${vb}">${inner}</symbol>`;
@@ -40,7 +41,7 @@ sprite += '</svg>';
 writeFileSync(join(theme, 'assets/icons/sprite.svg'), sprite);
 
 // 4. CSS bundle: concatenate src in order, then a light minify
-const order = ['tokens', 'fonts', 'base', 'layout', 'components', 'header-footer', 'home', 'catalog', 'course', 'pages', 'motion', 'utilities'];
+const order = ['tokens', 'fonts', 'base', 'layout', 'components', 'header-footer', 'hero', 'home', 'stories', 'catalog', 'course', 'pages', 'motion', 'utilities'];
 const srcDir = join(theme, 'assets/css/src');
 const files = order.map((n) => join(srcDir, `${n}.css`)).filter(existsSync);
 const extra = readdirSync(srcDir).filter((f) => f.endsWith('.css') && !order.includes(f.replace('.css', '')));

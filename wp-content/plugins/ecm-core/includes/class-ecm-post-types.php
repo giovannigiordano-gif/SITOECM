@@ -146,7 +146,7 @@ final class ECM_Post_Types {
 				'query_var'           => false,
 				'menu_position'       => 7,
 				'menu_icon'           => 'dashicons-format-quote',
-				'supports'            => array( 'title', 'editor', 'page-attributes' ),
+				'supports'            => array( 'title', 'editor', 'thumbnail', 'page-attributes' ),
 				'map_meta_cap'        => true,
 			)
 		);

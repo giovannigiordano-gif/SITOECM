@@ -44,6 +44,10 @@ Risposta attesa: `{"bytes_written": ..., "created": true}`.
 
 ## 3. Estrazione, lint, attivazione
 
+**Consigliato (aggiornamenti):** usare [`deploy-staged.php.txt`](deploy-staged.php.txt) come `code` di `novamira/execute-php`: estrae tema e/o plugin in una cartella temporanea, fa il lint di ogni PHP e sostituisce la versione online solo se è tutto pulito (altrimenti il sito resta com'era); unisce l'eventuale `ecm-import-delta.zip` al bundle di importazione, resetta OPcache e svuota la cache. Poi verificare le pagine con una nuova chiamata.
+
+Procedura originale (prima installazione):
+
 Incollare il contenuto di [`extract.php.txt`](extract.php.txt) come `code` di `novamira/execute-php`, cambiando solo i
 PARAMETRI in testa (`$type`, `$slug`, `$main`, `$activate`). Lo snippet:
 

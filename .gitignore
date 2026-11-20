@@ -11,3 +11,6 @@ Thumbs.db
 /tools/scrape/node_modules/
 /data/scrape/assets/brochures/
 /data/scrape/assets/cv/
+
+# Sorgenti immagini (rigenerabili: render 3D o generazione AI), si versionano le versioni ottimizzate nel tema
+/tools/images/src/

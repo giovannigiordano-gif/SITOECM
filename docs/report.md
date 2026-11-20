@@ -1,6 +1,8 @@
 # Report — Restyling corsidiformazionecm.it su WordPress
 
-Data: 20 novembre 2026 · Sito di staging: **https://soothing-khaki-okapi-74.hostingersite.com** · Repository: branch `restyling-wordpress` (commit locali, non ancora pubblicati su GitHub).
+Data: 20 novembre 2026 · Sito di staging: **https://soothing-khaki-okapi-74.hostingersite.com** · Repository: GitHub `giovannigiordano-gif/SITOECM`, branch `restyling-wordpress`.
+
+> **Aggiornamento (seconda iterazione, stesso giorno):** home e pagine rifatte in chiave scenografica, hero con sfondo su tutte le pagine, testimonianze ricostruite come sul sito originale, immagini 3D realizzate con Blender. Dettagli in §12; le righe della tabella qui sotto sono aggiornate.
 
 ## 1. In sintesi
 
@@ -11,9 +13,10 @@ Data: 20 novembre 2026 · Sito di staging: **https://soothing-khaki-okapi-74.hos
 | Scraping completo del sito attuale + inventario | Fatto (`docs/inventario.md`) |
 | Migrazione ripetibile e importazione | Fatto: 27 corsi, 18 docenti, 23 testimonianze, 128 file, 5 pagine, menu, opzioni, 8 redirect |
 | Verifica dei 27 corsi rispetto all'originale | **27/27** (`docs/verifica-corsi.md`) |
-| Accessibilità (axe, WCAG 2.2 AA) | **0 violazioni** su 9 pagine × desktop e mobile |
-| Lighthouse mobile | Performance 93-96, Accessibilità 97-100, Best practices 100, SEO 100, CLS 0 |
-| Immagini generate con Higgsfield | **Bloccato**: limite giornaliero dell'account (vedi §6). Segnaposto grafico al loro posto, pipeline pronta |
+| Accessibilità (axe, WCAG 2.2 AA) | **0 violazioni** su 9 pagine × desktop e mobile (anche dopo la seconda iterazione) |
+| Lighthouse mobile | Home 94, Testimonianze 96, Chi siamo 96, Corsi 96, Docenti 95, scheda corso 92; Accessibilità 100, Best practices 100, SEO 100, CLS 0 |
+| Immagini | Generazione AI ancora **bloccata** (Higgsfield in periodo di grazia, nessuna chiave MuAPI): al loro posto 9 render 3D fatti con Blender e 3 immagini ricavate dalle foto reali del sito (vedi §12) |
+| Hero con sfondo su tutte le pagine, testimonianze come l'originale | Fatto (§12) |
 
 ## 2. Ambiente verificato (Novamira)
 
@@ -92,6 +95,8 @@ Normalizzati anche i caratteri incollati da PDF (legature "ﬁ", separatori di r
 
 ## 6. Immagini (Higgsfield)
 
+> Superato dalla seconda iterazione: i segnaposto sono stati sostituiti da render 3D e da immagini ricavate dalle foto reali (§12). Il testo sotto descrive la situazione della prima consegna.
+
 - **Nessuna immagine generata.** Dal primo tentativo, Higgsfield ha risposto a ogni richiesta, su ogni modello, *"You've reached the daily generation limit for your grace period"* (l'account risulta in periodo di grazia, con 1185 crediti visibili). Ho riprovato più volte durante la sessione, senza esito, e ti ho mandato una notifica.
 - È comparsa una skill MuAPI per la generazione a basso costo, ma non c'è alcuna chiave `MUAPI_API_KEY` configurata: non era utilizzabile.
 - Il tema mostra al posto delle foto un **segnaposto grafico coerente** (composizione circolare tipo capsula di Petri con i colori del marchio), mai un riquadro vuoto; le copertine dei corsi e i loghi dei patrocini sono quelli reali.
@@ -162,3 +167,94 @@ Normalizzati anche i caratteri incollati da PDF (legature "ﬁ", separatori di r
 - Build tema: `node tools/build/build.mjs` (CSS da `assets/css/src`, vendor, icone); i sorgenti CSS non vengono distribuiti sul server.
 - Il tema dipende dal plugin solo tramite le funzioni helper documentate in `docs/contract-ecm-core.md`; se il plugin è disattivato il tema non va in errore e mostra un avviso in admin.
 - Disattivando il plugin i dati restano nel database (nessuna disinstallazione distruttiva).
+
+## 12. Seconda iterazione: scenografia, hero, testimonianze
+
+Richiesta: home troppo povera, immagini mancanti (generarle con MuAPI), hero con sfondo e testo in basso a sinistra su
+tutte le sezioni, testimonianze come sul sito originale, tutto più scenografico; Blender 3D ammesso.
+
+### Immagini: perché 3D e foto reali invece dell'AI
+
+- **MuAPI**: nessuna chiave sul PC (né variabile `MUAPI_API_KEY` utente/sistema né configurazione del CLI o di Claude).
+  Per usarla: `setx MUAPI_API_KEY "chiave"` in PowerShell; la chiave non va scritta in nessun file del progetto.
+- **Higgsfield**: saldo visibile 1185 crediti, piano Ultimate, ma ogni richiesta risponde ancora *"daily generation limit for
+  your grace period"* (12 richieste respinte, 0 crediti spesi).
+- **Soluzione adottata**: un "mondo della lente" 3D fatto con Blender 5.2 (Cycles, GPU), riproducibile da script
+  (`tools/render/lens_world.py`, `tools/render/render-all.sh`). L'anello cremisi laccato del logo, con il secondo anello
+  sottile, è sospeso nel buio viola-inchiostro e attraversato da un flusso diverso per ogni sezione:
+  globuli rossi (home), arilli di melograno (nutrizione umana), batteri (microbiota), foglie e gocce d'olio (fitoterapia),
+  crocchette (nutrizione animale), anelli intrecciati (comunicazione, contatti), un insieme di tutto (catalogo).
+  Il soggetto sta sempre a destra, il buio a sinistra ospita il titolo.
+- **Foto reali del sito** dove contano le persone: Chi siamo usa la foto di un corso dal vivo (ritagliata dentro la vecchia
+  cornice grafica), Testimonianze la stessa foto della hero originale, Docenti un mosaico delle 18 foto dei docenti
+  (senza la cornice rossa stampata sopra), in bianco e nero e a colori dentro la lente.
+- Le immagini si sostituiscono senza toccare i template (`tools/images/README.md`): appena l'AI sarà disponibile si
+  possono affiancare o sostituire con fotografie generate.
+
+### Hero su tutte le pagine
+
+Componente unico `ecm_hero()` (`inc/hero.php`): immagine a tutto schermo (variante verticale per smartphone in home),
+titolo in basso a sinistra, velatura per la leggibilità, header chiaro sopra la hero finché non si scorre.
+Il segno distintivo è una **lente WebGL** scritta a mano (nessuna libreria): ingrandisce l'immagine sotto il cursore con
+aberrazione cromatica sul bordo, seguita dall'anello con il testo che ruota; sui dispositivi touch la lente si muove
+da sola, lentamente. Si ferma quando la hero non è visibile; senza WebGL o con "riduci movimento" resta l'immagine statica.
+Applicata a: home, Corsi e pagine area, Docenti, Chi siamo, Testimonianze, Contatti, pagine generiche, 404; nella
+scheda corso lo sfondo è l'immagine dell'area e la copertina reale sta nella colonna destra (lì la lente è spenta per
+non coprirla).
+
+### Home scenografica
+
+1. **Hero** a tutto schermo con la lente.
+2. **Manifesto**: i numeri reali (200+ ore, 10k+ corsisti, 27 corsi, 18 docenti, 12 enti) in una frase che si accende
+   parola per parola allo scroll (cambio di colore, sempre leggibile: contrasto 4,5:1 anche "spento"), poi il nastro
+   dei patrocini.
+3. **Aree tematiche**: palcoscenico fissato; si apre da una lente al centro con l'anello, poi ogni area si apre come un
+   cerchio a tutto schermo, con navigazione a punti.
+4. **Corsi in evidenza** in scorrimento orizzontale guidato dallo scroll (desktop), con parallasse delle copertine e una
+   scheda finale "Tutti i 27 corsi"; su mobile si scorrono col dito.
+5. **Docenti** come elenco tipografico: sul desktop il ritratto segue il cursore in una lente; su mobile c'è l'avatar.
+6. **Testimonianze e recensioni** come sul sito originale (sotto).
+7. Newsletter con sfondo 3D, invito finale.
+
+### Testimonianze come l'originale
+
+La pagina segue la struttura di `sales.corsidiformazionecm.it/testimonianze`:
+
+- hero con la foto originale, titolo "Testimonianze", lo stesso sottotitolo e il pulsante "Leggi le testimonianze";
+- recensioni con **5 stelle, nome e professione** su due nastri che scorrono in direzioni opposte, con pulsante di
+  pausa (WCAG 2.2.2) e "Leggi tutte le recensioni" per l'elenco completo;
+- la citazione di **Marco Neri** con professione e ritratto;
+- **"Testimonianze dei nostri eventi dal vivo"**: i 9 video Vimeo su fondo cremisi, con anteprime salvate nella
+  Libreria media; il lettore Vimeo (senza tracciamento) si carica solo quando si preme play;
+- "Formazione continua in ambito medico e scientifico" con i numeri e la foto di un corso dal vivo;
+- la **fondatrice**, Dott.ssa Claudia Petrazzuolo, con la sua citazione.
+
+Dati aggiunti al plugin e alla migrazione ripetibile:
+- campi "Professione" e "Video" e immagine in evidenza nelle testimonianze (professioni lette dalle schede originali);
+- scheda **Impostazioni ECM › Testimonianze & fondatrice**: video degli eventi, nome, ruolo, citazione e foto della
+  fondatrice, foto del corso dal vivo;
+- segnaposto `{media_id:…}` nell'importatore.
+
+In home le stesse recensioni scorrono sotto "Testimonianze e recensioni", seguite dalla citazione di Marco Neri.
+
+**Da sapere**: il video della citazione di Marco Neri è in un lettore GoHighLevel che non espone l'indirizzo del video
+(ho provato anche a cliccarlo da browser automatico). Ho mostrato citazione e ritratto; incollando l'indirizzo Vimeo
+nel campo "Video" della sua testimonianza compare da solo il pulsante play.
+
+### Verifiche dopo la seconda iterazione
+
+- 27/27 corsi verificati (il test ora legge il titolo nella nuova hero), form e filtri 16/16, axe 0 violazioni.
+- Lighthouse mobile: home 94 (LCP 2,8 s, TBT 80-100 ms, CLS 0), Testimonianze 96, Chi siamo 96, Corsi 96, Docenti 95,
+  scheda corso 92; accessibilità, best practices e SEO 100.
+- Per tenere la home veloce: l'ingresso del titolo è in CSS (non aspetta il JavaScript), zoom e parallasse della hero
+  avvengono nello shader, le scene sotto la piega si preparano quando il browser è libero dopo il caricamento.
+- Deploy reso più sicuro: `tools/deploy/deploy-staged.php.txt` estrae in una cartella temporanea, controlla la sintassi
+  di ogni file PHP e sostituisce la versione online solo se è tutto pulito.
+
+### Da fare per chiudere
+
+- Generazione AI: chiave MuAPI o sblocco di Higgsfield, se si vogliono fotografie al posto (o accanto) dei render 3D.
+- Indirizzo del video di Marco Neri.
+- Cartella vuota `C:\tools\images\src` creata per errore da Blender sul PC (percorso relativo risolto dalla radice del
+  disco): i file sono stati spostati nel progetto, la cancellazione della cartella vuota è stata bloccata dal controllo
+  di sicurezza e va fatta a mano.

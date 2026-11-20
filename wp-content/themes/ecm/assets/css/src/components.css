@@ -1006,13 +1006,4 @@ textarea.field__input {
 	transform: translate(-50%, -50%);
 	box-shadow: inset 0 0 0 1.5px color-mix(in oklch, var(--c-crimson) 55%, transparent), 0 0 0 14px color-mix(in oklch, var(--c-paper) 60%, transparent), 0 0 0 15px color-mix(in oklch, var(--c-crimson) 25%, transparent);
 }
-.band-img {
-	border-radius: var(--r-media);
-	overflow: hidden;
-	aspect-ratio: 21 / 8;
-}
-@media (max-width: 699px) {
-	.band-img {
-		aspect-ratio: 4 / 3;
-	}
-}
+

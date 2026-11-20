@@ -1,0 +1,66 @@
+// =====================================================================
+// Deploy sicuro di tema e/o plugin da ZIP caricati in wp-content/uploads/ecm-deploy/
+// (ecm.zip per il tema, ecm-core.zip per il plugin, ecm-import-delta.zip facoltativo per il bundle).
+// Incollare come "code" di novamira/execute-php (senza tag <?php). Non usa exit/die.
+//
+// 1. estrae ogni ZIP in una cartella temporanea accanto a quella definitiva;
+// 2. controlla i percorsi (niente backslash, niente "..", radice = slug) e fa il lint di ogni PHP;
+// 3. solo se il lint è pulito sostituisce la cartella (rename), altrimenti lascia online la versione attuale;
+// 4. unisce l'eventuale delta del bundle di importazione, resetta OPcache e svuota la cache LiteSpeed.
+// Verificare poi le pagine in una NUOVA chiamata (il codice nuovo vale dalla richiesta successiva).
+// =====================================================================
+$rm = function ( $dir ) use ( &$rm ) {
+	if ( ! is_dir( $dir ) ) { return; }
+	$it = new RecursiveIteratorIterator( new RecursiveDirectoryIterator( $dir, FilesystemIterator::SKIP_DOTS ), RecursiveIteratorIterator::CHILD_FIRST );
+	foreach ( $it as $f ) { $f->isDir() ? rmdir( $f->getPathname() ) : unlink( $f->getPathname() ); }
+	rmdir( $dir );
+};
+$deploy = function ( $type, $slug ) use ( $rm ) {
+	$zip_path = WP_CONTENT_DIR . '/uploads/ecm-deploy/' . $slug . '.zip';
+	$base     = 'plugin' === $type ? WP_PLUGIN_DIR : get_theme_root();
+	$target   = $base . '/' . $slug;
+	$stage    = $base . '/.' . $slug . '-stage';
+	$old      = $base . '/.' . $slug . '-old';
+	$r        = array( 'slug' => $slug );
+	if ( ! file_exists( $zip_path ) ) { return $r + array( 'skipped' => 'zip non caricato' ); }
+	$rm( $stage ); $rm( $old );
+	$zip = new ZipArchive();
+	if ( true !== $zip->open( $zip_path ) ) { return $r + array( 'error' => 'zip non apribile' ); }
+	for ( $i = 0; $i < $zip->numFiles; $i++ ) {
+		$n = (string) $zip->getNameIndex( $i );
+		if ( false !== strpos( $n, '\\' ) || false !== strpos( $n, '..' ) || 0 !== strpos( $n, $slug . '/' ) ) { $zip->close(); return $r + array( 'error' => 'percorso non valido ' . $n ); }
+	}
+	wp_mkdir_p( $stage );
+	$ok = $zip->extractTo( $stage );
+	$zip->close();
+	if ( ! $ok ) { return $r + array( 'error' => 'estrazione' ); }
+	$src = $stage . '/' . $slug;
+	$errors = array(); $count = 0;
+	$it = new RecursiveIteratorIterator( new RecursiveDirectoryIterator( $src, FilesystemIterator::SKIP_DOTS ) );
+	foreach ( $it as $f ) {
+		if ( '.php' !== substr( $f->getFilename(), -4 ) ) { continue; }
+		++$count;
+		try { token_get_all( (string) file_get_contents( $f->getPathname() ), TOKEN_PARSE ); } catch ( \ParseError $e ) { $errors[] = str_replace( $src, '', $f->getPathname() ) . ':' . $e->getLine() . ' ' . $e->getMessage(); }
+	}
+	$r['php_files']   = $count;
+	$r['lint_errors'] = $errors;
+	if ( $errors ) { $rm( $stage ); return $r; }
+	if ( is_dir( $target ) ) { rename( $target, $old ); }
+	rename( $src, $target );
+	$rm( $stage ); $rm( $old );
+	unlink( $zip_path );
+	$r['deployed'] = is_dir( $target );
+	return $r;
+};
+$out = array(
+	'plugin' => $deploy( 'plugin', 'ecm-core' ),
+	'theme'  => $deploy( 'theme', 'ecm' ),
+);
+$dz = WP_CONTENT_DIR . '/uploads/ecm-deploy/ecm-import-delta.zip';
+if ( file_exists( $dz ) ) {
+	$z = new ZipArchive();
+	if ( true === $z->open( $dz ) ) { wp_mkdir_p( WP_CONTENT_DIR . '/uploads/ecm-import' ); $out['delta'] = $z->extractTo( WP_CONTENT_DIR . '/uploads/ecm-import' ); $z->close(); unlink( $dz ); }
+}
+if ( function_exists( 'opcache_reset' ) ) { $out['opcache'] = opcache_reset(); }
+do_action( 'litespeed_purge_all' );
+return $out;

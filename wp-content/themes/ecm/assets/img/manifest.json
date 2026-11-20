@@ -1,0 +1,156 @@
+{
+ "hero-chi-siamo": {
+  "dir": "hero",
+  "widths": [
+   640,
+   960,
+   1280,
+   1920,
+   2560
+  ],
+  "width": 3669,
+  "height": 1736,
+  "alt": ""
+ },
+ "hero-contatti": {
+  "dir": "hero",
+  "widths": [
+   640,
+   960,
+   1280,
+   1920,
+   2560
+  ],
+  "width": 2560,
+  "height": 1440,
+  "alt": ""
+ },
+ "hero-corsi": {
+  "dir": "hero",
+  "widths": [
+   640,
+   960,
+   1280,
+   1920,
+   2560
+  ],
+  "width": 2560,
+  "height": 1440,
+  "alt": ""
+ },
+ "hero-docenti": {
+  "dir": "hero",
+  "widths": [
+   640,
+   960,
+   1280,
+   1920,
+   2560
+  ],
+  "width": 2560,
+  "height": 1440,
+  "alt": ""
+ },
+ "hero-home-m": {
+  "dir": "hero",
+  "widths": [
+   480,
+   720,
+   1080,
+   1440
+  ],
+  "width": 1440,
+  "height": 2560,
+  "alt": ""
+ },
+ "hero-home": {
+  "dir": "hero",
+  "widths": [
+   640,
+   960,
+   1280,
+   1920,
+   2560
+  ],
+  "width": 2560,
+  "height": 1440,
+  "alt": ""
+ },
+ "hero-testimonianze": {
+  "dir": "hero",
+  "widths": [
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "width": 2153,
+  "height": 1435,
+  "alt": ""
+ },
+ "lens-comunicazione": {
+  "dir": "lens",
+  "widths": [
+   640,
+   960,
+   1280,
+   1920,
+   2560
+  ],
+  "width": 2560,
+  "height": 1440,
+  "alt": ""
+ },
+ "lens-fitoterapia": {
+  "dir": "lens",
+  "widths": [
+   640,
+   960,
+   1280,
+   1920,
+   2560
+  ],
+  "width": 2560,
+  "height": 1440,
+  "alt": ""
+ },
+ "lens-microbiota": {
+  "dir": "lens",
+  "widths": [
+   640,
+   960,
+   1280,
+   1920,
+   2560
+  ],
+  "width": 2560,
+  "height": 1440,
+  "alt": ""
+ },
+ "lens-nutrizione-animale": {
+  "dir": "lens",
+  "widths": [
+   640,
+   960,
+   1280,
+   1920,
+   2560
+  ],
+  "width": 2560,
+  "height": 1440,
+  "alt": ""
+ },
+ "lens-nutrizione-umana": {
+  "dir": "lens",
+  "widths": [
+   640,
+   960,
+   1280,
+   1920,
+   2560
+  ],
+  "width": 2560,
+  "height": 1440,
+  "alt": ""
+ }
+}

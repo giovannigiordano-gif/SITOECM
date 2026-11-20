@@ -758,6 +758,9 @@ final class ECM_Data {
 				'corso_url'   => $published ? (string) get_permalink( $corso ) : '',
 				'fonte'       => ECM_Meta::sanitize_fonte( get_post_meta( $post->ID, '_ecm_fonte', true ) ),
 				'rating'      => (int) get_post_meta( $post->ID, '_ecm_rating', true ),
+				'ruolo'       => (string) get_post_meta( $post->ID, '_ecm_ruolo', true ),
+				'video'       => (string) get_post_meta( $post->ID, '_ecm_video', true ),
+				'photo_id'    => (int) get_post_thumbnail_id( $post ),
 			);
 		}
 

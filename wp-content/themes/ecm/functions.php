@@ -19,4 +19,5 @@ require ECM_THEME_DIR . '/inc/setup.php';
 require ECM_THEME_DIR . '/inc/assets.php';
 require ECM_THEME_DIR . '/inc/template-tags.php';
 require ECM_THEME_DIR . '/inc/images.php';
+require ECM_THEME_DIR . '/inc/hero.php';
 require ECM_THEME_DIR . '/inc/catalog.php';

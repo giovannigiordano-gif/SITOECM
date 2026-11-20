@@ -428,6 +428,8 @@ final class ECM_Meta_Boxes {
 		$label    = (string) get_post_meta( $post->ID, '_ecm_corso_label', true );
 		$fonte    = ECM_Meta::sanitize_fonte( get_post_meta( $post->ID, '_ecm_fonte', true ) );
 		$rating   = (string) get_post_meta( $post->ID, '_ecm_rating', true );
+		$ruolo    = (string) get_post_meta( $post->ID, '_ecm_ruolo', true );
+		$video    = (string) get_post_meta( $post->ID, '_ecm_video', true );
 		$courses  = get_posts(
 			array(
 				'post_type'      => 'corso',
@@ -445,6 +447,18 @@ final class ECM_Meta_Boxes {
 		);
 		?>
 		<div class="ecm-fields">
+			<div class="ecm-grid">
+				<div class="ecm-grid__col">
+					<label for="ecm_ruolo"><strong><?php esc_html_e( 'Professione', 'ecm' ); ?></strong></label>
+					<input type="text" id="ecm_ruolo" name="ecm[ruolo]" class="widefat" value="<?php echo esc_attr( $ruolo ); ?>" placeholder="<?php esc_attr_e( 'Es. Biologa nutrizionista', 'ecm' ); ?>">
+					<?php ECM_Admin::hint( __( 'Mostrata sotto il nome, come sul sito originale.', 'ecm' ) ); ?>
+				</div>
+				<div class="ecm-grid__col">
+					<label for="ecm_video"><strong><?php esc_html_e( 'Video (facoltativo)', 'ecm' ); ?></strong></label>
+					<input type="url" id="ecm_video" name="ecm[video]" class="widefat" value="<?php echo esc_attr( $video ); ?>" placeholder="https://vimeo.com/123456789">
+					<?php ECM_Admin::hint( __( 'Indirizzo Vimeo o YouTube. Una testimonianza con video viene messa in evidenza, con la sua immagine in evidenza come anteprima.', 'ecm' ) ); ?>
+				</div>
+			</div>
 			<div class="ecm-grid">
 				<div class="ecm-grid__col">
 					<label for="ecm_corso_id"><strong><?php esc_html_e( 'Corso frequentato', 'ecm' ); ?></strong></label>
@@ -570,6 +584,8 @@ final class ECM_Meta_Boxes {
 				self::update( $post_id, '_ecm_corso_label', sanitize_text_field( (string) ( $in['corso_label'] ?? '' ) ) );
 				self::update( $post_id, '_ecm_fonte', ECM_Meta::sanitize_fonte( $in['fonte'] ?? 'entrambe' ) );
 				self::update( $post_id, '_ecm_rating', ECM_Meta::sanitize_rating( $in['rating'] ?? '' ) );
+				self::update( $post_id, '_ecm_ruolo', sanitize_text_field( (string) ( $in['ruolo'] ?? '' ) ) );
+				self::update( $post_id, '_ecm_video', esc_url_raw( (string) ( $in['video'] ?? '' ) ) );
 				break;
 			case 'page':
 				self::save_seo( (int) $post_id, $in );

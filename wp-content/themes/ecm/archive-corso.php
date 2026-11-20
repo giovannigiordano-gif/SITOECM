@@ -25,21 +25,30 @@ $ecm_intro   = $ecm_term instanceof WP_Term && $ecm_term->description ? wp_strip
 $ecm_count_l = 0 === $ecm_visible ? __( 'Nessun corso', 'ecm' ) : sprintf( _n( '%d corso', '%d corsi', $ecm_visible, 'ecm' ), $ecm_visible );
 ?>
 
-<section class="page-head page-head--catalog">
-	<div class="wrap page-head__grid">
-		<div>
-			<?php
-			if ( $ecm_term instanceof WP_Term ) {
-				ecm_breadcrumbs( array( array( __( 'Corsi', 'ecm' ), ecm_catalog_url() ), array( $ecm_term->name, '' ) ) );
-			}
-			?>
-			<h1 class="page-title page-title--count"><span data-reveal="lines"><?php echo esc_html( $ecm_title ); ?></span> <sup class="page-title__count" aria-label="<?php echo esc_attr( sprintf( /* translators: %d */ _n( '%d corso', '%d corsi', $ecm_term instanceof WP_Term ? (int) $ecm_term->count : count( $ecm_all ), 'ecm' ), $ecm_term instanceof WP_Term ? (int) $ecm_term->count : count( $ecm_all ) ) ); ?>"><?php echo (int) ( $ecm_term instanceof WP_Term ? $ecm_term->count : count( $ecm_all ) ); ?></sup></h1>
-		</div>
-		<p class="page-head__intro" data-reveal="fade"><?php echo esc_html( $ecm_intro ); ?></p>
-	</div>
-</section>
+<?php
+$ecm_n       = $ecm_term instanceof WP_Term ? (int) $ecm_term->count : count( $ecm_all );
+$ecm_area_ix = null;
+if ( $ecm_term instanceof WP_Term ) {
+	foreach ( $ecm_areas as $ecm_a ) {
+		if ( $ecm_a['slug'] === $ecm_term->slug ) {
+			$ecm_area_ix = $ecm_a;
+		}
+	}
+}
+ecm_hero(
+	array(
+		'size'       => 'compact',
+		'title_html' => esc_html( $ecm_title ) . ' <sup class="hero__count" aria-label="' . esc_attr( sprintf( /* translators: %d */ _n( '%d corso', '%d corsi', $ecm_n, 'ecm' ), $ecm_n ) ) . '">' . (int) $ecm_n . '</sup>',
+		'lead'       => $ecm_intro,
+		'image'      => $ecm_term instanceof WP_Term ? ecm_area_img_key( $ecm_area_ix ) : 'hero-corsi',
+		'crumbs'     => $ecm_term instanceof WP_Term ? array( array( __( 'Corsi', 'ecm' ), ecm_catalog_url() ), array( $ecm_term->name, '' ) ) : array(),
+		'ring_text'  => $ecm_term instanceof WP_Term ? $ecm_term->name : __( 'Tutti i corsi', 'ecm' ),
+		'scroll'     => '#catalogo',
+	)
+);
+?>
 
-<div class="catalog" data-catalog>
+<div class="catalog" id="catalogo" data-catalog>
 	<form class="filters" role="search" data-filters action="<?php echo esc_url( ecm_catalog_url() ); ?>" method="get" aria-label="<?php esc_attr_e( 'Filtra i corsi', 'ecm' ); ?>">
 		<div class="wrap filters__inner">
 			<fieldset class="filters__areas">
@@ -103,7 +112,7 @@ $ecm_count_l = 0 === $ecm_visible ? __( 'Nessun corso', 'ecm' ) : sprintf( _n( '
 		</div>
 
 		<div class="empty" data-empty <?php echo $ecm_visible ? 'hidden' : ''; ?>>
-			<?php echo ecm_img( 'empty-plate', array( 'class' => 'empty__img', 'sizes' => '240px', 'alt' => '' ) ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
+			<span class="empty__lens" aria-hidden="true"><?php echo ecm_icon( 'search' ); // phpcs:ignore WordPress.Security.EscapeOutput ?></span>
 			<h2 class="empty__title"><?php esc_html_e( 'Nessun corso con questi filtri', 'ecm' ); ?></h2>
 			<p class="empty__text"><?php esc_html_e( 'Prova a togliere un filtro o a cercare un’altra parola. Se cerchi un argomento preciso, chiedici: potrebbe essere in arrivo.', 'ecm' ); ?></p>
 			<div class="empty__actions">

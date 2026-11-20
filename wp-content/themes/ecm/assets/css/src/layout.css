@@ -31,10 +31,6 @@
 	line-height: 1;
 	text-wrap: balance;
 }
-
-.page-title {
-	font-size: var(--fs-3xl);
-}
 .page-title--md {
 	font-size: var(--fs-2xl);
 }
@@ -57,10 +53,7 @@
 }
 
 /* Intestazione pagine interne */
-.page-head {
-	padding-top: calc(var(--header-h) + clamp(2.5rem, 1rem + 6vw, 7rem));
-	padding-bottom: clamp(2.5rem, 1.5rem + 4vw, 5.5rem);
-}
+
 .page-head__grid {
 	display: grid;
 	gap: var(--s-6) var(--gutter);

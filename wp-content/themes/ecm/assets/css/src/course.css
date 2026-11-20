@@ -1,33 +1,11 @@
 /* ==========================================================================
    Scheda corso
    ========================================================================== */
-.course-hero {
-	padding-top: calc(var(--header-h) + clamp(1.5rem, 0.5rem + 4vw, 4.5rem));
-	padding-bottom: clamp(3rem, 2rem + 4vw, 6rem);
-	overflow: hidden;
-}
-.course-hero__grid {
-	display: grid;
-	gap: clamp(2.5rem, 1.5rem + 4vw, 5rem) var(--gutter);
-	align-items: center;
-}
+
 @media (min-width: 1000px) {
-	.course-hero__grid {
-		grid-template-columns: repeat(12, minmax(0, 1fr));
-	}
-	.course-hero__copy {
-		grid-column: 1 / span 6;
-	}
 	.course-hero__cover {
 		grid-column: 7 / -1;
 	}
-}
-.course-hero__meta {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	gap: var(--s-3);
-	margin-bottom: var(--s-5);
 }
 .credits {
 	display: inline-flex;
@@ -44,49 +22,6 @@
 	color: var(--c-crimson);
 	font-variant-numeric: tabular-nums;
 	line-height: 1;
-}
-.course-title {
-	font-size: var(--fs-3xl);
-	line-height: 1;
-	padding-bottom: 0.05em;
-	hyphens: manual;
-	overflow-wrap: break-word;
-}
-.course-title.is-long {
-	font-size: clamp(2.1rem, 1.4rem + 2.8vw, 3.9rem);
-}
-.course-title.is-xlong {
-	font-size: clamp(1.85rem, 1.3rem + 2.1vw, 3.1rem);
-	line-height: 1.04;
-}
-.course-title.is-caps {
-	font-stretch: 104%;
-	letter-spacing: -0.012em;
-	line-height: 1.04;
-}
-.course-title.is-caps.is-long {
-	font-size: clamp(1.8rem, 1.25rem + 2.2vw, 3.2rem);
-}
-.course-title.is-caps.is-xlong {
-	font-size: clamp(1.6rem, 1.15rem + 1.75vw, 2.6rem);
-	line-height: 1.08;
-}
-.course-hero__for {
-	margin-top: var(--s-5);
-	font-size: var(--fs-base);
-	color: var(--c-ink-soft);
-	max-width: 52ch;
-}
-.course-hero__for-label {
-	font-weight: 640;
-	color: var(--c-ink);
-	margin-right: 0.3em;
-}
-.course-hero__ctas {
-	display: flex;
-	flex-wrap: wrap;
-	gap: var(--s-3);
-	margin-top: clamp(1.75rem, 1rem + 2vw, 2.5rem);
 }
 
 /* Copertina in scena: cornice porcellana, profondità, anello cremisi */

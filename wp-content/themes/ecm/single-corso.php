@@ -70,70 +70,82 @@ while ( have_posts() ) :
 
 <article class="course" data-course-page>
 
-	<header class="course-hero">
-		<div class="wrap course-hero__grid">
-			<div class="course-hero__copy">
-				<?php
-				$ecm_crumbs = array( array( __( 'Corsi', 'ecm' ), ecm_catalog_url() ) );
-				if ( ! empty( $c['area'] ) ) {
-					$ecm_crumbs[] = array( $c['area']['name'], $c['area']['url'] );
-				}
-				$ecm_crumbs[] = array( wp_trim_words( $c['title'], 6, '…' ), '' );
-				ecm_breadcrumbs( $ecm_crumbs );
-				?>
-				<p class="course-hero__meta">
-					<?php echo ecm_badge_stato( $c['stato'] ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
-					<?php if ( '' !== (string) $c['crediti'] ) : ?>
-						<span class="credits"><span class="credits__num"><?php echo esc_html( (string) $c['crediti'] ); ?></span> <?php esc_html_e( 'crediti ECM', 'ecm' ); ?></span>
-					<?php endif; ?>
-				</p>
-				<h1 class="course-title <?php echo esc_attr( ecm_title_class( $c['title'] ) ); ?>" data-reveal="lines"><?php echo esc_html( $c['title'] ); ?></h1>
-				<?php if ( $c['destinatari'] ) : ?>
-					<p class="course-hero__for">
-						<span class="course-hero__for-label"><?php esc_html_e( 'Per', 'ecm' ); ?></span>
-						<?php echo esc_html( implode( ', ', wp_list_pluck( $c['destinatari'], 'name' ) ) ); ?>
-					</p>
-				<?php endif; ?>
-				<div class="course-hero__ctas" data-hero-ctas>
-					<?php
-					if ( $c['link_iscrizione'] ) {
-						echo ecm_button( // phpcs:ignore WordPress.Security.EscapeOutput
-							array(
-								'label' => __( 'Iscriviti al corso', 'ecm' ),
-								'url'   => $c['link_iscrizione'],
-								'icon'  => 'arrow-up-right',
-								'attrs' => ecm_ext_attrs(),
-							)
-						);
-					}
-					echo $ecm_wa_btn . $ecm_br_btn; // phpcs:ignore WordPress.Security.EscapeOutput
-					?>
-				</div>
-			</div>
+	<?php
+	$ecm_crumbs = array( array( __( 'Corsi', 'ecm' ), ecm_catalog_url() ) );
+	if ( ! empty( $c['area'] ) ) {
+		$ecm_crumbs[] = array( $c['area']['name'], $c['area']['url'] );
+	}
+	$ecm_crumbs[] = array( wp_trim_words( $c['title'], 6, '…' ), '' );
 
-			<figure class="course-hero__cover" data-cover>
-				<div class="cover-frame" data-cover-frame>
-					<?php
-					if ( $c['cover_id'] ) {
-						echo wp_get_attachment_image(
-							$c['cover_id'],
-							'ecm-hero',
-							false,
-							array(
-								'class'         => 'cover-frame__img',
-								'sizes'         => '(min-width: 1000px) 46vw, 92vw',
-								'loading'       => 'eager',
-								'fetchpriority' => 'high',
-								'alt'           => sprintf( /* translators: %s titolo */ __( 'Copertina del corso %s', 'ecm' ), $c['title'] ),
-							)
-						);
-					}
-					?>
-				</div>
-				<span class="cover-ring" aria-hidden="true"></span>
-			</figure>
-		</div>
-	</header>
+	$ecm_meta = ecm_badge_stato( $c['stato'] );
+	if ( '' !== (string) $c['crediti'] ) {
+		$ecm_meta .= ' <span class="credits credits--on-ink"><span class="credits__num">' . esc_html( (string) $c['crediti'] ) . '</span> ' . esc_html__( 'crediti ECM', 'ecm' ) . '</span>';
+	}
+
+	$ecm_ctas = array();
+	if ( $c['link_iscrizione'] ) {
+		$ecm_ctas[] = array(
+			'label' => __( 'Iscriviti al corso', 'ecm' ),
+			'url'   => $c['link_iscrizione'],
+			'icon'  => 'arrow-up-right',
+			'attrs' => ecm_ext_attrs(),
+		);
+	}
+	$ecm_ctas[] = array(
+		'label'    => __( 'Scrivici su WhatsApp', 'ecm' ),
+		'url'      => $c['whatsapp_url'],
+		'icon'     => 'whatsapp',
+		'icon_pos' => 'start',
+		'attrs'    => ecm_ext_attrs(),
+	);
+	if ( $ecm_b ) {
+		$ecm_ctas[] = array(
+			'label'    => __( 'Scarica la brochure', 'ecm' ),
+			'url'      => $ecm_b['url'],
+			'variant'  => 'secondary',
+			'icon'     => 'download',
+			'icon_pos' => 'start',
+			'attrs'    => array( 'download' => $ecm_b['filename'] ),
+		);
+	}
+
+	$ecm_cover = '';
+	if ( $c['cover_id'] ) {
+		$ecm_cover = '<figure class="course-hero__cover" data-cover><div class="cover-frame" data-cover-frame>'
+			. wp_get_attachment_image(
+				$c['cover_id'],
+				'ecm-hero',
+				false,
+				array(
+					'class'         => 'cover-frame__img',
+					'sizes'         => '(min-width: 1000px) 34vw, 92vw',
+					'loading'       => 'eager',
+					'fetchpriority' => 'high',
+					'alt'           => sprintf( /* translators: %s titolo */ __( 'Copertina del corso %s', 'ecm' ), $c['title'] ),
+				)
+			)
+			. '</div><span class="cover-ring" aria-hidden="true"></span></figure>';
+	}
+
+	ecm_hero(
+		array(
+			'size'        => 'page',
+			'class'       => 'hero--course',
+			'lens'        => false,
+			'title'       => $c['title'],
+			'title_class' => ecm_title_class( $c['title'] ),
+			'lead'        => $c['destinatari'] ? sprintf( /* translators: %s professioni */ __( 'Per %s', 'ecm' ), implode( ', ', wp_list_pluck( $c['destinatari'], 'name' ) ) ) : '',
+			'image'       => ecm_area_img_key( $c['area'] ?? null ),
+			'crumbs'      => $ecm_crumbs,
+			'meta_html'   => $ecm_meta,
+			'ctas'        => $ecm_ctas,
+			'ctas_attrs'  => 'data-hero-ctas',
+			'aside_html'  => $ecm_cover,
+			'ring_text'   => ! empty( $c['area'] ) ? $c['area']['name'] : '',
+			'focus'       => '78% 50%',
+		)
+	);
+	?>
 
 	<div class="course-body">
 		<div class="wrap course-body__grid">

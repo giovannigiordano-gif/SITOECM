@@ -11,11 +11,16 @@ get_header();
 while ( have_posts() ) :
 	the_post();
 	?>
-<section class="page-head page-head--simple">
-	<div class="wrap">
-		<h1 class="page-title page-title--md" data-reveal="lines"><?php the_title(); ?></h1>
-	</div>
-</section>
+	<?php
+	ecm_hero(
+		array(
+			'size'  => 'compact',
+			'title' => get_the_title(),
+			'lead'  => has_excerpt() ? get_the_excerpt() : '',
+			'image' => 'hero-contatti',
+		)
+	);
+	?>
 <section class="section-tight">
 	<div class="wrap">
 		<div class="prose prose--editorial" data-prose><?php the_content(); ?></div>

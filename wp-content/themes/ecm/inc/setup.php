@@ -81,6 +81,8 @@ add_filter(
 		if ( is_singular( 'corso' ) ) {
 			$classes[] = 'has-sticky-cta';
 		}
+		// Tutti i template aprono con una hero scura a tutto schermo: header chiaro finché non si scorre.
+		$classes[] = 'has-hero';
 		return $classes;
 	}
 );
