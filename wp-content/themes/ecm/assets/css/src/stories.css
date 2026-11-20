@@ -24,10 +24,10 @@
 	gap: var(--s-4) var(--s-6);
 }
 .reviews__pause .reviews__ico-play,
-.reviews.is-paused .reviews__pause .reviews__ico-pause {
+[data-reviews].is-paused .reviews__pause .reviews__ico-pause {
 	display: none;
 }
-.reviews.is-paused .reviews__pause .reviews__ico-play {
+[data-reviews].is-paused .reviews__pause .reviews__ico-play {
 	display: block;
 }
 .reviews__rows {
@@ -62,7 +62,7 @@
 	}
 	.reviews__row:hover .reviews__track,
 	.reviews__row:focus-within .reviews__track,
-	.reviews.is-paused .reviews__track {
+	[data-reviews].is-paused .reviews__track {
 		animation-play-state: paused;
 	}
 }
@@ -268,13 +268,34 @@ a.review__course {
 	max-width: 16ch;
 	margin-bottom: clamp(2rem, 1rem + 3vw, 3.5rem);
 }
-.reels__grid {
+.reels {
+	overflow: hidden;
+}
+.reels__head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: end;
+	justify-content: space-between;
+	gap: var(--s-4) var(--s-6);
+	margin-bottom: clamp(2rem, 1rem + 3vw, 3.5rem);
+}
+.reels__head .reels__title {
+	margin-bottom: 0;
+}
+.reels__rows {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(min(42vw, 190px), 1fr));
 	gap: clamp(0.75rem, 0.5rem + 1vw, 1.5rem);
-	margin: 0;
-	padding: 0;
-	list-style: none;
+}
+.reels__row {
+	mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+	-webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+}
+.reels__track {
+	gap: clamp(0.75rem, 0.5rem + 1vw, 1.5rem);
+	padding-right: clamp(0.75rem, 0.5rem + 1vw, 1.5rem);
+}
+.reels__track > li {
+	width: clamp(150px, 15vw, 230px);
 }
 .reel {
 	position: relative;

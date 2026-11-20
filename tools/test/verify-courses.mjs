@@ -10,6 +10,9 @@ const root = join(here, '..', '..');
 const BASE = process.env.ECM_BASE || 'https://soothing-khaki-okapi-74.hostingersite.com';
 const scraped = JSON.parse(readFileSync(join(root, 'data/scrape/courses.json'), 'utf8'));
 const bundle = JSON.parse(readFileSync(join(root, 'dist/ecm-import/data.json'), 'utf8'));
+// I banner compositi (più loghi in un'immagine) sono mostrati come loghi singoli: un logo per ente contenuto.
+const logosIndex = JSON.parse(readFileSync(join(root, 'data/scrape/logos_index.json'), 'utf8')).logos || [];
+const expectedPatrons = (list) => (list || []).reduce((n, p) => { const li = logosIndex.find((l) => l.sha1 === p.sha1); return n + (li && li.composite_image && li.contains_entities ? li.contains_entities.length : 1); }, 0);
 
 const norm = (s) =>
 	String(s || '')
@@ -41,7 +44,7 @@ for (const sc of scraped) {
 			cover: q('.cover-frame img')?.currentSrc || q('.cover-frame img')?.src || '',
 			coverNatural: q('.cover-frame img')?.naturalWidth || 0,
 			brochure: q('.brochure a.btn')?.href || '',
-			patrons: document.querySelectorAll('.patrons__grid > li').length,
+			patrons: document.querySelectorAll('.patrons-grid__list > li, .patrons__grid > li').length,
 			voices: document.querySelectorAll('.course-voices__grid > li').length,
 			wa: q('.sticky-cta a[href*="wa.me"]')?.href || '',
 			perChi: q('.fit .prose')?.innerText || '',
@@ -70,7 +73,7 @@ for (const sc of scraped) {
 		if (len !== sc.brochure_bytes) r.notes.push(`brochure ${len} B vs originale ${sc.brochure_bytes} B`);
 	} else r.checks.brochure = false;
 	// Patrocini e testimonianze presenti dove previsti
-	r.checks.patrocini = dom.patrons === (sc.patrocini || []).length;
+	r.checks.patrocini = dom.patrons === expectedPatrons(sc.patrocini);
 	r.checks.testimonianze = dom.voices === (sc.testimonials || []).length;
 	// WhatsApp: testo generato dal titolo
 	const waText = dom.wa ? decodeURIComponent(new URL(dom.wa).searchParams.get('text') || '') : '';
@@ -97,7 +100,7 @@ let md = `# Verifica dei 27 corsi\n\nGenerato da \`tools/test/verify-courses.mjs
 md += `Esito: **${rows.filter((r) => r.ok).length}/${rows.length} corsi superano tutti i controlli.**\n\n`;
 md += '| # | Corso | 200 | Titolo | Descrizione | Copertina | Brochure | Patrocini | Testim. | WhatsApp | Per chi | SEO | 301 | Note |\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n';
 for (const r of rows) md += `| ${r.n} | ${r.slug} | ${keys.map((k) => tick(r.checks[k])).join(' | ')} | ${r.notes.join('; ')} |\n`;
-md += `\nControlli: titolo identico all'originale (salvo refusi evidenti corretti); testo della descrizione identico; copertina caricata; brochure servita dal sito (non da Drive), PDF, stesso peso in byte del file originale; numero di loghi patrocinio e di testimonianze uguale all'originale; link WhatsApp con testo "Salve, vorrei avere maggiori informazioni sul corso \\"TITOLO\\""; sezione "Per chi è adatto" presente; title, meta description e schema.org Course presenti; redirect 301 dai vecchi URL con spazi.\n`;
+md += `\nControlli: titolo identico all'originale (salvo refusi evidenti corretti); testo della descrizione identico; copertina caricata; brochure servita dal sito (non da Drive), PDF, stesso peso in byte del file originale; numero di loghi patrocinio (un logo per ente, anche quelli che sull'originale erano riuniti in un banner) e di testimonianze uguale all'originale; link WhatsApp con testo "Salve, vorrei avere maggiori informazioni sul corso \\"TITOLO\\""; sezione "Per chi è adatto" presente; title, meta description e schema.org Course presenti; redirect 301 dai vecchi URL con spazi.\n`;
 writeFileSync(join(root, 'docs/verifica-corsi.md'), md);
 writeFileSync(join(root, 'docs/verifica-corsi.json'), JSON.stringify(rows, null, 1));
 console.log(`\n${rows.filter((r) => r.ok).length}/${rows.length} ok`);

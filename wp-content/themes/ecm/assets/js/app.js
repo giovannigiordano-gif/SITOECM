@@ -604,6 +604,13 @@
 			btn.addEventListener('click', () => {
 				const src = btn.dataset.video;
 				if (!src) return;
+				// dentro uno slider: lo scorrimento si ferma mentre si guarda il video
+				const slider = btn.closest('[data-reviews]');
+				if (slider && !slider.classList.contains('is-paused')) {
+					const pause = $('[data-reviews-pause]', slider);
+					if (pause) pause.click();
+					else slider.classList.add('is-paused');
+				}
 				const f = d.createElement('iframe');
 				f.src = src;
 				f.title = btn.dataset.videoTitle || btn.getAttribute('aria-label') || 'Video';

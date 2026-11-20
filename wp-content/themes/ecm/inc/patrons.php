@@ -9,6 +9,27 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
+ * Patrocini unici di tutti i corsi (un logo per ente, deduplicato per nome).
+ *
+ * @return array<int,array>
+ */
+function ecm_all_patrons(): array {
+	$logos = array();
+	foreach ( ecm_courses() as $c ) {
+		foreach ( (array) $c['patrocini'] as $p ) {
+			if ( empty( $p['image_id'] ) ) {
+				continue;
+			}
+			$k = $p['name'] ? sanitize_title( $p['name'] ) : 'img-' . $p['image_id'];
+			if ( ! isset( $logos[ $k ] ) ) {
+				$logos[ $k ] = $p;
+			}
+		}
+	}
+	return array_values( $logos );
+}
+
+/**
  * Stampa la sezione dei patrocini.
  *
  * @param array $logos Patrocini: array di { image_id, name, width, height }.

@@ -1,6 +1,6 @@
 # Verifica dei 27 corsi
 
-Generato da `tools/test/verify-courses.mjs` il 2026-11-20 16:14 su https://soothing-khaki-okapi-74.hostingersite.com.
+Generato da `tools/test/verify-courses.mjs` il 2026-11-20 17:49 su https://soothing-khaki-okapi-74.hostingersite.com.
 
 Esito: **27/27 corsi superano tutti i controlli.**
 
@@ -34,4 +34,4 @@ Esito: **27/27 corsi superano tutti i controlli.**
 | 26 | pnl-applicata-alla-comunicazione-sanitaria | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | descrizione con refusi corretti |
 | 27 | ritmi-circadiani-e-metabolismo | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | descrizione con refusi corretti |
 
-Controlli: titolo identico all'originale (salvo refusi evidenti corretti); testo della descrizione identico; copertina caricata; brochure servita dal sito (non da Drive), PDF, stesso peso in byte del file originale; numero di loghi patrocinio e di testimonianze uguale all'originale; link WhatsApp con testo "Salve, vorrei avere maggiori informazioni sul corso \"TITOLO\""; sezione "Per chi è adatto" presente; title, meta description e schema.org Course presenti; redirect 301 dai vecchi URL con spazi.
+Controlli: titolo identico all'originale (salvo refusi evidenti corretti); testo della descrizione identico; copertina caricata; brochure servita dal sito (non da Drive), PDF, stesso peso in byte del file originale; numero di loghi patrocinio (un logo per ente, anche quelli che sull'originale erano riuniti in un banner) e di testimonianze uguale all'originale; link WhatsApp con testo "Salve, vorrei avere maggiori informazioni sul corso \"TITOLO\""; sezione "Per chi è adatto" presente; title, meta description e schema.org Course presenti; redirect 301 dai vecchi URL con spazi.

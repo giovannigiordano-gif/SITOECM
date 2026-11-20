@@ -23,18 +23,8 @@ if ( count( $ecm_featured ) < 3 ) {
 $ecm_docenti = ecm_docenti();
 $ecm_wa      = ecm_opt( 'whatsapp_number' ) ? ecm_whatsapp_generic() : '';
 
-// Loghi patrocinanti unici (da tutti i corsi).
-$ecm_logos = array();
-foreach ( ecm_courses() as $ecm_c ) {
-	foreach ( (array) $ecm_c['patrocini'] as $ecm_p ) {
-		// I banner compositi (più loghi in un'immagine) entrano anche loro: così si vedono tutti gli enti dichiarati.
-		$ecm_wide = $ecm_p['height'] > 0 && ( $ecm_p['width'] / $ecm_p['height'] ) > 2.6;
-		$ecm_k    = ( $ecm_wide || ! $ecm_p['name'] ) ? 'img-' . $ecm_p['image_id'] : sanitize_title( $ecm_p['name'] );
-		if ( $ecm_p['image_id'] && ! isset( $ecm_logos[ $ecm_k ] ) ) {
-			$ecm_logos[ $ecm_k ] = $ecm_p;
-		}
-	}
-}
+// Loghi patrocinanti unici (da tutti i corsi): un logo per ente.
+$ecm_logos = ecm_all_patrons();
 
 $ecm_ctas = array(
 	array(

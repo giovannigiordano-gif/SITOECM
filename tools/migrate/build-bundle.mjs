@@ -182,20 +182,39 @@ const normChars = (s) =>
 const clean = (s) => TYPOS.reduce((v, [a, b]) => v.split(a).join(b), normChars(s));
 
 const logoKeyBySha = {};
+// Loghi ritagliati dai banner compositi (node tools/migrate/split-banners.mjs).
+const splitLogos = existsSync(join(SCR, 'assets', 'logos-split', 'split.json')) ? JSON.parse(readFileSync(join(SCR, 'assets', 'logos-split', 'split.json'), 'utf8')) : [];
+const sameName = (a, b) => slugify(a) === slugify(b);
 const outCourses = courses.map((c0) => {
 	const c = { ...c0, title: clean(c0.title) };
 	const slug = c.clean_slug;
 	const cover = addMedia(`cover-${slug}`, c.cover_file, 'covers', { title: c.title, alt: `Copertina del corso ${c.title}`, kind: 'cover' });
 	const brochure = c.brochure_ok ? addMedia(`brochure-${slug}`, c.brochure_file, 'brochures', { title: `Brochure ${c.title}`, kind: 'brochure', pages: c.brochure_pages || null }) : null;
 	const preview = c.brochure_preview ? addMedia(`preview-${slug}`, c.brochure_preview, 'previews', { title: `Anteprima brochure ${c.title}`, alt: '', kind: 'preview' }) : null;
-	const patrocini = (c.patrocini || []).map((p0, i) => {
-		// Banner compositi: il nome elenca gli enti contenuti (separati da "; ").
+	const patrocini = (c.patrocini || []).flatMap((p0) => {
 		const li = logosIndex.find((l) => l.sha1 === p0.sha1);
+		// Banner compositi (più loghi in un'immagine): diventano loghi singoli, uno per ente (tools/migrate/split-banners.mjs).
+		// Se l'ente ha già un logo singolo in un altro corso si usa quello (originale, più nitido).
+		const parts = li && li.composite_image ? splitLogos.filter((s) => p0.file && p0.file.replace(/\\/g, '/').endsWith(s.banner.replace(/\\/g, '/'))) : [];
+		if (parts.length) {
+			return parts.map((s) => {
+				const single = logosIndex.find((l) => !l.composite_image && l.name && sameName(l.name, s.name));
+				if (single) {
+					const key = logoKeyBySha[single.sha1] || `logo-${slugify(single.name).slice(0, 60)}`;
+					logoKeyBySha[single.sha1] = key;
+					addMedia(key, single.canonical_file, 'logos', { title: single.name, alt: `Logo ${single.name}`, kind: 'logo' });
+					return { media: key, name: single.name };
+				}
+				const key = `logo-${s.slug}`.slice(0, 65);
+				addMedia(key, s.file, 'logos', { title: s.name, alt: `Logo ${s.name}`, kind: 'logo' });
+				return { media: key, name: s.name };
+			});
+		}
 		const p = { ...p0, name: p0.name || (li && li.contains_entities ? li.contains_entities.join('; ') : null) };
 		const key = logoKeyBySha[p.sha1] || `logo-${slugify(p0.name || p0.name_from_filename || basename(p0.file)).slice(0, 60) || p0.sha1.slice(0, 10)}`;
 		logoKeyBySha[p.sha1] = key;
 		addMedia(key, p.file, 'logos', { title: p.name || p.name_from_filename || '', alt: p.name ? `Logo ${p.name}` : '', kind: 'logo' });
-		return { media: key, name: p.name || '' };
+		return [{ media: key, name: p.name || '' }];
 	});
 	const faq = (c.faq || [])
 		.filter((f) => !isPerChi(f.question))

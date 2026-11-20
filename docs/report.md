@@ -292,3 +292,18 @@ nel campo "Video" della sua testimonianza compare da solo il pulsante play.
   dell'ente sotto, ultima riga centrata. In home ci sono tutti gli enti (anche i due banner con più loghi); nelle schede
   corso la sezione è subito sotto la hero, che ora ha lo sfondo più scuro perché il soggetto sia la copertina.
 - Verifiche: axe 0 violazioni; Lighthouse mobile home 94, scheda corso 94, catalogo 96 (accessibilità 100).
+
+### Loghi singoli, Chi siamo, video (terza revisione)
+
+- **Banner dei patrocini divisi**: i due banner del corso Bundle (6 e 5 loghi in un'unica immagine) sono stati
+  ritagliati in loghi singoli con `tools/migrate/split-banners.mjs` (individua i loghi dalle colonne vuote e controlla
+  che il numero coincida con gli enti letti). Gli enti che avevano già un logo singolo in altri corsi usano quello
+  originale; i 5 nuovi (Caserta, Parma, Reggio Emilia, Bologna, Torino) sono i ritagli. Il corso Bundle ora mostra
+  11 loghi, il sito 12 enti in tutto (home, Chi siamo, conteggio). La migrazione è aggiornata e ripetibile; il test dei
+  corsi conta un logo per ente.
+- **Chi siamo rifatta**, solo con testi reali della pagina e delle impostazioni: hero con la foto del corso dal vivo e la
+  prima frase come sottotitolo; "Cosa facciamo" con gli altri paragrafi; Mission e Vision affiancate in grande su
+  fondo scuro; numeri e foto del corso; fondatrice con ritratto e citazione; i volti dei 18 docenti (link alla scheda
+  di ciascuno); i 12 patrocini; invito finale.
+- **Video degli eventi dal vivo**: doppio slider infinito su due file che scorrono in direzioni opposte, come
+  nell'originale; pausa al passaggio del mouse, con il pulsante e automaticamente quando parte un video.
