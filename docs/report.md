@@ -319,9 +319,8 @@ Cloudflare, hosting Rocket.net con il plugin LeadConnector), tramite il server M
   background: 14 termini, 143 media, 27 corsi, 18 docenti, 23 testimonianze, 5 pagine, 2 menu, impostazioni e 8
   redirect, 0 errori. `wp ecm status` mostra l'avanzamento dell'ultima importazione.
 - **Impostazioni** come sulla staging: italiano, Europe/Rome, data `j F Y`, permalink `/%postname%/`, home statica,
-  blocco "ECM Cache" nell'`.htaccess`. Differenza voluta: **"Scoraggia i motori di ricerca" attivo** finché il sito
-  resta sul dominio temporaneo (evita contenuti duplicati con il sito attuale). Va tolto alla messa online
-  (Impostazioni › Lettura), insieme al collegamento del dominio vero.
+  blocco "ECM Cache" nell'`.htaccess`. L'indicizzazione è attiva (su
+  richiesta, il 27/11/2026 è stato tolto "Scoraggia i motori di ricerca": questo è il sito principale).
 - **Approvazioni Novamira 2**: il sito chiede conferma per le azioni con punteggio da 8 in su (installare plugin,
   cambiare tema, scrivere molti file); si regola da wp-admin › AI Activity.
 - **Cache**: Cloudflare tiene in cache per 30 giorni anche le pagine HTML. Il deploy ora svuota la CDN con il metodo del
@@ -339,3 +338,28 @@ Cloudflare, hosting Rocket.net con il plugin LeadConnector), tramite il server M
 - **Titolo bicolore**: la parte tra asterischi del titolo esce in cremisi chiaro (`--c-crimson-bright`, contrasto 5,6:1
   sul fondo scuro): "*Formazione ECM* per chi si prende cura della salute." Si cambia da Impostazioni ECM › Home ›
   Titolo principale; vale per tutte le hero che ricevono un titolo con asterischi.
+
+### SEO di base con Yoast SEO (27/11/2026)
+
+- **Yoast SEO 28.9** installato in italiano. Il modulo SEO di ECM Core si spegne da solo quando trova Yoast (nessun meta
+  doppio: un titolo, una descrizione, un canonical, un solo blocco JSON-LD per pagina) e passa a Yoast i propri dati
+  (`class-ecm-seo.php`, sezione "Ponte verso Yoast SEO"):
+  - descrizione: quella scritta in Yoast, altrimenti l'estratto del corso, il testo breve dell'area, la descrizione del
+    catalogo o il testo della pagina; in home il testo della hero;
+  - schema: il nodo `Course` nelle schede corso; dati dell'azienda (P. IVA, email, indirizzo, contatto WhatsApp, profili
+    social) nell'`Organization` di Yoast;
+  - immagini social in JPEG/PNG originale invece della versione WebP;
+  - pagine dei destinatari fuori dalla sitemap (il catalogo filtrato è la pagina di riferimento).
+- **Impostazioni**: separatore "–"; titoli "Corso – Corso ECM online – Corsi di Formazione ECM", "Catalogo dei corsi
+  ECM online – …", "Corsi ECM di {area} – …"; home "Corsi di Formazione ECM – Formazione ECM online per i professionisti
+  della salute"; azienda "Corsi di FormazionEcm" (ragione sociale) con il marchio quadrato come logo; immagine di
+  condivisione 1200×630 con logo, cane e gatto; archivi autore, data e allegati disattivati; tracciamento di Yoast spento.
+- **Sitemap**: `/sitemap_index.xml` con pagine (6), corsi (27 + catalogo) e aree (5). Articolo di esempio "Ciao mondo!"
+  spostato nel cestino.
+- **robots.txt**: WordPress/Yoast generano quello giusto (escluso solo `/wp-admin/`, con la sitemap). All'indirizzo
+  `/robots.txt` del dominio temporaneo però risponde ancora "Disallow: /" direttamente Cloudflare (nessuna richiesta
+  arriva a WordPress, resta uguale dopo gli svuotamenti della CDN): è il blocco che l'hosting mette sui domini
+  temporanei `*.wpdns.site`. Sparisce collegando il dominio vero; finché c'è, Lighthouse segna SEO 69 ("pagina non
+  scansionabile") e Google non indicizza il dominio temporaneo.
+- Da fare alla messa online: collegare il dominio, controllare `/robots.txt` e inviare `/sitemap_index.xml` in
+  Google Search Console.

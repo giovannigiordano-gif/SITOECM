@@ -23,6 +23,140 @@ final class ECM_SEO {
 		add_filter( 'wp_sitemaps_add_provider', array( __CLASS__, 'sitemap_providers' ), 10, 2 );
 		add_filter( 'wp_sitemaps_post_types', array( __CLASS__, 'sitemap_post_types' ) );
 		add_filter( 'wp_sitemaps_taxonomies', array( __CLASS__, 'sitemap_taxonomies' ) );
+
+		// Con Yoast SEO attivo l'output di ECM si spegne (enabled() = false): i dati del sito passano a Yoast.
+		add_filter( 'wpseo_metadesc', array( __CLASS__, 'yoast_description' ) );
+		add_filter( 'wpseo_opengraph_desc', array( __CLASS__, 'yoast_description' ) );
+		add_filter( 'wpseo_twitter_description', array( __CLASS__, 'yoast_description' ) );
+		add_filter( 'wpseo_title', array( __CLASS__, 'yoast_title' ) );
+		add_filter( 'wpseo_opengraph_image', array( __CLASS__, 'yoast_social_image' ) );
+		add_filter( 'wpseo_twitter_image', array( __CLASS__, 'yoast_social_image' ) );
+		add_filter( 'wpseo_schema_organization', array( __CLASS__, 'yoast_organization' ) );
+		add_filter( 'wpseo_schema_graph', array( __CLASS__, 'yoast_graph' ), 10, 2 );
+		add_filter( 'wpseo_sitemap_exclude_taxonomy', array( __CLASS__, 'yoast_sitemap_taxonomy' ), 10, 2 );
+		add_action( 'Yoast\WP\SEO\register_robots_rules', array( __CLASS__, 'yoast_robots' ) );
+	}
+
+	/* ------------------------------------------------------------------
+	 * Ponte verso Yoast SEO.
+	 * ------------------------------------------------------------------ */
+
+	/**
+	 * Descrizione: quella scritta in Yoast, altrimenti quella calcolata da ECM (estratto del corso, testo breve
+	 * dell'area, testo della hero in home, descrizione del catalogo).
+	 *
+	 * @param string $description Descrizione di Yoast.
+	 * @return string
+	 */
+	public static function yoast_description( $description ) {
+		if ( '' !== trim( (string) $description ) ) {
+			return $description;
+		}
+		return self::description();
+	}
+
+	/**
+	 * Titolo SEO di ECM (_ecm_seo_title) se in Yoast non ne è stato scritto uno.
+	 *
+	 * @param string $title Titolo di Yoast.
+	 * @return string
+	 */
+	public static function yoast_title( $title ) {
+		if ( is_singular() ) {
+			$id     = get_queried_object_id();
+			$custom = trim( (string) get_post_meta( $id, '_ecm_seo_title', true ) );
+			if ( '' !== $custom && '' === trim( (string) get_post_meta( $id, '_yoast_wpseo_title', true ) ) ) {
+				return $custom;
+			}
+		}
+		return $title;
+	}
+
+	/**
+	 * Immagine social: l'originale JPEG/PNG al posto della versione WebP creata da ECM Media (non tutte le app la
+	 * mostrano nelle anteprime dei link).
+	 *
+	 * @param string $url URL scelto da Yoast.
+	 * @return string
+	 */
+	public static function yoast_social_image( $url ) {
+		if ( ! is_string( $url ) || ! preg_match( '/\.webp(\?.*)?$/i', $url ) ) {
+			return $url;
+		}
+		$id   = attachment_url_to_postid( $url );
+		$data = $id ? self::image_data( $id ) : null;
+		return ( $data && ! preg_match( '/\.webp(\?.*)?$/i', $data['url'] ) ) ? $data['url'] : $url;
+	}
+
+	/**
+	 * Arricchisce l'Organization di Yoast con i dati delle Impostazioni ECM.
+	 *
+	 * @param array $data Nodo Organization di Yoast.
+	 * @return array
+	 */
+	public static function yoast_organization( $data ) {
+		if ( ! is_array( $data ) ) {
+			return $data;
+		}
+		$ecm = self::organization();
+		foreach ( array( 'vatID', 'email', 'address', 'contactPoint' ) as $key ) {
+			if ( empty( $data[ $key ] ) && ! empty( $ecm[ $key ] ) ) {
+				$data[ $key ] = $ecm[ $key ];
+			}
+		}
+		if ( ! empty( $ecm['sameAs'] ) ) {
+			$data['sameAs'] = array_values( array_unique( array_merge( (array) ( $data['sameAs'] ?? array() ), $ecm['sameAs'] ) ) );
+		}
+		return $data;
+	}
+
+	/**
+	 * Aggiunge il nodo Course allo schema di Yoast nelle schede corso (le briciole le fa già Yoast).
+	 *
+	 * @param array $graph   Nodi.
+	 * @param mixed $context Contesto di Yoast.
+	 * @return array
+	 */
+	public static function yoast_graph( $graph, $context = null ) {
+		if ( ! is_array( $graph ) || ! is_singular( 'corso' ) ) {
+			return $graph;
+		}
+		$nodes = self::course_graph( self::description(), self::image() );
+		if ( empty( $nodes[0] ) ) {
+			return $graph;
+		}
+		$course = $nodes[0];
+		if ( is_object( $context ) && ! empty( $context->main_schema_id ) ) {
+			$course['mainEntityOfPage'] = array( '@id' => $context->main_schema_id );
+		}
+		$graph[] = $course;
+		return $graph;
+	}
+
+	/**
+	 * Sitemap di Yoast: le pagine dei destinatari restano visitabili ma fuori dalla sitemap (come con le sitemap
+	 * native: il catalogo filtrato per professione è la pagina di riferimento).
+	 *
+	 * @param bool   $exclude  Escludere.
+	 * @param string $taxonomy Tassonomia.
+	 * @return bool
+	 */
+	public static function yoast_sitemap_taxonomy( $exclude, $taxonomy ) {
+		return 'destinatario' === $taxonomy ? true : $exclude;
+	}
+
+	/**
+	 * robots.txt di Yoast: area di amministrazione esclusa, admin-ajax permesso.
+	 *
+	 * @param object $robots Helper di Yoast.
+	 */
+	public static function yoast_robots( $robots ): void {
+		if ( is_object( $robots ) && method_exists( $robots, 'add_disallow' ) ) {
+			$robots->add_disallow( '*', '/wp-admin/' );
+			if ( method_exists( $robots, 'add_allow' ) ) {
+				$robots->add_allow( '*', '/wp-admin/admin-ajax.php' );
+			}
+		}
 	}
 
 	/**
