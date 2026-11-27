@@ -5,6 +5,7 @@
 import sharp from 'sharp';
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from 'node:fs';
 import { join, dirname, extname, basename } from 'node:path';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -30,7 +31,9 @@ for (const f of files) {
 		await base.clone().avif({ quality: cfg.avifQ || 52, effort: 6, chromaSubsampling: '4:2:0' }).toFile(join(OUT, dir, `${key}-${w}.avif`));
 		await base.clone().webp({ quality: cfg.webpQ || 76, effort: 6, smartSubsample: true }).toFile(join(OUT, dir, `${key}-${w}.webp`));
 	}
-	manifest[key] = { dir, widths, width: meta.width, height: meta.height, alt: cfg.alt || '' };
+	// v: impronta della sorgente, va nell'URL (?v=) perché CDN e browser non tengano la versione vecchia di un file con lo stesso nome.
+	const v = createHash('md5').update(readFileSync(join(SRC, f))).digest('hex').slice(0, 8);
+	manifest[key] = { dir, widths, width: meta.width, height: meta.height, alt: cfg.alt || '', v };
 	console.log(key, `${meta.width}x${meta.height}`, widths.join(','));
 }
 writeFileSync(join(OUT, 'manifest.json'), JSON.stringify(manifest, null, 1));

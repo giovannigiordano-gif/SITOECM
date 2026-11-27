@@ -10,6 +10,7 @@
 	--c-crimson: oklch(0.512 0.198 25.4);
 	--c-crimson-deep: oklch(0.42 0.165 22);
 	--c-crimson-soft: oklch(0.62 0.17 22);
+	--c-crimson-bright: oklch(0.66 0.19 24); /* accento su fondo inchiostro: 5,6:1 */
 	--c-blush: oklch(0.935 0.028 15);
 	--c-blush-2: oklch(0.965 0.014 15);
 	--c-paper: oklch(0.977 0.005 285);

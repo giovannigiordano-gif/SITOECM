@@ -30,7 +30,8 @@ function ecm_lens_ring_svg( string $id, string $text = '' ): string {
  * Stampa una hero.
  *
  * @param array $a {
- *     @type string $title       Titolo (testo).
+ *     @type string $title       Titolo (testo). La parte tra asterischi esce nel secondo colore:
+ *                               "*Formazione ECM* per chi si prende cura della salute.".
  *     @type string $title_html  Titolo già formattato (alternativo a title).
  *     @type string $title_class Classi extra del titolo.
  *     @type string $lead        Testo introduttivo (testo semplice).
@@ -87,6 +88,12 @@ function ecm_hero( array $a ): void {
 	);
 	static $n = 0;
 	++$n;
+
+	// Titolo bicolore: *testo* diventa l'accento cremisi.
+	if ( ! $a['title_html'] && preg_match( '/\*[^*]+\*/u', $a['title'] ) ) {
+		$a['title_html'] = (string) preg_replace( '/\*([^*]+)\*/u', '<span class="hero__accent">$1</span>', esc_html( $a['title'] ) );
+		$a['title']      = str_replace( '*', '', $a['title'] );
+	}
 
 	$classes = array( 'hero', 'hero--' . sanitize_html_class( $a['size'] ) );
 	if ( $a['photo'] ) {

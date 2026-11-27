@@ -5,11 +5,11 @@
   "images": {
     "hero-home": {
       "aspect_ratio": "16:9",
-      "prompt": "A modern scientific still life staged like a Dutch Golden Age painting: on a dark slate ledge a halved pomegranate spilling glistening crimson seeds, a white porcelain mortar holding dried herbs, fresh sprigs of echinacea and purple sage, a glass petri dish with crimson cultures catching the light, a few red currants and a single fig."
+      "prompt": "A noble golden retriever and an elegant silver tabby cat sitting close together on a dark slate ledge, both looking calmly toward the viewer with bright healthy eyes and glossy coats, rim light tracing the edges of their fur; beside them on the slate a small white porcelain bowl, a halved pomegranate with glistening crimson seeds and a sprig of fresh sage. Fine-art pet portrait staged like a Dutch Golden Age painting, tack-sharp eyes."
     },
     "hero-home-m": {
       "aspect_ratio": "9:16",
-      "prompt": "Vertical composition. A modern scientific still life staged like a Dutch Golden Age painting: on a dark slate ledge a halved pomegranate spilling glistening crimson seeds, a white porcelain mortar holding dried herbs, sprigs of echinacea and purple sage, a glass petri dish with crimson cultures. The arrangement fills the upper half of the frame; the lower half is smooth deep shadow for a headline."
+      "prompt": "Vertical composition. A noble golden retriever and an elegant silver tabby cat sitting close together on a dark slate ledge, both looking calmly toward the viewer with bright healthy eyes and glossy coats, rim light tracing the edges of their fur, a small white porcelain bowl and a halved pomegranate with crimson seeds beside them. Fine-art pet portrait, tack-sharp eyes. The two animals fill the upper half of the frame; the lower half is smooth deep shadow for a headline."
     },
     "hero-corsi": {
       "aspect_ratio": "16:9",

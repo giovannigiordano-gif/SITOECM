@@ -9,7 +9,8 @@
 //    non sparisce mai, nemmeno per un istante. (Il 20/11/2026 un deploy fatto rinominando la cartella ha fatto
 //    attivare a un plugin Hostinger il suo tema "hostinger-ai-theme": sito bianco.)
 // 4. controlla che il tema attivo sia ancora "ecm" (e lo riattiva se serve), resetta OPcache,
-//    svuota LiteSpeed e la CDN Hostinger (stessa azione del pulsante "Svuota cache" del plugin Hostinger).
+//    svuota LiteSpeed e la CDN Hostinger (stessa azione del pulsante "Svuota cache" del plugin Hostinger) oppure,
+//    sul sito definitivo, la CDN Rocket.net tramite il mu-plugin cdn-cache-management.
 // Verificare poi le pagine in una NUOVA chiamata (il codice nuovo vale dalla richiesta successiva).
 // =====================================================================
 $rm = function ( $dir ) use ( &$rm ) {
@@ -88,5 +89,18 @@ if ( defined( 'HOSTINGER_PLUGIN_REST_API_BASE' ) ) {
 	do_action( 'rest_api_init', rest_get_server() );
 	$res        = rest_do_request( new WP_REST_Request( 'DELETE', '/' . trim( HOSTINGER_PLUGIN_REST_API_BASE, '/' ) . '/clear-cache' ) );
 	$out['cdn'] = $res->get_data();
+}
+// CDN Rocket.net (wvup5sgt7n.wpdns.site): il mu-plugin cdn-cache-management espone purge_everything_cache().
+global $wp_filter;
+if ( isset( $wp_filter['upgrader_process_complete'] ) ) {
+	foreach ( $wp_filter['upgrader_process_complete']->callbacks as $cbs ) {
+		foreach ( $cbs as $cb ) {
+			if ( is_array( $cb['function'] ) && is_object( $cb['function'][0] ) && method_exists( $cb['function'][0], 'purge_everything_cache' ) ) {
+				$cb['function'][0]->purge_everything_cache();
+				if ( method_exists( $cb['function'][0], 'flush_deferred_purges' ) ) { $cb['function'][0]->flush_deferred_purges(); }
+				$out['cdn_rocket'] = 'svuotata';
+			}
+		}
+	}
 }
 return $out;

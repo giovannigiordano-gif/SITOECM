@@ -307,3 +307,35 @@ nel campo "Video" della sua testimonianza compare da solo il pulsante play.
   di ciascuno); i 12 patrocini; invito finale.
 - **Video degli eventi dal vivo**: doppio slider infinito su due file che scorrono in direzioni opposte, come
   nell'originale; pausa al passaggio del mouse, con il pulsante e automaticamente quando parte un video.
+
+## 13. Trasferimento sul WordPress definitivo (27/11/2026)
+
+Il sito è stato rifatto da zero su **https://wvup5sgt7n.wpdns.site** (WordPress 7.1.5, PHP 8.3, Apache dietro
+Cloudflare, hosting Rocket.net con il plugin LeadConnector), tramite il server MCP `novamira-wvup5sgt7n-wpdns`.
+
+- **Pacchetti**: plugin, tema e bundle dei contenuti (70 MB, caricato in 14 parti da 5 MB perché Cloudflare rifiuta i
+  corpi grandi e va in 504 sulle richieste lunghe; riunito sul server con controllo md5).
+- **Importazione**: nuovo comando `wp ecm import` (plugin, `includes/class-ecm-cli.php`) eseguito una volta sola in
+  background: 14 termini, 143 media, 27 corsi, 18 docenti, 23 testimonianze, 5 pagine, 2 menu, impostazioni e 8
+  redirect, 0 errori. `wp ecm status` mostra l'avanzamento dell'ultima importazione.
+- **Impostazioni** come sulla staging: italiano, Europe/Rome, data `j F Y`, permalink `/%postname%/`, home statica,
+  blocco "ECM Cache" nell'`.htaccess`. Differenza voluta: **"Scoraggia i motori di ricerca" attivo** finché il sito
+  resta sul dominio temporaneo (evita contenuti duplicati con il sito attuale). Va tolto alla messa online
+  (Impostazioni › Lettura), insieme al collegamento del dominio vero.
+- **Approvazioni Novamira 2**: il sito chiede conferma per le azioni con punteggio da 8 in su (installare plugin,
+  cambiare tema, scrivere molti file); si regola da wp-admin › AI Activity.
+- **Cache**: Cloudflare tiene in cache per 30 giorni anche le pagine HTML. Il deploy ora svuota la CDN con il metodo del
+  mu-plugin dell'hosting (`cdn-cache-management`), e le immagini del tema hanno un'impronta nell'URL (`?v=`) così una foto
+  sostituita con lo stesso nome non resta vecchia. Il mu-plugin svuota la cache anche quando si pubblica un contenuto o si cambia tema; non è ancora verificato che una
+  semplice modifica a una pagina già pubblicata aggiorni subito l'HTML in cache: controllarlo alla prima modifica.
+- Verifiche: 27/27 corsi, filtri e moduli 16/16, axe 0 violazioni (desktop e mobile), Lighthouse 93-98 con
+  accessibilità e best practice 100 (SEO 66-69 solo per il noindex del dominio temporaneo).
+
+### Hero della home con cane e gatto
+
+- Nuova fotografia MuAPI (`nano-banana-2`, 4k, 2 immagini, 0,044 USD): golden retriever e gatto tigrato argentato su
+  una lastra d'ardesia con melograno, salvia e ciotola di porcellana, nella stessa luce delle altre immagini; versione
+  orizzontale (soggetti a destra) e verticale per smartphone e tablet (soggetti in alto).
+- **Titolo bicolore**: la parte tra asterischi del titolo esce in cremisi chiaro (`--c-crimson-bright`, contrasto 5,6:1
+  sul fondo scuro): "*Formazione ECM* per chi si prende cura della salute." Si cambia da Impostazioni ECM › Home ›
+  Titolo principale; vale per tutte le hero che ricevono un titolo con asterischi.

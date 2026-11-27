@@ -15,6 +15,11 @@ Le 9 immagini della home (orizzontale e verticale), del catalogo, dei contatti e
 **MuAPI**: modello `nano-banana-2`, risoluzione 4k, 0,022 USD l'una (0,198 USD in tutto il 20/11/2026). Prompt e stile
 comune in `muapi-prompts.json`.
 
+Il 27/11/2026 la hero della home (`hero-home`, `hero-home-m`) è stata rigenerata con un cane e un gatto (2 immagini,
+0,044 USD); le vecchie nature morte restano in `src-ai/hero-home-still.jpg` e `hero-home-m-still.jpg` (non versionate).
+`images.mjs` scrive nel manifest un'impronta della sorgente (`v`) che il tema aggiunge agli URL (`?v=`): sostituendo
+un'immagine con lo stesso nome, CDN e browser scaricano quella nuova.
+
 ```sh
 MUAPI_API_KEY=la-tua-chiave node tools/images/muapi-generate.mjs             # tutte (preventivo prima, si ferma oltre 1 USD)
 MUAPI_API_KEY=la-tua-chiave node tools/images/muapi-generate.mjs hero-home   # una sola

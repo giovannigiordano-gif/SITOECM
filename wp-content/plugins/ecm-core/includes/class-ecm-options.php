@@ -195,6 +195,7 @@ final class ECM_Options {
 				'tab'   => 'home',
 				'label' => __( 'Titolo principale', 'ecm' ),
 				'type'  => 'text',
+				'desc'  => __( 'La parte tra asterischi esce in rosso, ad esempio: *Formazione ECM* per chi si prende cura della salute.', 'ecm' ),
 			),
 			'hero_text'           => array(
 				'tab'   => 'home',

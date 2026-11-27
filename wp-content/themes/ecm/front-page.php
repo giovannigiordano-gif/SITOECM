@@ -48,12 +48,12 @@ ecm_hero(
 	array(
 		'size'    => 'full',
 		'class'   => 'hero--home',
-		'title'   => (string) ecm_opt( 'hero_title', __( 'Formazione ECM per chi si prende cura della salute.', 'ecm' ) ),
+		'title'   => (string) ecm_opt( 'hero_title', __( '*Formazione ECM* per chi si prende cura della salute.', 'ecm' ) ),
 		'lead'    => (string) ecm_opt( 'hero_text', __( 'Corsi ECM online per nutrizionisti, medici, farmacisti e veterinari, con docenti universitari e il patrocinio degli ordini professionali.', 'ecm' ) ),
 		'image'   => 'hero-home',
 		'image_m' => 'hero-home-m',
-		'focus'   => '74% 50%',
-		'focus_m' => '50% 28%',
+		'focus'   => '72% 40%',
+		'focus_m' => '50% 30%',
 		'ctas'    => $ecm_ctas,
 		'scroll'  => '#manifesto',
 	)

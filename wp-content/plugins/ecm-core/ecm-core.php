@@ -47,6 +47,10 @@ if ( is_admin() ) {
 	require_once ECM_CORE_DIR . 'includes/admin/class-ecm-import-page.php';
 }
 
+if ( defined( 'WP_CLI' ) && WP_CLI ) {
+	require_once ECM_CORE_DIR . 'includes/class-ecm-cli.php';
+}
+
 register_activation_hook( __FILE__, array( 'ECM_Plugin', 'activate' ) );
 register_deactivation_hook( __FILE__, array( 'ECM_Plugin', 'deactivate' ) );
 

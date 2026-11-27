@@ -1,4 +1,21 @@
-# Deploy su soothing-khaki-okapi-74.hostingersite.com (plugin `ecm-core` e tema `ecm`)
+# Deploy del plugin `ecm-core` e del tema `ecm`
+
+## Sito definitivo: wvup5sgt7n.wpdns.site (dal 27/11/2026)
+
+Server MCP `novamira-wvup5sgt7n-wpdns` (Novamira 2, credenziali solo come variabili d'ambiente in `~/.claude.json`).
+Se il server non è ancora caricato nella sessione si usa il ponte `node tools/deploy/mcp-call.mjs <server> <calls.json>
+[request_id]` (stesse credenziali, non le stampa). Differenze rispetto alla staging Hostinger:
+
+- **Approvazioni AI**: ogni chiamata che modifica il sito porta `review` (`attention` 0-10, `summary`). Da 8 in su
+  resta in attesa finché una persona approva in wp-admin › AI Activity; l'AI non approva mai da sola.
+- **Cloudflare**: niente upload grandi in un colpo solo (504 o `rest_no_route`): dividere in parti da 5 MB
+  (`split -b 5000000 -d -a 2 file.zip parts/file.part`) e riunirle sul server con `execute-php`, controllando l'md5.
+- **Importazione**: `novamira/run-wp-cli` con `["ecm","import","--user=admin"]` e `async: true`, poi
+  `novamira/get-wp-cli-job` per l'esito. Niente limite dei 30 s di `execute-php`.
+- **Cache**: Cloudflare tiene anche l'HTML per 30 giorni. `deploy-staged.php.txt` svuota la CDN con il metodo
+  `purge_everything_cache()` del mu-plugin `cdn-cache-management` dell'hosting. Le immagini del tema hanno `?v=`.
+
+## Staging Hostinger: soothing-khaki-okapi-74.hostingersite.com
 
 Accesso **solo** tramite il server MCP `novamira-soothing-khaki-o` (abilità `novamira/create-upload-link` e
 `novamira/execute-php`). Non usare altri server/profili Novamira. Non toccare il plugin Novamira né l'utente 1.

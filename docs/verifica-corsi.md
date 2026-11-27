@@ -1,6 +1,6 @@
 # Verifica dei 27 corsi
 
-Generato da `tools/test/verify-courses.mjs` il 2026-11-20 17:49 su https://soothing-khaki-okapi-74.hostingersite.com.
+Generato da `tools/test/verify-courses.mjs` il 2026-11-27 07:58 su https://wvup5sgt7n.wpdns.site.
 
 Esito: **27/27 corsi superano tutti i controlli.**
 

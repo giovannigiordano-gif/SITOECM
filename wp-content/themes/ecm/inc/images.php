@@ -54,16 +54,20 @@ function ecm_img( string $key, array $args = array() ): string {
 		return ecm_img_fallback( $key, $args );
 	}
 	$item    = $m[ $key ];
-	$srcsets = static function ( string $k ) use ( $m ): callable {
+	// ?v= impronta della sorgente: un'immagine sostituita con lo stesso nome non resta in cache (CDN, browser).
+	$ver     = static fn( array $it ): string => empty( $it['v'] ) ? '' : '?v=' . rawurlencode( (string) $it['v'] );
+	$srcsets = static function ( string $k ) use ( $m, $ver ): callable {
 		$it     = $m[ $k ];
 		$base   = ECM_THEME_URI . '/assets/img/' . $it['dir'] . '/' . $k;
+		$q      = $ver( $it );
 		$widths = array_map( 'intval', (array) $it['widths'] );
 		sort( $widths );
-		return static function ( string $ext ) use ( $widths, $base ): string {
-			return implode( ', ', array_map( static fn( $w ) => esc_url( "{$base}-{$w}.{$ext}" ) . " {$w}w", $widths ) );
+		return static function ( string $ext ) use ( $widths, $base, $q ): string {
+			return implode( ', ', array_map( static fn( $w ) => esc_url( "{$base}-{$w}.{$ext}{$q}" ) . " {$w}w", $widths ) );
 		};
 	};
 	$base   = ECM_THEME_URI . '/assets/img/' . $item['dir'] . '/' . $key;
+	$q      = $ver( $item );
 	$widths = array_map( 'intval', (array) $item['widths'] );
 	sort( $widths );
 	$srcset = $srcsets( $key );
@@ -92,7 +96,7 @@ function ecm_img( string $key, array $args = array() ): string {
 		$srcset( 'webp' ),
 		esc_attr( $args['sizes'] ),
 		esc_attr( $args['img_class'] ),
-		esc_url( "{$base}-{$fallw}.webp" ),
+		esc_url( "{$base}-{$fallw}.webp{$q}" ),
 		(int) ( $item['width'] ?? 1600 ),
 		(int) ( $item['height'] ?? 1600 ),
 		esc_attr( (string) $alt ),

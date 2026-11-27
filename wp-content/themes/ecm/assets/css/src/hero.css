@@ -146,6 +146,9 @@
 	text-wrap: balance;
 	text-shadow: 0 2px 40px oklch(0.15 0.04 285 / 0.45);
 }
+.hero__accent {
+	color: var(--c-crimson-bright);
+}
 .hero--page .hero__title,
 .hero--compact .hero__title {
 	font-size: clamp(2.6rem, min(1.3rem + 4.4vw, 9.6svh), 5.75rem);
